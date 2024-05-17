@@ -1,0 +1,101 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,force:appHostable" access="global">
+    
+    <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        }
+        .btnsend {
+        background: #fe864d;
+        border: 1px solid #fe864d;
+        outline: none;
+        box-shadow: none;
+        margin: 1rem;
+        }
+        .slds-border_bottom {
+        border-bottom: 1px solid #f2f2f2;
+        }
+        .modal-header.slds-modal__header.empty.slds-modal__header--empty button {
+        display: none;
+        }
+        <!--.slds-modal__close {
+        top: .5rem;
+        right: .5rem;
+        border: 1px solid #d4d4d4;
+        }
+        .slds-modal__close svg.slds-button__icon.slds-button_icon-inverse {
+        fill: #000;-->
+        }
+    </aura:html>   
+    
+     <aura:attribute name="hasError" type="boolean" default="false"/>
+    <aura:attribute name="showSpinner" type="boolean" default="false"/>
+    <aura:attribute name="record" type="Object"/>
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      fields="ETI_Accepted__c,SchedStartTime,RecordType.Name"
+                      targetFields="{!v.record}"
+                      recordUpdated="{!c.onForceLoad}"
+                      />
+    <aura:if isTrue="true">
+        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-border_bottom slds-hyphenate slds-align_absolute-center" style="border-bottom: 1px solid #f2f2f2;font-size: 16px;font-weight: 500!important;padding: 1rem;">
+            Service Appointment Request
+        </h2>
+    </aura:if>
+    <aura:if isTrue="false">
+        <header class="slds-modal__header">
+            <lightning:buttonIcon iconName="utility:close"
+                                  onclick="{! c.closeModel }"
+                                  alternativeText="close"
+                                  variant="bare-inverse"
+                                  class="slds-modal__close"/>
+            <h2 id="" class="slds-text-heading_medium slds-hyphenat" >Service Appointment Request</h2>
+        </header>
+    </aura:if>
+  
+    <div class="slds-border_bottom">
+        <div class="slds-form-element__control slds-m-around_medium">
+             <aura:if isTrue="{!v.showSpinner}">
+            <lightning:spinner class="spins" size="" variant="brand" alternativeText="Loading" />
+            </aura:if>
+            <aura:if isTrue="{!!v.hasError}">
+                <p style="font-size: 21px;font-style: italic;">
+                    Please click on accept button to accept this request.
+                </p>
+                
+                <lightning:recordEditForm recordId="{!v.recordId}" aura:id="servApp" objectApiName="ServiceAppointment" onsuccess="{!c.handleOnSuccess}" onerror="{!c.handleOnError}">
+                    <lightning:messages />                   
+                    <lightning:inputField fieldName="ETI_Accepted__c" Checked="true" class="slds-hide"/>
+                    <lightning:inputField fieldName="Status" value="Dispatched" class="slds-hide"/>                   
+                   
+                </lightning:recordEditForm>
+                <aura:set attribute="else">
+                    <p style="font-size: 21px;font-style: italic;color: orange;"> 
+                      Inspection can be accepted on the same day of Inspection. Please try on the Inspection Date.
+                    </p>
+                </aura:set>
+            </aura:if>
+        </div>
+    </div>
+    <div class="slds-float--right " >
+        
+        <lightning:button variant="brand" 
+                          label="Cancel"
+                          title="Cancel"
+                          onclick="{!c.closeModel}" class="btnsend" disabled="{!v.showSpinner}" /> 
+        <aura:if isTrue="{!!v.hasError}">
+        <lightning:button variant="brand" 
+                          label="Accept"
+                          title="Accept"
+                          onclick="{!c.acceptRequest}" class="btnsend" disabled="{!v.showSpinner}" /> 
+       </aura:if>
+    </div>
+	
+</aura:component>

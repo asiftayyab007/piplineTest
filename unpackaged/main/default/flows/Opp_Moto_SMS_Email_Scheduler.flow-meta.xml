@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_SMS_and_Email</name>
+        <label>Send SMS and Email</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <actionName>Moto_SendSMS_Opp_Handler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>smsRelRecIds</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Moto_SendSMS_Opp_Handler</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Sens_SMS_and_Email</name>
+        <label>Sens SMS and Email</label>
+        <locationX>440</locationX>
+        <locationY>288</locationY>
+        <actionName>Moto_SendSMSEMail_Opp_Handler_Template1</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>smsRelRecIds</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Moto_SendSMSEMail_Opp_Handler_Template1</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <description>Vehicle Delivery - Service Opp rec type</description>
+    <environments>Default</environments>
+    <interviewLabel>Opp_Moto_SMS_Email_Scheduler {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opp_Moto_SMS_Email_Scheduler_Service</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>{!$Record.RecordType.Name} == &#39;Automotive Service Center &amp; Body Shop&#39; &amp;&amp;  ISPICKVAL({!$Record.StageName}, &#39;Vehicle Delivery&#39;) &amp;&amp; (ISPICKVAL({!$Record.Type_of_Customer__c},&#39;Private&#39;))</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>Run_after_2_hrs</name>
+            <connector>
+                <targetReference>Send_SMS_and_Email</targetReference>
+            </connector>
+            <label>Run after 2 hrs</label>
+            <offsetNumber>2</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Run_after</name>
+            <connector>
+                <targetReference>Sens_SMS_and_Email</targetReference>
+            </connector>
+            <label>Run after 2 Days</label>
+            <offsetNumber>2</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <timeSource>RecordTriggerEvent</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

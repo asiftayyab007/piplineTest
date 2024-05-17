@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurance_is_Active</fullName>
+    <active>true</active>
+    <description>Insurance is active, coordinator cannot make any changes</description>
+    <errorConditionFormula>AND
+(
+$Profile.Name == &quot;ETIN_HealthInsuranceCord(Platform)&quot;,
+TEXT( Insurance_Current_Status__c ) = &quot;Active&quot;
+)</errorConditionFormula>
+    <errorMessage>You don&#39;t have rights to change. Please check with insurance admin.</errorMessage>
+</ValidationRule>

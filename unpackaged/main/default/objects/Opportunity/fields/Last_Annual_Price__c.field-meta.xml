@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Annual_Price__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(  Annual_AmountFormulla__c ) &amp;&amp; NOT(ISBLANK(  Annual_proposed_amount__c )),Annual_proposed_amount__c ,
+
+IF(ISBLANK(Annual_AmountFormulla__c ) &amp;&amp; ISBLANK( Annual_proposed_amount__c ) ,
+ Annual_budget__c ,Annual_AmountFormulla__c  ))</formula>
+    <label>Last Annual Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Workforce Visa Cost</label>
+    <pluralLabel>Workforce Visa Costs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

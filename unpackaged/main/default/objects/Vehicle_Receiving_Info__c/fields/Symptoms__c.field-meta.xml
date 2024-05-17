@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Symptoms__c</fullName>
+    <externalId>false</externalId>
+    <label>Symptoms</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fluid Leaks</fullName>
+                <default>false</default>
+                <label>Fluid Leaks</label>
+            </value>
+            <value>
+                <fullName>Schedule A - Minor</fullName>
+                <default>false</default>
+                <label>Schedule A - Minor</label>
+            </value>
+            <value>
+                <fullName>Schedule B – Minor</fullName>
+                <default>false</default>
+                <label>Schedule B – Minor</label>
+            </value>
+            <value>
+                <fullName>Schedule C - Major</fullName>
+                <default>false</default>
+                <label>Schedule C - Major</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Warning Lights</fullName>
+                <default>false</default>
+                <label>Warning Lights</label>
+            </value>
+            <value>
+                <fullName>Suspension and Steering Issues</fullName>
+                <default>false</default>
+                <label>Suspension and Steering Issues</label>
+            </value>
+            <value>
+                <fullName>Braking System Issues</fullName>
+                <default>false</default>
+                <label>Braking System Issues</label>
+            </value>
+            <value>
+                <fullName>Tire and Wheel Issues</fullName>
+                <default>false</default>
+                <label>Tire and Wheel Issues</label>
+            </value>
+            <value>
+                <fullName>Electrical System Issues</fullName>
+                <default>false</default>
+                <label>Electrical System Issues</label>
+            </value>
+            <value>
+                <fullName>Exhaust Emissions</fullName>
+                <default>false</default>
+                <label>Exhaust Emissions</label>
+            </value>
+            <value>
+                <fullName>Engine-related Issues</fullName>
+                <default>false</default>
+                <label>Engine-related Issues</label>
+            </value>
+            <value>
+                <fullName>Transmission-related Issues</fullName>
+                <default>false</default>
+                <label>Transmission-related Issues</label>
+            </value>
+            <value>
+                <fullName>Fuel System Issues</fullName>
+                <default>false</default>
+                <label>Fuel System Issues</label>
+            </value>
+            <value>
+                <fullName>Remote Key/Keyless Entry Issues</fullName>
+                <default>false</default>
+                <label>Remote Key/Keyless Entry Issues</label>
+            </value>
+            <value>
+                <fullName>Communication Systems</fullName>
+                <default>false</default>
+                <label>Communication Systems</label>
+            </value>
+            <value>
+                <fullName>Entertainment and Infotainment Systems</fullName>
+                <default>false</default>
+                <label>Entertainment and Infotainment Systems</label>
+            </value>
+            <value>
+                <fullName>Dashboard Display and Controls</fullName>
+                <default>false</default>
+                <label>Dashboard Display and Controls</label>
+            </value>
+            <value>
+                <fullName>Drivetrain Issues</fullName>
+                <default>false</default>
+                <label>Drivetrain Issues</label>
+            </value>
+            <value>
+                <fullName>Windshield and Wipers</fullName>
+                <default>false</default>
+                <label>Windshield and Wipers</label>
+            </value>
+            <value>
+                <fullName>Exterior and Visual Inspection</fullName>
+                <default>false</default>
+                <label>Exterior and Visual Inspection</label>
+            </value>
+            <value>
+                <fullName>Interior Issues</fullName>
+                <default>false</default>
+                <label>Interior Issues</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Issues</fullName>
+                <default>false</default>
+                <label>Miscellaneous Issues</label>
+            </value>
+            <value>
+                <fullName>1-gear problem</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1-gear problem</label>
+            </value>
+            <value>
+                <fullName>ABS Warning Light</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ABS Warning Light</label>
+            </value>
+            <value>
+                <fullName>Abnormal Sound When Turning</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Abnormal Sound When Turning</label>
+            </value>
+            <value>
+                <fullName>Battery Charging Warning Light</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Battery Charging Warning Light</label>
+            </value>
+            <value>
+                <fullName>Black Smoke</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Black Smoke</label>
+            </value>
+            <value>
+                <fullName>Brake sound</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Brake sound</label>
+            </value>
+            <value>
+                <fullName>Check Engine Warning Light</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Check Engine Warning Light</label>
+            </value>
+            <value>
+                <fullName>Engine Oil Pressure Warning Light</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Engine Oil Pressure Warning Light</label>
+            </value>
+            <value>
+                <fullName>Engine Vibration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Engine Vibration</label>
+            </value>
+            <value>
+                <fullName>Gray Smoke</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gray Smoke</label>
+            </value>
+            <value>
+                <fullName>Hard Starting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hard Starting</label>
+            </value>
+            <value>
+                <fullName>Low Pickup</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Low Pickup</label>
+            </value>
+            <value>
+                <fullName>Starting Failure</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Starting Failure</label>
+            </value>
+            <value>
+                <fullName>Steering Vibration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Steering Vibration</label>
+            </value>
+            <value>
+                <fullName>Tyre Pressure Warning Light</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tyre Pressure Warning Light</label>
+            </value>
+            <value>
+                <fullName>Vehicle Pulling to One Side</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vehicle Pulling to One Side</label>
+            </value>
+            <value>
+                <fullName>White Smoke</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>White Smoke</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

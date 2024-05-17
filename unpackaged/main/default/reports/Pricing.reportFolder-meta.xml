@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>ET_HQ_Head_Of_Pricing</sharedTo>
+        <sharedToType>Role</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>ET_HQ_Pricing_Accountant</sharedTo>
+        <sharedToType>Role</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>HQ_Risk_Pricing_Department</sharedTo>
+        <sharedToType>Role</sharedToType>
+    </folderShares>
+    <name>Pricing</name>
+</ReportFolder>

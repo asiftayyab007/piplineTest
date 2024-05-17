@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mussafah_Bookings</fullName>
+    <columns>NAME</columns>
+    <columns>User__c</columns>
+    <columns>Booking_Date_Time__c</columns>
+    <columns>Booking_Status__c</columns>
+    <columns>ET_Location__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ET_Location__c</field>
+        <operation>equals</operation>
+        <value>Mussafah Inspection Centre</value>
+    </filters>
+    <label>Mussafah Bookings</label>
+</ListView>

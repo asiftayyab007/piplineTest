@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Age_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>Age__c  &gt;= 18 &amp;&amp;   ISPICKVAL(Relation__c , &#39;Child&#39;) &amp;&amp; ISNEW()</errorConditionFormula>
+    <errorDisplayField>Date_Of_Birth__c</errorDisplayField>
+    <errorMessage>Child age should be less than 18 years.</errorMessage>
+</ValidationRule>

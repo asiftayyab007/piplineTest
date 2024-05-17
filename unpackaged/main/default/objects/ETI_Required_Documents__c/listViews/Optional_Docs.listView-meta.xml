@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Optional_Docs</fullName>
+    <columns>NAME</columns>
+    <columns>Service_Types__c</columns>
+    <columns>Vehicle_Service__c</columns>
+    <columns>Is_Optional__c</columns>
+    <columns>Is_Required__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Is_Optional__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Optional Docs</label>
+</ListView>

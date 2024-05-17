@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Purchase_MandatoryFields</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR (ISPICKVAL(Status  , &#39;Appointment Booked&#39;) ,ISPICKVAL(Status  , &#39;Converted&#39;)) &amp;&amp; OR ( ISBLANK( Vehicle_Brand__c),ISBLANK(Moto_Vehicle_Model__c ),ISBLANK(Text(ETM_Vehicle_Model__c)),ISBLANK(TEXT(Vehicle_Mileage__c )),ISBLANK( Direct_Purchase_Price__c ) ) &amp;&amp; RecordType.DeveloperName==&#39;Moto_Dealership_Vehicle_Purchase&#39;</errorConditionFormula>
+    <errorMessage>Vehicle Brand, Model, Mileage, Model year and Customer Price Expectation are mandatory.</errorMessage>
+</ValidationRule>

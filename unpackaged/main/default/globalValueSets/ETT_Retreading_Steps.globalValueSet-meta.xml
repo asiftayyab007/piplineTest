@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Light Conditions</fullName>
+        <default>false</default>
+        <label>Light Conditions</label>
+    </customValue>
+    <customValue>
+        <fullName>Floor Conditions</fullName>
+        <default>false</default>
+        <label>Floor Conditions</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing Blade Conditions</fullName>
+        <default>false</default>
+        <label>Buffing Blade Conditions</label>
+    </customValue>
+    <customValue>
+        <fullName>Wearing, Workstation, Skills Set &amp; Tools Check</fullName>
+        <default>false</default>
+        <label>Wearing, Workstation, Skills Set &amp; Tools Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing Sidebuffer Conditions</fullName>
+        <default>false</default>
+        <label>Buffing Sidebuffer Conditions</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing powder replacement check</fullName>
+        <default>false</default>
+        <label>Buffing powder replacement check</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing Dust Collector Check</fullName>
+        <default>false</default>
+        <label>Buffing Dust Collector Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing Dust Collector - Suction line check</fullName>
+        <default>false</default>
+        <label>Buffing Dust Collector - Suction line check</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing Dust Collector - Suction pipeline capacity check</fullName>
+        <default>false</default>
+        <label>Buffing Dust Collector - Suction pipeline capacity check</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing Dust Collector - Suction filter value check</fullName>
+        <default>false</default>
+        <label>Buffing Dust Collector - Suction filter value check</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing - Inflation pressure check</fullName>
+        <default>false</default>
+        <label>Buffing - Inflation pressure check</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing- Rasphub Tyre contact position check</fullName>
+        <default>false</default>
+        <label>Buffing- Rasphub Tyre contact position check</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing- Tyre stone check</fullName>
+        <default>false</default>
+        <label>Buffing- Tyre stone check</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Swicth Operation</fullName>
+        <default>false</default>
+        <label>Power Swicth Operation</label>
+    </customValue>
+    <customValue>
+        <fullName>Terms Read</fullName>
+        <default>false</default>
+        <label>Terms Read</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing - Scan Surface</fullName>
+        <default>false</default>
+        <label>Buffing - Scan Surface</label>
+    </customValue>
+    <customValue>
+        <fullName>Side Crown buffing</fullName>
+        <default>false</default>
+        <label>Side Crown buffing</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffing - Tyre Cut Check</fullName>
+        <default>false</default>
+        <label>Buffing - Tyre Cut Check</label>
+    </customValue>
+    <customValue>
+        <fullName>OnHold</fullName>
+        <default>false</default>
+        <label>OnHold</label>
+    </customValue>
+    <customValue>
+        <fullName>Buffer Settings Check</fullName>
+        <default>false</default>
+        <label>Buffer Settings Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Complaints</fullName>
+        <default>false</default>
+        <label>Complaints</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Stage Check</fullName>
+        <default>false</default>
+        <label>Final Stage Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Reviewing Job History</fullName>
+        <default>false</default>
+        <label>Reviewing Job History</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Cutting Stone Check</fullName>
+        <default>false</default>
+        <label>Skiving - Cutting Stone Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Counter wheel Check</fullName>
+        <default>false</default>
+        <label>Skiving - Counter wheel Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Cement tool Check</fullName>
+        <default>false</default>
+        <label>Skiving - Cement tool Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Rubber hogs Check</fullName>
+        <default>false</default>
+        <label>Skiving - Rubber hogs Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Burr Check</fullName>
+        <default>false</default>
+        <label>Skiving - Burr Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Router carbide Check</fullName>
+        <default>false</default>
+        <label>Skiving - Router carbide Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Ball shaped carbide Check</fullName>
+        <default>false</default>
+        <label>Skiving - Ball shaped carbide Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Aluminum oxide Check</fullName>
+        <default>false</default>
+        <label>Skiving - Aluminum oxide Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Other tools Check</fullName>
+        <default>false</default>
+        <label>Skiving - Other tools Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Rasps Check</fullName>
+        <default>false</default>
+        <label>Skiving - Rasps Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - RMA Perfection Check</fullName>
+        <default>false</default>
+        <label>Skiving - RMA Perfection Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Start</fullName>
+        <default>false</default>
+        <label>Skiving - Start</label>
+    </customValue>
+    <customValue>
+        <fullName>Thread - Cutting Machine Check</fullName>
+        <default>false</default>
+        <label>Thread - Cutting Machine Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Review Thread Specifications</fullName>
+        <default>false</default>
+        <label>Review Thread Specifications</label>
+    </customValue>
+    <customValue>
+        <fullName>Thread Cemented Check</fullName>
+        <default>false</default>
+        <label>Thread Cemented Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Motorized Inspection Spread Work</fullName>
+        <default>false</default>
+        <label>Motorized Inspection Spread Work</label>
+    </customValue>
+    <customValue>
+        <fullName>Rust Not Remove, Crack Missing, Steel Note Remove</fullName>
+        <default>false</default>
+        <label>Rust Not Remove, Crack Missing, Steel Note Remove</label>
+    </customValue>
+    <customValue>
+        <fullName>Cutting Found</fullName>
+        <default>false</default>
+        <label>Cutting Found</label>
+    </customValue>
+    <customValue>
+        <fullName>Instructions Agreement</fullName>
+        <default>false</default>
+        <label>Instructions Agreement</label>
+    </customValue>
+    <customValue>
+        <fullName>Display History</fullName>
+        <default>false</default>
+        <label>Display History</label>
+    </customValue>
+    <customValue>
+        <fullName>Repaired Skived Area</fullName>
+        <default>false</default>
+        <label>Repaired Skived Area</label>
+    </customValue>
+    <customValue>
+        <fullName>Filling machine temperature check</fullName>
+        <default>false</default>
+        <label>Filling machine temperature check</label>
+    </customValue>
+    <customValue>
+        <fullName>Defect Checks</fullName>
+        <default>false</default>
+        <label>Defect Checks</label>
+    </customValue>
+    <customValue>
+        <fullName>Nail hole missing/Crack on Sidewall Check</fullName>
+        <default>false</default>
+        <label>Nail hole missing/Crack on Sidewall Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Tyre Cementing Check</fullName>
+        <default>false</default>
+        <label>Tyre Cementing Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Tyre Cementing Dryness Check</fullName>
+        <default>false</default>
+        <label>Tyre Cementing Dryness Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Filling Sholders Strip Availability Check</fullName>
+        <default>false</default>
+        <label>Filling Sholders Strip Availability Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Filling Work Check on Skived Areas/GSO/Plate</fullName>
+        <default>false</default>
+        <label>Filling Work Check on Skived Areas/GSO/Plate</label>
+    </customValue>
+    <customValue>
+        <fullName>Cementing Missing Repair</fullName>
+        <default>false</default>
+        <label>Cementing Missing Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Cementing Patches</fullName>
+        <default>false</default>
+        <label>Cementing Patches</label>
+    </customValue>
+    <customValue>
+        <fullName>Cementing First Half</fullName>
+        <default>false</default>
+        <label>Cementing First Half</label>
+    </customValue>
+    <customValue>
+        <fullName>Cementing Second Half</fullName>
+        <default>false</default>
+        <label>Cementing Second Half</label>
+    </customValue>
+    <customValue>
+        <fullName>Cementing Production Plate Area</fullName>
+        <default>false</default>
+        <label>Cementing Production Plate Area</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Rim Status Check</fullName>
+        <default>false</default>
+        <label>Building Rim Status Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Expandable Building Rim pressure check</fullName>
+        <default>false</default>
+        <label>Expandable Building Rim pressure check</label>
+    </customValue>
+    <customValue>
+        <fullName>Stitching adjustment check</fullName>
+        <default>false</default>
+        <label>Stitching adjustment check</label>
+    </customValue>
+    <customValue>
+        <fullName>Stitching wheel condition</fullName>
+        <default>false</default>
+        <label>Stitching wheel condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Stitching pressure check</fullName>
+        <default>false</default>
+        <label>Stitching pressure check</label>
+    </customValue>
+    <customValue>
+        <fullName>Check Onside down filling</fullName>
+        <default>false</default>
+        <label>Check Onside down filling</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving spot filling check</fullName>
+        <default>false</default>
+        <label>Skiving spot filling check</label>
+    </customValue>
+    <customValue>
+        <fullName>Tread centering sensor condition check</fullName>
+        <default>false</default>
+        <label>Tread centering sensor condition check</label>
+    </customValue>
+    <customValue>
+        <fullName>Tread width with Cushion gum match</fullName>
+        <default>false</default>
+        <label>Tread width with Cushion gum match</label>
+    </customValue>
+    <customValue>
+        <fullName>Shoulder Strip check</fullName>
+        <default>false</default>
+        <label>Shoulder Strip check</label>
+    </customValue>
+    <customValue>
+        <fullName>Nail hole check</fullName>
+        <default>false</default>
+        <label>Nail hole check</label>
+    </customValue>
+    <customValue>
+        <fullName>Check Tread width, Pattern</fullName>
+        <default>false</default>
+        <label>Check Tread width, Pattern</label>
+    </customValue>
+    <customValue>
+        <fullName>Removal of plastic sheet check</fullName>
+        <default>false</default>
+        <label>Removal of plastic sheet check</label>
+    </customValue>
+    <customValue>
+        <fullName>Stitching check</fullName>
+        <default>false</default>
+        <label>Stitching check</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping System Checks</fullName>
+        <default>false</default>
+        <label>Enveloping System Checks</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Rim Type</fullName>
+        <default>false</default>
+        <label>Enveloping Rim Type</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Build Tyre Condition</fullName>
+        <default>false</default>
+        <label>Enveloping Build Tyre Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Wicking Pad Application</fullName>
+        <default>false</default>
+        <label>Enveloping Wicking Pad Application</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Check 13 Inflation Pressure Valve and 13 Pressure Cable Condition</fullName>
+        <default>false</default>
+        <label>Curing Check 13 Inflation Pressure Valve and 13 Pressure Cable Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Vacuum Machine Condition</fullName>
+        <default>false</default>
+        <label>Curing Vacuum Machine Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing 13 Vacuum Pressure valve Condition and 13 Pressure Cable Condition</fullName>
+        <default>false</default>
+        <label>Curing 13 Vacuum Pressure valve Condition and 13 Pressure Cable Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Digital Screen Condition</fullName>
+        <default>false</default>
+        <label>Curing Digital Screen Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Control Panel Board Condition</fullName>
+        <default>false</default>
+        <label>Curing Control Panel Board Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Chamber Motor Condition</fullName>
+        <default>false</default>
+        <label>Curing Chamber Motor Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing The Gaugs of Pressure And Vacuum</fullName>
+        <default>false</default>
+        <label>Curing The Gaugs of Pressure And Vacuum</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Remove all vacuum and pressure connections from the catridge</fullName>
+        <default>false</default>
+        <label>Curing Remove all vacuum and pressure connections from the catridge</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check Tyre Spreader in working condition</fullName>
+        <default>false</default>
+        <label>Final Inspection Check Tyre Spreader in working condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check Spreader Light Conditions</fullName>
+        <default>false</default>
+        <label>Final Inspection Check Spreader Light Conditions</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check Tyre Lift</fullName>
+        <default>false</default>
+        <label>Final Inspection Check Tyre Lift</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check Tyre Size</fullName>
+        <default>false</default>
+        <label>Final Inspection Check Tyre Size</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check Tyre Pattern</fullName>
+        <default>false</default>
+        <label>Final Inspection Check Tyre Pattern</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check Precure tread size</fullName>
+        <default>false</default>
+        <label>Final Inspection Check Precure tread size</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check Crown Condition</fullName>
+        <default>false</default>
+        <label>Final Inspection Check Crown Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check Side Wall</fullName>
+        <default>false</default>
+        <label>Final Inspection Check Side Wall</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is Any Poor Repair</fullName>
+        <default>false</default>
+        <label>Final Inspection Is Any Poor Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is Any Curing Mark</fullName>
+        <default>false</default>
+        <label>Final Inspection Is Any Curing Mark</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is Wicking Pad Mark Visible</fullName>
+        <default>false</default>
+        <label>Final Inspection Is Wicking Pad Mark Visible</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is Shoulde Strip Overflow Mark</fullName>
+        <default>false</default>
+        <label>Final Inspection Is Shoulde Strip Overflow Mark</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is Buff off any excessive sidewall repair rubber flash</fullName>
+        <default>false</default>
+        <label>Final Inspection Is Buff off any excessive sidewall repair rubber flash</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is there any other default</fullName>
+        <default>false</default>
+        <label>Final Inspection Is there any other default</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is thread area ok</fullName>
+        <default>false</default>
+        <label>Final Inspection Is thread area ok</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is any open/defective splice</fullName>
+        <default>false</default>
+        <label>Final Inspection Is any open/defective splice</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is any Tread centering or snaking</fullName>
+        <default>false</default>
+        <label>Final Inspection Is any Tread centering or snaking</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is any Liner bulge/Separation</fullName>
+        <default>false</default>
+        <label>Final Inspection Is any Liner bulge/Separation</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is any poor rubber flow at tread shoulder edges</fullName>
+        <default>false</default>
+        <label>Final Inspection Is any poor rubber flow at tread shoulder edges</label>
+    </customValue>
+    <customValue>
+        <fullName>Painting Check Tyres Sidewall Painted</fullName>
+        <default>false</default>
+        <label>Painting Check Tyres Sidewall Painted</label>
+    </customValue>
+    <customValue>
+        <fullName>Painting Check Excessive Paint Leakage</fullName>
+        <default>false</default>
+        <label>Painting Check Excessive Paint Leakage</label>
+    </customValue>
+    <customValue>
+        <fullName>Painting Check Sidewall Painting Leakage</fullName>
+        <default>false</default>
+        <label>Painting Check Sidewall Painting Leakage</label>
+    </customValue>
+    <customValue>
+        <fullName>Painting Check Inner Side of Tyre Casing</fullName>
+        <default>false</default>
+        <label>Painting Check Inner Side of Tyre Casing</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check Tyre Spreader in working condition</fullName>
+        <default>false</default>
+        <label>Quality Control Check Tyre Spreader in working condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check Spreader Light Conditions</fullName>
+        <default>false</default>
+        <label>Quality Control Check Spreader Light Conditions</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check Tyre Lift</fullName>
+        <default>false</default>
+        <label>Quality Control Check Tyre Lift</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check Tyre Size</fullName>
+        <default>false</default>
+        <label>Quality Control Check Tyre Size</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check Tyre Pattern</fullName>
+        <default>false</default>
+        <label>Quality Control Check Tyre Pattern</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check Precure tread size</fullName>
+        <default>false</default>
+        <label>Quality Control Check Precure tread size</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check Crown Condition</fullName>
+        <default>false</default>
+        <label>Quality Control Check Crown Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check Side Wall</fullName>
+        <default>false</default>
+        <label>Quality Control Check Side Wall</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is Any Poor Repair</fullName>
+        <default>false</default>
+        <label>Quality Control Is Any Poor Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is Any Curing Mark</fullName>
+        <default>false</default>
+        <label>Quality Control Is Any Curing Mark</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is Wicking Pad Mark Visible</fullName>
+        <default>false</default>
+        <label>Quality Control Is Wicking Pad Mark Visible</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is Shoulde Strip Overflow Mark</fullName>
+        <default>false</default>
+        <label>Quality Control Is Shoulde Strip Overflow Mark</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is Buff off any excessive sidewall repair rubber flash</fullName>
+        <default>false</default>
+        <label>Quality Control Is Buff off any excessive sidewall repair rubber flash</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is there any other default</fullName>
+        <default>false</default>
+        <label>Quality Control Is there any other default</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is thread area ok</fullName>
+        <default>false</default>
+        <label>Quality Control Is thread area ok</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any open/defective splice</fullName>
+        <default>false</default>
+        <label>Quality Control Is any open/defective splice</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any Tread centering or snaking</fullName>
+        <default>false</default>
+        <label>Quality Control Is any Tread centering or snaking</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any Liner bulge/Separation</fullName>
+        <default>false</default>
+        <label>Quality Control Is any Liner bulge/Separation</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any poor rubber flow at tread shoulder edges</fullName>
+        <default>false</default>
+        <label>Quality Control Is any poor rubber flow at tread shoulder edges</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is Tyre Interior OK</fullName>
+        <default>false</default>
+        <label>Quality Control Is Tyre Interior OK</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any Bubbles,Blister/Crack</fullName>
+        <default>false</default>
+        <label>Quality Control Is any Bubbles,Blister/Crack</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is Any Loose/Incorrect Repair Unit</fullName>
+        <default>false</default>
+        <label>Quality Control Is Any Loose/Incorrect Repair Unit</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any missed nail hole repair</fullName>
+        <default>false</default>
+        <label>Quality Control Is any missed nail hole repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any Inner Line Bulge</fullName>
+        <default>false</default>
+        <label>Quality Control Is any Inner Line Bulge</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any ply Separation for Bias Tyre</fullName>
+        <default>false</default>
+        <label>Quality Control Is any ply Separation for Bias Tyre</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is Tyre Bead Area OK</fullName>
+        <default>false</default>
+        <label>Quality Control Is Tyre Bead Area OK</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any Bead Wire Visible default</fullName>
+        <default>false</default>
+        <label>Quality Control Is any Bead Wire Visible default</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any overheated bead area default</fullName>
+        <default>false</default>
+        <label>Quality Control Is any overheated bead area default</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any Tearing Mount/Dismount Damage</fullName>
+        <default>false</default>
+        <label>Quality Control Is any Tearing Mount/Dismount Damage</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Inflation pressure check</fullName>
+        <default>false</default>
+        <label>Enveloping Inflation pressure check</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Pressure</fullName>
+        <default>false</default>
+        <label>Enveloping Pressure</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Vaccum</fullName>
+        <default>false</default>
+        <label>Enveloping Vaccum</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Lube Type</fullName>
+        <default>false</default>
+        <label>Enveloping Lube Type</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Applied Tyre</fullName>
+        <default>false</default>
+        <label>Enveloping Applied Tyre</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Chamber</fullName>
+        <default>false</default>
+        <label>Enveloping Chamber</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Hang the tyre</fullName>
+        <default>false</default>
+        <label>Enveloping Hang the tyre</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Vaccume gage</fullName>
+        <default>false</default>
+        <label>Enveloping Vaccume gage</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Pressure and Vaccum gage</fullName>
+        <default>false</default>
+        <label>Enveloping Pressure and Vaccum gage</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Pressure/Vaccum</fullName>
+        <default>false</default>
+        <label>Enveloping Pressure/Vaccum</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Chamber 1</fullName>
+        <default>false</default>
+        <label>Enveloping Chamber 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Enveloping Rimming and Envloping status</fullName>
+        <default>false</default>
+        <label>Enveloping Rimming and Envloping status</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Chamber Door Condition</fullName>
+        <default>false</default>
+        <label>Curing Chamber Door Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Hydraulic Pump Condition</fullName>
+        <default>false</default>
+        <label>Curing Hydraulic Pump Condition</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Door Safety Lock</fullName>
+        <default>false</default>
+        <label>Curing Door Safety Lock</label>
+    </customValue>
+    <customValue>
+        <fullName>Skiving - Check Skiving Tools Status</fullName>
+        <default>false</default>
+        <label>Skiving - Check Skiving Tools Status</label>
+    </customValue>
+    <customValue>
+        <fullName>Cushion Gum check</fullName>
+        <default>false</default>
+        <label>Cushion Gum check</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing Connect the vacuum and pressure pipes to the loaded catridge inside the chamber</fullName>
+        <default>false</default>
+        <label>Curing Connect the vacuum and pressure pipes to the loaded catridge inside the chamber</label>
+    </customValue>
+    <customValue>
+        <fullName>Check safety lock on</fullName>
+        <default>false</default>
+        <label>Check safety lock on</label>
+    </customValue>
+    <customValue>
+        <fullName>Enter Curing round number and choose starting time and end time</fullName>
+        <default>false</default>
+        <label>Enter Curing round number and choose starting time and end time</label>
+    </customValue>
+    <customValue>
+        <fullName>Change in the default Temperature</fullName>
+        <default>false</default>
+        <label>Change in the default Temperature</label>
+    </customValue>
+    <customValue>
+        <fullName>check the Tube pressure and envelop valve</fullName>
+        <default>false</default>
+        <label>check the Tube pressure and envelop valve</label>
+    </customValue>
+    <customValue>
+        <fullName>Is Curing round &gt;=1</fullName>
+        <default>false</default>
+        <label>Is Curing round &gt;=1</label>
+    </customValue>
+    <customValue>
+        <fullName>curing started</fullName>
+        <default>false</default>
+        <label>curing started</label>
+    </customValue>
+    <customValue>
+        <fullName>check chamber motor condition in 45 mintues</fullName>
+        <default>false</default>
+        <label>check chamber motor condition in 45 mintues</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is Tyre Bead Area ok</fullName>
+        <default>false</default>
+        <label>Final Inspection Is Tyre Bead Area ok</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check correct labelling location</fullName>
+        <default>false</default>
+        <label>Final Inspection Check correct labelling location</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is any Bead Wire Visible default</fullName>
+        <default>false</default>
+        <label>Final Inspection Is any Bead Wire Visible default</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is any overheated bead area default</fullName>
+        <default>false</default>
+        <label>Final Inspection Is any overheated bead area default</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is any Tearing Mount/Dismount Damage</fullName>
+        <default>false</default>
+        <label>Final Inspection Is any Tearing Mount/Dismount Damage</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is any any other default</fullName>
+        <default>false</default>
+        <label>Final Inspection Is any any other default</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Status</fullName>
+        <default>false</default>
+        <label>Final Inspection Status</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Check ET sticker is clearly displayed on the sidewall</fullName>
+        <default>false</default>
+        <label>Final Inspection Check ET sticker is clearly displayed on the sidewall</label>
+    </customValue>
+    <customValue>
+        <fullName>chamber door is opened?</fullName>
+        <default>false</default>
+        <label>chamber door is opened?</label>
+    </customValue>
+    <customValue>
+        <fullName>Thread Cut Section Cemented Check</fullName>
+        <default>false</default>
+        <label>Thread Cut Section Cemented Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Temperature reaches to 120 degree?</fullName>
+        <default>false</default>
+        <label>Temperature reaches to 120 degree?</label>
+    </customValue>
+    <customValue>
+        <fullName>Confirm The Temperture</fullName>
+        <default>false</default>
+        <label>Confirm The Temperture</label>
+    </customValue>
+    <customValue>
+        <fullName>Door safety lock is ok</fullName>
+        <default>false</default>
+        <label>Door safety lock is ok</label>
+    </customValue>
+    <customValue>
+        <fullName>check lekage</fullName>
+        <default>false</default>
+        <label>check lekage</label>
+    </customValue>
+    <customValue>
+        <fullName>check the repair plug availability</fullName>
+        <default>false</default>
+        <label>check the repair plug availability</label>
+    </customValue>
+    <customValue>
+        <fullName>Sprayer</fullName>
+        <default>false</default>
+        <label>Sprayer</label>
+    </customValue>
+    <customValue>
+        <fullName>Brush</fullName>
+        <default>false</default>
+        <label>Brush</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial Pressure met 25-30 psi</fullName>
+        <default>false</default>
+        <label>Initial Pressure met 25-30 psi</label>
+    </customValue>
+    <customValue>
+        <fullName>The Spacer/Rad Adjustment</fullName>
+        <default>false</default>
+        <label>The Spacer/Rad Adjustment</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Inspection Is Tyre Interior OK</fullName>
+        <default>false</default>
+        <label>Final Inspection Is Tyre Interior OK</label>
+    </customValue>
+    <customValue>
+        <fullName>Remove Tube Flap and Envelop</fullName>
+        <default>false</default>
+        <label>Remove Tube Flap and Envelop</label>
+    </customValue>
+    <customValue>
+        <fullName>Check Tube Flap and Envelop</fullName>
+        <default>false</default>
+        <label>Check Tube Flap and Envelop</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check Correct Labelling Location</fullName>
+        <default>false</default>
+        <label>Quality Control Check Correct Labelling Location</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Check ET sticker is clearly displayed on the sidewall</fullName>
+        <default>false</default>
+        <label>Quality Control Check ET sticker is clearly displayed on the sidewall</label>
+    </customValue>
+    <customValue>
+        <fullName>Painting Check</fullName>
+        <default>false</default>
+        <label>Painting Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Control Is any Inner Line Cracking</fullName>
+        <default>false</default>
+        <label>Quality Control Is any Inner Line Cracking</label>
+    </customValue>
+    <customValue>
+        <fullName>Input tools/materials usage</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Input tools/materials usage</label>
+    </customValue>
+    <description>This common picklist will have all related retreading activities which includes all processes of retreading of tyre</description>
+    <masterLabel>Retreading Steps</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

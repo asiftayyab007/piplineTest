@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Till_End_of_the_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(((365 * VALUE(BLANKVALUE(TEXT( Contract_Years__c ),&#39;0&#39;))) + (30.417*VALUE(BLANKVALUE(TEXT( Contract_Months__c ),&#39;0&#39;))) + (7 * VALUE(BLANKVALUE(TEXT( Contract_Weeks__c ),&#39;0&#39;))) + VALUE(BLANKVALUE(TEXT( Contract_Days__c ),&#39;0&#39;)) )&lt;( DATE( YEAR( Mobilization_Date__c ) ,12,31) - Mobilization_Date__c ), Amount , (Amount / ((365 * VALUE(BLANKVALUE(TEXT( Contract_Years__c ),&#39;0&#39;))) + (30.417*VALUE(BLANKVALUE(TEXT( Contract_Months__c ),&#39;0&#39;))) + (7 * VALUE(BLANKVALUE(TEXT( Contract_Weeks__c ),&#39;0&#39;))) + VALUE(BLANKVALUE(TEXT( Contract_Days__c ),&#39;0&#39;)) )) * ( DATE( YEAR( Mobilization_Date__c ) ,12,31) - Mobilization_Date__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Amount Till End of the Year</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

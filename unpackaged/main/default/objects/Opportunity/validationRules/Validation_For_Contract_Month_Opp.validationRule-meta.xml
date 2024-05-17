@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_For_Contract_Month_Opp</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(MONTH(Contract_End_Date__c) - MONTH(Contract_Start_Date__c) &lt;&gt; VALUE(TEXT(Contract_Months__c)),
+OR($Profile.Name &lt;&gt; &#39;T&amp;L - Sales Manager&#39;,$Profile.Name &lt;&gt; &#39;T&amp;L - Account Manager&#39;))</errorConditionFormula>
+    <errorMessage>Contract Months is not matching with Contract Start Date and Contract End Date In Agreement Information</errorMessage>
+</ValidationRule>

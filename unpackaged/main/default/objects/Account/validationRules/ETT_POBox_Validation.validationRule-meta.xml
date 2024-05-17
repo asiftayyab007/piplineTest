@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_POBox_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(NOT(ISBLANK(ETT_P_O_Box__c)),
+AND(
+NOT(REGEX(ETT_P_O_Box__c ,&quot;([0-9-]{9})&quot;)),
+OR(
+$RecordType.Name = &quot;Tyre Supplier&quot;,
+$RecordType.Name = &quot;Tyre Customer&quot;,
+$RecordType.Name = &quot;Tyre Internal&quot;,
+$RecordType.Name = &quot;Tyre Internal Private&quot;
+)),FALSE)</errorConditionFormula>
+    <errorMessage>Please enter the proper PO Box number.</errorMessage>
+</ValidationRule>

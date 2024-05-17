@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>customer_type_picklist_wrt_account_type</fullName>
+    <active>true</active>
+    <description>when a customer type is organisation acc type can be any other than individual and
+when auctomer type is individual acc type should be ind</description>
+    <errorConditionFormula>AND( ISPICKVAL( ETSALES_Customer_Type__c , &quot;Organization&quot;) , 
+( RecordType.DeveloperName= &#39;ETSALES_B2B_Account&#39;) ,  (ISPICKVAL(ETSALES_Account_Type__c, &quot;Individual&quot;)) )</errorConditionFormula>
+    <errorDisplayField>ETSALES_Account_Type__c</errorDisplayField>
+    <errorMessage>For Customer type as organisation, account type  should be values other than individual</errorMessage>
+</ValidationRule>

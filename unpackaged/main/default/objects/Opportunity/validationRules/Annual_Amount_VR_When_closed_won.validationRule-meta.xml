@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Amount_VR_When_closed_won</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( ISBLANK( Annual_Amount__c ), Annual_Amount__c &lt;= 0 )
+&amp;&amp;
+ISPICKVAL (StageName, &#39;Closed Won&#39;)
+&amp;&amp;
+OR( RecordType.Name == &#39;Leasing&#39;,
+RecordType.Name == &#39;Logistics&#39;,
+RecordType.Name == &#39;Manpower&#39;,
+RecordType.Name == &#39;Transportation&#39;,
+RecordType.Name == &#39;Maintainance&#39;)</errorConditionFormula>
+    <errorMessage>Won Opportunities must have an Annual Amount above 0.</errorMessage>
+</ValidationRule>

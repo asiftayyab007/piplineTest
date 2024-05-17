@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Airport drop off</fullName>
+        <default>false</default>
+        <label>Airport drop off</label>
+    </customValue>
+    <customValue>
+        <fullName>Chauffeur - Dubai</fullName>
+        <default>false</default>
+        <label>Chauffeur - Dubai</label>
+    </customValue>
+    <customValue>
+        <fullName>Chauffeur - Others</fullName>
+        <default>false</default>
+        <label>Chauffeur - Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Abu Dhabi</fullName>
+        <default>false</default>
+        <label>Abu Dhabi</label>
+    </customValue>
+    <customValue>
+        <fullName>Documents</fullName>
+        <default>false</default>
+        <label>Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Motor Cycle</fullName>
+        <default>false</default>
+        <label>Motor Cycle</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric Car</fullName>
+        <default>false</default>
+        <label>Electric Car</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehicle</fullName>
+        <default>false</default>
+        <label>Vehicle</label>
+    </customValue>
+    <customValue>
+        <fullName>Government School</fullName>
+        <default>false</default>
+        <label>Government School</label>
+    </customValue>
+    <customValue>
+        <fullName>Quran Studies</fullName>
+        <default>false</default>
+        <label>Quran Studies</label>
+    </customValue>
+    <customValue>
+        <fullName>Private School</fullName>
+        <default>false</default>
+        <label>Private School</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Executive</fullName>
+        <default>false</default>
+        <label>Government Executive</label>
+    </customValue>
+    <customValue>
+        <fullName>Staff-Employees and Labors</fullName>
+        <default>false</default>
+        <label>Staff-Employees and Labors</label>
+    </customValue>
+    <customValue>
+        <fullName>Haj &amp; Umrah</fullName>
+        <default>false</default>
+        <label>Haj &amp; Umrah</label>
+    </customValue>
+    <customValue>
+        <fullName>University</fullName>
+        <default>false</default>
+        <label>University</label>
+    </customValue>
+    <customValue>
+        <fullName>Club Members</fullName>
+        <default>false</default>
+        <label>Club Members</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehicle Auctioning</fullName>
+        <default>false</default>
+        <label>Vehicle Auctioning</label>
+    </customValue>
+    <customValue>
+        <fullName>Sale Of Scrap Materials</fullName>
+        <default>false</default>
+        <label>Sale Of Scrap Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Maintenance Services - Contracted</fullName>
+        <default>false</default>
+        <label>Maintenance Services - Contracted</label>
+    </customValue>
+    <customValue>
+        <fullName>Maintenance Services - Non-Contracted</fullName>
+        <default>false</default>
+        <label>Maintenance Services - Non-Contracted</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxury Vehicles Maintenance</fullName>
+        <default>false</default>
+        <label>Luxury Vehicles Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Wash</fullName>
+        <default>false</default>
+        <label>Dry Wash</label>
+    </customValue>
+    <customValue>
+        <fullName>Tire Rethreading and Repair</fullName>
+        <default>false</default>
+        <label>Tire Rethreading and Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Refurbished and used tire Sales</fullName>
+        <default>false</default>
+        <label>Refurbished and used tire Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Road Side Assistance</fullName>
+        <default>false</default>
+        <label>Road Side Assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>Body-Accident Repair services</fullName>
+        <default>false</default>
+        <label>Body-Accident Repair services</label>
+    </customValue>
+    <customValue>
+        <fullName>Bus Refurbishment</fullName>
+        <default>false</default>
+        <label>Bus Refurbishment</label>
+    </customValue>
+    <customValue>
+        <fullName>CNG Conversion Services</fullName>
+        <default>false</default>
+        <label>CNG Conversion Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehicle Inspection</fullName>
+        <default>false</default>
+        <label>Vehicle Inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>Heavy Equipment Maintenance</fullName>
+        <default>false</default>
+        <label>Heavy Equipment Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehicle Renewal Services</fullName>
+        <default>false</default>
+        <label>Vehicle Renewal Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Drivers</fullName>
+        <default>false</default>
+        <label>Drivers</label>
+    </customValue>
+    <customValue>
+        <fullName>Bus Nanny</fullName>
+        <default>false</default>
+        <label>Bus Nanny</label>
+    </customValue>
+    <customValue>
+        <fullName>Coordinator</fullName>
+        <default>false</default>
+        <label>Coordinator</label>
+    </customValue>
+    <customValue>
+        <fullName>Supervisor</fullName>
+        <default>false</default>
+        <label>Supervisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Accountant or Cashier</fullName>
+        <default>false</default>
+        <label>Accountant or Cashier</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Employee</fullName>
+        <default>false</default>
+        <label>Other Employee</label>
+    </customValue>
+    <customValue>
+        <fullName>Valet Parking</fullName>
+        <default>false</default>
+        <label>Valet Parking</label>
+    </customValue>
+    <customValue>
+        <fullName>Petroleum Center Logistics</fullName>
+        <default>false</default>
+        <label>Petroleum Center Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Refrigerated Logistics</fullName>
+        <default>false</default>
+        <label>Refrigerated Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Services Center Logistics</fullName>
+        <default>false</default>
+        <label>Services Center Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehicle with Driver</fullName>
+        <default>false</default>
+        <label>Vehicle with Driver</label>
+    </customValue>
+    <customValue>
+        <fullName>Bus</fullName>
+        <default>false</default>
+        <label>Bus</label>
+    </customValue>
+    <customValue>
+        <fullName>Bus with Driver</fullName>
+        <default>false</default>
+        <label>Bus with Driver</label>
+    </customValue>
+    <customValue>
+        <fullName>Additional Services</fullName>
+        <default>false</default>
+        <label>Additional Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Driver</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Driver</label>
+    </customValue>
+    <masterLabel>GL Service Type Values</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

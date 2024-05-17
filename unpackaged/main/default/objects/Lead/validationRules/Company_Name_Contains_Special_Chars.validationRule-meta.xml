@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Name_Contains_Special_Chars</fullName>
+    <active>false</active>
+    <description>Company Name Should Not Contain Special Characters.</description>
+    <errorConditionFormula>AND(
+NOT(REGEX(  Company , &#39;[a-zA-Z0-9- ]+&#39;)),
+OR($RecordType.DeveloperName = &#39;ETSALES_Leasing&#39;,
+   $RecordType.DeveloperName = &#39;ETSALES_Transportation&#39;,
+   $RecordType.DeveloperName = &#39;ETSALES_Maintainance&#39;,
+   $RecordType.DeveloperName = &#39;ETSALES_Manpower&#39;)
+)</errorConditionFormula>
+    <errorDisplayField>Company</errorDisplayField>
+    <errorMessage>Company Name Should Not Contain any Special Characters.</errorMessage>
+</ValidationRule>

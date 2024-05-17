@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_validation_rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(ETIN_Amount__c)),
+NOT(REGEX( TEXT(ETIN_Amount__c) , &quot;^[0-9.]+$&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>ETIN_Amount__c</errorDisplayField>
+    <errorMessage>Enter a valid value.</errorMessage>
+</ValidationRule>

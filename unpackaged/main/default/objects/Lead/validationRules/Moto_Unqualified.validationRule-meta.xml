@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moto_Unqualified</fullName>
+    <active>true</active>
+    <description>If status is not qualified then reason is mandatory</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status, &#39;Not Qualified&#39;),ISBLANK( Text(Moto_Unqualified_Reason__c)), OR(
+$RecordType.Name = &quot;Automotive Dealership - Vehicle Inquiry/Trade-In&quot;,
+$RecordType.Name = &quot;Automotive Dealership - Vehicle Purchase&quot;,
+$RecordType.Name = &quot;Automotive Service Center &amp; Body Shop&quot;))</errorConditionFormula>
+    <errorDisplayField>Moto_Unqualified_Reason__c</errorDisplayField>
+    <errorMessage>Unqualified reason is mandatory</errorMessage>
+</ValidationRule>

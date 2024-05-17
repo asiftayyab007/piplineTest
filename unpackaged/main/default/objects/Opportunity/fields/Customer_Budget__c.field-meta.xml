@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Budget__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Budget</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>50000 – 75000</fullName>
+                <default>false</default>
+                <label>50000 – 75000</label>
+            </value>
+            <value>
+                <fullName>75000 – 100000</fullName>
+                <default>false</default>
+                <label>75000 – 100000</label>
+            </value>
+            <value>
+                <fullName>100000 – 125000</fullName>
+                <default>false</default>
+                <label>100000 – 125000</label>
+            </value>
+            <value>
+                <fullName>125000 – 150000</fullName>
+                <default>false</default>
+                <label>125000 – 150000</label>
+            </value>
+            <value>
+                <fullName>150000 – 175000</fullName>
+                <default>false</default>
+                <label>150000 – 175000</label>
+            </value>
+            <value>
+                <fullName>175000 – 200000</fullName>
+                <default>false</default>
+                <label>175000 – 200000</label>
+            </value>
+            <value>
+                <fullName>20000 – 225000</fullName>
+                <default>false</default>
+                <label>20000 – 225000</label>
+            </value>
+            <value>
+                <fullName>22500 – 25000</fullName>
+                <default>false</default>
+                <label>22500 – 25000</label>
+            </value>
+            <value>
+                <fullName>250000+</fullName>
+                <default>false</default>
+                <label>250000+</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

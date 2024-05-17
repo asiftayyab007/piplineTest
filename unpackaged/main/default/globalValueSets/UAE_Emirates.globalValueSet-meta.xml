@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Abu Dhabi</fullName>
+        <default>false</default>
+        <label>Abu Dhabi</label>
+    </customValue>
+    <customValue>
+        <fullName>Ajman</fullName>
+        <default>false</default>
+        <label>Ajman</label>
+    </customValue>
+    <customValue>
+        <fullName>Dubai</fullName>
+        <default>false</default>
+        <label>Dubai</label>
+    </customValue>
+    <customValue>
+        <fullName>Fujairah</fullName>
+        <default>false</default>
+        <label>Fujairah</label>
+    </customValue>
+    <customValue>
+        <fullName>Ras Al Khaimah</fullName>
+        <default>false</default>
+        <label>Ras Al Khaimah</label>
+    </customValue>
+    <customValue>
+        <fullName>Sharjah</fullName>
+        <default>false</default>
+        <label>Sharjah</label>
+    </customValue>
+    <customValue>
+        <fullName>Umm Al Quwain</fullName>
+        <default>false</default>
+        <label>Umm Al Quwain</label>
+    </customValue>
+    <customValue>
+        <fullName>GCC - Abu Dhabi</fullName>
+        <default>false</default>
+        <label>GCC - Abu Dhabi</label>
+    </customValue>
+    <customValue>
+        <fullName>GCC - Dubai and Northern Emirates</fullName>
+        <default>false</default>
+        <label>GCC - Dubai and Northern Emirates</label>
+    </customValue>
+    <customValue>
+        <fullName>UAE Nationality - Dubai</fullName>
+        <default>false</default>
+        <label>UAE Nationality - Dubai</label>
+    </customValue>
+    <customValue>
+        <fullName>UAE Nationality - Abu Dhabi</fullName>
+        <default>false</default>
+        <label>UAE Nationality - Abu Dhabi</label>
+    </customValue>
+    <masterLabel>UAE Emirates</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Closed_InternalComments</fullName>
+    <active>false</active>
+    <description>Internal Comments - required if it BRU Group
+Requested by Ali Mardan</description>
+    <errorConditionFormula>ISPICKVAL(Status  , &#39;Solution Completed&#39;) &amp;&amp; NOT(Case_Comment__c) &amp;&amp; (RecordType.Name =&#39;Vehicle Device Issue&#39; || RecordType.Name =&#39;Vehicle Visual Defect&#39;)</errorConditionFormula>
+    <errorDisplayField>Comments</errorDisplayField>
+    <errorMessage>Internal comments are required to close the Case.</errorMessage>
+</ValidationRule>

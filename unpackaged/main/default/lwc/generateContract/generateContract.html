@@ -1,0 +1,258 @@
+<template>
+	<lightning-card title="Contract Document Creation">
+		<template if:true={SPNR}>
+			<lightning-spinner variant="brand"></lightning-spinner>
+		</template>
+		<template if:false={SPNR}>
+			<div class="accordion_main_sec">
+				<lightning-accordion allow-multiple-sections-open active-section-name="A">
+
+					<lightning-accordion-section name="A" label="Contract Head Information">
+						<lightning-record-edit-form object-api-name={contractHeaderObject}
+							data-id="contractHeaderSection" onsuccess={handleSuccess}>
+							<div class="slds-grid fieid_data" style="flex-wrap: wrap;">
+								<div class="slds-col slds-size_1-of-3">
+									<lightning-input-field class="slds-col"
+										field-name={contractHeader.ET_Rep_Solitation}></lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-3">
+									<lightning-input-field class="slds-col"
+										field-name={contractHeader.Lessee_Solitation}></lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-3">
+									<lightning-input-field class="slds-col"
+										field-name={contractHeader.ET_Representative}></lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-3">
+									<lightning-input-field class="slds-col" field-name={contractHeader.Lessee_Rep}>
+									</lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-3">
+									<lightning-input-field class="slds-col"
+										field-name={contractHeader.ET_Rep_Designation}></lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-3">
+									<lightning-input-field class="slds-col"
+										field-name={contractHeader.Lessee_Rep_Designation}></lightning-input-field>
+								</div>
+							</div>
+							<div class="slds-grid slds-hide">
+								<lightning-button variant="brand" type="submit" label="Save"> </lightning-button>
+							</div>
+							<div class="slds-hide">
+								<lightning-input-field value={recordId} field-name={contractHeader.CUSTOMER_QUOTE}></lightning-input-field>
+                                <lightning-input-field value={RecordsData.ETSALES_Sector__c} field-name={contractHeader.SECTOR}></lightning-input-field>
+							</div>
+						</lightning-record-edit-form>
+					</lightning-accordion-section>
+
+					<lightning-accordion-section name="B" label="Contract Articles">
+						<div class="slds-scrollable_x">
+							<template for:each={contractLines} for:item="contractLine">
+								<c-generate-contract-lines key={contractLine.Id} article={contractLine}>
+								</c-generate-contract-lines>
+							</template>
+						</div>
+					</lightning-accordion-section>
+
+					<lightning-accordion-section name="C" label="Duplicate" class="slds-hide">
+						<div class="slds-scrollable_x">
+							<template if:true={LeasingRECType}>
+								<div class="slds-p-around_medium">
+									<h1>
+										<span class="slds-page-header__title slds-align_absolute-center" title="LEASE AGREEMENT">LEASE
+                                        AGREEMENT</span>
+									</h1>
+									<template if:false={url}>
+										<div class="slds-grid slds-wrap">
+											<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+												<!-- 1 -->
+
+												<lightning-combobox name="ET_Solitation" label="Solitation"
+													required="true" class="validate" options={getmrmsOptions}
+													onchange={handlechangeinput}></lightning-combobox>
+												<lightning-input name="ET_ETRepresentative"
+													label="Emirates Transport Representative" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="ET_Designation" label="Designation"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+											</div>
+
+											<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+												<!-- 2 -->
+												<lightning-combobox name="LA_Solitation" label="Solitation"
+													required="true" class="validate" options={getmrmsOptions}
+													onchange={handlechangeinput}></lightning-combobox>
+												<lightning-input name="LA_LARepresentative"
+													label="Lease Agreement Representative" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_Designation" label="Designation"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_AgreementDate" label="Agreement Date"
+													value={getTodayDate} type="date" required="ture" class="validate"
+													onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_POBusiness" label="Place Of Business"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_PostOfBox" label="Post Of Box" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_ALMPYear"
+													label="Agreed Limited Mileage Per Year" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_InCAccident" label="In Case of Accident (AED)"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_CMCost" label="Charge Modification Cost"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_TVNExceed"
+													label="Total Vehicle Number Shall Not Exceed -X%" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_LAKilometer"
+													label="Lessor Additional Kilometer" required="true" class="validate"
+													onchange={handlechangeinput}></lightning-input>
+												<!-- <lightning-input name="Lessee" label="Represented by as (“Lessee”)." required="true"
+                                                class="validate" onchange={handlechangeinput}></lightning-input> -->
+
+											</div>
+											<!-- <div class="slds-col slds-size_1-of-1 slds-text-align_right slds-p-around_x-small">
+                                            <lightning-button label="Next" variant="brand" onclick={handleNext}></lightning-button>
+                                        </div> -->
+
+										</div>
+									</template>
+								</div>
+							</template>
+							<!--  -->
+							<template if:true={TranspostRECType}>
+								<div class="slds-p-around_medium">
+									<h1>
+										<span class="slds-page-header__title slds-align_absolute-center"
+                                        title="TRANSPORTATION AGREEMENT">TRANSPORTATION AGREEMENT</span>
+									</h1>
+									<template if:false={url}>
+										<div class="slds-grid slds-wrap">
+											<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+												<lightning-combobox name="ET_Solitation" label="Solitation"
+													required="true" class="validate" options={getmrmsOptions}
+													onchange={handlechangeinput}></lightning-combobox>
+												<lightning-input name="ET_ETRepresentative"
+													label="Emirates Transport Representative" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="ET_Designation" label="Designation"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+											</div>
+											<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+												<lightning-combobox name="LA_Solitation" label="Solitation"
+													required="true" class="validate" options={getmrmsOptions}
+													onchange={handlechangeinput}></lightning-combobox>
+												<lightning-input name="LA_LARepresentative"
+													label="Lease Agreement Representative" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_Designation" label="Designation"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_AgreementDate" label="Agreement Date"
+													required="true" class="validate" value={getTodayDate} type="date"
+													onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_POBusiness" label="Place Of Business"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_PostOfBox" label="Post Of Box" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_FAllowance" label="Fuel Allowance"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_DOAgreement" label="Duration Of Agreement"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+											</div>
+										</div>
+										<!-- <div class="slds-col slds-size_1-of-1 slds-text-align_right slds-p-around_x-small">
+                                        <lightning-button label="Next" variant="brand" onclick={handleNext}></lightning-button>
+                                    </div> -->
+									</template>
+								</div>
+							</template>
+							<!--  -->
+							<template if:true={SchoolTranspostREC}>
+								<div class="slds-p-around_medium">
+									<h1>
+										<span class="slds-page-header__title slds-align_absolute-center"
+                                        title="AGREEMENT FOR PROVISION OF THE {schoolName} SCHOOL TRANSPORT SERVICE">AGREEMENT
+                                        FOR PROVISION OF THE {schoolName} SCHOOL TRANSPORT SERVICE</span>
+									</h1>
+									<template if:false={url}>
+										<div class="slds-grid slds-wrap">
+											<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+
+												<lightning-combobox name="ET_Solitation" label="Solitation"
+													required="true" class="validate" options={getmrmsOptions}
+													onchange={handlechangeinput}></lightning-combobox>
+												<lightning-input name="ET_ETRepresentative"
+													label="Emirates Transport Representative" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="ET_Designation" label="Designation"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+
+											</div>
+
+											<div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+
+												<lightning-combobox name="LA_Solitation" label="Solitation"
+													required="true" class="validate" options={getmrmsOptions}
+													onchange={handlechangeinput}></lightning-combobox>
+												<lightning-input name="LA_LARepresentative"
+													label="Lease Agreement Representative" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_Designation" label="Designation"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_AgreementDate" label="Agreement Date"
+													value={getTodayDate} type="date" required="true" class="validate"
+													onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_POBusiness" label="Place of Business"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_PostOfBox" label="Post Of Box" required="true"
+													class="validate" onchange={handlechangeinput}></lightning-input>
+												<lightning-input name="LA_FAllowance" label="Fuel Allowance"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+												<lightning-input name="LA_VOSCheque" label="Value Of Security Cheque"
+													required="true" class="validate" onchange={handlechangeinput}>
+												</lightning-input>
+
+											</div>
+										</div>
+										<!-- <div class="slds-col slds-size_1-of-1 slds-text-align_right slds-p-around_x-small">
+                                        <lightning-button label="Next" variant="brand" onclick={handleNext}></lightning-button>
+                                    </div> -->
+									</template>
+								</div>
+
+							</template>
+							<div><br/></div>
+							</div>
+					</lightning-accordion-section>
+
+				</lightning-accordion>
+			</div>
+		</template>
+		<div class="slds-grid">
+			<div class="slds-col slds-size_1-of-2 slds-p-right_small">
+				<lightning-button variant="brand" class="slds-m-top_small slds-float_right" label="Cancel"
+					onclick={handleCancel}></lightning-button>
+			</div>
+			<div class="slds-col slds-size_1-of-2">
+				<lightning-button variant="brand" onclick={handleSaveClick} class="slds-m-top_small slds-float_left"
+					label="Save"></lightning-button>
+			</div>
+		</div>
+	</lightning-card>
+
+</template>

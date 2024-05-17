@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Traffic_Fine_date_cannot_be_Future_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>Traffic_Fine_Date__c  &gt;  TODAY()</errorConditionFormula>
+    <errorMessage>Traffic Fine date cannot be Future Date</errorMessage>
+</ValidationRule>

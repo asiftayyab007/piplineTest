@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>extraKMPrice__c</fullName>
+    <externalId>false</externalId>
+    <formula>((ROUND(Vehicle_Quote_Item__r.ET_Vehicle_Maintenance_Rate__c,5)) + 
+(Vehicle_Quote_Item__r.ET_Vehicle_Original_Purchase_Price__c *0.05/30000) + 
+(Vehicle_Quote_Item__r.ET_Vehicle_Original_Purchase_Price__c *0.045/30000)+
+(Vehicle_Quote_Item__r.ET_Vehicle_Fuel_Rate__c *1.23))*1.05</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>extraKMPrice</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

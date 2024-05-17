@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Working_Hours__c</fullName>
+    <externalId>false</externalId>
+    <label>Working Hours</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>8AM - 5PM</fullName>
+                <default>false</default>
+                <label>8AM - 5PM</label>
+            </value>
+            <value>
+                <fullName>9AM - 6PM</fullName>
+                <default>false</default>
+                <label>9AM - 6PM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

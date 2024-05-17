@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason_Remarks</fullName>
+    <active>true</active>
+    <description>Old Logic: AND(
+ISPICKVAL(StageName, &#39;Closed Lost&#39;),
+ISBLANK(Loss_Reason_Remarks__c)
+)
+It is not meaning full, New logic added by Janardhan</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(ETSALES_Loss_Reason__c , &#39;Other&#39;),
+ISBLANK(Loss_Reason_Remarks__c)
+)</errorConditionFormula>
+    <errorMessage>Loss Reason Remark is Mandatory.</errorMessage>
+</ValidationRule>

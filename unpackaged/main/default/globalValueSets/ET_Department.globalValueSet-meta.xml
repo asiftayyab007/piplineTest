@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Business Development Department</fullName>
+        <default>false</default>
+        <label>Business Development Department</label>
+    </customValue>
+    <customValue>
+        <fullName>Chief Operation Office</fullName>
+        <default>false</default>
+        <label>Chief Operation Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Facilities Management</fullName>
+        <default>false</default>
+        <label>Facilities Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance Management</fullName>
+        <default>false</default>
+        <label>Finance Management</label>
+    </customValue>
+    <customValue>
+        <fullName>General Manager office Department</fullName>
+        <default>false</default>
+        <label>General Manager office Department</label>
+    </customValue>
+    <customValue>
+        <fullName>Health, Safety and Environment Department</fullName>
+        <default>false</default>
+        <label>Health, Safety and Environment Department</label>
+    </customValue>
+    <customValue>
+        <fullName>Human Resources</fullName>
+        <default>false</default>
+        <label>Human Resources</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal Audit Department</fullName>
+        <default>false</default>
+        <label>Internal Audit Department</label>
+    </customValue>
+    <customValue>
+        <fullName>Properties Management</fullName>
+        <default>false</default>
+        <label>Properties Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Purchase Department</fullName>
+        <default>false</default>
+        <label>Purchase Department</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk Management Department</fullName>
+        <default>false</default>
+        <label>Risk Management Department</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales, Safety and Support Services (Zone)</fullName>
+        <default>false</default>
+        <label>Sales, Safety and Support Services (Zone)</label>
+    </customValue>
+    <customValue>
+        <fullName>Systems and Applications Department</fullName>
+        <default>false</default>
+        <label>Systems and Applications Department</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services Department</fullName>
+        <default>false</default>
+        <label>Technical Services Department</label>
+    </customValue>
+    <customValue>
+        <fullName>Transport and Lease Operations Department</fullName>
+        <default>false</default>
+        <label>Transport and Lease Operations Department</label>
+    </customValue>
+    <description>for global use of Data</description>
+    <masterLabel>GL Department</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

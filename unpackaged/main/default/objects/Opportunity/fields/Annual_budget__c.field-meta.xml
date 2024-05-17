@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_budget__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(TEXT(Contract_Years__c)),
+ETSALES_Customer_Budget__c ,((ETSALES_Customer_Budget__c /((VALUE(TEXT(Contract_Years__c))*12*4)+(VALUE(IF(ISPICKVAL(Contract_Months__c , &#39;&#39;), &#39;0&#39;,TEXT( Contract_Months__c )))*4)+VALUE(IF(ISPICKVAL(Contract_Weeks__c , &#39;&#39;), &#39;0&#39;,TEXT( Contract_Weeks__c )))))*12*4))</formula>
+    <label>Annual Budget (Current Contract)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

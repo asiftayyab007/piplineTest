@@ -1,0 +1,114 @@
+.THIS {
+}
+.THIS .btn_red {
+    background: transparent linear-gradient(0deg, #EB4026 0%, #F75064 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    border: 1px solid #EB4026;
+    margin-bottom: 1rem;
+    box-shadow: none;
+}
+.THIS .btn_white {
+    background: #fff;
+    color: #EB4026;
+    font-size: 12px;
+    font-weight: 800;
+    border: 1px solid #EB4026;
+    margin-bottom: 1rem;
+    box-shadow: none;
+}
+.THIS .btn_filter_main {
+    display: flex;
+    width: 100%;
+}
+.THIS .btn_filter_main .btn_innerfilter, .THIS .btn_filter_main .btn_search {
+    width: 50%;
+    display: inline-block;
+}
+.THIS .btn_filter_main .btn_search{
+    text-align: right;
+}
+.THIS .btn_search label.slds-form-element__label.slds-no-flex {
+    display: none;
+}
+.THIS .btn_search input , .THIS .btn_search select{
+    border: 1px solid rgb(56 59 68 / 10%);
+    border-radius: 5px;
+    box-shadow: none;
+    max-width: 200px;
+    min-height: 32px;
+    margin-left: 5px;
+    outline: none;
+}
+.THIS .btn_search select{
+    max-width: 150px;
+}
+.THIS .search_div {
+    position: relative;
+    display: inline-block;
+}
+.THIS img.search_icon {
+    position: absolute;
+    top: 35%;
+    right: 3%;
+}
+.THIS.bordertab{
+    background: #fff;
+    padding: 1rem;
+    overflow: auto;
+    box-shadow: 0px 3px 12px rgb(56 59 68 / 2%);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+.THIS.bordertab table tr th, .THIS.bordertab table tr td  {
+    border-bottom: 1px solid rgb(56 59 68 / 2%)!important;
+    color:#000!important;
+}
+.THIS.bordertab table tr th{
+    font-weight:800!important;
+}
+.THIS p.infotext {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+.THIS header.slds-modal__header {
+    border-bottom: 1px solid #ccc;
+}
+.THIS .school_form .slds-form-element__control.slds-input-has-icon.slds-input-has-icon_right,
+.THIS .school_form .slds-form-element__control,
+.THIS .school_form .slds-combobox.slds-dropdown-trigger.slds-dropdown-trigger_click{
+    padding: 0px!important;
+    clear: both;
+}
+.THIS .school_form .slds-form-element__control input,
+.THIS .school_form .slds-combobox__form-element.slds-input-has-icon.slds-input-has-icon_right{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    outline: none!important;
+    box-shadow: none!important;
+    background: transparent;
+}
+.THIS .school_form textarea{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    outline: none!important;
+    box-shadow: none!important;
+    background: transparent;
+    /*min-height: 32px!important;
+    max-height: 32px;*/
+    height: auto;
+    resize: none;
+}
+.THIS .school_form .slds-form-element__help{
+    margin-left:0px;
+}
+.THIS .school_form .slds-combobox__input{
+    border: none!important;
+}

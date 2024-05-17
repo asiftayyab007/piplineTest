@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tools_Material_Usage</fullName>
+    <fields>Name</fields>
+    <fields>ETT_Tools_Material_Allocation__c</fields>
+    <fields>ETT_Job_Card__c</fields>
+    <label>Tools/Material Usage</label>
+</CompactLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Pricing_Service_Request__c</fullName>
+    <externalId>false</externalId>
+    <label>Pricing Service Request</label>
+    <referenceTo>ET_Pricing_Service_Request__c</referenceTo>
+    <relationshipLabel>Request Mapping</relationshipLabel>
+    <relationshipName>Request_Mapping</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

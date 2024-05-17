@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investment_Total__c</fullName>
+    <externalId>false</externalId>
+    <label>Investment Total</label>
+    <summarizedField>Financial_Analysis__c.Total_Investment__c</summarizedField>
+    <summaryForeignKey>Financial_Analysis__c.Quote__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

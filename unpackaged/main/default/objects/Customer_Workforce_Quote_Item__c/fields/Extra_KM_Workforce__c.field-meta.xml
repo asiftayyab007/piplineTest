@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Extra_KM_Workforce__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(Workforce_Quote_Item_Type__c ==&#39;Driver&#39;, Workforce_Quote_Item_Type__c ==&#39;Coordinator&#39;), 
+(IF((Workforce_Quote_Item_Type__c ==&#39;Driver&#39;), 
+((Total_Cost__c+Annual_Profit_Value__c)/30000)*1.05, 
+0)+ IF(( Workforce_Quote_Item_Type__c ==&#39;Coordinator&#39;), 
+((Workforce_cost_per_each_vehicle__c + Workforce_profit_per_each_vehicle__c)/30000)*1.05, 
+0)), 
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Extra KM Workforce</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

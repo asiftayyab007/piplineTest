@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_New_Business_Type_Conversion_Restrict</fullName>
+    <active>false</active>
+    <description>Validation for restricting the user to select Opportunity Type as &quot;New Business&quot; when creating Opportunity from Account or New Opportunity button but not through conversion</description>
+    <errorConditionFormula>AND(  NOT(ISPICKVAL(Convertedfromlead__c,&#39;Converted from Lead&#39; )), 
+    ISPICKVAL(Type,&#39;New Business&#39;)
+)</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>For existing customers Opportunity type must be &#39;Growth&#39; or &#39;Renewal&#39;</errorMessage>
+</ValidationRule>

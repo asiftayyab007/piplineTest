@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>quotation_approval_for_closed_won</fullName>
+    <active>true</active>
+    <description>quotation approval required for sales agreement and closed won stage</description>
+    <errorConditionFormula>ISPICKVAL(ETSALES_Sector__c, &quot;Transport And Lease&quot;) &amp;&amp;
+OR(AND(
+OR(
+ISPICKVAL(PRIORVALUE(StageName), &quot;Closed Won&quot;),
+ISPICKVAL(PRIORVALUE(StageName), &quot;Sales Agreement&quot;)
+),
+NOT(ISPICKVAL(Quotation_status__c, &quot;Approved&quot;))
+)
+)</errorConditionFormula>
+    <errorMessage>Opportunity can be in Closed Won or Sales Agreement stage once Quotation Status is approved,</errorMessage>
+</ValidationRule>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Students__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Students__r.ETST_Transport_Requests__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Students__r.ETST_Transport_Requests__r.ET_Payments__r$Name</field>
+    </columns>
+    <currency>AED</currency>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Students__r$ETST_Student_School__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Students with Renew Status per School</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Schools_Students_Service_Req_Payments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$ETST_Academic_Year_End_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

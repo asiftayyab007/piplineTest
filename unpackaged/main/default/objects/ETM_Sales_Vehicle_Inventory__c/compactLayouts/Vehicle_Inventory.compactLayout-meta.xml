@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Inventory</fullName>
+    <fields>Name</fields>
+    <fields>Vehicle_Brand_Master__c</fields>
+    <fields>Vehicle_Model_Master__c</fields>
+    <fields>ETM_Family__c</fields>
+    <fields>ETM_Vehicle_Status__c</fields>
+    <label>Vehicle Inventory</label>
+</CompactLayout>

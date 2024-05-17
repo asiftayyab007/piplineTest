@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAccounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ETSALES_Status__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>ETST_Account_Type__c</columns>
+    <columns>ETST_Coordinator__c</columns>
+    <columns>Party_Type__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ETSALES_Payment_Term_Id__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>ETST_SchoolRefID__c</columns>
+    <columns>ETIN_Mobile_Number__c</columns>
+    <columns>PC_PHONE3</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Accounts</label>
+</ListView>

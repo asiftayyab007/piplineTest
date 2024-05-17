@@ -1,0 +1,244 @@
+<template>
+
+   <!--  /VRTS_StartPage/ -->
+    <template if:true={VRTS_StartPage}>
+        <div class="container vRTSForm">
+        <div style="text-align: right;">
+            <img class="VRTS_ET" src={VRTS_ET_Logo} />
+        </div>
+        <div style="Padding: 10px;;">
+            <h5 class="slds-theme_shade SCHOOLBUSHeader" style="text-align: center; ">
+                School Bus Smart Devices & 
+            </h5>
+            <h5 class="slds-theme_shade SCHOOLBUSHeader" style="text-align: center; ">
+                Equipement Acceptence
+            </h5>
+            <h5 class="slds-theme_shade SCHOOLBUSHeader" style="text-align: center; ">
+                Form (VRTS)
+            </h5>
+        </div>
+        <div style="text-align: Center;">
+            <img class="VRTS_BUS" src={VRTS_SCHOOL_BUS} />
+        </div>
+        <div style="text-align: Center;" class="Start-button">
+            <button class="slds-button slds-button_neutral slds-button_stretch custom-Start"
+                        onclick={VRTS_Start}>Start</button>
+        </div>
+    </div>
+    </template>
+
+
+   <!--  /VRTS_FormPage/ -->
+    <template if:true={VRTS_FormPage}>
+        <div class="container vRTSForm">
+
+            <div style="text-align: center; ">
+                <h3 class="slds-theme_shade formHeader">
+                    بيانات موقع الاستلام
+                </h3>
+                <h3 class="slds-theme_shade formHeader">
+                    Inspection Site Data
+                </h3>
+            </div>
+            <div class="slds-grid slds-wrap slds-p-around_xx-small dataSection">
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Name الاسم
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-input name="name" value="Srihari VRTS" onchange={handleonchange}></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Zone المنطقة الجغرافية
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-combobox name="Zone" onchange={handleonchange}></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Branch الفرع
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-combobox name="Branch" onchange={handleonchange}></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Station المحطة
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-combobox name="Station" onchange={handleonchange}></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Inspection Date تاريخ الاستلام
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-combobox name="InspectionDate" type="date"
+                        onchange={handleonchange}></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Bus Internal No. الرقم الداخلي للحافلة
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-combobox name="BusInternalNo" onchange={handleonchange}></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Plate Issue رقم الإصدار
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-combobox name="PlateIssue" onchange={handleonchange}></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Plate Code رقم الإصدار
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-combobox name="PlateCode" onchange={handleonchange}></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Plate Number رقم اللوحة
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-combobox name="PlateNumber" onchange={handleonchange}></lightning-combobox>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <label>Sim Card Number رقم الشريحة الالكترونية
+                    </label>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_xx-small">
+                    <lightning-combobox name="SimCardNumber" onchange={handleonchange}></lightning-combobox>
+                </div>
+            </div>
+
+            <div class="slds-p-around_x-small slds-grid" style="text-align: center;">
+
+                <div class="slds-col">
+                    <button class="slds-button slds-button_neutral slds-button_stretch custom-box"
+                        onclick={VRTS_FormPage_Back}>Back</button>
+                </div>
+                <div class="slds-col">
+                    <button class="slds-button slds-button_neutral slds-button_stretch custom-box"
+                        onclick={VRTS_FormPage_Next}>Next</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+   <!--  /VRTS_CTRSPage/ -->
+    <template if:true={VRTS_CTRSPage}>
+        <div class="container vRTSForm">
+
+            <div style="text-align: center; ">
+                <h3 class="slds-theme_shade formHeader">
+                    ملاحظة بخصوص الأجهزة المدرجة
+                </h3>
+                <h3 class="slds-theme_shade formHeader">
+                    Attention for the below devices
+                </h3>
+            </div>
+        <h5 class="slds-theme_shade CTRSPageHeader" style="text-align: center; ">
+            Internal Siren (Speaker)
+        </h5>
+        <h5 class="slds-theme_shade CTRSPageHeader PaddingClass" style="text-align: center; ">
+            صفارات الإنذار الداخلية (صوت و ضوء)
+        </h5>
+        <h5 class="slds-theme_shade CTRSPageHeader" style="text-align: center; ">
+            Child Detection Sensor
+        </h5>
+        <h5 class="slds-theme_shade CTRSPageHeader PaddingClass" style="text-align: center; ">
+            جهاز مستشعر الحركة داخل الحافلة
+        </h5>
+        <h5 class="slds-theme_shade CTRSPageHeader" style="text-align: center; ">
+            Child Check Button
+        </h5>
+        <h5 class="slds-theme_shade CTRSPageHeader PaddingClass" style="text-align: center; ">
+            زر تفقد الحافلة بعد انتهاء الرحلة
+        </h5>
+        <h5 class="slds-theme_shade CTRSPageHeader" style="text-align: center; ">
+            Temp. - Humidity
+        </h5>
+        <h5 class="slds-theme_shade CTRSPageHeader PaddingClass" style="text-align: center; ">
+            جهاز قياس درجة الحرارة - الرطوبة
+        </h5>
+        
+        <div class="slds-grid CTRSPageNotediv">
+            <div class="slds-col slds-size_1-of-3"></div>
+            <div class="slds-col slds-size_1-of-3">
+                <h1 class="slds-theme_shade CTRSPageNote" style="text-align: center; ">
+                    يرجى فحص الجهاز باستثناء النقل المدرسي الخاص أو حسب خدمة العملاء
+                    Please Check the Device, exept for the private School Transportation or according to customer service
+                </h1>
+            </div>
+            <div class="slds-col slds-size_1-of-3"></div>
+       </div>
+
+        <div class="slds-p-around_x-small slds-grid" style="text-align: center;">
+        <div class="slds-col">
+            <button class="slds-button slds-button_neutral slds-button_stretch custom-box"
+                onclick={VRTS_CTRSPage_Back}>Back</button>
+        </div>
+        <div class="slds-col">
+            <button class="slds-button slds-button_neutral slds-button_stretch custom-box"
+                onclick={VRTS_CTRSPage_Next}>Next</button>
+        </div>
+        </div>
+
+
+        </div>
+    </template>
+
+   <!--  /VRTS_CTR1/ -->
+    <template if:true={VRTS_CTR1}>
+    {defaultData}
+    <div class="container vRTSForm">
+        <div style="text-align: center; ">
+            <h3 class="slds-theme_shade formHeader">
+                صفارات الإنذار الداخلية (صوت و ضوء)
+            </h3>
+            <h3 class="slds-theme_shade formHeader">
+                Internal Siren (Speaker)
+            </h3>
+        </div>
+<!-- 
+ -->
+    <template if:true={VRTSrecords}>
+        <lightning-card>
+            <template for:each={VRTSrecords} for:item="VRTS">
+                <div key={VRTS.Id} class="box_VRTS">
+                    <p>
+                        Name:{VRTS.Name}
+                        Question:{VRTS.Question_En__c}
+                        Question_Ar:{VRTS.Question_Ar__c}
+                    </p>
+                </div>
+            </template>
+        </lightning-card>
+    </template>
+
+
+
+
+
+
+
+        
+
+    <div class="slds-p-around_x-small slds-grid" style="text-align: center;">
+        <div class="slds-col">
+            <button class="slds-button slds-button_neutral slds-button_stretch custom-box"
+                onclick={VRTS_VRTS_CTR1_Back}>Back</button>
+        </div>
+        <div class="slds-col">
+            <button class="slds-button slds-button_neutral slds-button_stretch custom-box"
+                onclick={VRTS_VRTS_CTR1_Next}>Next</button>
+        </div>
+        </div>
+    </div>
+
+    </template>
+
+</template>

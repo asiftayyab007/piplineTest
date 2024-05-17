@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Safety_of_mirrors_cleanliness__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Safety of mirrors-cleanliness</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Safety of side and internal mirrors in terms of cleanliness, numbers and the appropriate field of view</inlineHelpText>
+    <label>Safety of mirrors-cleanliness</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

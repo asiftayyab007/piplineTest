@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Cost Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Annually</fullName>
+                <default>false</default>
+                <label>Annually</label>
+            </value>
+            <value>
+                <fullName>One time</fullName>
+                <default>false</default>
+                <label>One time</label>
+            </value>
+            <value>
+                <fullName>Applicable for (years)</fullName>
+                <default>false</default>
+                <label>Applicable for (years)</label>
+            </value>
+            <value>
+                <fullName>Applicable from (year)</fullName>
+                <default>false</default>
+                <label>Applicable from (year)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

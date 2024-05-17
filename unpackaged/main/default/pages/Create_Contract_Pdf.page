@@ -1,0 +1,67 @@
+<apex:page applyBodyTag="false" standardController="Quote" extensions="Create_Contract_Controller" showHeader="false" sidebar="false" renderAs="pdf"  standardStylesheets="false" applyHtmlTag="false">
+    
+     <head>
+        <style>
+            
+            div.a {
+            text-align: center;
+            padding: 30px;
+            font-size: 20px;
+            
+            }
+            span {
+            text-decoration:underline;
+            }
+            dd.d1 {
+            list-style-type: circle;
+            }
+            
+        </style>  
+        
+    </head>
+    
+    
+   <div styleClass="center_section" style="width: 30%;display: inline-block;float: left;text-align:center;">
+        <apex:image style="height: 50px;" url="{!URLFOR($Resource.Invoicepdf, 'Invoicepdf/logo.png')}"/>                
+    </div>
+    
+    
+    
+    <div style="position: relative;display:block;clear: both;width: 100%;font-size:11px;font-family:sans-serif;margin-top:20px;">
+        <table style="width:100%;border: trasprant;border-collapse: collapse;font-size:11px;">
+            <thead style="background:#f2f2f2;">
+                <tr>
+                    <th style="border: .4px solid #000000;padding:3px;text-align: center;font-weight:normal;">Contract Name</th>
+                    <th style="border: .4px solid #000000;center;font-weight:normal;text-align: center;">Quote Name</th>
+                    <th style="border: .4px solid #000000;center;font-weight:normal;text-align: center;">Total Investment</th>
+                    <th style="border: .4px solid #000000;center;font-weight:normal;text-align: center;">Type</th> 
+                    <th style="border: .4px solid #000000;center;font-weight:normal;text-align: center;">Total Number of Main Vehicles</th>
+                    <th style="border: .4px solid #000000;center;font-weight:normal;text-align: center;"></th>                
+                </tr>
+                
+            </thead>
+            <tbody>
+                <apex:repeat var="Veh" value="{!Contractdetails}"> 
+                    <tr>
+                        <td style="border: .4px solid #000000;padding:2px 5px;text-align: center;">{!Veh.Name}</td>
+                        <td style="border: .4px solid #000000;padding:2px 5px;text-align: center;">{!Veh.Quote_Number__c}</td>
+                        <td style="border: .4px solid #000000;padding:2px 5px;text-align: center;">{!Veh.Total_Investment__c}</td>
+                        <td style="border: .4px solid #000000;padding:2px 5px;text-align: center;">{!Veh.Type__c}</td>
+                        <td style="border: .4px solid #000000;padding:2px 5px;text-align: center;">{!Veh.Total_Number_of_Main_Vehicles__c}</td>
+                        <td style="border: .4px solid #000000;padding:2px 5px;text-align: center;"></td>
+                    </tr>
+                </apex:repeat>
+            </tbody>
+            
+            
+            
+        </table>
+    </div>
+    
+    	<!--<iframe src="data:application/pdf;base64,{!pdf}" ></iframe>-->
+
+    
+    
+    
+    
+</apex:page>

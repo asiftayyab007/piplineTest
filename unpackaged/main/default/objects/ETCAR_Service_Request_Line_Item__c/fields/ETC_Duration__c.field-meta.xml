@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETC_Duration__c</fullName>
+    <externalId>false</externalId>
+    <label>Order Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3 Hours</fullName>
+                <default>false</default>
+                <label>3 Hours</label>
+            </value>
+            <value>
+                <fullName>5 Hours</fullName>
+                <default>false</default>
+                <label>5 Hours</label>
+            </value>
+            <value>
+                <fullName>8 Hours</fullName>
+                <default>false</default>
+                <label>8 Hours</label>
+            </value>
+            <value>
+                <fullName>10 Hours</fullName>
+                <default>false</default>
+                <label>10 Hours</label>
+            </value>
+            <value>
+                <fullName>Fixed Trip</fullName>
+                <default>false</default>
+                <label>Fixed Trip</label>
+            </value>
+            <value>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+                <label>Transfer</label>
+            </value>
+            <value>
+                <fullName>Package : 10 Hours</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Package : 10 Hours</label>
+            </value>
+            <value>
+                <fullName>Package : 3 Hours</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Package : 3 Hours</label>
+            </value>
+            <value>
+                <fullName>Package : 5 Hours</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Package : 5 Hours</label>
+            </value>
+            <value>
+                <fullName>Package : 8 Hours</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Package : 8 Hours</label>
+            </value>
+            <value>
+                <fullName>Zone Fare : Fixed Trip</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Zone Fare : Fixed Trip</label>
+            </value>
+            <value>
+                <fullName>Zone Fare : Transfer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Zone Fare : Transfer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

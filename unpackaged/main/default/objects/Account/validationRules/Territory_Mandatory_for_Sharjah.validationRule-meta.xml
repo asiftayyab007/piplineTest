@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Mandatory_for_Sharjah</fullName>
+    <active>false</active>
+    <description>Service Territory is Mandatory to fill when Emirates is Sharjah.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&#39;Business_B2B_Inspection&#39;  &amp;&amp; text(ETI_Emirates__c)=&#39;Sharjah&#39;</errorConditionFormula>
+    <errorMessage>Please Assign Service Territory to this Customer.</errorMessage>
+</ValidationRule>

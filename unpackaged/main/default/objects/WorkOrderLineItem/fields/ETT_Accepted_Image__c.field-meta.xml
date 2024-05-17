@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Accepted_Image__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ETT_Accepted__c ==true, IMAGE(&quot;/resource/Accept&quot;, &quot;Accepted&quot;, 32, 32) , IMAGE(&quot;/resource/NotAccepted&quot;, &quot;NotAccepted&quot;, 32, 32))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Accepted Image</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Bookings</fullName>
+    <fields>Name</fields>
+    <fields>ETCAR_Selecetd_Car__c</fields>
+    <fields>ETC_Duration__c</fields>
+    <fields>Total_Booking_Cost_With_Vat__c</fields>
+    <label>Vehicle Bookings</label>
+</CompactLayout>

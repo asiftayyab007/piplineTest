@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Exchange_Model_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ETM_Exchange__c  = TRUE, isBLANK(ETM_Exchange_Model__c)
+)</errorConditionFormula>
+    <errorDisplayField>ETM_Exchange_Model__c</errorDisplayField>
+    <errorMessage>Please Provide Exchange Model Information</errorMessage>
+</ValidationRule>

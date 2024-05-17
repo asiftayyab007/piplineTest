@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETST_Cancellation_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Cancellation Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not satisfied with services</fullName>
+                <default>false</default>
+                <label>Not satisfied with services</label>
+            </value>
+            <value>
+                <fullName>Temporary cancellation or holding service</fullName>
+                <default>false</default>
+                <label>Temporary cancellation or holding service</label>
+            </value>
+            <value>
+                <fullName>Changing school</fullName>
+                <default>false</default>
+                <label>Changing school</label>
+            </value>
+            <value>
+                <fullName>Leaving the country</fullName>
+                <default>false</default>
+                <label>Leaving the country</label>
+            </value>
+            <value>
+                <fullName>New Address not covered</fullName>
+                <default>false</default>
+                <label>New Address not covered</label>
+            </value>
+            <value>
+                <fullName>I will come back later</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I will come back later</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

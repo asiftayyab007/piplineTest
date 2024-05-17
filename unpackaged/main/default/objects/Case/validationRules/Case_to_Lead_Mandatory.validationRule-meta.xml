@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_to_Lead_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Status),ISPICKVAL(Status,&#39;Solution Completed&#39;),  NOT(Lead_Created__c), Create_Lead__c, RecordType.DeveloperName==&#39;New_Business&#39;)</errorConditionFormula>
+    <errorDisplayField>Lead_Created__c</errorDisplayField>
+    <errorMessage>The record is marked as create lead true please create a lead to mark the case as complete.</errorMessage>
+</ValidationRule>

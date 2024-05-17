@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Center__c</fullName>
+    <externalId>false</externalId>
+    <label>Inspection Center</label>
+    <referenceTo>ET_Location__c</referenceTo>
+    <relationshipLabel>Inspection Center Shift Times</relationshipLabel>
+    <relationshipName>Inspection_Shift_Times</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

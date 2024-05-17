@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Collection_Agreement</fullName>
+    <fields>Name</fields>
+    <fields>ETT_Account__c</fields>
+    <fields>ETT_Opportunity__c</fields>
+    <fields>ETT_Party_Type__c</fields>
+    <label>ETT Collection Agreement</label>
+</CompactLayout>

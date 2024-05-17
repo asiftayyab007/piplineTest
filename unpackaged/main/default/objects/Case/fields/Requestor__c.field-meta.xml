@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requestor__c</fullName>
+    <externalId>false</externalId>
+    <label>Requestor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Parent/Guardian</fullName>
+                <default>false</default>
+                <label>Parent/Guardian</label>
+            </value>
+            <value>
+                <fullName>Public Schools</fullName>
+                <default>false</default>
+                <label>Public Schools</label>
+            </value>
+            <value>
+                <fullName>Staffs</fullName>
+                <default>false</default>
+                <label>Staffs</label>
+            </value>
+            <value>
+                <fullName>Ministries</fullName>
+                <default>false</default>
+                <label>Ministries</label>
+            </value>
+            <value>
+                <fullName>Private Schools</fullName>
+                <default>false</default>
+                <label>Private Schools</label>
+            </value>
+            <value>
+                <fullName>ET staff</fullName>
+                <default>false</default>
+                <label>ET staff</label>
+            </value>
+            <value>
+                <fullName>Municipality/RTA/DoT</fullName>
+                <default>false</default>
+                <label>Municipality/RTA/DoT</label>
+            </value>
+            <value>
+                <fullName>Police</fullName>
+                <default>false</default>
+                <label>Police</label>
+            </value>
+            <value>
+                <fullName>General Public</fullName>
+                <default>false</default>
+                <label>General Public</label>
+            </value>
+            <value>
+                <fullName>Private School Parents</fullName>
+                <default>false</default>
+                <label>Private School Parents</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Insurance Company</fullName>
+                <default>false</default>
+                <label>Insurance Company</label>
+            </value>
+            <value>
+                <fullName>AD Police</fullName>
+                <default>false</default>
+                <label>AD Police</label>
+            </value>
+            <value>
+                <fullName>ADFCA</fullName>
+                <default>false</default>
+                <label>ADFCA</label>
+            </value>
+            <value>
+                <fullName>FUJAIRAH Police</fullName>
+                <default>false</default>
+                <label>FUJAIRAH Police</label>
+            </value>
+            <value>
+                <fullName>Hotels/Event team</fullName>
+                <default>false</default>
+                <label>Hotels/Event team</label>
+            </value>
+            <value>
+                <fullName>Dubai Police</fullName>
+                <default>false</default>
+                <label>Dubai Police</label>
+            </value>
+            <value>
+                <fullName>Sharjah Police</fullName>
+                <default>false</default>
+                <label>Sharjah Police</label>
+            </value>
+            <value>
+                <fullName>Ajman Police</fullName>
+                <default>false</default>
+                <label>Ajman Police</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Private</fullName>
+                <default>false</default>
+                <label>Private</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Technical Service</fullName>
+                <default>false</default>
+                <label>Technical Service</label>
+            </value>
+            <value>
+                <fullName>MUSADA</fullName>
+                <default>false</default>
+                <label>MUSADA</label>
+            </value>
+            <value>
+                <fullName>Dry Wash Unite</fullName>
+                <default>false</default>
+                <label>Dry Wash Unite</label>
+            </value>
+            <value>
+                <fullName>Watania</fullName>
+                <default>false</default>
+                <label>Watania</label>
+            </value>
+            <value>
+                <fullName>CNG</fullName>
+                <default>false</default>
+                <label>CNG</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>HR</fullName>
+                <default>false</default>
+                <label>HR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

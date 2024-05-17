@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trade_In_Vehicle_Model__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Trade-In Vehicle Model</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Vehicle_Model_Master__c.Vehicle_Brand__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Trade_In_Vehicle_Brand__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Vehicle_Model_Master__c</referenceTo>
+    <relationshipLabel>Opportunities (Trade-In Vehicle Model)</relationshipLabel>
+    <relationshipName>Opportunities1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

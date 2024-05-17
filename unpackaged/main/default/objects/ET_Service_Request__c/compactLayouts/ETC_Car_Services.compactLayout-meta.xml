@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETC_Car_Services</fullName>
+    <fields>ET_Account__c</fields>
+    <fields>ETC_Billing_Total__c</fields>
+    <fields>ETC_Payment_Status__c</fields>
+    <fields>ETC_Service_Type__c</fields>
+    <fields>ETC_Customer_Email_Id__c</fields>
+    <label>Car Services</label>
+</CompactLayout>

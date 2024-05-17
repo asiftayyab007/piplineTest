@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>IMDAAD</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>IMDAAD</label>
+        <sharedTo>
+            <portalRole>IMDAADLLCPartnerUser</portalRole>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Union_Co_Operative</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Union Co-Operative</label>
+        <sharedTo>
+            <portalRole>UNIONCOOPOPERRATIVEPartnerUser</portalRole>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Union_Coop</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Union Coop</label>
+        <sharedTo>
+            <portalRole>UNIONCOOPERATIVESOCIETYPartnerUser</portalRole>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETIN_Place_of_Visa_Issuance__c</fullName>
+    <description>Insurance</description>
+    <externalId>false</externalId>
+    <label>Place of Visa Issuance</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>UAE_Emirates</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Used_Stock__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of all used stock value, only applies to consumables type of tool/material master records</inlineHelpText>
+    <label>Used Stock</label>
+    <summarizedField>ETT_Tools_Material_Usage__c.ETT_Usage_Value__c</summarizedField>
+    <summaryForeignKey>ETT_Tools_Material_Usage__c.ETT_Tools_Material_Allocation__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

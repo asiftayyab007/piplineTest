@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>After_Legal_Contract_Amount_current_req</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+$RecordType.DeveloperName = &quot;ETSALES_Leasing&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Manpower&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Transportation&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Logistics&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Rental_B2B&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Maintainance&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Chauffeur_and_Limousine_B2B&quot;
+),
+OR(
+ISPICKVAL( StageName , &#39;Sales Agreement&#39;),
+ISPICKVAL( StageName , &#39;Closed Won&#39;)
+),
+
+ISBLANK( Amount )
+)</errorConditionFormula>
+    <errorMessage>Price Information: Amount is mandatory.</errorMessage>
+</ValidationRule>

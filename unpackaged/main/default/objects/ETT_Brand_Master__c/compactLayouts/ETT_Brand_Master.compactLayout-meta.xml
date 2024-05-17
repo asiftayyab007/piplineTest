@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Brand_Master</fullName>
+    <fields>ETT_Brand_Code__c</fields>
+    <fields>Name</fields>
+    <fields>ETT_Status__c</fields>
+    <label>ETT Brand Master</label>
+</CompactLayout>

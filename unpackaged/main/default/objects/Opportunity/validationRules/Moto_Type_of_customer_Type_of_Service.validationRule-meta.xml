@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moto_Type_of_customer_Type_of_Service</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName =&#39;Automotive_Service_CenterBodyShop&#39;, 
+ISPICKVAL(StageName, &#39;Vehicle Inspection&#39;),
+OR(
+   ISBLANK( TEXT(Type_of_Customer__c)),
+   ISBLANK( TEXT(Type_of_Service__c)) 
+))</errorConditionFormula>
+    <errorMessage>Type of customer and Type of service is mandatory,If stage is &quot;Vehicle Inspection&quot;</errorMessage>
+</ValidationRule>

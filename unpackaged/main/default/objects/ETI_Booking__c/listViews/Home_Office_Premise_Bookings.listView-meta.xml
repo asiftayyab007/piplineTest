@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Home_Office_Premise_Bookings</fullName>
+    <columns>NAME</columns>
+    <columns>User__c</columns>
+    <columns>AMAN_Booking_No__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Booking_Status__c</columns>
+    <columns>Inspector__c</columns>
+    <columns>Vehicle_Number__c</columns>
+    <columns>Payment_Type__c</columns>
+    <columns>Payment_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Service_Premises__c</field>
+        <operation>equals</operation>
+        <value>Home/Office Premise</value>
+    </filters>
+    <label>Home/Office Premise Bookings</label>
+</ListView>

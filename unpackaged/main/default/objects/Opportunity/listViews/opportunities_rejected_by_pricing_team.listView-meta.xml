@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>opportunities_rejected_by_pricing_team</fullName>
+    <columns>ETSALES_Opportunity_Number__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.RECORDTYPE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ETSALES_Approval_Status__c</field>
+        <operation>equals</operation>
+        <value>Rejected by Pricing Team</value>
+    </filters>
+    <label>opportunities rejected by pricing team</label>
+    <sharedTo>
+        <group>ET_Pricing_Team</group>
+    </sharedTo>
+</ListView>

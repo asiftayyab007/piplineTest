@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Restrict_Editing_the_Lead</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(ISCHANGED(ETT_HOO_Rejection_Comments__c),
+ISCHANGED(Status),
+ISCHANGED(ETT_FM_Rejection_Comments__c),
+ISCHANGED(ETT_Final_Rejection__c),
+ISCHANGED(ETT_Re_Submit_Reasons__c),
+ISCHANGED(RecordTypeId),
+ISCHANGED(OwnerId),
+ISCHANGED(ETT_isSupplierConvert__c),
+ISCHANGED(ETT_Party_Type__c)),
+OR(
+$Profile.Name = &quot;ETT_Receptionist&quot;,
+$Profile.Name = &quot;ETT_Sales Team&quot;
+))</errorConditionFormula>
+    <errorMessage>You are not allowed to update the Lead Information and additional information sections.
+Please contact HOO or FM to do the changes.</errorMessage>
+</ValidationRule>

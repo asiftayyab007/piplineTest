@@ -1,0 +1,153 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,force:appHostable" access="global" >
+    
+  
+    <aura:attribute name="Branch" type="String"/>
+    <aura:attribute name="Name" type="String"/>
+    <aura:attribute name="Education" type="String"/>
+    <aura:attribute name="Station" type="String"/>
+    <aura:attribute name="FDate" type="Date"/>
+    <aura:attribute name="TDate" type="Date"/>
+    <aura:attribute name="Report" type="String"/>
+    <aura:attribute name="VehicleInt" type="string" />
+    <aura:attribute name="VehicleExt" type="string" />
+    <aura:attribute name="Issues" type="string" />
+    <aura:attribute name="Morning" type="string" />
+    <aura:attribute name="Afternoon" type="string" />
+    <aura:attribute name="AppearanceD" type="string" />
+    <aura:attribute name="BehaviourD" type="string" />
+    <aura:attribute name="AppearanceS" type="string" />
+    <aura:attribute name="BehaviourS" type="string" />
+    <aura:attribute name="Driver" type="string" default="Karthick"/>
+    <aura:attribute name="Internal" type="string" default="ESC12345"/>
+    
+    
+    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-border_bottom slds-hyphenate slds-align_absolute-center" style="border-bottom: 1px solid #f2f2f2;font-size: 16px;font-weight: 500!important;padding: 1rem;">
+        Weekly Report of School Transportation
+    </h2>
+    
+    <div class="mainDiv slds-scrollable"> 
+        
+               
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                <lightning:input name="Branch" value="{!v.Branch}" label="Branch of ET"/>
+                
+            </div> 
+            <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                <lightning:input name="Name" value="{!v.name}" label="Centre Name"/>
+                
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                <lightning:input name="Education" value="{!v.Education}" label="Education Station Name"/>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                <lightning:input name="Station" value="{!v.Station}" label="Station"/>
+            </div>
+        </div>    
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                <lightning:input type="Date" value="{!v.FDate}" label="From Date"/>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                <lightning:input type="Date" value="{!v.TDate}" label="To Date"/>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                <lightning:input name="Report" value="{!v.Report}" label="Report No"/>
+            </div>  
+        </div>
+        
+        <div class="slds-border_bottom">
+            <div class="slds-form-element__control slds-m-around_medium">
+                <!--div><h1 class="subheading">Customer Price Approval</h1></div-->  
+
+                
+                <table class="slds-box slds-table slds-table slds-table--striped">
+    <thead>
+        <tr>
+            <th colspan="2" style="vertical-align : middle;text-align:center;"> </th>
+            <th colspan="3" style="vertical-align : middle;text-align:center;">Notes on Vehicle</th>
+            <th colspan="2" style="vertical-align : middle;text-align:center;">Comments on regular Transportation</th>
+            <th colspan="2" style="vertical-align : middle;text-align:center;">Comments on Driver</th>
+            <th colspan="2" style="vertical-align : middle;text-align:center;">Comments on Supervisor</th>
+            
+        </tr>
+        <tr>
+            <th style="vertical-align : middle;text-align:center;">Driver Name</th>
+            <th style="vertical-align : middle;text-align:center;">Internal No</th>
+            <th style="vertical-align : middle;text-align:center;">Internal Vehicle</th>
+            <th style="vertical-align : middle;text-align:center;">External Vehicle</th>                               
+            <th style="vertical-align : middle;text-align:center;">Technical Issues</th>
+            <th style="vertical-align : middle;text-align:center;">Morning Trips</th>    
+            <th style="vertical-align : middle;text-align:center;">Afternoon Trips</th>
+            <th style="vertical-align : middle;text-align:center;">Appearance</th>
+            <th style="vertical-align : middle;text-align:center;">Behaviour</th>
+            <th style="vertical-align : middle;text-align:center;">Appearance</th>
+            <th style="vertical-align : middle;text-align:center;">Behaviour</th>
+        </tr>
+                    </thead>
+    <tbody class="padtb">
+        <tr>
+           
+            <td style="horizontal-align : middle;text-align:center;"><ui:outputText value="Arun"/> </td>
+            <td style="horizontal-align : middle;text-align:center;"><ui:outputText value="B0012345"/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="VehicleInt" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="VehicleExt" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="Issues" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="Morning" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="Afternoon" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="AppearanceD" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="BehaviourD" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="AppearanceS" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="BehaviourS" value=""/></td>
+        </tr>
+        <tr>
+           
+            <td style="horizontal-align : middle;text-align:center;"><ui:outputText value="Nidhin"/> </td>
+            <td style="horizontal-align : middle;text-align:center;"><ui:outputText value="C001245"/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="VehicleInt" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="VehicleExt" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="Issues" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="Morning" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="Afternoon" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="AppearanceD" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="BehaviourD" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="AppearanceS" value=""/></td>
+            <td style="horizontal-align : middle;text-align:center;"> <lightning:input name="BehaviourS" value=""/></td>
+        </tr>
+    </tbody>
+</table>
+               
+
+                
+                
+                
+                
+            </div>
+        </div>
+        <div class="slds-float--right " >
+            
+            
+                <lightning:button variant="Brand" class="btnsend"
+                                  label="Cancel" 
+                                  onclick="{! c.OnCancel}"/>
+           
+                <lightning:button variant="brand" 
+                                  label="Submit"
+                                  title="Submit"
+                                  onclick="{! c.save}" class="btnsend" /> 
+          
+        </div>
+
+        
+        
+    </div> 
+    <!--div class="modal-footer slds-modal__footer slds-size_1-of-1">
+        <lightning:button label="Cancel" title="Neutral action" onclick="{! c.OnCancel}"/>
+        <lightning:button variant="brand" label="Save" title="Brand action" onclick="{! c.save }" />
+    </div-->
+    
+      
+    
+    
+    
+</aura:component>

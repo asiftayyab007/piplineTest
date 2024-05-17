@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Process_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Process Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tyre Refurbishing Services</fullName>
+                <default>false</default>
+                <label>Tyre Refurbishing Services</label>
+            </value>
+            <value>
+                <fullName>Tyre - Cash Supplier</fullName>
+                <default>false</default>
+                <label>Tyre - Cash Supplier</label>
+            </value>
+            <value>
+                <fullName>Tyre - Credit/B2B Supplier</fullName>
+                <default>false</default>
+                <label>Tyre - Credit/B2B Supplier</label>
+            </value>
+            <value>
+                <fullName>Tyre Cash Individual</fullName>
+                <default>false</default>
+                <label>Tyre Cash Individual</label>
+            </value>
+            <value>
+                <fullName>Cash Tyre Supplier</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cash Tyre Supplier</label>
+            </value>
+            <value>
+                <fullName>Credit/B2B Tyre Supplier</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Credit/B2B Tyre Supplier</label>
+            </value>
+            <value>
+                <fullName>Refurbished Tyre Sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refurbished Tyre Sales</label>
+            </value>
+            <value>
+                <fullName>Tyre - Refurbishing Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tyre - Refurbishing Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

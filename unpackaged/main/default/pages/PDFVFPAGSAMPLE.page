@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity">
+  <script>
+        if({!Opportunity.StageName='Proposal'})  
+            alert('Display Alert!!');
+    </script>
+</apex:page>

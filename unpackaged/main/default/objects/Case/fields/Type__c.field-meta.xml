@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reissue Bus ID card for student(s)</fullName>
+                <default>false</default>
+                <label>Reissue Bus ID card for student(s)</label>
+            </value>
+            <value>
+                <fullName>Nanny</fullName>
+                <default>false</default>
+                <label>Nanny</label>
+            </value>
+            <value>
+                <fullName>School Bus</fullName>
+                <default>false</default>
+                <label>School Bus</label>
+            </value>
+            <value>
+                <fullName>Issue Bus ID card for student(s)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Issue Bus ID card for student(s)</label>
+            </value>
+            <value>
+                <fullName>My kid lost the Bus ID card</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>My kid lost the Bus ID card</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Recent Activity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved by ET Branch Manager</fullName>
+                <default>false</default>
+                <label>Approved by ET Branch Manager</label>
+            </value>
+            <value>
+                <fullName>Rejected by ET Branch Manager</fullName>
+                <default>false</default>
+                <label>Rejected by ET Branch Manager</label>
+            </value>
+            <value>
+                <fullName>Approved by ET Safety and Health Specialist</fullName>
+                <default>false</default>
+                <label>Approved by ET Safety and Health Specialist</label>
+            </value>
+            <value>
+                <fullName>Rejected by ET Safety and Health Specialist</fullName>
+                <default>false</default>
+                <label>Rejected by ET Safety and Health Specialist</label>
+            </value>
+            <value>
+                <fullName>Approved by ET Routes Efficient and Design Director</fullName>
+                <default>false</default>
+                <label>Approved by ET Routes Efficient and Design Director</label>
+            </value>
+            <value>
+                <fullName>Rejected by ET Routes Efficient and Design Director</fullName>
+                <default>false</default>
+                <label>Rejected by ET Routes Efficient and Design Director</label>
+            </value>
+            <value>
+                <fullName>Approved by ET First Transport Specialist</fullName>
+                <default>false</default>
+                <label>Approved by ET First Transport Specialist</label>
+            </value>
+            <value>
+                <fullName>Rejected by ET First Transport Specialist</fullName>
+                <default>false</default>
+                <label>Rejected by ET First Transport Specialist</label>
+            </value>
+            <value>
+                <fullName>Approved by ET School Transportation</fullName>
+                <default>false</default>
+                <label>Approved by ET School Transportation</label>
+            </value>
+            <value>
+                <fullName>Rejected by ET School Transportation</fullName>
+                <default>false</default>
+                <label>Rejected by ET School Transportation</label>
+            </value>
+            <value>
+                <fullName>Approved by Statistics Coordinator</fullName>
+                <default>false</default>
+                <label>Approved by Statistics Coordinator</label>
+            </value>
+            <value>
+                <fullName>Rejected by Statistics Coordinator</fullName>
+                <default>false</default>
+                <label>Rejected by Statistics Coordinator</label>
+            </value>
+            <value>
+                <fullName>Approved By Head of Safety Unit</fullName>
+                <default>false</default>
+                <label>Approved By Head of Safety Unit</label>
+            </value>
+            <value>
+                <fullName>Rejected By Head of Safety Unit</fullName>
+                <default>false</default>
+                <label>Rejected By Head of Safety Unit</label>
+            </value>
+            <value>
+                <fullName>Approved By Students Safety Specialist</fullName>
+                <default>false</default>
+                <label>Approved By Students Safety Specialist</label>
+            </value>
+            <value>
+                <fullName>Rejected By Students Safety Specialist</fullName>
+                <default>false</default>
+                <label>Rejected By Students Safety Specialist</label>
+            </value>
+            <value>
+                <fullName>Submitted for ET Branch Manager</fullName>
+                <default>false</default>
+                <label>Submitted for ET Branch Manager</label>
+            </value>
+            <value>
+                <fullName>Approved By Special Education</fullName>
+                <default>false</default>
+                <label>Approved By Special Education</label>
+            </value>
+            <value>
+                <fullName>Approved by Department of School Services</fullName>
+                <default>false</default>
+                <label>Approved by Department of School Services</label>
+            </value>
+            <value>
+                <fullName>Rejected by Department of School Services</fullName>
+                <default>false</default>
+                <label>Rejected by Department of School Services</label>
+            </value>
+            <value>
+                <fullName>Approved by Department of Personnel Management</fullName>
+                <default>false</default>
+                <label>Approved by Department of Personnel Management</label>
+            </value>
+            <value>
+                <fullName>Rejected by Department of Personnel Management</fullName>
+                <default>false</default>
+                <label>Rejected by Department of Personnel Management</label>
+            </value>
+            <value>
+                <fullName>Approved by Department of School Activities</fullName>
+                <default>false</default>
+                <label>Approved by Department of School Activities</label>
+            </value>
+            <value>
+                <fullName>Rejected by Department of School Activities</fullName>
+                <default>false</default>
+                <label>Rejected by Department of School Activities</label>
+            </value>
+            <value>
+                <fullName>Replied by ET Safety and Health Specialist</fullName>
+                <default>false</default>
+                <label>Replied by ET Safety and Health Specialist</label>
+            </value>
+            <value>
+                <fullName>Replied by Department of School Services</fullName>
+                <default>false</default>
+                <label>Replied by Department of School Services</label>
+            </value>
+            <value>
+                <fullName>Closed by Department of School Services</fullName>
+                <default>false</default>
+                <label>Closed by Department of School Services</label>
+            </value>
+            <value>
+                <fullName>Rejected by Special Education</fullName>
+                <default>false</default>
+                <label>Rejected by Special Education</label>
+            </value>
+            <value>
+                <fullName>Approved by Main School</fullName>
+                <default>false</default>
+                <label>Approved by Main School</label>
+            </value>
+            <value>
+                <fullName>Rejected by Main School</fullName>
+                <default>false</default>
+                <label>Rejected by Main School</label>
+            </value>
+            <value>
+                <fullName>Closed by Main School</fullName>
+                <default>false</default>
+                <label>Closed by Main School</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

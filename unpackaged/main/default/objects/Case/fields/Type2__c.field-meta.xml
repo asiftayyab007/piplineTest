@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type2__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Accident/Emergency&#39;), &#39;Complaint&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;IT Complaints&#39;), &#39;Complaint&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Internal Issues&#39;), &#39;Complaint&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Safety Issues&#39;), &#39;Complaint&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Service Compliance&#39;), &#39;Complaint&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Staff Behavior&#39;), &#39;Complaint&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Theft&#39;), &#39;Complaint&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Traffic Violation&#39;), &#39;Complaint&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Add Service&#39;), &#39;Enquiry&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Inquiry and Notices&#39;), &#39;Enquiry&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Request&#39;), &#39;Enquiry&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;New Business&#39;), &#39;Enquiry&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Cancel Services&#39;), &#39;Service&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Financial Services&#39;), &#39;Service&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Online Services&#39;), &#39;Service&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Service Quality&#39;), &#39;Service&#39;,
+IF(
+ISPICKVAL(Case_Record_Types__c, &#39;Feedback and Appreciation&#39;), &#39;Feedback and appreciate&#39;,
+null)))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Case Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

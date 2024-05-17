@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certificate_Services__c</fullName>
+    <externalId>false</externalId>
+    <label>Certificate Services</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Change Chassis Certificate</fullName>
+                <default>false</default>
+                <label>Change Chassis Certificate</label>
+            </value>
+            <value>
+                <fullName>Change Color Certificate</fullName>
+                <default>false</default>
+                <label>Change Color Certificate</label>
+            </value>
+            <value>
+                <fullName>Change Vehicle Type Certificate</fullName>
+                <default>false</default>
+                <label>Change Vehicle Type Certificate</label>
+            </value>
+            <value>
+                <fullName>Print Chassis On Trailer Certificate</fullName>
+                <default>false</default>
+                <label>Print Chassis On Trailer Certificate</label>
+            </value>
+            <value>
+                <fullName>Advertisement Certificate</fullName>
+                <default>false</default>
+                <label>Advertisement Certificate</label>
+            </value>
+            <value>
+                <fullName>Full Paint Certificate</fullName>
+                <default>false</default>
+                <label>Full Paint Certificate</label>
+            </value>
+            <value>
+                <fullName>Print Chassis Certificate</fullName>
+                <default>false</default>
+                <label>Print Chassis Certificate</label>
+            </value>
+            <value>
+                <fullName>Change Chassis-Outside Certificate  Company</fullName>
+                <default>false</default>
+                <label>Change Chassis-Outside Certificate  Company</label>
+            </value>
+            <value>
+                <fullName>Change Vehicle Type-Outside Company</fullName>
+                <default>false</default>
+                <label>Change Vehicle Type-Outside Company</label>
+            </value>
+            <value>
+                <fullName>Change Color-Outside Certificate Company</fullName>
+                <default>false</default>
+                <label>Change Color-Outside Certificate Company</label>
+            </value>
+            <value>
+                <fullName>Print Chassis On Trailer-Outside Certificate Company</fullName>
+                <default>false</default>
+                <label>Print Chassis On Trailer-Outside Certificate Company</label>
+            </value>
+            <value>
+                <fullName>Print Chassis-Outside Certificate</fullName>
+                <default>false</default>
+                <label>Print Chassis-Outside Certificate</label>
+            </value>
+            <value>
+                <fullName>Full Paint-Outside Company</fullName>
+                <default>false</default>
+                <label>Full Paint-Outside Company</label>
+            </value>
+            <value>
+                <fullName>Change Chassis-Outside Certificate Private</fullName>
+                <default>false</default>
+                <label>Change Chassis-Outside Certificate Private</label>
+            </value>
+            <value>
+                <fullName>Change Vehicle Type-Outside Certificate private</fullName>
+                <default>false</default>
+                <label>Change Vehicle Type-Outside Certificate private</label>
+            </value>
+            <value>
+                <fullName>Change Color-Outside Certificate private</fullName>
+                <default>false</default>
+                <label>Change Color-Outside Certificate private</label>
+            </value>
+            <value>
+                <fullName>Print Chassis On Trailer-Outside Certificate Private</fullName>
+                <default>false</default>
+                <label>Print Chassis On Trailer-Outside Certificate Private</label>
+            </value>
+            <value>
+                <fullName>Print Chassis-Outside Certificate private</fullName>
+                <default>false</default>
+                <label>Print Chassis-Outside Certificate private</label>
+            </value>
+            <value>
+                <fullName>Full Paint-Outside Certificate private</fullName>
+                <default>false</default>
+                <label>Full Paint-Outside Certificate private</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

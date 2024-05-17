@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <description>when the Opportunity Type changes to &#39;Growth Business&#39; or &#39;New Business&#39;</description>
+        <name>Opportunity_Types_Change</name>
+        <label>Opportunity Types Change</label>
+        <locationX>665</locationX>
+        <locationY>366</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Opportunity_Types</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Growth Business</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New Business</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Field_Update</targetReference>
+            </connector>
+            <label>Opportunity Types</label>
+        </rules>
+    </decisions>
+    <description>To make the previous contract fields as blank when Opportunity type is Growth or New Business</description>
+    <environments>Default</environments>
+    <interviewLabel>Previous Contract Fields Blank {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Previous Contract Fields Blank</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Update the previous contract fields to blank</description>
+        <name>Field_Update</name>
+        <label>Field Update</label>
+        <locationX>911</locationX>
+        <locationY>365</locationY>
+        <inputAssignments>
+            <field>Competitor_Before_ET_Previous_Contract__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Contract_Days_Previous_Contract__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Contract_Months_Previous_Contract__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Contract_Type_Previous_Contract__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Contract_Weeks_Previous_Contract__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Contract_Years_Previous_Contract__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ET_Service_Previous_Contract__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Existing_Contract_No_Previous_Contract__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Old_No_of_New_Vehicles__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Old_No_of_Resources__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Old_No_of_Used_Vehicles__c</field>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>543</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Opportunity_Types_Change</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

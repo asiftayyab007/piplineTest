@@ -1,0 +1,35 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <div class="checkbox">
+        <input id="check1" type="checkbox" name="check" value="check1"/>
+            <label for="check1">Checkbox No. 1</label>
+        <br/>
+                <input id="check2" type="checkbox" name="check" value="check2"/>
+                    <label for="check2">Checkbox No. 2</label>
+                </div>
+    
+    
+    <aura:attribute name="options" type="List" default="[
+                                                        {'label': 'Sales', 'value': 'option1'},
+                                                        {'label': 'Force', 'value': 'option2'}
+                                                        ]"/>
+    <aura:attribute name="value" type="String" default="option1"/>
+    
+    <lightning:radioGroup name="radioGroup"
+                          label="Radio Group"
+                          options="{! v.options }"
+                          value="{! v.value }"
+                          type="radio"/>
+    
+    
+    
+    <aura:attribute name="liked" default="false" type="Boolean" />
+   
+    <div class="slds-m-around_medium">
+        <lightning:buttonIconStateful iconName="utility:like" name="liked" selected="{! v.liked }" value="{! v.liked }" onclick="{! c.handleLikeButtonClick }" alternativeText="Like" />
+    </div>
+     <div class="slds-m-around_medium">
+        <lightning:buttonIconStateful iconName="utility:dislike" name="liked" selected="{! v.liked }" value="{! v.liked }" onclick="{! c.handleDisLikeButtonClick }" alternativeText="Like" />
+    </div>
+    {!v.liked}
+    
+</aura:component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Purchase_Price</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(and(! ISNEW()  ,OR(ETT_Brand__r.Name == &#39;New&#39;, ETT_Country__r.Name == &#39;New&#39;, ETT_Pattern__r.Name == &#39;New&#39;,  ETT_Tyre_Size_Master__r.ETT_Tyre_Size__c == &#39;New&#39;)), true, false)</errorConditionFormula>
+    <errorMessage>Please update &#39;New&#39; tyre details with actual values. To update tyre details please create new record into Tyre Master</errorMessage>
+</ValidationRule>

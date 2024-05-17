@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Head_Of_Operations</name>
+    <queueMembers>
+        <roles>
+            <role>BC_Emirates_Head_of_OperationTyre_Centre</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>ETT_Job_Card__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>ETT_Tools_Master__c</sobjectType>
+    </queueSobject>
+</Queue>

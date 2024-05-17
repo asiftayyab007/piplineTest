@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_End_Date_greater_than_Start_dat</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+Contract_End_Date__c &lt; Contract_Start_Date__c,
+
+OR(
+$RecordType.DeveloperName = &quot;ETSALES_Leasing&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Manpower&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Transportation&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Logistics&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Rental_B2B&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Maintainance&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Chauffeur_and_Limousine_B2B&quot;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Contract_End_Date__c</errorDisplayField>
+    <errorMessage>Contract End Date must be Greater than Start Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resources_should_be_mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(ETSALES_Sector__c, &quot;Transport And Lease&quot;),
+  
+    OR(
+        ISPICKVAL(ETSALES_GL_Services__c, &quot;Vehicle with Driver&quot;),
+        ISPICKVAL(ETSALES_GL_Services__c, &quot;Bus with Driver&quot;)
+    ),
+    ISBLANK(No_of_Resources__c)
+)</errorConditionFormula>
+    <errorMessage>No. of Resources (Current Contract) is mandatory</errorMessage>
+</ValidationRule>

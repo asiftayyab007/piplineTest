@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Finished_Inventory</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>ETT_Tyre_Inventory</compactLayoutAssignment>
+    <label>Finished Inventory</label>
+    <picklistValues>
+        <picklist>Claim_Process__c</picklist>
+        <values>
+            <fullName>Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Inventory_Status__c</picklist>
+        <values>
+            <fullName>Approved by Receptionist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspected - Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspected - Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Card Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Status_TI__c</picklist>
+        <values>
+            <fullName>Buffing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cementing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Note Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Note Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimation Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Team Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Team Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Card Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Painting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase Order Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receptionist Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removal of RIM Tube Flap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rimming %26 Enveloping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skiving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thread Preparation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Tyre_Life__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Type__c</picklist>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retread</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Process_Type__c</picklist>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precure</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tyre_Type__c</picklist>
+        <values>
+            <fullName>Refurbished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrapped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Used</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

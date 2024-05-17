@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Record_Types__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Record Types</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IT Complaints</fullName>
+                <default>false</default>
+                <label>IT Complaints</label>
+            </value>
+            <value>
+                <fullName>Accident/Emergency</fullName>
+                <default>false</default>
+                <label>Accident/Emergency</label>
+            </value>
+            <value>
+                <fullName>Add Service</fullName>
+                <default>false</default>
+                <label>Add Service</label>
+            </value>
+            <value>
+                <fullName>Cancel Services</fullName>
+                <default>false</default>
+                <label>Cancel Services</label>
+            </value>
+            <value>
+                <fullName>Feedback and Appreciation</fullName>
+                <default>false</default>
+                <label>Feedback and Appreciation</label>
+            </value>
+            <value>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+                <label>Financial Services</label>
+            </value>
+            <value>
+                <fullName>Inquiry and Notices</fullName>
+                <default>false</default>
+                <label>Inquiry and Notices</label>
+            </value>
+            <value>
+                <fullName>Internal Issues</fullName>
+                <default>false</default>
+                <label>Internal Issues</label>
+            </value>
+            <value>
+                <fullName>New Business</fullName>
+                <default>false</default>
+                <label>New Business</label>
+            </value>
+            <value>
+                <fullName>Online Services</fullName>
+                <default>false</default>
+                <label>Online Services</label>
+            </value>
+            <value>
+                <fullName>Request</fullName>
+                <default>false</default>
+                <label>Request</label>
+            </value>
+            <value>
+                <fullName>Safety Issues</fullName>
+                <default>false</default>
+                <label>Safety Issues</label>
+            </value>
+            <value>
+                <fullName>Service Compliance</fullName>
+                <default>false</default>
+                <label>Service Compliance</label>
+            </value>
+            <value>
+                <fullName>Service Quality</fullName>
+                <default>false</default>
+                <label>Service Quality</label>
+            </value>
+            <value>
+                <fullName>Staff Behavior</fullName>
+                <default>false</default>
+                <label>Staff Behavior</label>
+            </value>
+            <value>
+                <fullName>Service Environment</fullName>
+                <default>false</default>
+                <label>Service Environment</label>
+            </value>
+            <value>
+                <fullName>Theft</fullName>
+                <default>false</default>
+                <label>Theft</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation</fullName>
+                <default>false</default>
+                <label>Traffic Violation</label>
+            </value>
+            <value>
+                <fullName>Update Information</fullName>
+                <default>false</default>
+                <label>Update Information</label>
+            </value>
+            <value>
+                <fullName>ET Tyre - Claim</fullName>
+                <default>false</default>
+                <label>ET Tyre - Claim</label>
+            </value>
+            <value>
+                <fullName>ET Tyre - Traffic Fine</fullName>
+                <default>false</default>
+                <label>ET Tyre - Traffic Fine</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

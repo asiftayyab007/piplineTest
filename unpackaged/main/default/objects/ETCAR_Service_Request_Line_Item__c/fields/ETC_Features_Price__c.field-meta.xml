@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETC_Features_Price__c</fullName>
+    <externalId>false</externalId>
+    <label>Features Price</label>
+    <summarizedField>ETCAR_Service_Request_Sub_Line_Item__c.ETCAR_Price__c</summarizedField>
+    <summaryForeignKey>ETCAR_Service_Request_Sub_Line_Item__c.Service_Request_Line_Item__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

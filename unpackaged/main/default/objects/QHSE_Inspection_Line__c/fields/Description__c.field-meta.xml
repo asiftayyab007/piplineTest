@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description__c</fullName>
+    <externalId>false</externalId>
+    <label>Description/وصف الملاحظة</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Requirement__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Damage to the internal structure of the bus</fullName>
+                <default>false</default>
+                <label>تلف في الهيكل الداخلي للحافلة</label>
+            </value>
+            <value>
+                <fullName>Damage to the bus&#39;s exterior</fullName>
+                <default>false</default>
+                <label>Damage to the bus&#39;s exterior</label>
+            </value>
+            <value>
+                <fullName>Damage to window tinting (hidden)</fullName>
+                <default>false</default>
+                <label>Damage to window tinting (hidden)</label>
+            </value>
+            <value>
+                <fullName>Damage to the windshield wipers</fullName>
+                <default>false</default>
+                <label>Damage to the windshield wipers</label>
+            </value>
+            <value>
+                <fullName>There is no rearview mirror on the bus</fullName>
+                <default>false</default>
+                <label>There is no rearview mirror on the bus</label>
+            </value>
+            <value>
+                <fullName>Damage and malfunction of the passenger door</fullName>
+                <default>false</default>
+                <label>Damage and malfunction of the passenger door</label>
+            </value>
+            <value>
+                <fullName>There are uncovered electrical connections</fullName>
+                <default>false</default>
+                <label>There are uncovered electrical connections</label>
+            </value>
+            <value>
+                <fullName>Failure to remove old warning lights</fullName>
+                <default>false</default>
+                <label>Failure to remove old warning lights</label>
+            </value>
+            <value>
+                <fullName>The bus plate is not clear</fullName>
+                <default>false</default>
+                <label>The bus plate is not clear</label>
+            </value>
+            <value>
+                <fullName>Damage to the bus free plate base</fullName>
+                <default>false</default>
+                <label>Damage to the bus free plate base</label>
+            </value>
+            <value>
+                <fullName>Fracture of the lateral femur</fullName>
+                <default>false</default>
+                <label>Fracture of the lateral femur</label>
+            </value>
+            <value>
+                <fullName>Do not install a trash can</fullName>
+                <default>false</default>
+                <label>Do not install a trash can</label>
+            </value>
+            <value>
+                <fullName>Lack of window opening handles</fullName>
+                <default>false</default>
+                <label>Lack of window opening handles</label>
+            </value>
+            <value>
+                <fullName>There is no barrier in front of the transfer seats</fullName>
+                <default>false</default>
+                <label>There is no barrier in front of the transfer seats</label>
+            </value>
+            <value>
+                <fullName>The presence of writing and drawings on the internal structure of the bus</fullName>
+                <default>false</default>
+                <label>The presence of writing and drawings on the internal structure of the bus</label>
+            </value>
+            <value>
+                <fullName>The &quot;stop&quot; lever does not work</fullName>
+                <default>false</default>
+                <label>The &quot;stop&quot; lever does not work</label>
+            </value>
+            <value>
+                <fullName>There are no shelves for students&#39; bags</fullName>
+                <default>false</default>
+                <label>There are no shelves for students&#39; bags</label>
+            </value>
+            <value>
+                <fullName>Broken bus glass</fullName>
+                <default>false</default>
+                <label>Broken bus glass</label>
+            </value>
+            <value>
+                <fullName>There is rust and cracks on the exterior of the bus</fullName>
+                <default>false</default>
+                <label>There is rust and cracks on the exterior of the bus</label>
+            </value>
+            <value>
+                <fullName>Presence following an accident (bus exterior structure)</fullName>
+                <default>false</default>
+                <label>Presence following an accident (bus exterior structure)</label>
+            </value>
+            <value>
+                <fullName>The seat belt is damaged and not working properly</fullName>
+                <default>false</default>
+                <label>The seat belt is damaged and not working properly</label>
+            </value>
+            <value>
+                <fullName>Damage to the safety packages and the presence of sharp parts as a result of the protection cover being shattered or broken</fullName>
+                <default>false</default>
+                <label>Damage to the safety packages and the presence of sharp parts as a result of the protection cover being shattered or broken</label>
+            </value>
+            <value>
+                <fullName>The presence of sharp parts in the internal structure of the bus</fullName>
+                <default>false</default>
+                <label>The presence of sharp parts in the internal structure of the bus</label>
+            </value>
+            <value>
+                <fullName>Damage to the stairs&#39; anti-slip</fullName>
+                <default>false</default>
+                <label>Damage to the stairs&#39; anti-slip</label>
+            </value>
+            <value>
+                <fullName>The seat belt is two-point and contravenes legislative requirements</fullName>
+                <default>false</default>
+                <label>The seat belt is two-point and contravenes legislative requirements</label>
+            </value>
+            <value>
+                <fullName>The bus internal number (B00) on the bus body is not clear</fullName>
+                <default>false</default>
+                <label>The bus internal number (B00) on the bus body is not clear</label>
+            </value>
+            <value>
+                <fullName>The absence of the bus internal number (B00) on the bus body</fullName>
+                <default>false</default>
+                <label>The absence of the bus internal number (B00) on the bus body</label>
+            </value>
+            <value>
+                <fullName>The reference number (DOT) on the bus body is not clear</fullName>
+                <default>false</default>
+                <label>The reference number (DOT) on the bus body is not clear</label>
+            </value>
+            <value>
+                <fullName>Lack of a bus reference number (DOT) according to the legislation of the Integrated Transport Center</fullName>
+                <default>false</default>
+                <label>Lack of a bus reference number (DOT) according to the legislation of the Integrated Transport Center</label>
+            </value>
+            <value>
+                <fullName>Damage to the bus&#39;s exterior stickers</fullName>
+                <default>false</default>
+                <label>Damage to the bus&#39;s exterior stickers</label>
+            </value>
+            <value>
+                <fullName>Cover the bus stickers with police radars</fullName>
+                <default>false</default>
+                <label>Cover the bus stickers with police radars</label>
+            </value>
+            <value>
+                <fullName>Damage to the external phosphorescent tape of the bus</fullName>
+                <default>false</default>
+                <label>Damage to the external phosphorescent tape of the bus</label>
+            </value>
+            <value>
+                <fullName>The presence of a “school bus” sticker on the windshield affects the driver’s field of vision</fullName>
+                <default>false</default>
+                <label>The presence of a “school bus” sticker on the windshield affects the driver’s field of vision</label>
+            </value>
+            <value>
+                <fullName>Damage to the internal phosphorescent tape of the bus</fullName>
+                <default>false</default>
+                <label>Damage to the internal phosphorescent tape of the bus</label>
+            </value>
+            <value>
+                <fullName>Brake damage/failure</fullName>
+                <default>false</default>
+                <label>Brake damage/failure</label>
+            </value>
+            <value>
+                <fullName>There is a transmission malfunction</fullName>
+                <default>false</default>
+                <label>There is a transmission malfunction</label>
+            </value>
+            <value>
+                <fullName>The moving step for boarding the bus does not work as expected</fullName>
+                <default>false</default>
+                <label>The moving step for boarding the bus does not work as expected</label>
+            </value>
+            <value>
+                <fullName>There is damage to the tires</fullName>
+                <default>false</default>
+                <label>There is damage to the tires</label>
+            </value>
+            <value>
+                <fullName>Heavy smoke coming out of the bus exhaust</fullName>
+                <default>false</default>
+                <label>Heavy smoke coming out of the bus exhaust</label>
+            </value>
+            <value>
+                <fullName>Presence of transmission oil/engine oil spills</fullName>
+                <default>false</default>
+                <label>Presence of transmission oil/engine oil spills</label>
+            </value>
+            <value>
+                <fullName>There is a malfunction in the bus engine</fullName>
+                <default>false</default>
+                <label>There is a malfunction in the bus engine</label>
+            </value>
+            <value>
+                <fullName>The camera screen is not working</fullName>
+                <default>false</default>
+                <label>The camera screen is not working</label>
+            </value>
+            <value>
+                <fullName>Passenger door sensor malfunction</fullName>
+                <default>false</default>
+                <label>Passenger door sensor malfunction</label>
+            </value>
+            <value>
+                <fullName>Motion sensor and alarm malfunction</fullName>
+                <default>false</default>
+                <label>Motion sensor and alarm malfunction</label>
+            </value>
+            <value>
+                <fullName>Tamper motion sensor and alarm</fullName>
+                <default>false</default>
+                <label>Tamper motion sensor and alarm</label>
+            </value>
+            <value>
+                <fullName>Lack of motion sensor and alarm system “First cycle + kindergarten”</fullName>
+                <default>false</default>
+                <label>Lack of motion sensor and alarm system “First cycle + kindergarten”</label>
+            </value>
+            <value>
+                <fullName>Tampering with audio alarm</fullName>
+                <default>false</default>
+                <label>Tampering with audio alarm</label>
+            </value>
+            <value>
+                <fullName>The bus&#39;s front electronic panel malfunctions</fullName>
+                <default>false</default>
+                <label>The bus&#39;s front electronic panel malfunctions</label>
+            </value>
+            <value>
+                <fullName>Reverse alarm malfunctioned</fullName>
+                <default>false</default>
+                <label>Reverse alarm malfunctioned</label>
+            </value>
+            <value>
+                <fullName>The reversing camera is not working</fullName>
+                <default>false</default>
+                <label>The reversing camera is not working</label>
+            </value>
+            <value>
+                <fullName>Damage to the bus&#39;s external camera</fullName>
+                <default>false</default>
+                <label>Damage to the bus&#39;s external camera</label>
+            </value>
+            <value>
+                <fullName>Damage to the internal bus camera</fullName>
+                <default>false</default>
+                <label>Damage to the internal bus camera</label>
+            </value>
+            <value>
+                <fullName>There are no recordings in MDVR</fullName>
+                <default>false</default>
+                <label>There are no recordings in MDVR</label>
+            </value>
+            <value>
+                <fullName>Defect in camera systems</fullName>
+                <default>false</default>
+                <label>Defect in camera systems</label>
+            </value>
+            <value>
+                <fullName>There is a break in the interior lighting of the bus</fullName>
+                <default>false</default>
+                <label>There is a break in the interior lighting of the bus</label>
+            </value>
+            <value>
+                <fullName>Broken bus taillights</fullName>
+                <default>false</default>
+                <label>Broken bus taillights</label>
+            </value>
+            <value>
+                <fullName>Broken bus headlights</fullName>
+                <default>false</default>
+                <label>Broken bus headlights</label>
+            </value>
+            <value>
+                <fullName>Damage/broken bus warning signals</fullName>
+                <default>false</default>
+                <label>Damage/broken bus warning signals</label>
+            </value>
+            <value>
+                <fullName>The inside of the bus is not clean</fullName>
+                <default>false</default>
+                <label>The inside of the bus is not clean</label>
+            </value>
+            <value>
+                <fullName>The outside of the bus is not clean</fullName>
+                <default>false</default>
+                <label>The outside of the bus is not clean</label>
+            </value>
+            <value>
+                <fullName>The presence of (writing/drawings) on the bus seats</fullName>
+                <default>false</default>
+                <label>The presence of (writing/drawings) on the bus seats</label>
+            </value>
+            <value>
+                <fullName>Bus chairs damaged and broken</fullName>
+                <default>false</default>
+                <label>Bus chairs damaged and broken</label>
+            </value>
+            <value>
+                <fullName>Torn bus seats</fullName>
+                <default>false</default>
+                <label>Torn bus seats</label>
+            </value>
+            <value>
+                <fullName>Not installing a first aid box</fullName>
+                <default>false</default>
+                <label>Not installing a first aid box</label>
+            </value>
+            <value>
+                <fullName>There is a shortage in the content of the first aid box</fullName>
+                <default>false</default>
+                <label>There is a shortage in the content of the first aid box</label>
+            </value>
+            <value>
+                <fullName>Lack of first aid box</fullName>
+                <default>false</default>
+                <label>Lack of first aid box</label>
+            </value>
+            <value>
+                <fullName>Not installing fire extinguishers</fullName>
+                <default>false</default>
+                <label>Not installing fire extinguishers</label>
+            </value>
+            <value>
+                <fullName>Do not remove the old fire extinguisher base</fullName>
+                <default>false</default>
+                <label>Do not remove the old fire extinguisher base</label>
+            </value>
+            <value>
+                <fullName>There are no fire extinguishers on the bus</fullName>
+                <default>false</default>
+                <label>There are no fire extinguishers on the bus</label>
+            </value>
+            <value>
+                <fullName>Fire extinguisher inspection completed</fullName>
+                <default>false</default>
+                <label>Fire extinguisher inspection completed</label>
+            </value>
+            <value>
+                <fullName>Invalid fire extinguisher</fullName>
+                <default>false</default>
+                <label>Invalid fire extinguisher</label>
+            </value>
+            <value>
+                <fullName>Lack of safety hammers</fullName>
+                <default>false</default>
+                <label>Lack of safety hammers</label>
+            </value>
+            <value>
+                <fullName>Shortage of safety hammers</fullName>
+                <default>false</default>
+                <label>Shortage of safety hammers</label>
+            </value>
+            <value>
+                <fullName>There is no evidence of inspection of emergency doors</fullName>
+                <default>false</default>
+                <label>There is no evidence of inspection of emergency doors</label>
+            </value>
+            <value>
+                <fullName>Emergency door inspection has expired</fullName>
+                <default>false</default>
+                <label>Emergency door inspection has expired</label>
+            </value>
+            <value>
+                <fullName>The audio alert when the emergency door is opened does not work</fullName>
+                <default>false</default>
+                <label>The audio alert when the emergency door is opened does not work</label>
+            </value>
+            <value>
+                <fullName>There is no evidence of checking the bus’s self-extinguishing system</fullName>
+                <default>false</default>
+                <label>There is no evidence of checking the bus’s self-extinguishing system</label>
+            </value>
+            <value>
+                <fullName>The bus engine fire extinguishing system malfunctions</fullName>
+                <default>false</default>
+                <label>The bus engine fire extinguishing system malfunctions</label>
+            </value>
+            <value>
+                <fullName>Expiration of the permit to practice the profession</fullName>
+                <default>false</default>
+                <label>Expiration of the permit to practice the profession</label>
+            </value>
+            <value>
+                <fullName>Lack of proof of obtaining a permit to practice the profession</fullName>
+                <default>false</default>
+                <label>Lack of proof of obtaining a permit to practice the profession</label>
+            </value>
+            <value>
+                <fullName>Expiration of ownership of the bus</fullName>
+                <default>false</default>
+                <label>Expiration of ownership of the bus</label>
+            </value>
+            <value>
+                <fullName>The driver&#39;s driving license has expired</fullName>
+                <default>false</default>
+                <label>The driver&#39;s driving license has expired</label>
+            </value>
+            <value>
+                <fullName>Lack of a heavy bus driving license</fullName>
+                <default>false</default>
+                <label>Lack of a heavy bus driving license</label>
+            </value>
+            <value>
+                <fullName>The end of the examination of the seat height for people of determination</fullName>
+                <default>false</default>
+                <label>The end of the examination of the seat height for people of determination</label>
+            </value>
+            <value>
+                <fullName>There is no evidence that the lift seats for people of determination have been inspected</fullName>
+                <default>false</default>
+                <label>There is no evidence that the lift seats for people of determination have been inspected</label>
+            </value>
+            <value>
+                <fullName>There is no evidence of checking the seat belts of people of determination on the bus</fullName>
+                <default>false</default>
+                <label>There is no evidence of checking the seat belts of people of determination on the bus</label>
+            </value>
+            <value>
+                <fullName>Damage to the seat belts for people of determination</fullName>
+                <default>false</default>
+                <label>Damage to the seat belts for people of determination</label>
+            </value>
+            <value>
+                <fullName>Lack of seat belts for people of determination</fullName>
+                <default>false</default>
+                <label>Lack of seat belts for people of determination</label>
+            </value>
+            <value>
+                <fullName>Lack of knowledge and familiarity with using a hoist for people of determination (manual work in times of emergency)</fullName>
+                <default>false</default>
+                <label>Lack of knowledge and familiarity with using a hoist for people of determination (manual work in times of emergency)</label>
+            </value>
+            <value>
+                <fullName>Lack of daily bus inspection record</fullName>
+                <default>false</default>
+                <label>Lack of daily bus inspection record</label>
+            </value>
+            <value>
+                <fullName>Use of a daily bus inspection log that is not up to date</fullName>
+                <default>false</default>
+                <label>Use of a daily bus inspection log that is not up to date</label>
+            </value>
+            <value>
+                <fullName>Getting busy on the road using a tablet to prepare transfers.</fullName>
+                <default>false</default>
+                <label>Getting busy on the road using a tablet to prepare transfers.</label>
+            </value>
+            <value>
+                <fullName>Failure to record the arrival and disembarkation of transported persons</fullName>
+                <default>false</default>
+                <label>Failure to record the arrival and disembarkation of transported persons</label>
+            </value>
+            <value>
+                <fullName>Reverse the bus during the trip.</fullName>
+                <default>false</default>
+                <label>Reverse the bus during the trip.</label>
+            </value>
+            <value>
+                <fullName>Transporting an unauthorized person to board the bus.</fullName>
+                <default>false</default>
+                <label>Transporting an unauthorized person to board the bus.</label>
+            </value>
+            <value>
+                <fullName>Installing a sign (the bus is empty) in the presence of transporters</fullName>
+                <default>false</default>
+                <label>Installing a sign (the bus is empty) in the presence of transporters</label>
+            </value>
+            <value>
+                <fullName>The bus runs in the opposite direction of the road.</fullName>
+                <default>false</default>
+                <label>The bus runs in the opposite direction of the road.</label>
+            </value>
+            <value>
+                <fullName>Boarding/disembarking passengers at unsafe points.</fullName>
+                <default>false</default>
+                <label>Boarding/disembarking passengers at unsafe points.</label>
+            </value>
+            <value>
+                <fullName>Picking up/dropping off transporters at a distance from his home.</fullName>
+                <default>false</default>
+                <label>Picking up/dropping off transporters at a distance from his home.</label>
+            </value>
+            <value>
+                <fullName>The driver&#39;s failure to put up a sign (the bus is empty) after the end of the trip</fullName>
+                <default>false</default>
+                <label>The driver&#39;s failure to put up a sign (the bus is empty) after the end of the trip</label>
+            </value>
+            <value>
+                <fullName>Opening the stop lever without shifters</fullName>
+                <default>false</default>
+                <label>Opening the stop lever without shifters</label>
+            </value>
+            <value>
+                <fullName>Check the bus when it reaches the resting point (the final stop of the bus).</fullName>
+                <default>false</default>
+                <label>Check the bus when it reaches the resting point (the final stop of the bus).</label>
+            </value>
+            <value>
+                <fullName>Failure to fasten the seat belt correctly</fullName>
+                <default>false</default>
+                <label>Failure to fasten the seat belt correctly</label>
+            </value>
+            <value>
+                <fullName>Using the school bus after official working hours</fullName>
+                <default>false</default>
+                <label>Using the school bus after official working hours</label>
+            </value>
+            <value>
+                <fullName>Using the school bus for personal purposes</fullName>
+                <default>false</default>
+                <label>Using the school bus for personal purposes</label>
+            </value>
+            <value>
+                <fullName>Using &quot;vultures&quot; or &quot;smoking&quot; on the bus.</fullName>
+                <default>false</default>
+                <label>Using &quot;vultures&quot; or &quot;smoking&quot; on the bus.</label>
+            </value>
+            <value>
+                <fullName>Getting distracted from the road using the phone</fullName>
+                <default>false</default>
+                <label>Getting distracted from the road using the phone</label>
+            </value>
+            <value>
+                <fullName>Being distracted by the road, drinking hot/cold drinks.</fullName>
+                <default>false</default>
+                <label>Being distracted by the road, drinking hot/cold drinks.</label>
+            </value>
+            <value>
+                <fullName>Allowing an unauthorized person to drive school buses</fullName>
+                <default>false</default>
+                <label>Allowing an unauthorized person to drive school buses</label>
+            </value>
+            <value>
+                <fullName>Busy on the phone while providing the service.</fullName>
+                <default>false</default>
+                <label>Busy on the phone while providing the service.</label>
+            </value>
+            <value>
+                <fullName>Not wearing a reflective vest.</fullName>
+                <default>false</default>
+                <label>Not wearing a reflective vest.</label>
+            </value>
+            <value>
+                <fullName>Failure to assist students in the process of getting up and down.</fullName>
+                <default>false</default>
+                <label>Failure to assist students in the process of getting up and down.</label>
+            </value>
+            <value>
+                <fullName>Failure to monitor the negative behaviors of transferees.</fullName>
+                <default>false</default>
+                <label>Failure to monitor the negative behaviors of transferees.</label>
+            </value>
+            <value>
+                <fullName>Failure to deliver students to parents or their representatives.</fullName>
+                <default>false</default>
+                <label>Failure to deliver students to parents or their representatives.</label>
+            </value>
+            <value>
+                <fullName>Failure to help transported people cross the road to take them from home to the bus and vice versa</fullName>
+                <default>false</default>
+                <label>Failure to help transported people cross the road to take them from home to the bus and vice versa</label>
+            </value>
+            <value>
+                <fullName>Sleeping while serving.</fullName>
+                <default>false</default>
+                <label>Sleeping while serving.</label>
+            </value>
+            <value>
+                <fullName>Dealing with transferees violently.</fullName>
+                <default>false</default>
+                <label>Dealing with transferees violently.</label>
+            </value>
+            <value>
+                <fullName>Throwing the bag of someone being transported from the bus.</fullName>
+                <default>false</default>
+                <label>Throwing the bag of someone being transported from the bus.</label>
+            </value>
+            <value>
+                <fullName>The presence of students’ bags and luggage in the bus aisle.</fullName>
+                <default>false</default>
+                <label>The presence of students’ bags and luggage in the bus aisle.</label>
+            </value>
+            <value>
+                <fullName>Check the bus randomly and inaccurately.</fullName>
+                <default>false</default>
+                <label>Check the bus randomly and inaccurately.</label>
+            </value>
+            <value>
+                <fullName>Do not check the bus before students board the bus.</fullName>
+                <default>false</default>
+                <label>Do not check the bus before students board the bus.</label>
+            </value>
+            <value>
+                <fullName>Do not check the bus after the students get off the bus.</fullName>
+                <default>false</default>
+                <label>Do not check the bus after the students get off the bus.</label>
+            </value>
+            <value>
+                <fullName>The presence of one of those transported on the bus after the transportation and safety supervisor gets off the bus.</fullName>
+                <default>false</default>
+                <label>The presence of one of those transported on the bus after the transportation and safety supervisor gets off the bus.</label>
+            </value>
+            <value>
+                <fullName>Make the bus plate clear.</fullName>
+                <default>false</default>
+                <label>Make the bus plate clear.</label>
+            </value>
+            <value>
+                <fullName>Allow students to use the tablet to prepare transfers</fullName>
+                <default>false</default>
+                <label>Allow students to use the tablet to prepare transfers</label>
+            </value>
+            <value>
+                <fullName>Allow the driver to use the tablet to prepare transfers</fullName>
+                <default>false</default>
+                <label>Allow the driver to use the tablet to prepare transfers</label>
+            </value>
+            <value>
+                <fullName>Failure to provide first aid when one of the transported is injured.</fullName>
+                <default>false</default>
+                <label>Failure to provide first aid when one of the transported is injured.</label>
+            </value>
+            <value>
+                <fullName>Failure to wear a seat belt during the flight.</fullName>
+                <default>false</default>
+                <label>Failure to wear a seat belt during the flight.</label>
+            </value>
+            <value>
+                <fullName>Ready to get off before the bus stops.</fullName>
+                <default>false</default>
+                <label>Ready to get off before the bus stops.</label>
+            </value>
+            <value>
+                <fullName>The use of materials that affect the safety of those transported on the bus.</fullName>
+                <default>false</default>
+                <label>The use of materials that affect the safety of those transported on the bus.</label>
+            </value>
+            <value>
+                <fullName>Students quarreling on the bus.</fullName>
+                <default>false</default>
+                <label>Students quarreling on the bus.</label>
+            </value>
+            <value>
+                <fullName>Failure to board the bus at the specified time during the trip</fullName>
+                <default>false</default>
+                <label>Failure to board the bus at the specified time during the trip</label>
+            </value>
+            <value>
+                <fullName>A student was injured on the bus.</fullName>
+                <default>false</default>
+                <label>A student was injured on the bus.</label>
+            </value>
+            <value>
+                <fullName>Lie on the seat during the flight.</fullName>
+                <default>false</default>
+                <label>Lie on the seat during the flight.</label>
+            </value>
+            <value>
+                <fullName>Not sitting properly on the seats, which affects the safety of the flight time</fullName>
+                <default>false</default>
+                <label>Not sitting properly on the seats, which affects the safety of the flight time</label>
+            </value>
+            <value>
+                <fullName>The bus driver was distracted while driving because a student approached the bus control buttons.</fullName>
+                <default>false</default>
+                <label>The bus driver was distracted while driving because a student approached the bus control buttons.</label>
+            </value>
+            <value>
+                <fullName>Tampering with the transmission while the bus is in motion</fullName>
+                <default>false</default>
+                <label>Tampering with the transmission while the bus is in motion</label>
+            </value>
+            <value>
+                <fullName>Stopping the bus and preventing the driver from providing the service.</fullName>
+                <default>false</default>
+                <label>Stopping the bus and preventing the driver from providing the service.</label>
+            </value>
+            <value>
+                <fullName>Assault on the bus driver.</fullName>
+                <default>false</default>
+                <label>Assault on the bus driver.</label>
+            </value>
+            <value>
+                <fullName>Assault on the transportation and safety supervisor.</fullName>
+                <default>false</default>
+                <label>Assault on the transportation and safety supervisor.</label>
+            </value>
+            <value>
+                <fullName>Sitting in unallocated places on the bus.</fullName>
+                <default>false</default>
+                <label>Sitting in unallocated places on the bus.</label>
+            </value>
+            <value>
+                <fullName>Violently assaulting others.</fullName>
+                <default>false</default>
+                <label>Violently assaulting others.</label>
+            </value>
+            <value>
+                <fullName>Failure to leave a safe distance from the bus.</fullName>
+                <default>false</default>
+                <label>Failure to leave a safe distance from the bus.</label>
+            </value>
+            <value>
+                <fullName>The student’s guardian or his representative board the bus</fullName>
+                <default>false</default>
+                <label>The student’s guardian or his representative board the bus</label>
+            </value>
+            <value>
+                <fullName>The student’s guardian or his representative boarding the bus and assaulting those being transported.</fullName>
+                <default>false</default>
+                <label>The student’s guardian or his representative boarding the bus and assaulting those being transported.</label>
+            </value>
+            <value>
+                <fullName>The number of passengers on the bus exceeds the number of seats</fullName>
+                <default>false</default>
+                <label>The number of passengers on the bus exceeds the number of seats</label>
+            </value>
+            <value>
+                <fullName>Flight time exceeding 60 minutes</fullName>
+                <default>false</default>
+                <label>Flight time exceeding 60 minutes</label>
+            </value>
+            <value>
+                <fullName>There is no evidence of field oversight</fullName>
+                <default>false</default>
+                <label>There is no evidence of field oversight</label>
+            </value>
+            <value>
+                <fullName>Providing transportation service without the presence of a transportation and safety supervisor on the bus.</fullName>
+                <default>false</default>
+                <label>Providing transportation service without the presence of a transportation and safety supervisor on the bus.</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>People of determination</controllingFieldValue>
+            <valueName>The end of the examination of the seat height for people of determination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People of determination</controllingFieldValue>
+            <valueName>There is no evidence that the lift seats for people of determination have been inspected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People of determination</controllingFieldValue>
+            <valueName>There is no evidence of checking the seat belts of people of determination on the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People of determination</controllingFieldValue>
+            <valueName>Damage to the seat belts for people of determination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People of determination</controllingFieldValue>
+            <valueName>Lack of seat belts for people of determination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>People of determination</controllingFieldValue>
+            <valueName>Lack of knowledge and familiarity with using a hoist for people of determination (manual work in times of emergency)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Lack of daily bus inspection record</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Use of a daily bus inspection log that is not up to date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Getting busy on the road using a tablet to prepare transfers.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Failure to record the arrival and disembarkation of transported persons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Reverse the bus during the trip.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Transporting an unauthorized person to board the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Installing a sign (the bus is empty) in the presence of transporters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>The bus runs in the opposite direction of the road.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Boarding/disembarking passengers at unsafe points.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Picking up/dropping off transporters at a distance from his home.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>The driver&#39;s failure to put up a sign (the bus is empty) after the end of the trip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Opening the stop lever without shifters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Check the bus when it reaches the resting point (the final stop of the bus).</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Failure to fasten the seat belt correctly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Using the school bus after official working hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Using the school bus for personal purposes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Using &quot;vultures&quot; or &quot;smoking&quot; on the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Getting distracted from the road using the phone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Being distracted by the road, drinking hot/cold drinks.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>School transportation driver</controllingFieldValue>
+            <valueName>Allowing an unauthorized person to drive school buses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Busy on the phone while providing the service.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Not wearing a reflective vest.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Failure to assist students in the process of getting up and down.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Failure to monitor the negative behaviors of transferees.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Failure to deliver students to parents or their representatives.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Failure to help transported people cross the road to take them from home to the bus and vice versa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Sleeping while serving.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Dealing with transferees violently.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Throwing the bag of someone being transported from the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>The presence of students’ bags and luggage in the bus aisle.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Check the bus randomly and inaccurately.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Do not check the bus before students board the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Do not check the bus after the students get off the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>The presence of one of those transported on the bus after the transportation and safety supervisor gets off the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Make the bus plate clear.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Allow students to use the tablet to prepare transfers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Allow the driver to use the tablet to prepare transfers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation and safety supervisor</controllingFieldValue>
+            <valueName>Failure to provide first aid when one of the transported is injured.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Failure to wear a seat belt during the flight.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Ready to get off before the bus stops.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>The use of materials that affect the safety of those transported on the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Students quarreling on the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Failure to board the bus at the specified time during the trip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>A student was injured on the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Lie on the seat during the flight.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Not sitting properly on the seats, which affects the safety of the flight time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>The bus driver was distracted while driving because a student approached the bus control buttons.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Tampering with the transmission while the bus is in motion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Stopping the bus and preventing the driver from providing the service.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Assault on the bus driver.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Assault on the transportation and safety supervisor.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Sitting in unallocated places on the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Behavior of transferees</controllingFieldValue>
+            <valueName>Violently assaulting others.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Observations on the behavior of the guardian or his representative</controllingFieldValue>
+            <valueName>Failure to leave a safe distance from the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Observations on the behavior of the guardian or his representative</controllingFieldValue>
+            <valueName>The student’s guardian or his representative board the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Observations on the behavior of the guardian or his representative</controllingFieldValue>
+            <valueName>The student’s guardian or his representative boarding the bus and assaulting those being transported.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operational-administrative</controllingFieldValue>
+            <valueName>The number of passengers on the bus exceeds the number of seats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operational-administrative</controllingFieldValue>
+            <valueName>Flight time exceeding 60 minutes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operational-administrative</controllingFieldValue>
+            <valueName>There is no evidence of field oversight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operational-administrative</controllingFieldValue>
+            <valueName>Providing transportation service without the presence of a transportation and safety supervisor on the bus.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Damage to the internal structure of the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Damage to the bus&#39;s exterior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Damage to window tinting (hidden)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Damage to the windshield wipers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>There is no rearview mirror on the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Damage and malfunction of the passenger door</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>There are uncovered electrical connections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Failure to remove old warning lights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>The bus plate is not clear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Damage to the bus free plate base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Fracture of the lateral femur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Do not install a trash can</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Lack of window opening handles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>There is no barrier in front of the transfer seats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>The presence of writing and drawings on the internal structure of the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>The &quot;stop&quot; lever does not work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>There are no shelves for students&#39; bags</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Broken bus glass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>There is rust and cracks on the exterior of the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus structure readiness</controllingFieldValue>
+            <valueName>Presence following an accident (bus exterior structure)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety and security of the transported</controllingFieldValue>
+            <valueName>The seat belt is damaged and not working properly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety and security of the transported</controllingFieldValue>
+            <valueName>Damage to the safety packages and the presence of sharp parts as a result of the protection cover being shattered or broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety and security of the transported</controllingFieldValue>
+            <valueName>The presence of sharp parts in the internal structure of the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety and security of the transported</controllingFieldValue>
+            <valueName>Damage to the stairs&#39; anti-slip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety and security of the transported</controllingFieldValue>
+            <valueName>The seat belt is two-point and contravenes legislative requirements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus stickers/identification numbers</controllingFieldValue>
+            <valueName>The bus internal number (B00) on the bus body is not clear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus stickers/identification numbers</controllingFieldValue>
+            <valueName>The absence of the bus internal number (B00) on the bus body</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus stickers/identification numbers</controllingFieldValue>
+            <valueName>The reference number (DOT) on the bus body is not clear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus stickers/identification numbers</controllingFieldValue>
+            <valueName>Lack of a bus reference number (DOT) according to the legislation of the Integrated Transport Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus stickers/identification numbers</controllingFieldValue>
+            <valueName>Damage to the bus&#39;s exterior stickers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus stickers/identification numbers</controllingFieldValue>
+            <valueName>Cover the bus stickers with police radars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus stickers/identification numbers</controllingFieldValue>
+            <valueName>Damage to the external phosphorescent tape of the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus stickers/identification numbers</controllingFieldValue>
+            <valueName>The presence of a “school bus” sticker on the windshield affects the driver’s field of vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus stickers/identification numbers</controllingFieldValue>
+            <valueName>Damage to the internal phosphorescent tape of the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus mechanical requirements</controllingFieldValue>
+            <valueName>Brake damage/failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus mechanical requirements</controllingFieldValue>
+            <valueName>There is a transmission malfunction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus mechanical requirements</controllingFieldValue>
+            <valueName>The moving step for boarding the bus does not work as expected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus mechanical requirements</controllingFieldValue>
+            <valueName>There is damage to the tires</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus mechanical requirements</controllingFieldValue>
+            <valueName>Heavy smoke coming out of the bus exhaust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus mechanical requirements</controllingFieldValue>
+            <valueName>Presence of transmission oil/engine oil spills</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus mechanical requirements</controllingFieldValue>
+            <valueName>There is a malfunction in the bus engine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>The camera screen is not working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>Passenger door sensor malfunction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>Motion sensor and alarm malfunction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>Tamper motion sensor and alarm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>Lack of motion sensor and alarm system “First cycle + kindergarten”</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>Tampering with audio alarm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>The bus&#39;s front electronic panel malfunctions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>Reverse alarm malfunctioned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>The reversing camera is not working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>Damage to the bus&#39;s external camera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>Damage to the internal bus camera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>There are no recordings in MDVR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alarm systems and electronic systems</controllingFieldValue>
+            <valueName>Defect in camera systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus lights and lights</controllingFieldValue>
+            <valueName>There is a break in the interior lighting of the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus lights and lights</controllingFieldValue>
+            <valueName>Broken bus taillights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus lights and lights</controllingFieldValue>
+            <valueName>Broken bus headlights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus lights and lights</controllingFieldValue>
+            <valueName>Damage/broken bus warning signals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus cleanliness and readiness</controllingFieldValue>
+            <valueName>The inside of the bus is not clean</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus cleanliness and readiness</controllingFieldValue>
+            <valueName>The outside of the bus is not clean</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus cleanliness and readiness</controllingFieldValue>
+            <valueName>The presence of (writing/drawings) on the bus seats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus cleanliness and readiness</controllingFieldValue>
+            <valueName>Bus chairs damaged and broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bus cleanliness and readiness</controllingFieldValue>
+            <valueName>Torn bus seats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>Not installing a first aid box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>There is a shortage in the content of the first aid box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>Lack of first aid box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>Not installing fire extinguishers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>Do not remove the old fire extinguisher base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>There are no fire extinguishers on the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>Fire extinguisher inspection completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>Invalid fire extinguisher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>Lack of safety hammers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>Shortage of safety hammers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>There is no evidence of inspection of emergency doors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>Emergency door inspection has expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>The audio alert when the emergency door is opened does not work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>There is no evidence of checking the bus’s self-extinguishing system</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Emergency and safety</controllingFieldValue>
+            <valueName>The bus engine fire extinguishing system malfunctions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Readiness of permits and licenses</controllingFieldValue>
+            <valueName>Expiration of the permit to practice the profession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Readiness of permits and licenses</controllingFieldValue>
+            <valueName>Lack of proof of obtaining a permit to practice the profession</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Readiness of permits and licenses</controllingFieldValue>
+            <valueName>Expiration of ownership of the bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Readiness of permits and licenses</controllingFieldValue>
+            <valueName>The driver&#39;s driving license has expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Readiness of permits and licenses</controllingFieldValue>
+            <valueName>Lack of a heavy bus driving license</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

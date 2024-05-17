@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETI_Inspection_Service_Appointments_All</fullName>
+    <columns>Name</columns>
+    <columns>Status</columns>
+    <columns>SchedStartTime</columns>
+    <columns>SchedEndTime</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>ServiceAppointment.Inspection_Service_Appointment,ServiceAppointment.ETI_nspection_Service_Appointment_Completed</value>
+    </filters>
+    <label>Inspection Service Appointments -All</label>
+    <sharedTo>
+        <group>ETI_Inspection_FSL_Admins</group>
+    </sharedTo>
+</ListView>

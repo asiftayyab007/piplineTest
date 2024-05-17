@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Sales_Agreement_Validation</fullName>
+    <active>false</active>
+    <description>for LeaseTransportManpower</description>
+    <errorConditionFormula>AND(ISCHANGED(StageName),Opportunity_Sales_Process__c = &#39;LeaseTransportManpower&#39;,
+IF(!(ISPICKVAL(StageName,&#39;Requirement Analysis&#39;)) &amp;&amp; ISPICKVAL (PRIORVALUE (StageName),&#39;Qualification&#39;),TRUE,
+IF(!(ISPICKVAL(StageName,&#39;Decision&#39;)) &amp;&amp; ISPICKVAL (PRIORVALUE (StageName),&#39;Requirement Analysis&#39;),TRUE,
+IF(!(ISPICKVAL(StageName,&#39;Pricing Request&#39;)) &amp;&amp; ISPICKVAL (PRIORVALUE (StageName),&#39;Decision&#39;),TRUE,
+IF(!(ISPICKVAL(StageName,&#39;Proposal&#39;)) &amp;&amp; ISPICKVAL (PRIORVALUE (StageName),&#39;Pricing Request&#39;),TRUE,
+IF(!(ISPICKVAL(StageName,&#39;Negotiation&#39;)) &amp;&amp; ISPICKVAL (PRIORVALUE (StageName),&#39;Proposal&#39;),TRUE,
+IF(!((ISPICKVAL(StageName,&#39;Legal Contract&#39;)) || (ISPICKVAL(StageName,&#39;Pricing Request&#39;))) &amp;&amp; ISPICKVAL (PRIORVALUE (StageName),&#39;Negotiation&#39;),TRUE,
+IF(!(ISPICKVAL(StageName,&#39;Sales Agreement&#39;)) &amp;&amp; ISPICKVAL (PRIORVALUE (StageName),&#39;Legal Contract&#39;),TRUE,
+IF(!((ISPICKVAL(StageName,&#39;Closed Won&#39;)) || (ISPICKVAL(StageName,&#39;Closed Lost&#39;))) &amp;&amp; ISPICKVAL (PRIORVALUE (StageName),&#39;Sales Agreement&#39;),TRUE,FALSE
+))))))))
+)</errorConditionFormula>
+    <errorMessage>Back and forth Stage change is not allowed in Opportunity</errorMessage>
+</ValidationRule>

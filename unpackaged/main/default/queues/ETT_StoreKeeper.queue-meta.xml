@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>StoreKeeper</name>
+    <queueMembers>
+        <roles>
+            <role>BC_Emirates_StoreKeeper_Centre_Tyre</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>ETT_Job_Card__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>ETT_Tools_Master__c</sobjectType>
+    </queueSobject>
+</Queue>

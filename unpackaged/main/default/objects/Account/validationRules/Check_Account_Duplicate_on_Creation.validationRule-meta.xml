@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Account_Duplicate_on_Creation</fullName>
+    <active>false</active>
+    <description>IsConvertedFromLead__c</description>
+    <errorConditionFormula>IF( ( ISNEW() &amp;&amp; RecordType.Name == &#39;Organization&#39; &amp;&amp; (  $User.Id != &#39;0053z00000CWCwP&#39;) ) &amp;&amp; IsConvertedFromLead__c==false, true, false)</errorConditionFormula>
+    <errorDisplayField>ETST_Academic_Year_End_Date__c</errorDisplayField>
+    <errorMessage>The account can not be created without lead conversion.</errorMessage>
+</ValidationRule>

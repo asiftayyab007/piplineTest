@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurance_Company__c</fullName>
+    <externalId>false</externalId>
+    <label>Insurance Company’</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oman Insurance Company</fullName>
+                <default>false</default>
+                <label>Oman Insurance Company</label>
+            </value>
+            <value>
+                <fullName>Al Sagr National Insurance Co.</fullName>
+                <default>false</default>
+                <label>Al Sagr National Insurance Co.</label>
+            </value>
+            <value>
+                <fullName>United Fidelity Insurance Company</fullName>
+                <default>false</default>
+                <label>United Fidelity Insurance Company</label>
+            </value>
+            <value>
+                <fullName>Wathba Insurance</fullName>
+                <default>false</default>
+                <label>Wathba Insurance</label>
+            </value>
+            <value>
+                <fullName>Salama Insurance</fullName>
+                <default>false</default>
+                <label>Salama Insurance</label>
+            </value>
+            <value>
+                <fullName>Al Buhaira insurance</fullName>
+                <default>false</default>
+                <label>Al Buhaira insurance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

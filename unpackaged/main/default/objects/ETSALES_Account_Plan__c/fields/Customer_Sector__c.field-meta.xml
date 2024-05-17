@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Sector__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Sector</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MRO</fullName>
+                <default>false</default>
+                <label>MRO</label>
+            </value>
+            <value>
+                <fullName>Transport and Lease</fullName>
+                <default>false</default>
+                <label>Transport and Lease</label>
+            </value>
+            <value>
+                <fullName>School Transportation (Private and Government)</fullName>
+                <default>false</default>
+                <label>School Transportation (Private and Government)</label>
+            </value>
+            <value>
+                <fullName>B2C/Managed for Cash</fullName>
+                <default>false</default>
+                <label>B2C/Managed for Cash</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

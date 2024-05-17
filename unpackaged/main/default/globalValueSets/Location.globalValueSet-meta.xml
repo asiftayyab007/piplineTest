@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Abu Dhabi</fullName>
+        <default>false</default>
+        <label>Abu Dhabi</label>
+    </customValue>
+    <customValue>
+        <fullName>Ajman</fullName>
+        <default>false</default>
+        <label>Ajman</label>
+    </customValue>
+    <customValue>
+        <fullName>Dubai</fullName>
+        <default>false</default>
+        <label>Dubai</label>
+    </customValue>
+    <customValue>
+        <fullName>Fujairah</fullName>
+        <default>false</default>
+        <label>Fujairah</label>
+    </customValue>
+    <customValue>
+        <fullName>Ras Al Khaimah</fullName>
+        <default>false</default>
+        <label>Ras Al Khaimah</label>
+    </customValue>
+    <customValue>
+        <fullName>Sharjah</fullName>
+        <default>false</default>
+        <label>Sharjah</label>
+    </customValue>
+    <customValue>
+        <fullName>Umm Al Quwain</fullName>
+        <default>false</default>
+        <label>Umm Al Quwain</label>
+    </customValue>
+    <customValue>
+        <fullName>Emirates Moto Al Quoz</fullName>
+        <default>false</default>
+        <label>Emirates Moto Al Quoz</label>
+    </customValue>
+    <customValue>
+        <fullName>Emirates Moto Profix – Sharjah</fullName>
+        <default>false</default>
+        <label>Emirates Moto Profix – Sharjah</label>
+    </customValue>
+    <customValue>
+        <fullName>Emirates Moto Profix – Al Quoz</fullName>
+        <default>false</default>
+        <label>Emirates Moto Profix – Al Quoz</label>
+    </customValue>
+    <customValue>
+        <fullName>Emirates Moto Profix – RAK</fullName>
+        <default>false</default>
+        <label>Emirates Moto Profix – RAK</label>
+    </customValue>
+    <customValue>
+        <fullName>الشارقة</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>الشارقة</label>
+    </customValue>
+    <customValue>
+        <fullName>Preferred Location</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Preferred Location</label>
+    </customValue>
+    <customValue>
+        <fullName>أم القيوين</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>أم القيوين</label>
+    </customValue>
+    <masterLabel>Location</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

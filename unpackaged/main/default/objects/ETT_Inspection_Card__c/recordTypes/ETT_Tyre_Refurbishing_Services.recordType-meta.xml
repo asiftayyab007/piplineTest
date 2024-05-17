@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Tyre_Refurbishing_Services</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>ETT_Inspection_Card</compactLayoutAssignment>
+    <label>Tyre - Refurbishing Services</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Submitted</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Priority__c</picklist>
+        <values>
+            <fullName>1st Priority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2nd Priority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Priority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Status__c</picklist>
+        <values>
+            <fullName>Accept</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accepted%2FNo Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Inspected</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Scrap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Back</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Tyre_Life__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

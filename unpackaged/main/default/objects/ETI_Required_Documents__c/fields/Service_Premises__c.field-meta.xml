@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Premises__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Premises</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Visit ET Premises</fullName>
+                <default>false</default>
+                <label>Visit ET Premises</label>
+            </value>
+            <value>
+                <fullName>Customer Premises</fullName>
+                <default>false</default>
+                <label>Customer Premises</label>
+            </value>
+            <value>
+                <fullName>Ocean/Island</fullName>
+                <default>false</default>
+                <label>Ocean/Island</label>
+            </value>
+            <value>
+                <fullName>Home/Office Premise</fullName>
+                <default>false</default>
+                <label>Home/Office Premise</label>
+            </value>
+            <value>
+                <fullName>Customer Premises-B2B</fullName>
+                <default>false</default>
+                <label>Customer Premises-B2B</label>
+            </value>
+            <value>
+                <fullName>Home/Office Premise-B2B</fullName>
+                <default>false</default>
+                <label>Home/Office Premise-B2B</label>
+            </value>
+            <value>
+                <fullName>Ocean/Island-B2B</fullName>
+                <default>false</default>
+                <label>Ocean/Island-B2B</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

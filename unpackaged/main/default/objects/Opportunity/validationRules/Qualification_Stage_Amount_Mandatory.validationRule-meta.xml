@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualification_Stage_Amount_Mandatory</fullName>
+    <active>false</active>
+    <description>Amount (Previous Contract) should be mandatory in Qualification stage</description>
+    <errorConditionFormula>AND(
+OR(
+$RecordType.Name = &quot;Leasing&quot;,
+$RecordType.Name = &quot;Manpower&quot;,
+$RecordType.Name = &quot;Transportation&quot;,
+$RecordType.Name = &quot;Logistics&quot;,
+$RecordType.Name = &quot;Rental -B2B&quot;,
+$RecordType.Name = &quot;Maintainance&quot;,
+$RecordType.Name = &quot;Chauffeur and Limousine -B2B&quot;
+),
+
+ISPICKVAL( StageName , &#39;Requirement Analysis&#39;),
+ISBLANK(  Amount_Previous_Contract__c  )
+)</errorConditionFormula>
+    <errorDisplayField>Amount_Previous_Contract__c</errorDisplayField>
+    <errorMessage>Complete this field</errorMessage>
+</ValidationRule>

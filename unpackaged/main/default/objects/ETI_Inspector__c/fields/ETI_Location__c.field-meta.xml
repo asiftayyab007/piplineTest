@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETI_Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Al Ain Inspection Centre</fullName>
+                <default>false</default>
+                <label>Al Ain Inspection Centre</label>
+            </value>
+            <value>
+                <fullName>Al Faya Inspection Centre</fullName>
+                <default>false</default>
+                <label>Al Faya Inspection Centre</label>
+            </value>
+            <value>
+                <fullName>Al Hayer Inspection Centre</fullName>
+                <default>false</default>
+                <label>Al Hayer Inspection Centre</label>
+            </value>
+            <value>
+                <fullName>Al Jaber Inspection Centre</fullName>
+                <default>false</default>
+                <label>Al Jaber Inspection Centre</label>
+            </value>
+            <value>
+                <fullName>Al Quaa Inspection Centre</fullName>
+                <default>false</default>
+                <label>Al Quaa Inspection Centre</label>
+            </value>
+            <value>
+                <fullName>Al Saad Inspection Centre</fullName>
+                <default>false</default>
+                <label>Al Saad Inspection Centre</label>
+            </value>
+            <value>
+                <fullName>Dubai Municipality Inspection Center</fullName>
+                <default>false</default>
+                <label>Dubai Municipality Inspection Center</label>
+            </value>
+            <value>
+                <fullName>Dubai(M) Inspection Center</fullName>
+                <default>false</default>
+                <label>Dubai(M) Inspection Center</label>
+            </value>
+            <value>
+                <fullName>Dubai(M) Inspection Center-Rta(Awir)</fullName>
+                <default>false</default>
+                <label>Dubai(M) Inspection Center-Rta(Awir)</label>
+            </value>
+            <value>
+                <fullName>Dubai(M) Inspection Center-Rta(Jebel Ali)</fullName>
+                <default>false</default>
+                <label>Dubai(M) Inspection Center-Rta(Jebel Ali)</label>
+            </value>
+            <value>
+                <fullName>Dubai(M) Inspection Center-Rta(Khawneej)</fullName>
+                <default>false</default>
+                <label>Dubai(M) Inspection Center-Rta(Khawneej)</label>
+            </value>
+            <value>
+                <fullName>Dubai(M) Inspection Center-Rta(Qusais)</fullName>
+                <default>false</default>
+                <label>Dubai(M) Inspection Center-Rta(Qusais)</label>
+            </value>
+            <value>
+                <fullName>Dubai(M) Inspection Center-Rta(Ruwaiyya)</fullName>
+                <default>false</default>
+                <label>Dubai(M) Inspection Center-Rta(Ruwaiyya)</label>
+            </value>
+            <value>
+                <fullName>Fujairah Inspection Center</fullName>
+                <default>false</default>
+                <label>Fujairah Inspection Center</label>
+            </value>
+            <value>
+                <fullName>Ghayathi Inspection Centre</fullName>
+                <default>false</default>
+                <label>Ghayathi Inspection Centre</label>
+            </value>
+            <value>
+                <fullName>Madeenat Zayed Inspection Centre</fullName>
+                <default>false</default>
+                <label>Madeenat Zayed Inspection Centre</label>
+            </value>
+            <value>
+                <fullName>Mussafah Inspection Centre</fullName>
+                <default>false</default>
+                <label>Mussafah Inspection Centre</label>
+            </value>
+            <value>
+                <fullName>Sharjah Spea Inspection Centre</fullName>
+                <default>false</default>
+                <label>Sharjah Spea Inspection Centre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETC_Limo_Vehicle</fullName>
+    <active>true</active>
+    <label>Limo Vehicle</label>
+    <picklistValues>
+        <picklist>ETCAR_Car_Segment__c</picklist>
+        <values>
+            <fullName>Luxury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETCAR_Car_Type__c</picklist>
+        <values>
+            <fullName>7 seater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 seater van</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sedan Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETC_Service_Type__c</picklist>
+        <values>
+            <fullName>Limo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

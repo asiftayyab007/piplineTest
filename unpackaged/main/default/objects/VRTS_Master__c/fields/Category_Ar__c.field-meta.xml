@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_Ar__c</fullName>
+    <externalId>false</externalId>
+    <label>Category Ar</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>صفارات الإنذار الداخلية</fullName>
+                <default>false</default>
+                <label>صفارات الإنذار الداخلية</label>
+            </value>
+            <value>
+                <fullName>جهاز مستشعر الحركة داخل الحافلة</fullName>
+                <default>false</default>
+                <label>جهاز مستشعر الحركة داخل الحافلة</label>
+            </value>
+            <value>
+                <fullName>زر تفقد الحافلة بعد انتهاء الرحلة</fullName>
+                <default>false</default>
+                <label>زر تفقد الحافلة بعد انتهاء الرحلة</label>
+            </value>
+            <value>
+                <fullName>زر الطوارئ</fullName>
+                <default>false</default>
+                <label>زر الطوارئ</label>
+            </value>
+            <value>
+                <fullName>جهاز قياس درجة الحرارة - الرطوبة</fullName>
+                <default>false</default>
+                <label>جهاز قياس درجة الحرارة - الرطوبة</label>
+            </value>
+            <value>
+                <fullName>الشاشة الرئيسية أمام السائق</fullName>
+                <default>false</default>
+                <label>الشاشة الرئيسية أمام السائق</label>
+            </value>
+            <value>
+                <fullName>الكاميرات الخارجية عدد(4)</fullName>
+                <default>false</default>
+                <label>الكاميرات الخارجية عدد(4)</label>
+            </value>
+            <value>
+                <fullName>(3) الكاميرات الداخلية عدد</fullName>
+                <default>false</default>
+                <label>(3) الكاميرات الداخلية عدد</label>
+            </value>
+            <value>
+                <fullName>جهاز التخزين الرئيسي</fullName>
+                <default>false</default>
+                <label>جهاز التخزين الرئيسي</label>
+            </value>
+            <value>
+                <fullName>جهاز مثبت سرعة الحافلة</fullName>
+                <default>false</default>
+                <label>جهاز مثبت سرعة الحافلة</label>
+            </value>
+            <value>
+                <fullName>ذراع التوقف</fullName>
+                <default>false</default>
+                <label>ذراع التوقف</label>
+            </value>
+            <value>
+                <fullName>اللوحة الالكترونية لخط السير</fullName>
+                <default>false</default>
+                <label>اللوحة الالكترونية لخط السير</label>
+            </value>
+            <value>
+                <fullName>طفايات الحريق عدد(2) 6KG</fullName>
+                <default>false</default>
+                <label>طفايات الحريق عدد(2) 6KG</label>
+            </value>
+            <value>
+                <fullName>مطرقة طوارئ لكسر زجاج مخرج الطوارئ</fullName>
+                <default>false</default>
+                <label>مطرقة طوارئ لكسر زجاج مخرج الطوارئ</label>
+            </value>
+            <value>
+                <fullName>حقيبة إسعافات أولية</fullName>
+                <default>false</default>
+                <label>حقيبة إسعافات أولية</label>
+            </value>
+            <value>
+                <fullName>نظام الاطفاء الذاتي لمحرك جميع الحافلات ما عدا حافلات</fullName>
+                <default>false</default>
+                <label>نظام الاطفاء الذاتي لمحرك جميع الحافلات ما عدا حافلات</label>
+            </value>
+            <value>
+                <fullName>أداة قطع الأحزمة في حالة الطوارئ</fullName>
+                <default>false</default>
+                <label>أداة قطع الأحزمة في حالة الطوارئ</label>
+            </value>
+            <value>
+                <fullName>نظام الاطفاء الذاتي لمحرك حافلات   (SUNWIN)</fullName>
+                <default>false</default>
+                <label>نظام الاطفاء الذاتي لمحرك حافلات   (SUNWIN)</label>
+            </value>
+            <value>
+                <fullName>نظام الاطفاء الذاتي لمحرك حافلات (Except SUNWIN)</fullName>
+                <default>false</default>
+                <label>نظام الاطفاء الذاتي لمحرك حافلات (Except SUNWIN)</label>
+            </value>
+            <value>
+                <fullName>اتصالات الكابلات</fullName>
+                <default>false</default>
+                <label>اتصالات الكابلات</label>
+            </value>
+            <value>
+                <fullName>الجهاز الثاني</fullName>
+                <default>false</default>
+                <label>الجهاز الثاني</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

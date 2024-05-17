@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Profile_Class__c</fullName>
+    <externalId>false</externalId>
+    <label>Profile Class</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ETSALES_Customer_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Default</fullName>
+                <default>false</default>
+                <label>Default</label>
+            </value>
+            <value>
+                <fullName>Federal Government</fullName>
+                <default>false</default>
+                <label>Federal Government</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+            <value>
+                <fullName>Ministries</fullName>
+                <default>false</default>
+                <label>Ministries</label>
+            </value>
+            <value>
+                <fullName>Private</fullName>
+                <default>false</default>
+                <label>Private</label>
+            </value>
+            <value>
+                <fullName>Semi Government</fullName>
+                <default>false</default>
+                <label>Semi Government</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Person</controllingFieldValue>
+            <valueName>Individual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Organization</controllingFieldValue>
+            <valueName>Federal Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Organization</controllingFieldValue>
+            <valueName>Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Organization</controllingFieldValue>
+            <valueName>Ministries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Organization</controllingFieldValue>
+            <valueName>Private</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Organization</controllingFieldValue>
+            <valueName>Semi Government</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

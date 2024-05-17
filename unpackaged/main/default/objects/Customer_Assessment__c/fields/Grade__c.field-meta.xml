@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grade__c</fullName>
+    <externalId>false</externalId>
+    <label>Grade</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Grade A</fullName>
+                <default>false</default>
+                <label>Grade A</label>
+            </value>
+            <value>
+                <fullName>Grade B</fullName>
+                <default>false</default>
+                <label>Grade B</label>
+            </value>
+            <value>
+                <fullName>Grade C</fullName>
+                <default>false</default>
+                <label>Grade C</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

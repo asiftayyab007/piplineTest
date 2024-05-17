@@ -1,0 +1,29 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable" access="global">
+
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    
+    
+    <aura:if isTrue="{!$Locale.language == 'ar'}">
+        <ltng:require styles="/resource/bootstrap4,/resource/myExternalArabicStyle,/resource/landingPageArabic" scripts='/resource/jquery4,/resource/bootstrapjs4,/resource/owl_carousel_min_js,/resource/owl_custome_js'  />
+        
+        <aura:set attribute="else">
+            <ltng:require styles="/resource/bootstrap4,/resource/myExternalStyle,/resource/landingPage" scripts='/resource/jquery4,/resource/bootstrapjs4,/resource/owl_carousel_min_js,/resource/owl_custome_js'  />
+            
+        </aura:set> 
+    </aura:if> 
+    
+    
+    <lightning:layout>
+        <lightning:layoutItem size="12" padding="around-small"  class="loginPageInput">
+            <ui:inputText value="" aura:id="username" placeholder="" keyup="{!c.onKeyUp}" class="" label="UserName" labelClass="assistiveText"/>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <lightning:layout>
+        <lightning:layoutItem size="12" padding="around-small" class="loginPageInput"> 
+            <ui:inputSecret value="" aura:id="password" placeholder="" keyup="{!c.onKeyUp}" class="" label="{!$Label.c.UserName}" labelClass="assistiveText"/>
+        </lightning:layoutItem>
+    </lightning:layout>
+    
+    
+</aura:component>

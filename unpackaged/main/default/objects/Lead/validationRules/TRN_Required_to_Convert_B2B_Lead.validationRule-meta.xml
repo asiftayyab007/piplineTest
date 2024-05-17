@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRN_Required_to_Convert_B2B_Lead</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF( ( ( RecordType.Name =&#39;Chauffeur and Limousine - B2B&#39; || RecordType.Name =&#39;Driving School - B2B&#39; ||  RecordType.Name =&#39;Inspection - B2B&#39; ||  RecordType.Name =&#39;RSA - B2B&#39; ||  RecordType.Name =&#39;Rental -B2B&#39; ) &amp;&amp; (ETSALES_TaxRegistrationNo__c =null || ETSALES_TaxRegistrationNo__c =&#39;&#39; ) &amp;&amp; IsConverted) , true, false)</errorConditionFormula>
+    <errorMessage>Please enter value for Tax Registration No to convert B2B leads.</errorMessage>
+</ValidationRule>

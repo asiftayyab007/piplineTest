@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_tyre_HOO_FM_Salesteam_field_is_blank</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(Head_of_Operation_Comments__c)</errorConditionFormula>
+    <errorMessage>Head of operation comment is mandatory while rejecting the case</errorMessage>
+</ValidationRule>

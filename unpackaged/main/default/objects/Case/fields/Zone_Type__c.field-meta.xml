@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zone_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Zone Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abu Dhabi Educational Zone</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Educational Zone</label>
+            </value>
+            <value>
+                <fullName>Abu Munzer Shabiyat - Tamm Center</fullName>
+                <default>false</default>
+                <label>Abu Munzer Shabiyat - Tamm Center</label>
+            </value>
+            <value>
+                <fullName>Adnoc – Adnoc</fullName>
+                <default>false</default>
+                <label>Adnoc – Adnoc</label>
+            </value>
+            <value>
+                <fullName>Al Ain Educational Zone</fullName>
+                <default>false</default>
+                <label>Al Ain Educational Zone</label>
+            </value>
+            <value>
+                <fullName>AL Ameraya - MERAGAB SCHOOL</fullName>
+                <default>false</default>
+                <label>AL Ameraya - MERAGAB SCHOOL</label>
+            </value>
+            <value>
+                <fullName>Al Ashghal - Power House</fullName>
+                <default>false</default>
+                <label>Al Ashghal - Power House</label>
+            </value>
+            <value>
+                <fullName>Al Awamer - Zayed Al khair School</fullName>
+                <default>false</default>
+                <label>Al Awamer - Zayed Al khair School</label>
+            </value>
+            <value>
+                <fullName>AL BAHYA</fullName>
+                <default>false</default>
+                <label>AL BAHYA</label>
+            </value>
+            <value>
+                <fullName>A - AL RAHBA POLICE STATION</fullName>
+                <default>false</default>
+                <label>A - AL RAHBA POLICE STATION</label>
+            </value>
+            <value>
+                <fullName>B - AL BAHYA CARFOOR</fullName>
+                <default>false</default>
+                <label>B - AL BAHYA CARFOOR</label>
+            </value>
+            <value>
+                <fullName>Al Bateen - Al Bateen</fullName>
+                <default>false</default>
+                <label>Al Bateen - Al Bateen</label>
+            </value>
+            <value>
+                <fullName>Al Dhafrah POWER HOUSE</fullName>
+                <default>false</default>
+                <label>Al Dhafrah POWER HOUSE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

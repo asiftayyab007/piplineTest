@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payable_amount_less_or_equal_tyre_fine</fullName>
+    <active>true</active>
+    <description>Payable amount should be less than or equal to tyre fine amount</description>
+    <errorConditionFormula>Payable__c  &gt;  Tyre_Fine_Amount__c</errorConditionFormula>
+    <errorMessage>Payable amount should be less than or equal to Tyre fine amount</errorMessage>
+</ValidationRule>

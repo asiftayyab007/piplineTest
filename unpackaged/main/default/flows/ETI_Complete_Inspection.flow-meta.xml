@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_pmetdec</targetReference>
+            </connector>
+            <label>check if all checks are Passed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_pmetdec</targetReference>
+            </connector>
+            <label>if any check failed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_1_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>100</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_1_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_1_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_3_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>300</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_3_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_3_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <description>Check conditions in inspection and complete the inspection</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion1__c = true &amp;&amp;
+[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion2__c = true &amp;&amp; [WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion3__c = true &amp;&amp;
+[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion4__c = true &amp;&amp; [WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion5__c = true &amp;&amp;
+[WorkOrder].ETI_3Pcs_Int_Ip_Camera_quetion1__c = true &amp;&amp; [WorkOrder].ETI_3Pcs_Int_Ip_Camera_quetion2__c = true &amp;&amp;
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion1__c = true &amp;&amp; [WorkOrder].ETI_MDVR_HDD_2TB_quetion2__c = true &amp;&amp; 
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion4__c = true &amp;&amp;
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion5__c = true &amp;&amp;
+[WorkOrder].ETI_bs_quetion1__c = true &amp;&amp; [WorkOrder].ETI_bs_quetion2__c = true &amp;&amp;
+[WorkOrder].ETI_bs_quetion3__c = true &amp;&amp; [WorkOrder].ETI_bs_quetion4__c = true &amp;&amp;
+[WorkOrder].ETI_bs_quetion5__c = true &amp;&amp; [WorkOrder].BS11_Camera_Tampering__c= true &amp;&amp; [WorkOrder].BS12_Storage_HDD_full_Video_loss__c= true &amp;&amp;
+[WorkOrder].RecordType.DeveloperName = &#39;Inspection_Work_Order&#39; &amp;&amp; text([WorkOrder].Status ) =&#39;Dispatched&#39; &amp;&amp; [WorkOrder].ETI_Inspection_Completed__c  = true &amp;&amp; [WorkOrder].MNVR_Serial_Number_is_Matched__c= true </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>{!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion1__c} = true &amp;&amp;
+{!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion2__c} = true &amp;&amp; {!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion3__c} = true &amp;&amp;
+{!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion4__c} = true &amp;&amp; {!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion5__c} = true &amp;&amp;
+{!myVariable_current.ETI_3Pcs_Int_Ip_Camera_quetion1__c} = true &amp;&amp; {!myVariable_current.ETI_3Pcs_Int_Ip_Camera_quetion2__c} = true &amp;&amp;
+{!myVariable_current.ETI_MDVR_HDD_2TB_quetion1__c} = true &amp;&amp; {!myVariable_current.ETI_MDVR_HDD_2TB_quetion2__c} = true &amp;&amp; 
+{!myVariable_current.ETI_MDVR_HDD_2TB_quetion4__c} = true &amp;&amp;
+{!myVariable_current.ETI_MDVR_HDD_2TB_quetion5__c} = true &amp;&amp;
+{!myVariable_current.ETI_bs_quetion1__c} = true &amp;&amp; {!myVariable_current.ETI_bs_quetion2__c} = true &amp;&amp;
+{!myVariable_current.ETI_bs_quetion3__c} = true &amp;&amp; {!myVariable_current.ETI_bs_quetion4__c} = true &amp;&amp;
+{!myVariable_current.ETI_bs_quetion5__c} = true &amp;&amp; {!myVariable_current.BS11_Camera_Tampering__c}= true &amp;&amp; {!myVariable_current.BS12_Storage_HDD_full_Video_loss__c}= true &amp;&amp;
+{!myVariable_current.RecordType.DeveloperName} = &#39;Inspection_Work_Order&#39; &amp;&amp; text({!myVariable_current.Status} ) =&#39;Dispatched&#39; &amp;&amp; {!myVariable_current.ETI_Inspection_Completed__c}  = true &amp;&amp; {!myVariable_current.MNVR_Serial_Number_is_Matched__c}= true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion1__c = true &amp;&amp;
+[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion2__c = true &amp;&amp; [WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion3__c = true &amp;&amp;
+[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion4__c = true &amp;&amp; [WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion5__c = true &amp;&amp;
+[WorkOrder].ETI_3Pcs_Int_Ip_Camera_quetion1__c = true &amp;&amp; [WorkOrder].ETI_3Pcs_Int_Ip_Camera_quetion2__c = true &amp;&amp;
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion1__c = true &amp;&amp; [WorkOrder].ETI_MDVR_HDD_2TB_quetion2__c = true &amp;&amp; 
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion4__c = true &amp;&amp;
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion5__c = true &amp;&amp;
+[WorkOrder].ETI_bs_quetion1__c = true &amp;&amp; [WorkOrder].ETI_bs_quetion2__c = true &amp;&amp;
+[WorkOrder].ETI_bs_quetion3__c = true &amp;&amp; [WorkOrder].ETI_bs_quetion4__c = true &amp;&amp;
+[WorkOrder].ETI_bs_quetion5__c = true &amp;&amp; [WorkOrder].BS11_Camera_Tampering__c= true &amp;&amp; [WorkOrder].BS12_Storage_HDD_full_Video_loss__c= true &amp;&amp;
+[WorkOrder].RecordType.DeveloperName = &#39;Inspection_Work_Order&#39; &amp;&amp; text([WorkOrder].Status ) =&#39;Dispatched&#39; &amp;&amp; [WorkOrder].ETI_Inspection_Completed__c  = true &amp;&amp; [WorkOrder].MNVR_Serial_Number_is_Matched__c= true </stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>{!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion1__c} = true &amp;&amp;
+{!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion2__c} = true &amp;&amp; {!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion3__c} = true &amp;&amp;
+{!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion4__c} = true &amp;&amp; {!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion5__c} = true &amp;&amp;
+{!myVariable_old.ETI_3Pcs_Int_Ip_Camera_quetion1__c} = true &amp;&amp; {!myVariable_old.ETI_3Pcs_Int_Ip_Camera_quetion2__c} = true &amp;&amp;
+{!myVariable_old.ETI_MDVR_HDD_2TB_quetion1__c} = true &amp;&amp; {!myVariable_old.ETI_MDVR_HDD_2TB_quetion2__c} = true &amp;&amp; 
+{!myVariable_old.ETI_MDVR_HDD_2TB_quetion4__c} = true &amp;&amp;
+{!myVariable_old.ETI_MDVR_HDD_2TB_quetion5__c} = true &amp;&amp;
+{!myVariable_old.ETI_bs_quetion1__c} = true &amp;&amp; {!myVariable_old.ETI_bs_quetion2__c} = true &amp;&amp;
+{!myVariable_old.ETI_bs_quetion3__c} = true &amp;&amp; {!myVariable_old.ETI_bs_quetion4__c} = true &amp;&amp;
+{!myVariable_old.ETI_bs_quetion5__c} = true &amp;&amp; {!myVariable_old.BS11_Camera_Tampering__c}= true &amp;&amp; {!myVariable_old.BS12_Storage_HDD_full_Video_loss__c}= true &amp;&amp;
+{!myVariable_old.RecordType.DeveloperName} = &#39;Inspection_Work_Order&#39; &amp;&amp; text({!myVariable_old.Status} ) =&#39;Dispatched&#39; &amp;&amp; {!myVariable_old.ETI_Inspection_Completed__c}  = true &amp;&amp; {!myVariable_old.MNVR_Serial_Number_is_Matched__c}= true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue> ([WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion1__c = false ||
+[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion2__c = false || [WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion3__c = false ||
+[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion4__c = false || [WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion5__c = false ||
+[WorkOrder].ETI_3Pcs_Int_Ip_Camera_quetion1__c = false || [WorkOrder].ETI_3Pcs_Int_Ip_Camera_quetion2__c = false ||
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion1__c = false || [WorkOrder].ETI_MDVR_HDD_2TB_quetion2__c = false || 
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion4__c = false ||
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion5__c = false ||
+[WorkOrder].ETI_bs_quetion1__c = false || [WorkOrder].ETI_bs_quetion2__c = false ||
+[WorkOrder].ETI_bs_quetion3__c = false || [WorkOrder].ETI_bs_quetion4__c = false ||
+[WorkOrder].ETI_bs_quetion5__c = false || [WorkOrder].MNVR_Serial_Number_is_Matched__c= false || [WorkOrder].BS11_Camera_Tampering__c= false ||[WorkOrder].BS12_Storage_HDD_full_Video_loss__c= false ) &amp;&amp;  
+[WorkOrder].RecordType.DeveloperName = &#39;Inspection_Work_Order&#39; &amp;&amp; text([WorkOrder].Status ) =&#39;Dispatched&#39; &amp;&amp; [WorkOrder].ETI_Inspection_Completed__c  = true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression> ({!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion1__c} = false ||
+{!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion2__c} = false || {!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion3__c} = false ||
+{!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion4__c} = false || {!myVariable_current.ETI_4Pcs_Ext_Ip_Camera_quetion5__c} = false ||
+{!myVariable_current.ETI_3Pcs_Int_Ip_Camera_quetion1__c} = false || {!myVariable_current.ETI_3Pcs_Int_Ip_Camera_quetion2__c} = false ||
+{!myVariable_current.ETI_MDVR_HDD_2TB_quetion1__c} = false || {!myVariable_current.ETI_MDVR_HDD_2TB_quetion2__c} = false || 
+{!myVariable_current.ETI_MDVR_HDD_2TB_quetion4__c} = false ||
+{!myVariable_current.ETI_MDVR_HDD_2TB_quetion5__c} = false ||
+{!myVariable_current.ETI_bs_quetion1__c} = false || {!myVariable_current.ETI_bs_quetion2__c} = false ||
+{!myVariable_current.ETI_bs_quetion3__c} = false || {!myVariable_current.ETI_bs_quetion4__c} = false ||
+{!myVariable_current.ETI_bs_quetion5__c} = false || {!myVariable_current.MNVR_Serial_Number_is_Matched__c}= false || {!myVariable_current.BS11_Camera_Tampering__c}= false ||{!myVariable_current.BS12_Storage_HDD_full_Video_loss__c}= false ) &amp;&amp;  
+{!myVariable_current.RecordType.DeveloperName} = &#39;Inspection_Work_Order&#39; &amp;&amp; text({!myVariable_current.Status} ) =&#39;Dispatched&#39; &amp;&amp; {!myVariable_current.ETI_Inspection_Completed__c}  = true</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue> ([WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion1__c = false ||
+[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion2__c = false || [WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion3__c = false ||
+[WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion4__c = false || [WorkOrder].ETI_4Pcs_Ext_Ip_Camera_quetion5__c = false ||
+[WorkOrder].ETI_3Pcs_Int_Ip_Camera_quetion1__c = false || [WorkOrder].ETI_3Pcs_Int_Ip_Camera_quetion2__c = false ||
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion1__c = false || [WorkOrder].ETI_MDVR_HDD_2TB_quetion2__c = false || 
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion4__c = false ||
+[WorkOrder].ETI_MDVR_HDD_2TB_quetion5__c = false ||
+[WorkOrder].ETI_bs_quetion1__c = false || [WorkOrder].ETI_bs_quetion2__c = false ||
+[WorkOrder].ETI_bs_quetion3__c = false || [WorkOrder].ETI_bs_quetion4__c = false ||
+[WorkOrder].ETI_bs_quetion5__c = false || [WorkOrder].MNVR_Serial_Number_is_Matched__c= false || [WorkOrder].BS11_Camera_Tampering__c= false ||[WorkOrder].BS12_Storage_HDD_full_Video_loss__c= false ) &amp;&amp;  
+[WorkOrder].RecordType.DeveloperName = &#39;Inspection_Work_Order&#39; &amp;&amp; text([WorkOrder].Status ) =&#39;Dispatched&#39; &amp;&amp; [WorkOrder].ETI_Inspection_Completed__c  = true</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression> ({!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion1__c} = false ||
+{!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion2__c} = false || {!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion3__c} = false ||
+{!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion4__c} = false || {!myVariable_old.ETI_4Pcs_Ext_Ip_Camera_quetion5__c} = false ||
+{!myVariable_old.ETI_3Pcs_Int_Ip_Camera_quetion1__c} = false || {!myVariable_old.ETI_3Pcs_Int_Ip_Camera_quetion2__c} = false ||
+{!myVariable_old.ETI_MDVR_HDD_2TB_quetion1__c} = false || {!myVariable_old.ETI_MDVR_HDD_2TB_quetion2__c} = false || 
+{!myVariable_old.ETI_MDVR_HDD_2TB_quetion4__c} = false ||
+{!myVariable_old.ETI_MDVR_HDD_2TB_quetion5__c} = false ||
+{!myVariable_old.ETI_bs_quetion1__c} = false || {!myVariable_old.ETI_bs_quetion2__c} = false ||
+{!myVariable_old.ETI_bs_quetion3__c} = false || {!myVariable_old.ETI_bs_quetion4__c} = false ||
+{!myVariable_old.ETI_bs_quetion5__c} = false || {!myVariable_old.MNVR_Serial_Number_is_Matched__c}= false || {!myVariable_old.BS11_Camera_Tampering__c}= false ||{!myVariable_old.BS12_Storage_HDD_full_Video_loss__c}= false ) &amp;&amp;  
+{!myVariable_old.RecordType.DeveloperName} = &#39;Inspection_Work_Order&#39; &amp;&amp; text({!myVariable_old.Status} ) =&#39;Dispatched&#39; &amp;&amp; {!myVariable_old.ETI_Inspection_Completed__c}  = true</expression>
+    </formulas>
+    <interviewLabel>ETI_Complete_Inspection-7_InterviewLabel</interviewLabel>
+    <label>ETI_Complete Inspection</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>WorkOrder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[WorkOrder].ServiceAppointments</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>update inspection Status on appointment</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_1_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>ParentRecordId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Inspection Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>ETI_Inspection_Status__c</field>
+            <value>
+                <stringValue>Pass</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Status</field>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>ServiceAppointment</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[WorkOrder]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_1_A2</name>
+        <label>inspection status in work order</label>
+        <locationX>100</locationX>
+        <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Inspection Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Inspection_Status__c</field>
+            <value>
+                <stringValue>Pass</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Status</field>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>WorkOrder</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[WorkOrder].ServiceAppointments</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>update status on Apppointment</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_3_A2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>ParentRecordId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Inspection Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>ETI_Inspection_Status__c</field>
+            <value>
+                <stringValue>Fail</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Status</field>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>ServiceAppointment</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[WorkOrder]</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_3_A2</name>
+        <label>update inspection status</label>
+        <locationX>300</locationX>
+        <locationY>300</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Inspection Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Inspection_Status__c</field>
+            <value>
+                <stringValue>Fail</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Status</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Status</field>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <object>WorkOrder</object>
+    </recordUpdates>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>WorkOrder</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>WorkOrder</objectType>
+    </variables>
+</Flow>

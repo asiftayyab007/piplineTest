@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zone_B_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>GL_Zone__c</field>
+        <operation>equals</operation>
+        <value>Zone B</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>Case.Accident_Emergency_ETDI,Case.Driver_Complaint_ETDI,Case.Financial_Services_ETDI,Case.Inquiry_and_Notices_ETDI,Case.Internal_Issues_ETDI,Case.Online_Services_ETDI,Case.Request_ETDI,Case.Service_Compliance_ETDI,Case.Service_Quality_ETDI,Case.Staff_Behavior_ETDI,Case.Traffic_Violation_ETDI</value>
+    </filters>
+    <label>Zone B Cases</label>
+    <sharedTo>
+        <role>ET_Zone_B_Quality_Officer</role>
+    </sharedTo>
+</ListView>

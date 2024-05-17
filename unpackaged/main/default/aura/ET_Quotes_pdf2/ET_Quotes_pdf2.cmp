@@ -1,0 +1,82 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="show" type="Boolean" default="False"/>
+    <aura:attribute name="NameStr" type="String"/> 
+    <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        }
+        .slds-modal__container{
+        max-width: 80rem !important;
+        width:80% !important;
+        
+        }
+    </aura:html>
+    
+    <!-- Show Popup -->
+    <aura:if isTrue="{!v.show}">
+        <div class="slds-box slds-box_small">
+            <div class="slds-modal__content slds-p-around_medium">
+                <div class="slds-form slds-form_stacked">
+                    <div class="slds-form-element">
+                        <lightning:input type="text" name="NameStr" label="Name" value="{!v.NameStr}"  onchange="{!c.handleChange}" placeholder="Enter Name "/>
+                    </div>
+                    {!v.NameStr}
+                </div>
+                
+                
+            </div>
+            
+            <footer class="slds-modal__footer">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_10-of-12 slds-text-align--left">
+                        
+                    </div>
+                    <div class="slds-col slds-size_2-of-12">
+                        <lightning:button variant="brand" label="Next" title="Brand action" onclick="{! c.handleClick }" />
+                    </div>
+                </div>
+                
+                
+            </footer>
+        </div>
+        
+    </aura:if>
+    
+    
+    <!--Pdf opened -->
+    
+    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate slds-align_absolute-center" style="position: relative;display: block;text-align: center;margin: 0.2rem;">Quote Preview</h2>   
+    <div class="slds-border_bottom slds-border_top">
+        <div class="slds-form-element__control outer-div" style="height:375;">
+            <div class="slds-form-element__control outer-div" style="height:375;">
+                <aura:if isTrue="{!v.disabled}">
+                    <lightning:spinner aura:id="Spinner" variant="brand" class="spinner2" />
+                </aura:if>
+                <div style="padding:10px;">
+                    <iframe src="{!'/apex/ET_Qoutes_NewPdf?Id=' + v.recordId }" width="100%" height="600px" frameBorder="0"/>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="slds-m-top_medium slds-float--right" style="position: absolute;display: block;text-align: right;width: 100%;background: #fff;margin-top: -6px;padding: 1rem;border-radius: 5px;">
+        <lightning:button variant="brand" 
+                          label="Save"
+                          title="Save"
+                          onclick="{!c.createQuoteDocHandler}" disabled="{!v.disabled}"/>
+        
+    </div>
+    
+    
+    
+    
+</aura:component>

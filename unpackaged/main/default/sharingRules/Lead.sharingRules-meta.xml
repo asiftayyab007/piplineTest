@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ET_Leads_Showroom_Dubai_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>ET_Leads Showroom Dubai Sharing Rule</description>
+        <label>ET_Leads Showroom Dubai Rule</label>
+        <sharedTo>
+            <group>ET_Leads_Showroom_Dubai</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>Good Prospect</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preferred_Location__c</field>
+            <operation>equals</operation>
+            <value>Dubai</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Automotive Dealership - Vehicle Purchase</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ET_Leads_Workshop_Dubai_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ET_Leads Workshop Dubai Rule</label>
+        <sharedTo>
+            <group>ET_Leads_Workshop_Dubai</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>Good Prospect</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Automotive Service Center &amp; Body Shop</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preferred_Location__c</field>
+            <operation>equals</operation>
+            <value>Dubai</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ET_Leads_Workshop_Sharjah_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>ET_Leads Workshop Sharjah Sharing Rule</description>
+        <label>ET_Leads Workshop Sharjah Rule</label>
+        <sharedTo>
+            <group>ET_Leads_Workshop_Sharjah</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>Good Prospect</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preferred_Location__c</field>
+            <operation>equals</operation>
+            <value>Sharjah</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Automotive Service Center &amp; Body Shop</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ET_Tyre_Lead_Accsess</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ET Tyre Lead Accsess</label>
+        <sharedTo>
+            <group>ETT_Lead_Accsess</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tyre Cash Individual,Tyre - Refurbishing Services,Tyre - Cash Supplier,Tyre - Credit/B2B Supplier</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>moto_VehInspection</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>moto_VehInspection</label>
+        <sharedTo>
+            <role>Vehicle_Workshop</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Automotive Service Center &amp; Body Shop</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>ET_Sales_HQ_Sharing_Rule</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>to share the record for READ ONLY Access</description>
+        <label>ET_Sales HQ Sharing Rule</label>
+        <sharedTo>
+            <group>ET_Read_Only_Group</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>ET_Record_Owner_Group</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

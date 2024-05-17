@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complain_Domain__c</fullName>
+    <externalId>false</externalId>
+    <label>Complain Domain</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service Delivery Duration And Time</fullName>
+                <default>false</default>
+                <label>Service Delivery Duration And Time</label>
+            </value>
+            <value>
+                <fullName>School Transport Drivers</fullName>
+                <default>false</default>
+                <label>School Transport Drivers</label>
+            </value>
+            <value>
+                <fullName>Bus Supervisors/Attendants</fullName>
+                <default>false</default>
+                <label>Bus Supervisors/Attendants</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Operation</fullName>
+                <default>false</default>
+                <label>Service Delivery Operation</label>
+            </value>
+            <value>
+                <fullName>Bus</fullName>
+                <default>false</default>
+                <label>Bus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

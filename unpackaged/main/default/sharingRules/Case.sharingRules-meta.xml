@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Activities_with_School_Transportation_Manager</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Activities with School Transportation Manager</label>
+        <sharedTo>
+            <role>ET_School_Transportation_Manager</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Status_Category__c</field>
+            <operation>equals</operation>
+            <value>Pending with School Transportation Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved by ET School Transportation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected by ET School Transportation</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Branch_Manager_Case_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Branch Manager Case Sharing Rule</label>
+        <sharedTo>
+            <role>ET_Branch_Manager</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Status_Category__c</field>
+            <operation>equals</operation>
+            <value>Pending with Branch Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved by ET Branch Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected by ET Branch Manager</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ET_School_Transportation_Manager</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ET - School Transportation Manager</label>
+        <sharedTo>
+            <role>ET_School_Transportation_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>Pending with ET - School Transportation Manager</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>First_Transport_Specialist_Case_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>First Transport Specialist Case Sharing Rule</label>
+        <sharedTo>
+            <role>ET_First_Transport_Specialist</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Status_Category__c</field>
+            <operation>equals</operation>
+            <value>Pending with First Transport Specialist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved by ET First Transport Specialist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected by ET First Transport Specialist</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Head_of_Safety_Unit_Case_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Head of Safety Unit Case Sharing Rule</label>
+        <sharedTo>
+            <role>ET_Head_of_Safety_Unit</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Status_Category__c</field>
+            <operation>equals</operation>
+            <value>Pending with Head of Safety Unit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved By Head of Safety Unit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected By Head of Safety Unit</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>MOE_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>MOE Sharing Rule</label>
+        <sharedTo>
+            <portalRole>MINISTRYOFEDUCATIONPartnerUser</portalRole>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Request for the Awareness Sessions,Requests for New Trips Activities and Events,Special Needs Services Transport or Nanny Request,&quot;Growth Requests for Vehicle,Nanny and Coordinator&quot;,Teachers Transportation Request</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Private_Main</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Private Main</label>
+        <sharedTo>
+            <group>MOEPrivate</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Request for the Awareness Sessions,Requests for New Trips Activities and Events,Special Needs Services Transport or Nanny Request,&quot;Growth Requests for Vehicle,Nanny and Coordinator&quot;,Teachers Transportation Request</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Routes_efficient_and_design_director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Routes efficient and design director</label>
+        <sharedTo>
+            <role>ET_Routes_Efficient_and_Design_Director</role>
+        </sharedTo>
+        <booleanFilter>1 OR  2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Status_Category__c</field>
+            <operation>equals</operation>
+            <value>Pending with Routes Efficient and Design Director</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved by ET Routes Efficient and Design Director</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected by ET Routes Efficient and Design Director</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Safety_and_Health_Specialist_case_sharing_rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Safety and Health Specialist case sharing rule</label>
+        <sharedTo>
+            <role>ET_Safety_and_Health_Specialist</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Status_Category__c</field>
+            <operation>equals</operation>
+            <value>Pending with Safety and Health Specialist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved by ET Safety and Health Specialist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected by ET Safety and Health Specialist</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Statistics_Coordinator_Case_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Statistics Coordinator Case Sharing Rule</label>
+        <sharedTo>
+            <role>ET_Statistics_Coordinator</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Status_Category__c</field>
+            <operation>equals</operation>
+            <value>Pending with Statistics Coordinator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved by Statistics Coordinator</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected by Statistics Coordinator</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Students_Safety_Specialist_Case_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Students Safety Specialist Case Sharing Rule</label>
+        <sharedTo>
+            <role>ET_Students_Safety_Specialist</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Status_Category__c</field>
+            <operation>equals</operation>
+            <value>Pending with Students Safety Specialist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved By Students Safety Specialist</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected By Students Safety Specialist</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>sharing_et_tyre_traffic_records</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>sharing et tyre traffic records</label>
+        <sharedTo>
+            <group>et_traffic_testing_public_grp</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ET Tyre - Traffic Fine</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

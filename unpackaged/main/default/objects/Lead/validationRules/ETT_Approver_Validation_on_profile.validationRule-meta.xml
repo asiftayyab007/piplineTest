@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Approver_Validation_on_profile</fullName>
+    <active>false</active>
+    <description>Only HOO or Factory Manager are the approvers / Rejectors to take the record further.</description>
+    <errorConditionFormula>AND(ISCHANGED(Status), $Setup.ETT_Validation_Setting__c.ETT_Approver_Validation__c )</errorConditionFormula>
+    <errorMessage>Only the assigned approver is allowed to approve the record. You don&#39;t have sufficient privileges.</errorMessage>
+</ValidationRule>

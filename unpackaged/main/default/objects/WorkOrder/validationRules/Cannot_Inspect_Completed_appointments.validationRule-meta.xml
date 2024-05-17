@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Inspect_Completed_appointments</fullName>
+    <active>false</active>
+    <description>Completed Appointments Should not be Completed Again.</description>
+    <errorConditionFormula>RecordType.DeveloperName =&#39;Inspection_Work_Order&#39; &amp;&amp; 
+ PRIORVALUE(ETI_Inspection_Completed__c) = true &amp;&amp;  ETI_Inspection_Completed__c = true</errorConditionFormula>
+    <errorMessage>Cannot do any operations on Completed Appointments</errorMessage>
+</ValidationRule>

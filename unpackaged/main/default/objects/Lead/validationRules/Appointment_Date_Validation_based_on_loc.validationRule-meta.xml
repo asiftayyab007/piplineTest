@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_Date_Validation_based_on_loc</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+AND(ISPICKVAL(Preferred_Location__c, &#39;Al Quoz, Dubai&#39;), TIMEVALUE(Appointment_Date__c + 4/24)&lt; TIMEVALUE(&quot;8:00:00.00&quot;)),
+AND(WEEKDAY(DATEVALUE(Appointment_Date__c))!=6, ISPICKVAL(Preferred_Location__c, &#39;Al Quoz, Dubai&#39;), TIMEVALUE(Appointment_Date__c + 4/24)&gt; TIMEVALUE(&quot;18:00:00.00&quot;)),
+AND(WEEKDAY(DATEVALUE(Appointment_Date__c))==6, ISPICKVAL(Preferred_Location__c, &#39;Al Quoz, Dubai&#39;), TIMEVALUE(Appointment_Date__c + 4/24)&gt; TIMEVALUE(&quot;20:00:00.00&quot;)),
+AND(WEEKDAY(DATEVALUE(Appointment_Date__c))!=6, ISPICKVAL(Preferred_Location__c, &#39;Industrial Area 12, Sharjah&#39;), TIMEVALUE(Appointment_Date__c + 4/24)&lt; TIMEVALUE(&quot;8:00:00.00&quot;)),
+AND(WEEKDAY(DATEVALUE(Appointment_Date__c))!=6, ISPICKVAL(Preferred_Location__c, &#39;Industrial Area 12, Sharjah&#39;), TIMEVALUE(Appointment_Date__c + 4/24)&gt; TIMEVALUE(&quot;17:00:00.00&quot;)),
+AND(WEEKDAY(DATEVALUE(Appointment_Date__c))==6, ISPICKVAL(Preferred_Location__c, &#39;Industrial Area 12, Sharjah&#39;), TIMEVALUE(Appointment_Date__c + 4/24)&lt; TIMEVALUE(&quot;9:00:00.00&quot;)),
+AND(WEEKDAY(DATEVALUE(Appointment_Date__c))==6, ISPICKVAL(Preferred_Location__c, &#39;Industrial Area 12, Sharjah&#39;), TIMEVALUE(Appointment_Date__c+ 4/24)&gt; TIMEVALUE(&quot;12:00:00.00&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Appointment_Date__c</errorDisplayField>
+    <errorMessage>Service is not available during the timeslot you selected. Kindly select different timeslot.</errorMessage>
+</ValidationRule>

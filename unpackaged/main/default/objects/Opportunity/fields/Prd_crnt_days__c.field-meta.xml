@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prd_crnt_days__c</fullName>
+    <externalId>false</externalId>
+    <formula>(365 * VALUE(BLANKVALUE(TEXT( Contract_Years__c ),&#39;0&#39;))) + (30.417*VALUE(BLANKVALUE(TEXT( Contract_Months__c ),&#39;0&#39;))) + (7 * VALUE(BLANKVALUE(TEXT( Contract_Weeks__c ),&#39;0&#39;))) + VALUE(BLANKVALUE(TEXT( Contract_Days__c ),&#39;0&#39;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Prd crnt days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

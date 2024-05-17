@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accountant/Cashier</fullName>
+        <default>false</default>
+        <label>Accountant/Cashier</label>
+    </customValue>
+    <customValue>
+        <fullName>Coordinator</fullName>
+        <default>false</default>
+        <label>Coordinator</label>
+    </customValue>
+    <customValue>
+        <fullName>Driver</fullName>
+        <default>false</default>
+        <label>Driver</label>
+    </customValue>
+    <customValue>
+        <fullName>Nanny</fullName>
+        <default>false</default>
+        <label>Nanny</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Employee</fullName>
+        <default>false</default>
+        <label>Other Employee</label>
+    </customValue>
+    <customValue>
+        <fullName>Supervisor</fullName>
+        <default>false</default>
+        <label>Supervisor</label>
+    </customValue>
+    <description>All available types of manpower</description>
+    <masterLabel>Workforce Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous_Contract_Details_are_Mandatory</fullName>
+    <active>true</active>
+    <description>When Opportunity type field is selected with &quot;Renewal Business&quot; then any one of the Previous Contract fields are mandatory.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(StageName,&quot;Closed Won&quot;),
+ISPICKVAL(StageName ,&quot;Sales Agreement&quot;),
+ISPICKVAL(StageName ,&quot;Requirement Analysis&quot;)),
+OR(
+$RecordType.Name = &quot;Leasing&quot;,
+$RecordType.Name = &quot;Manpower&quot;,
+$RecordType.Name = &quot;Transportation&quot;,
+$RecordType.Name = &quot;Logistics&quot;,
+$RecordType.Name = &quot;Rental -B2B&quot;,
+$RecordType.Name = &quot;Maintainance&quot;,
+$RecordType.Name = &quot;Chauffeur and Limousine -B2B&quot;
+),
+AND( ISPICKVAL( Type , &#39;Renewal Business&#39;) ,
+AND( ISBLANK( TEXT(Contract_Years_Previous_Contract__c) ),
+ISBLANK( TEXT(Contract_Months_Previous_Contract__c) ),
+ISBLANK( TEXT(Contract_Weeks_Previous_Contract__c) ),
+ISBLANK( TEXT(Contract_Days_Previous_Contract__c) )
+)))</errorConditionFormula>
+    <errorMessage>When opportunity type is &quot;Renewal Business&#39;. Previous Contract Year or Month or Week or Days is Mandatory</errorMessage>
+</ValidationRule>

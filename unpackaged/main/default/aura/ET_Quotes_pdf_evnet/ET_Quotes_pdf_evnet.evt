@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="Event template">
+    <aura:attribute name="cmpMsg" type="String" default="Welcome w3web.net" />
+    <aura:attribute name="popFadeEvnt" type="String" default="slds-hide" />        
+</aura:event>

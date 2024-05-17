@@ -1,0 +1,57 @@
+<template>
+    <form>
+        <div
+            class="slds-p-top_small slds-p-bottom_medium slds-align_absolute-center slds-theme_default slds-text-heading_medium">
+            <b>Please Enter the Account Information</b></div>
+        <div class="slds-box slds-theme_default ">
+            <div class="slds-align_absolute-center">
+                <lightning-input 
+                        type="text" 
+                        label="Full Name"
+                        value={nameVal}
+                        onchange={handleNameChange}
+                        style="width: 300px !important;">
+                </lightning-input>
+            </div>
+            <div class="slds-align_absolute-center">
+                <lightning-input 
+                        type="email" 
+                        label="Email Address"
+                        value={emailVal}
+                        onchange={handleEmailChange}
+                        style="width: 300px !important;">
+                </lightning-input>
+            </div>
+            <div class="slds-align_absolute-center">
+                <lightning-input 
+                        type="tel" 
+                        name="mobile"
+                        label="Mobile"
+                        value={mobileVal}
+                        onchange={handleMobileChange}
+                        style="width: 300px !important;">
+                </lightning-input>
+            </div>
+            <div class="slds-align_absolute-center"> 
+                <lightning-input 
+                        type="tel" 
+                        name="eid"
+                        label="Emirates id"
+                        value={EidVal}
+                        onchange={handleEIDChange}
+                        style="width: 300px !important;">
+                </lightning-input>
+            </div>
+            <div class="slds-m-top_small slds-align_absolute-center">
+                <lightning-button 
+                    variant="brand" 
+                    class="slds-m-left_x-small" 
+                    label="Save" 
+                    onclick={handleNext}>
+                </lightning-button>
+            </div>
+            
+        </div>
+       
+    </form>
+</template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Signed_By_Management</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( Contract_Signed_by_Management__c, if((!Contract_Signed_by_Customer__c),true,false),false)</errorConditionFormula>
+    <errorMessage>Contract Signed by Customer need to be checked</errorMessage>
+</ValidationRule>

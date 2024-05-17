@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Pricing_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Pricing Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ET_Pricing_Method__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Annual Price</fullName>
+                <default>false</default>
+                <label>Annual Price</label>
+            </value>
+            <value>
+                <fullName>Monthly Price</fullName>
+                <default>false</default>
+                <label>Monthly Price</label>
+            </value>
+            <value>
+                <fullName>Per student</fullName>
+                <default>false</default>
+                <label>Per student</label>
+            </value>
+            <value>
+                <fullName>Per route</fullName>
+                <default>false</default>
+                <label>Per route</label>
+            </value>
+            <value>
+                <fullName>Per KM</fullName>
+                <default>false</default>
+                <label>Per KM</label>
+            </value>
+            <value>
+                <fullName>Per ton</fullName>
+                <default>false</default>
+                <label>Per ton</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Per Unit</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Quotation</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Line</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Route</controllingFieldValue>
+            <valueName>Annual Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Per Unit</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Quotation</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Line</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Route</controllingFieldValue>
+            <valueName>Monthly Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comprehensive Price per Quotation</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Line</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Route</controllingFieldValue>
+            <valueName>Per student</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comprehensive Price per Quotation</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Line</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Route</controllingFieldValue>
+            <valueName>Per route</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comprehensive Price per Quotation</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Line</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Route</controllingFieldValue>
+            <valueName>Per KM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comprehensive Price per Quotation</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Line</controllingFieldValue>
+            <controllingFieldValue>Comprehensive Price per Route</controllingFieldValue>
+            <valueName>Per ton</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

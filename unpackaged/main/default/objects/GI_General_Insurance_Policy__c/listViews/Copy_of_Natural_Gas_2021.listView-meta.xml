@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Natural_Gas_2021</fullName>
+    <columns>NAME</columns>
+    <columns>Project__c</columns>
+    <columns>Insurance_Company__c</columns>
+    <columns>Insurance_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Project__c</field>
+        <operation>equals</operation>
+        <value>Dubai Airport</value>
+    </filters>
+    <filters>
+        <field>Policy_Start_Date__c</field>
+        <operation>equals</operation>
+        <value>1/1/2021</value>
+    </filters>
+    <label>Dubai Airport</label>
+</ListView>

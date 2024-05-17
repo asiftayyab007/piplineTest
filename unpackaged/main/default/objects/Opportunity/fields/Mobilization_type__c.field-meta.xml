@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobilization_type__c</fullName>
+    <description>If you select the Mobilization type partially delivered, Please Create the Partially delivered record</description>
+    <externalId>false</externalId>
+    <label>Mobilization type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full delivery</fullName>
+                <default>false</default>
+                <label>Full delivery</label>
+            </value>
+            <value>
+                <fullName>Partial delivery</fullName>
+                <default>false</default>
+                <label>Partial delivery</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_and_Reg_Number</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF ( NOT (ISBLANK( ParentId )) ,NOT ( Parent.ETSALES_TaxRegistrationNo__c = ETSALES_TaxRegistrationNo__c ),false)</errorConditionFormula>
+    <errorMessage>Tax No can not be saem</errorMessage>
+</ValidationRule>

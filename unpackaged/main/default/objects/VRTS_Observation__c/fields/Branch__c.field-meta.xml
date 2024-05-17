@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch__c</fullName>
+    <externalId>false</externalId>
+    <label>Branch</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Zone__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Al Dhafra-1</fullName>
+                <default>false</default>
+                <label>Al Dhafra-1 (الظفرة-1)</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi-2</fullName>
+                <default>false</default>
+                <label>Abu Dhabi-2 (أبوظبي-2)</label>
+            </value>
+            <value>
+                <fullName>Al Ain-3</fullName>
+                <default>false</default>
+                <label>Al Ain-3 (العين-3)</label>
+            </value>
+            <value>
+                <fullName>Dubai-4</fullName>
+                <default>false</default>
+                <label>Dubai-4 (دبي-4)</label>
+            </value>
+            <value>
+                <fullName>Ajman-5</fullName>
+                <default>false</default>
+                <label>Ajman-5 (عجمان-5)</label>
+            </value>
+            <value>
+                <fullName>Sharjah-6</fullName>
+                <default>false</default>
+                <label>Sharjah-6 (الشارقة-6)</label>
+            </value>
+            <value>
+                <fullName>Ras Al Khaimah-7</fullName>
+                <default>false</default>
+                <label>Ras Al Khaimah-7 (رأس الخيمة -7)</label>
+            </value>
+            <value>
+                <fullName>Central Region-8</fullName>
+                <default>false</default>
+                <label>Central Region-8 (المنطقة الوسطى-8)</label>
+            </value>
+            <value>
+                <fullName>East Coast-9</fullName>
+                <default>false</default>
+                <label>East Coast-9 (الساحل الشرقي-9)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Zone A</controllingFieldValue>
+            <valueName>Al Dhafra-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zone A</controllingFieldValue>
+            <valueName>Abu Dhabi-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zone A</controllingFieldValue>
+            <valueName>Al Ain-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zone B</controllingFieldValue>
+            <valueName>Dubai-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zone B</controllingFieldValue>
+            <valueName>Sharjah-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zone C</controllingFieldValue>
+            <valueName>Ajman-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zone C</controllingFieldValue>
+            <valueName>Ras Al Khaimah-7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zone C</controllingFieldValue>
+            <valueName>Central Region-8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Zone C</controllingFieldValue>
+            <valueName>East Coast-9</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Record Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Request for the Awareness Sessions</fullName>
+                <default>false</default>
+                <label>Request for the Awareness Sessions</label>
+            </value>
+            <value>
+                <fullName>Request for New Bus/Supervisors/Teachers Transfer</fullName>
+                <default>false</default>
+                <label>Request for New Bus/Supervisors/Teachers Transfer</label>
+            </value>
+            <value>
+                <fullName>Requests for New Trips, Activities and Events</fullName>
+                <default>false</default>
+                <label>Requests for New Trips, Activities and Events</label>
+            </value>
+            <value>
+                <fullName>Printing New Card - Student</fullName>
+                <default>false</default>
+                <label>Printing New Card - Student</label>
+            </value>
+            <value>
+                <fullName>Printing New Card - Drivers &amp; Transportation Supervisors</fullName>
+                <default>false</default>
+                <label>Printing New Card - Drivers &amp; Transportation Supervisors</label>
+            </value>
+            <value>
+                <fullName>Evaluation of Schools/Services</fullName>
+                <default>false</default>
+                <label>Evaluation of Schools/Services</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Environment</fullName>
+                <default>false</default>
+                <label>Service Delivery Environment</label>
+            </value>
+            <value>
+                <fullName>Transport Services</fullName>
+                <default>false</default>
+                <label>Transport Services</label>
+            </value>
+            <value>
+                <fullName>Transport service - B2B</fullName>
+                <default>false</default>
+                <label>Transport service - B2B</label>
+            </value>
+            <value>
+                <fullName>Limousine Services</fullName>
+                <default>false</default>
+                <label>Limousine Services</label>
+            </value>
+            <value>
+                <fullName>Driving School</fullName>
+                <default>false</default>
+                <label>Driving School</label>
+            </value>
+            <value>
+                <fullName>Vehicle Inspection Services</fullName>
+                <default>false</default>
+                <label>Vehicle Inspection Services</label>
+            </value>
+            <value>
+                <fullName>Auto Repair Services - B2C</fullName>
+                <default>false</default>
+                <label>Auto Repair Services - B2C</label>
+            </value>
+            <value>
+                <fullName>Auto Repair Services - B2B</fullName>
+                <default>false</default>
+                <label>Auto Repair Services - B2B</label>
+            </value>
+            <value>
+                <fullName>Human Resources- Inspec</fullName>
+                <default>false</default>
+                <label>Human Resources- Inspec</label>
+            </value>
+            <value>
+                <fullName>Internal Issue-Inspec</fullName>
+                <default>false</default>
+                <label>Internal Issue-Inspec</label>
+            </value>
+            <value>
+                <fullName>Online and Financial Services-Inspec</fullName>
+                <default>false</default>
+                <label>Online and Financial Services-Inspec</label>
+            </value>
+            <value>
+                <fullName>Quality and Compliance-Inspec</fullName>
+                <default>false</default>
+                <label>Quality and Compliance-Inspec</label>
+            </value>
+            <value>
+                <fullName>Request-Inspec</fullName>
+                <default>false</default>
+                <label>Request-Inspec</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation-Inspec</fullName>
+                <default>false</default>
+                <label>Traffic Violation-Inspec</label>
+            </value>
+            <value>
+                <fullName>Human Resources-Driving</fullName>
+                <default>false</default>
+                <label>Human Resources-Driving</label>
+            </value>
+            <value>
+                <fullName>Internal Issue-Driving</fullName>
+                <default>false</default>
+                <label>Internal Issue-Driving</label>
+            </value>
+            <value>
+                <fullName>Online and Financial Services-Driving</fullName>
+                <default>false</default>
+                <label>Online and Financial Services-Driving</label>
+            </value>
+            <value>
+                <fullName>Quality and Compliance-Driving</fullName>
+                <default>false</default>
+                <label>Quality and Compliance-Driving</label>
+            </value>
+            <value>
+                <fullName>Request-Driving</fullName>
+                <default>false</default>
+                <label>Request-Driving</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation-Driving</fullName>
+                <default>false</default>
+                <label>Traffic Violation-Driving</label>
+            </value>
+            <value>
+                <fullName>Services-Limo</fullName>
+                <default>false</default>
+                <label>Services-Limo</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation-Limo</fullName>
+                <default>false</default>
+                <label>Traffic Violation-Limo</label>
+            </value>
+            <value>
+                <fullName>Human Resources- Limo</fullName>
+                <default>false</default>
+                <label>Human Resources- Limo</label>
+            </value>
+            <value>
+                <fullName>Online and Financial Services-Limo</fullName>
+                <default>false</default>
+                <label>Online and Financial Services-Limo</label>
+            </value>
+            <value>
+                <fullName>Quality and Compliance-Limo</fullName>
+                <default>false</default>
+                <label>Quality and Compliance-Limo</label>
+            </value>
+            <value>
+                <fullName>Request-Limo</fullName>
+                <default>false</default>
+                <label>Request-Limo</label>
+            </value>
+            <value>
+                <fullName>Online and Financial Services-AutoRepair</fullName>
+                <default>false</default>
+                <label>Online and Financial Services-AutoRepair</label>
+            </value>
+            <value>
+                <fullName>Quality and Compliance_AutoRepair</fullName>
+                <default>false</default>
+                <label>Quality and Compliance_AutoRepair</label>
+            </value>
+            <value>
+                <fullName>Request_AutoRepair</fullName>
+                <default>false</default>
+                <label>Request_AutoRepair</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation-AutoRepair</fullName>
+                <default>false</default>
+                <label>Traffic Violation-AutoRepair</label>
+            </value>
+            <value>
+                <fullName>Human Resource-AutoRepair</fullName>
+                <default>false</default>
+                <label>Human Resource-AutoRepair</label>
+            </value>
+            <value>
+                <fullName>Internal Issue-AutoRepair</fullName>
+                <default>false</default>
+                <label>Internal Issue-AutoRepair</label>
+            </value>
+            <value>
+                <fullName>Internal Issue-AutoRepairB2C</fullName>
+                <default>false</default>
+                <label>Internal Issue-AutoRepairB2C</label>
+            </value>
+            <value>
+                <fullName>Online and Financial Services-AutoRepairB2C</fullName>
+                <default>false</default>
+                <label>Online and Financial Services-AutoRepairB2C</label>
+            </value>
+            <value>
+                <fullName>Quality and Compliance_AutoRepairB2C</fullName>
+                <default>false</default>
+                <label>Quality and Compliance_AutoRepairB2C</label>
+            </value>
+            <value>
+                <fullName>Request-AutoRepairB2C</fullName>
+                <default>false</default>
+                <label>Request-AutoRepairB2C</label>
+            </value>
+            <value>
+                <fullName>Theft and Missing-AutoRepairB2C</fullName>
+                <default>false</default>
+                <label>Theft and Missing-AutoRepairB2C</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation-AutoRepairB2C</fullName>
+                <default>false</default>
+                <label>Traffic Violation-AutoRepairB2C</label>
+            </value>
+            <value>
+                <fullName>MRO</fullName>
+                <default>false</default>
+                <label>MRO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>for_cust_type_individual_acc_typ_ind</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+( ISPICKVAL(ETSALES_Customer_Type__c, &quot;Person&quot;), 
+( RecordType.DeveloperName= &#39;ETSALES_B2B_Account&#39;),
+ NOT( ISPICKVAL(ETSALES_Account_Type__c,&quot;Individual&quot; )) )</errorConditionFormula>
+    <errorDisplayField>ETSALES_Account_Type__c</errorDisplayField>
+    <errorMessage>For Customer type Individual the account type must be individual only</errorMessage>
+</ValidationRule>

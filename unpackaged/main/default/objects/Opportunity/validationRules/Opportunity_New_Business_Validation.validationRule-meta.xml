@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_New_Business_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &#39;Opportunity&#39;,
+    AccountId = PRIORVALUE(AccountId),
+    ISPICKVAL(StageName, &#39;Closed Won&#39;)
+) || 
+AND(
+    RecordType.DeveloperName = &#39;Sales_Agreement&#39;,
+    AccountId = PRIORVALUE(AccountId),
+    ISPICKVAL( StageName , &#39;Closed Won&#39;)
+)</errorConditionFormula>
+    <errorMessage>New Opportunity should not create with Opportunity Type as New Business</errorMessage>
+</ValidationRule>

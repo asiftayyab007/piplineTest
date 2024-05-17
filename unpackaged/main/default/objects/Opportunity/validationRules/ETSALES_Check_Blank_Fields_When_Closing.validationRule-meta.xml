@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Check_Blank_Fields_When_Closing</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISPICKVAL(StageName, &#39;Closed Won&#39;),
+OR(
+$RecordType.Name = &quot;Leasing&quot;, 
+$RecordType.Name = &quot;Manpower&quot;, 
+$RecordType.Name = &quot;Transportation&quot;,
+$RecordType.Name = &quot;Logistics&quot;,
+$RecordType.Name = &quot;Rental -B2B&quot;
+),
+OR(
+ISBLANK(ETSALES_Customer_PO_Number__c),
+ISBLANK(ETSALES_Sales_Agreement_Number__c)
+    ) 
+)</errorConditionFormula>
+    <errorMessage>Customer PO Number,Sales Agreement No (Current Contract) fields are mandatory to close the Opportunity.</errorMessage>
+</ValidationRule>

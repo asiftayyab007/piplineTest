@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$ETI_Booking__c.ET_Location__c</field>
+    </columns>
+    <columns>
+        <field>ETI_Inspection_Receipt__c.ET_Status__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <currency>AED</currency>
+    <filter>
+        <criteriaItems>
+            <column>CUST_CREATED_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>fazlul kareem,ANGELITO GARICIA DE NIEVA,Mohamed Faheem Mohaideen,Talaat Ahmed Mohd,Falah Saleh Mohamed Bin Hamoudesh,AJMAL PUTTHAN PUAKKAL,Arnel Moscoso Punla,Yoonus Nangandy Kuniyil,Didar Ulalam Abdulsukkur,Mohamed Azif Abdul Kaboor,Mohd Arshad,Mohammed Shafiq Hamza,Mohd Ahmed Mahmood,Essam Bakhit Abdellah,MELVIN COLORADO SIGUIENTE,Shaik Asan Rafeek,Johnson Baby John,KHALID NAHAL,GERALD DE NIEVA,Sibeer Abu Baker,Rijeesh Khan Nadheer,Muhammed Riyas Koyamu,Mohammed Shafeek Poonakatail,RUBEN BAUTISTA CORPUZ,Muhammed Shameer Manithodika,Abdulsalam Kolar Kuzhiyil,MOHAMED NASURUDEEN ANWAR GANI,NASEEMUDHEEN MOHAMMED ABDULRAHIMAN MOHAMMED KALLINGAL,Nufail Manithodika Ahammed,Yousof Sediq Mohd,Navaf Manaram Veettil,THAYUB ALI SYED ABUDHAHIR,SAMEER MUDSAR AHEMAD MOHAMMED,Mohd Kasim Kuttyamkkath,Mohd Adam Jalal</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_CREATED_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Receipts Created By Inspectors</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ETI_Inspection_Receipt__c@ETI_Inspection_Receipt__c.Bookings__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

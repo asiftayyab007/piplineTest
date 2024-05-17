@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investment_Amt_mandatory_SalesAgreement</fullName>
+    <active>true</active>
+    <description>In case there is an entry in field No. of New Vehicles (Current Contract) in Opportunity, then Investment Amount in Price information should be mandatory in Sales Agreement Stage</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK( No_of_Vehicles__c )),
+ISPICKVAL(StageName ,&quot;Sales Agreement&quot;),
+ISBLANK( Investment_Amount__c ),
+
+OR(
+$RecordType.DeveloperName = &quot;ETSALES_Leasing&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Manpower&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Transportation&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Logistics&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Rental_B2B&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Maintainance&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Chauffeur_and_Limousine_B2B&quot;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Investment_Amount__c</errorDisplayField>
+    <errorMessage>Investment Amount in Price information is mandatory in Sales Agreement Stage</errorMessage>
+</ValidationRule>

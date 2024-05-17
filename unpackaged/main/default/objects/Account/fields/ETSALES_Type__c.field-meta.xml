@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tourism</fullName>
+                <default>false</default>
+                <label>Tourism</label>
+            </value>
+            <value>
+                <fullName>Rent</fullName>
+                <default>false</default>
+                <label>Rent</label>
+            </value>
+            <value>
+                <fullName>Private School</fullName>
+                <default>false</default>
+                <label>Private School</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Petrol And Gas</fullName>
+                <default>false</default>
+                <label>Petrol And Gas</label>
+            </value>
+            <value>
+                <fullName>Trading And Commercial</fullName>
+                <default>false</default>
+                <label>Trading And Commercial</label>
+            </value>
+            <value>
+                <fullName>Transport</fullName>
+                <default>false</default>
+                <label>Transport</label>
+            </value>
+            <value>
+                <fullName>Model School</fullName>
+                <default>false</default>
+                <label>Model School</label>
+            </value>
+            <value>
+                <fullName>Ministry And Government</fullName>
+                <default>false</default>
+                <label>Ministry And Government</label>
+            </value>
+            <value>
+                <fullName>Hotel,Restaurant,Catering,Tourism,Travel</fullName>
+                <default>false</default>
+                <label>Hotel,Restaurant,Catering,Tourism,Travel</label>
+            </value>
+            <value>
+                <fullName>Factory</fullName>
+                <default>false</default>
+                <label>Factory</label>
+            </value>
+            <value>
+                <fullName>Contracting And Decoration</fullName>
+                <default>false</default>
+                <label>Contracting And Decoration</label>
+            </value>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Government Corporation</fullName>
+                <default>false</default>
+                <label>Government Corporation</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Social Support Authority</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Social Support Authority</label>
+            </value>
+            <value>
+                <fullName>SUNDRY PARTIES – ET Staff</fullName>
+                <default>false</default>
+                <label>SUNDRY PARTIES – ET Staff</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

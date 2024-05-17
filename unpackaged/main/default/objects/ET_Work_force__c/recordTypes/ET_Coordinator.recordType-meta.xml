@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Coordinator</fullName>
+    <active>true</active>
+    <label>Coordinator</label>
+    <picklistValues>
+        <picklist>ET_Contract_Type__c</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ET_Pricing_Method__c</picklist>
+        <values>
+            <fullName>Comprehensive Price per Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comprehensive Price per Quotation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comprehensive Price per Route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Unit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ET_Pricing_Type__c</picklist>
+        <values>
+            <fullName>Annual Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per KM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per ton</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ET_Service_Emirate__c</picklist>
+        <values>
+            <fullName>Abu Dhabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dubai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fujairah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ras Al Khaimah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharjah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UMM Al Quawain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ET_Service_Type__c</picklist>
+        <values>
+            <fullName>Agricultural Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Rent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistic Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manpower Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motorcycle Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passengers Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ET_Special_Requirements__c</picklist>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Main</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reliever</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

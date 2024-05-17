@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requirement__c</fullName>
+    <externalId>false</externalId>
+    <label>Requirement/المتطلب</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bus structure readiness</fullName>
+                <default>false</default>
+                <label>جاهزية هيكل الحافلة</label>
+            </value>
+            <value>
+                <fullName>Safety and security of the transported</fullName>
+                <default>false</default>
+                <label>سلامة و الأمان المنقولين</label>
+            </value>
+            <value>
+                <fullName>Bus stickers/identification numbers</fullName>
+                <default>false</default>
+                <label>ملصقات الحافلة/ الأرقام  التعريفية</label>
+            </value>
+            <value>
+                <fullName>Bus mechanical requirements</fullName>
+                <default>false</default>
+                <label>متطلبات  الحافلة الميكانيكية</label>
+            </value>
+            <value>
+                <fullName>Alarm systems and electronic systems</fullName>
+                <default>false</default>
+                <label>أنظمة التنبية والأنظمة الالكترونية</label>
+            </value>
+            <value>
+                <fullName>Bus lights and lights</fullName>
+                <default>false</default>
+                <label>مصابيح وانارات الحافلة</label>
+            </value>
+            <value>
+                <fullName>Bus cleanliness and readiness</fullName>
+                <default>false</default>
+                <label>نظافة الحافلة و جاهزيتها</label>
+            </value>
+            <value>
+                <fullName>Emergency and safety</fullName>
+                <default>false</default>
+                <label>الطوارئ و السلامة</label>
+            </value>
+            <value>
+                <fullName>Readiness of permits and licenses</fullName>
+                <default>false</default>
+                <label>جاهزية التصاريح و التراخيص</label>
+            </value>
+            <value>
+                <fullName>People of determination</fullName>
+                <default>false</default>
+                <label>أصحاب الهمم</label>
+            </value>
+            <value>
+                <fullName>School transportation driver</fullName>
+                <default>false</default>
+                <label>سائق النقل المدرسي</label>
+            </value>
+            <value>
+                <fullName>Transportation and safety supervisor</fullName>
+                <default>false</default>
+                <label>مشرف النقل والسلامة</label>
+            </value>
+            <value>
+                <fullName>Behavior of transferees</fullName>
+                <default>false</default>
+                <label>سلوك المنقولين</label>
+            </value>
+            <value>
+                <fullName>Observations on the behavior of the guardian or his representative</fullName>
+                <default>false</default>
+                <label>ملاحظات على سلوك ولي الامر او من ينوب عنه</label>
+            </value>
+            <value>
+                <fullName>Operational-administrative</fullName>
+                <default>false</default>
+                <label>تشغلية-إدارية</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

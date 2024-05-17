@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Student application form" icon-name="custom:NewLwcObj">
+        <lightning-input label="First Name" name="First_Name__c" onchange={newchange}></lightning-input>
+        <lightning-input label="Last Name" name="Last_Name__c" onchange={newchange}></lightning-input>
+        <lightning-input label="Email" name="Email__c" onchange={newchange}></lightning-input>
+        <lightning-button label= "Save" onclick={handleSaveClick} variant= "brand"></lightning-button>
+        </lightning-card>   
+</template>

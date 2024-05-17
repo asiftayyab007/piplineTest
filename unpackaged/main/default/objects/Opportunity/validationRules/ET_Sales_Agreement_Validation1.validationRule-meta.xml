@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Sales_Agreement_Validation1</fullName>
+    <active>false</active>
+    <description>for validation on stage Change for Sales Agreement</description>
+    <errorConditionFormula>IF(
+ISPICKVAL(StageName, &#39;Sales Agreement&#39;) &amp;&amp;  !(isSalesAgreementCreated__c) &amp;&amp; ISCHANGED(StageName),
+TRUE, FALSE
+)</errorConditionFormula>
+    <errorMessage>Opportunity Stage Change is not Allowed to Sales Agreement if Sales Agreement is not yet generated</errorMessage>
+</ValidationRule>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ABU DHABI CITY</fullName>
+        <default>false</default>
+        <label>ABU DHABI CITY</label>
+    </customValue>
+    <customValue>
+        <fullName>ADNEC</fullName>
+        <default>false</default>
+        <label>ADNEC</label>
+    </customValue>
+    <customValue>
+        <fullName>AJMAN</fullName>
+        <default>false</default>
+        <label>AJMAN</label>
+    </customValue>
+    <customValue>
+        <fullName>AL AIN</fullName>
+        <default>false</default>
+        <label>AL AIN</label>
+    </customValue>
+    <customValue>
+        <fullName>AL FALAH</fullName>
+        <default>false</default>
+        <label>AL FALAH</label>
+    </customValue>
+    <customValue>
+        <fullName>AL MAHA/BAB AL SHAMS</fullName>
+        <default>false</default>
+        <label>AL MAHA/BAB AL SHAMS</label>
+    </customValue>
+    <customValue>
+        <fullName>AL QUAA AL AIN</fullName>
+        <default>false</default>
+        <label>AL QUAA AL AIN</label>
+    </customValue>
+    <customValue>
+        <fullName>AL RAHA</fullName>
+        <default>false</default>
+        <label>AL RAHA</label>
+    </customValue>
+    <customValue>
+        <fullName>AL WATHBA</fullName>
+        <default>false</default>
+        <label>AL WATHBA</label>
+    </customValue>
+    <customValue>
+        <fullName>Bab Al Shams</fullName>
+        <default>false</default>
+        <label>Bab Al Shams</label>
+    </customValue>
+    <customValue>
+        <fullName>BANIYAS</fullName>
+        <default>false</default>
+        <label>BANIYAS</label>
+    </customValue>
+    <customValue>
+        <fullName>BUR DUBAI</fullName>
+        <default>false</default>
+        <label>BUR DUBAI</label>
+    </customValue>
+    <customValue>
+        <fullName>Citibank Zone A</fullName>
+        <default>false</default>
+        <label>Citibank Zone A</label>
+    </customValue>
+    <customValue>
+        <fullName>Citibank Zone B</fullName>
+        <default>false</default>
+        <label>Citibank Zone B</label>
+    </customValue>
+    <customValue>
+        <fullName>Citibank Zone C</fullName>
+        <default>false</default>
+        <label>Citibank Zone C</label>
+    </customValue>
+    <customValue>
+        <fullName>Citibank Zone D</fullName>
+        <default>false</default>
+        <label>Citibank Zone D</label>
+    </customValue>
+    <customValue>
+        <fullName>Citibank Zone F</fullName>
+        <default>false</default>
+        <label>Citibank Zone F</label>
+    </customValue>
+    <customValue>
+        <fullName>Citibank Zone G</fullName>
+        <default>false</default>
+        <label>Citibank Zone G</label>
+    </customValue>
+    <customValue>
+        <fullName>Citibank Zone H</fullName>
+        <default>false</default>
+        <label>Citibank Zone H</label>
+    </customValue>
+    <customValue>
+        <fullName>Citibank Zone I</fullName>
+        <default>false</default>
+        <label>Citibank Zone I</label>
+    </customValue>
+    <customValue>
+        <fullName>DEIRA</fullName>
+        <default>false</default>
+        <label>DEIRA</label>
+    </customValue>
+    <customValue>
+        <fullName>DIBBA</fullName>
+        <default>false</default>
+        <label>DIBBA</label>
+    </customValue>
+    <customValue>
+        <fullName>DUBAI</fullName>
+        <default>false</default>
+        <label>DUBAI</label>
+    </customValue>
+    <customValue>
+        <fullName>DUBAI AIRPORT</fullName>
+        <default>false</default>
+        <label>DUBAI AIRPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>DWC</fullName>
+        <default>false</default>
+        <label>DWC</label>
+    </customValue>
+    <customValue>
+        <fullName>FUJAIRAH</fullName>
+        <default>false</default>
+        <label>FUJAIRAH</label>
+    </customValue>
+    <customValue>
+        <fullName>General Zone</fullName>
+        <default>false</default>
+        <label>General Zone</label>
+    </customValue>
+    <customValue>
+        <fullName>GHANTOOT</fullName>
+        <default>false</default>
+        <label>GHANTOOT</label>
+    </customValue>
+    <customValue>
+        <fullName>HATTA</fullName>
+        <default>false</default>
+        <label>HATTA</label>
+    </customValue>
+    <customValue>
+        <fullName>JEBEL ALI</fullName>
+        <default>false</default>
+        <label>JEBEL ALI</label>
+    </customValue>
+    <customValue>
+        <fullName>Jumeirah/Umm Suqueim</fullName>
+        <default>false</default>
+        <label>Jumeirah/Umm Suqueim</label>
+    </customValue>
+    <customValue>
+        <fullName>MADINAT ZAYED</fullName>
+        <default>false</default>
+        <label>MADINAT ZAYED</label>
+    </customValue>
+    <customValue>
+        <fullName>MARINA MALL</fullName>
+        <default>false</default>
+        <label>MARINA MALL</label>
+    </customValue>
+    <customValue>
+        <fullName>MUSSAFAH</fullName>
+        <default>false</default>
+        <label>MUSSAFAH</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>PALM JUMEIRAH</fullName>
+        <default>false</default>
+        <label>PALM JUMEIRAH</label>
+    </customValue>
+    <customValue>
+        <fullName>QASAR AL SARAB</fullName>
+        <default>false</default>
+        <label>QASAR AL SARAB</label>
+    </customValue>
+    <customValue>
+        <fullName>RAS AL KHAIMA</fullName>
+        <default>false</default>
+        <label>RAS AL KHAIMA</label>
+    </customValue>
+    <customValue>
+        <fullName>RUWAIS</fullName>
+        <default>false</default>
+        <label>RUWAIS</label>
+    </customValue>
+    <customValue>
+        <fullName>SAADIYAT ISLAND</fullName>
+        <default>false</default>
+        <label>SAADIYAT ISLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>SALAM STREET</fullName>
+        <default>false</default>
+        <label>SALAM STREET</label>
+    </customValue>
+    <customValue>
+        <fullName>SAMHA</fullName>
+        <default>false</default>
+        <label>SAMHA</label>
+    </customValue>
+    <customValue>
+        <fullName>SHAHAMA</fullName>
+        <default>false</default>
+        <label>SHAHAMA</label>
+    </customValue>
+    <customValue>
+        <fullName>Shaikh Zayed Road</fullName>
+        <default>false</default>
+        <label>Shaikh Zayed Road</label>
+    </customValue>
+    <customValue>
+        <fullName>SHAKBOUT CITY</fullName>
+        <default>false</default>
+        <label>SHAKBOUT CITY</label>
+    </customValue>
+    <customValue>
+        <fullName>SHAMKAH</fullName>
+        <default>false</default>
+        <label>SHAMKAH</label>
+    </customValue>
+    <customValue>
+        <fullName>SHARJAH</fullName>
+        <default>false</default>
+        <label>SHARJAH</label>
+    </customValue>
+    <customValue>
+        <fullName>SHARJAH AIRPORT</fullName>
+        <default>false</default>
+        <label>SHARJAH AIRPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>SILICON OASIS</fullName>
+        <default>false</default>
+        <label>SILICON OASIS</label>
+    </customValue>
+    <customValue>
+        <fullName>TAWEELA</fullName>
+        <default>false</default>
+        <label>TAWEELA</label>
+    </customValue>
+    <customValue>
+        <fullName>UMM AL NAAR</fullName>
+        <default>false</default>
+        <label>UMM AL NAAR</label>
+    </customValue>
+    <customValue>
+        <fullName>UMM AL QUWAIN</fullName>
+        <default>false</default>
+        <label>UMM AL QUWAIN</label>
+    </customValue>
+    <customValue>
+        <fullName>YAS ISLAND</fullName>
+        <default>false</default>
+        <label>YAS ISLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>ZIGHY BAY</fullName>
+        <default>false</default>
+        <label>ZIGHY BAY</label>
+    </customValue>
+    <customValue>
+        <fullName>ABU DHABI AIRPORT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ABU DHABI AIRPORT</label>
+    </customValue>
+    <description>Used for Rent A Car and Limo Services</description>
+    <masterLabel>Pick up &amp; Drop off Zones</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

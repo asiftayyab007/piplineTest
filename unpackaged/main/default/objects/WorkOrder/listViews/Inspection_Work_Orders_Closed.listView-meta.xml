@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Work_Orders_Closed</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>StartDate</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>Status</columns>
+    <columns>CreatedBy</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>WorkOrder.Inspection_Work_Order</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>Completed,Closed</value>
+    </filters>
+    <label>Inspection Work Orders - Closed</label>
+</ListView>

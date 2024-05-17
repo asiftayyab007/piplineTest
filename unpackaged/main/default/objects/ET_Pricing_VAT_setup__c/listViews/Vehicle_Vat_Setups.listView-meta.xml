@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Vat_Setups</fullName>
+    <columns>NAME</columns>
+    <columns>ET_IsRecoverable__c</columns>
+    <columns>ET_Cost_Type__c</columns>
+    <columns>ET_Cost_Api_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ET_Cost_Type__c</field>
+        <operation>equals</operation>
+        <value>Vehicle</value>
+    </filters>
+    <label>Vehicle Vat Setups</label>
+</ListView>

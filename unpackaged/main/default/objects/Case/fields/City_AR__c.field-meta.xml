@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City_AR__c</fullName>
+    <externalId>false</externalId>
+    <label>City AR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>أبو ظبي</fullName>
+                <default>false</default>
+                <label>أبو ظبي</label>
+            </value>
+            <value>
+                <fullName>عجمان</fullName>
+                <default>false</default>
+                <label>عجمان</label>
+            </value>
+            <value>
+                <fullName>دبي</fullName>
+                <default>false</default>
+                <label>دبي</label>
+            </value>
+            <value>
+                <fullName>الفجيرة</fullName>
+                <default>false</default>
+                <label>الفجيرة</label>
+            </value>
+            <value>
+                <fullName>رأس الخيمة</fullName>
+                <default>false</default>
+                <label>رأس الخيمة</label>
+            </value>
+            <value>
+                <fullName>الشارقة</fullName>
+                <default>false</default>
+                <label>الشارقة</label>
+            </value>
+            <value>
+                <fullName>أم القيوين</fullName>
+                <default>false</default>
+                <label>أم القيوين</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

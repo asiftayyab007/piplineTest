@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Vehicle_Make__c</columns>
+    <columns>ET_Vehicle_Model__c</columns>
+    <columns>ET_Variable_Maintenance_Rate_1st_year__c</columns>
+    <columns>ET_Variable_Maintenance_Rate_2nd_year__c</columns>
+    <columns>ET_Variable_Maintenance_Rate_3rd_year__c</columns>
+    <columns>ET_Variable_Maintenance_Rate_4th_year__c</columns>
+    <columns>ET_Variable_Maintenance_Rate_5th_year__c</columns>
+    <columns>ET_Variable_Maintenance_Rate_6th_year__c</columns>
+    <columns>ET_Variable_Maintenance_Rate_7th_year__c</columns>
+    <columns>ET_Variable_Maintenance_Rate_8th_year__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

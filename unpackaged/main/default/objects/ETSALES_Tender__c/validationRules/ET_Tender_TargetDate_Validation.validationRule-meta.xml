@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Tender_TargetDate_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+ETSALES_Date_Received__c &gt; ETSALES_Target_Date__c ||
+ETSALES_Target_Date__c  &gt;  ETSALES_Tender_Deadline__c
+ , TRUE, FALSE)</errorConditionFormula>
+    <errorDisplayField>ETSALES_Target_Date__c</errorDisplayField>
+    <errorMessage>Target Date should be always in between range of Received Date and Tender Deadline Date.</errorMessage>
+</ValidationRule>

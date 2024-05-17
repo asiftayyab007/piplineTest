@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending for Account Pricing Manager</fullName>
+                <default>false</default>
+                <label>Pending for Account Pricing Manager</label>
+            </value>
+            <value>
+                <fullName>Pending for Risk/Pricing Manager</fullName>
+                <default>false</default>
+                <label>Pending for Risk/Pricing Manager</label>
+            </value>
+            <value>
+                <fullName>Pending for Pricing Department Manager</fullName>
+                <default>false</default>
+                <label>Pending for Pricing Department Manager</label>
+            </value>
+            <value>
+                <fullName>Pending for Zone Executive Manager</fullName>
+                <default>false</default>
+                <label>Pending for Zone Executive Manager</label>
+            </value>
+            <value>
+                <fullName>Pending for Business Development Manager</fullName>
+                <default>false</default>
+                <label>Pending for Business Development Manager</label>
+            </value>
+            <value>
+                <fullName>Pending for General Manager</fullName>
+                <default>false</default>
+                <label>Pending for General Manager</label>
+            </value>
+            <value>
+                <fullName>Approved by General Manager</fullName>
+                <default>false</default>
+                <label>Approved by General Manager</label>
+            </value>
+            <value>
+                <fullName>Rejected by Account Pricing Manager</fullName>
+                <default>false</default>
+                <label>Rejected by Account Pricing Manager</label>
+            </value>
+            <value>
+                <fullName>Rejected by Risk/Pricing Manager</fullName>
+                <default>false</default>
+                <label>Rejected by Risk/Pricing Manager</label>
+            </value>
+            <value>
+                <fullName>Rejected by Pricing Department Manager</fullName>
+                <default>false</default>
+                <label>Rejected by Pricing Department Manager</label>
+            </value>
+            <value>
+                <fullName>Rejected by Zone Executive Manager</fullName>
+                <default>false</default>
+                <label>Rejected by Zone Executive Manager</label>
+            </value>
+            <value>
+                <fullName>Rejected by Business Development Manager</fullName>
+                <default>false</default>
+                <label>Rejected by Business Development Manager</label>
+            </value>
+            <value>
+                <fullName>Rejected by General Manager</fullName>
+                <default>false</default>
+                <label>Rejected by General Manager</label>
+            </value>
+            <value>
+                <fullName>Not Submitted</fullName>
+                <default>false</default>
+                <label>Not Submitted</label>
+            </value>
+            <value>
+                <fullName>Pending with Head of pricing Team</fullName>
+                <default>false</default>
+                <label>Pending with Head of pricing Team</label>
+            </value>
+            <value>
+                <fullName>Approved with Head of pricing Team</fullName>
+                <default>false</default>
+                <label>Approved with Head of pricing Team</label>
+            </value>
+            <value>
+                <fullName>Rejected with Head of pricing Team</fullName>
+                <default>false</default>
+                <label>Rejected with Head of pricing Team</label>
+            </value>
+            <value>
+                <fullName>Pending with Chief Commercial Officer</fullName>
+                <default>false</default>
+                <label>Pending with Chief Commercial Officer</label>
+            </value>
+            <value>
+                <fullName>Approved by Chief Commercial Officer</fullName>
+                <default>false</default>
+                <label>Approved by Chief Commercial Officer</label>
+            </value>
+            <value>
+                <fullName>Rejected by Chief Commercial Officer</fullName>
+                <default>false</default>
+                <label>Rejected by Chief Commercial Officer</label>
+            </value>
+            <value>
+                <fullName>Pending with CEO</fullName>
+                <default>false</default>
+                <label>Pending with CEO</label>
+            </value>
+            <value>
+                <fullName>Approved by CEO</fullName>
+                <default>false</default>
+                <label>Approved by CEO</label>
+            </value>
+            <value>
+                <fullName>Rejected by CEO</fullName>
+                <default>false</default>
+                <label>Rejected by CEO</label>
+            </value>
+            <value>
+                <fullName>Pending with Investments Committee</fullName>
+                <default>false</default>
+                <label>Pending with Investments Committee</label>
+            </value>
+            <value>
+                <fullName>Approved by Investments Committee</fullName>
+                <default>false</default>
+                <label>Approved by Investments Committee</label>
+            </value>
+            <value>
+                <fullName>Rejected by Investments Committee</fullName>
+                <default>false</default>
+                <label>Rejected by Investments Committee</label>
+            </value>
+            <value>
+                <fullName>Approved by Chief Transport &amp; Lease Officer</fullName>
+                <default>false</default>
+                <label>Approved by Chief Transport &amp; Lease Officer</label>
+            </value>
+            <value>
+                <fullName>Approved by Deputy CEO</fullName>
+                <default>false</default>
+                <label>Approved by Deputy CEO</label>
+            </value>
+            <value>
+                <fullName>Approved by School Transport Executive Director</fullName>
+                <default>false</default>
+                <label>Approved by School Transport Executive Director</label>
+            </value>
+            <value>
+                <fullName>Rejected by Chief Transport &amp; Lease Officer</fullName>
+                <default>false</default>
+                <label>Rejected by Chief Transport &amp; Lease Officer</label>
+            </value>
+            <value>
+                <fullName>Rejected by School Transport Executive Director</fullName>
+                <default>false</default>
+                <label>Rejected by School Transport Executive Director</label>
+            </value>
+            <value>
+                <fullName>Rejected by Deputy CEO</fullName>
+                <default>false</default>
+                <label>Rejected by Deputy CEO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

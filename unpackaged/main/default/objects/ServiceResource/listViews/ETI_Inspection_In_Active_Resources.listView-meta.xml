@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETI_Inspection_In_Active_Resources</fullName>
+    <columns>Name</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>RelatedRecord</columns>
+    <columns>ResourceType</columns>
+    <columns>IsActive</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IsActive</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ETI_Record_Type__c</field>
+        <operation>equals</operation>
+        <value>Inspection Service Resource</value>
+    </filters>
+    <label>Inspection In-Active Resources</label>
+    <sharedTo>
+        <group>ETI_Inspection_FSL_Admins</group>
+    </sharedTo>
+</ListView>

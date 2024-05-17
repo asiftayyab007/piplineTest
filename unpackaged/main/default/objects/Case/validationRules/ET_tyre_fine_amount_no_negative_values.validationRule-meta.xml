@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_tyre_fine_amount_no_negative_values</fullName>
+    <active>true</active>
+    <errorConditionFormula>Tyre_Fine_Amount__c  &lt; 0</errorConditionFormula>
+    <errorMessage>Please enter positive value for Tyre Fine Amount</errorMessage>
+</ValidationRule>

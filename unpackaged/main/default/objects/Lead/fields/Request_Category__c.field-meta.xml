@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Request Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Passenger Transportation</fullName>
+                <default>false</default>
+                <label>Passenger Transportation</label>
+            </value>
+            <value>
+                <fullName>School Transportation</fullName>
+                <default>false</default>
+                <label>School Transportation</label>
+            </value>
+            <value>
+                <fullName>Lease</fullName>
+                <default>false</default>
+                <label>Lease</label>
+            </value>
+            <value>
+                <fullName>Maintenance and Technical services</fullName>
+                <default>false</default>
+                <label>Maintenance and Technical services</label>
+            </value>
+            <value>
+                <fullName>General inquiry</fullName>
+                <default>false</default>
+                <label>General inquiry</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Activity_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Activity Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Car Rental Services</fullName>
+                <default>false</default>
+                <label>Car Rental Services</label>
+            </value>
+            <value>
+                <fullName>Limo Services</fullName>
+                <default>false</default>
+                <label>Limo Services</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Technical Service</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Technical Service</label>
+            </value>
+            <value>
+                <fullName>Emirates Transport and leasing</fullName>
+                <default>false</default>
+                <label>Emirates Transport and leasing</label>
+            </value>
+            <value>
+                <fullName>UCNG</fullName>
+                <default>false</default>
+                <label>UCNG</label>
+            </value>
+            <value>
+                <fullName>Al Wataneyah Auction Center</fullName>
+                <default>false</default>
+                <label>Al Wataneyah Auction Center</label>
+            </value>
+            <value>
+                <fullName>Government Transport</fullName>
+                <default>false</default>
+                <label>Government Transport</label>
+            </value>
+            <value>
+                <fullName>Petroleum Transport Center</fullName>
+                <default>false</default>
+                <label>Petroleum Transport Center</label>
+            </value>
+            <value>
+                <fullName>East Coast Technical Service</fullName>
+                <default>false</default>
+                <label>East Coast Technical Service</label>
+            </value>
+            <value>
+                <fullName>RAK Technical Service</fullName>
+                <default>false</default>
+                <label>RAK Technical Service</label>
+            </value>
+            <value>
+                <fullName>Body Shop Unit</fullName>
+                <default>false</default>
+                <label>Body Shop Unit</label>
+            </value>
+            <value>
+                <fullName>Luxury Vehicles Maintenance unit</fullName>
+                <default>false</default>
+                <label>Luxury Vehicles Maintenance unit</label>
+            </value>
+            <value>
+                <fullName>School Services Center</fullName>
+                <default>false</default>
+                <label>School Services Center</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

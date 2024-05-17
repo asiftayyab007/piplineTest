@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Service_Territory</fullName>
+    <active>true</active>
+    <description>Inspection Service Territory</description>
+    <label>Inspection Service Territory</label>
+    <picklistValues>
+        <picklist>FSL__System_Jobs__c</picklist>
+        <values>
+            <fullName>BATCH_ServicesDispatched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BATCH_ServicesInJeopardy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ChatterNotification</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

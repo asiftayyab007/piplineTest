@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Term Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Terms_Description__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ACC</fullName>
+                <default>false</default>
+                <label>ACC</label>
+            </value>
+            <value>
+                <fullName>ADM</fullName>
+                <default>false</default>
+                <label>ADM</label>
+            </value>
+            <value>
+                <fullName>ADR</fullName>
+                <default>false</default>
+                <label>ADR</label>
+            </value>
+            <value>
+                <fullName>ADV</fullName>
+                <default>false</default>
+                <label>ADV</label>
+            </value>
+            <value>
+                <fullName>BRC</fullName>
+                <default>false</default>
+                <label>BRC</label>
+            </value>
+            <value>
+                <fullName>BRE</fullName>
+                <default>false</default>
+                <label>BRE</label>
+            </value>
+            <value>
+                <fullName>DMG</fullName>
+                <default>false</default>
+                <label>DMG</label>
+            </value>
+            <value>
+                <fullName>DPO</fullName>
+                <default>false</default>
+                <label>DPO</label>
+            </value>
+            <value>
+                <fullName>DSERV</fullName>
+                <default>false</default>
+                <label>DSERV</label>
+            </value>
+            <value>
+                <fullName>EMF</fullName>
+                <default>false</default>
+                <label>EMF</label>
+            </value>
+            <value>
+                <fullName>ETP</fullName>
+                <default>false</default>
+                <label>ETP</label>
+            </value>
+            <value>
+                <fullName>FBE</fullName>
+                <default>false</default>
+                <label>FBE</label>
+            </value>
+            <value>
+                <fullName>FCD</fullName>
+                <default>false</default>
+                <label>FCD</label>
+            </value>
+            <value>
+                <fullName>FPRZ</fullName>
+                <default>false</default>
+                <label>FPRZ</label>
+            </value>
+            <value>
+                <fullName>FPRZD</fullName>
+                <default>false</default>
+                <label>FPRZD</label>
+            </value>
+            <value>
+                <fullName>GPS</fullName>
+                <default>false</default>
+                <label>GPS</label>
+            </value>
+            <value>
+                <fullName>IMP</fullName>
+                <default>false</default>
+                <label>IMP</label>
+            </value>
+            <value>
+                <fullName>INS</fullName>
+                <default>false</default>
+                <label>INS</label>
+            </value>
+            <value>
+                <fullName>LD</fullName>
+                <default>false</default>
+                <label>LD</label>
+            </value>
+            <value>
+                <fullName>MAPC</fullName>
+                <default>false</default>
+                <label>MAPC</label>
+            </value>
+            <value>
+                <fullName>MNT</fullName>
+                <default>false</default>
+                <label>MNT</label>
+            </value>
+            <value>
+                <fullName>MPC</fullName>
+                <default>false</default>
+                <label>MPC</label>
+            </value>
+            <value>
+                <fullName>NOC</fullName>
+                <default>false</default>
+                <label>NOC</label>
+            </value>
+            <value>
+                <fullName>NRT</fullName>
+                <default>false</default>
+                <label>NRT</label>
+            </value>
+            <value>
+                <fullName>PCC</fullName>
+                <default>false</default>
+                <label>PCC</label>
+            </value>
+            <value>
+                <fullName>PRC</fullName>
+                <default>false</default>
+                <label>PRC</label>
+            </value>
+            <value>
+                <fullName>PRICEST</fullName>
+                <default>false</default>
+                <label>PRICEST</label>
+            </value>
+            <value>
+                <fullName>QUOT</fullName>
+                <default>false</default>
+                <label>QUOT</label>
+            </value>
+            <value>
+                <fullName>REP</fullName>
+                <default>false</default>
+                <label>REP</label>
+            </value>
+            <value>
+                <fullName>RPL</fullName>
+                <default>false</default>
+                <label>RPL</label>
+            </value>
+            <value>
+                <fullName>TC</fullName>
+                <default>false</default>
+                <label>TC</label>
+            </value>
+            <value>
+                <fullName>TFADM</fullName>
+                <default>false</default>
+                <label>TFADM</label>
+            </value>
+            <value>
+                <fullName>TFC</fullName>
+                <default>false</default>
+                <label>TFC</label>
+            </value>
+            <value>
+                <fullName>TFDREQ</fullName>
+                <default>false</default>
+                <label>TFDREQ</label>
+            </value>
+            <value>
+                <fullName>TGC</fullName>
+                <default>false</default>
+                <label>TGC</label>
+            </value>
+            <value>
+                <fullName>VDC</fullName>
+                <default>false</default>
+                <label>VDC</label>
+            </value>
+            <value>
+                <fullName>VEHCB</fullName>
+                <default>false</default>
+                <label>VEHCB</label>
+            </value>
+            <value>
+                <fullName>VEHINS</fullName>
+                <default>false</default>
+                <label>VEHINS</label>
+            </value>
+            <value>
+                <fullName>VMC</fullName>
+                <default>false</default>
+                <label>VMC</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Traffic fines</controllingFieldValue>
+            <valueName>TFC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traffic Fines Admin Fees</controllingFieldValue>
+            <valueName>TFADM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>MNT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accident Repair</controllingFieldValue>
+            <valueName>REP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accident Faulty Penalty</controllingFieldValue>
+            <valueName>ACC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Insurance</controllingFieldValue>
+            <valueName>VEHINS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Additional Terms</controllingFieldValue>
+            <valueName>ADR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Price (School Transportation)</controllingFieldValue>
+            <valueName>PRICEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Duty Service</controllingFieldValue>
+            <valueName>DSERV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel Price</controllingFieldValue>
+            <valueName>FPRZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fuel differences</controllingFieldValue>
+            <valueName>FPRZD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>The cost of extra trip</controllingFieldValue>
+            <valueName>ETP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre mature penalty Months - 5th Year AED</controllingFieldValue>
+            <controllingFieldValue>Pre mature penalty Months - 6th Year AED</controllingFieldValue>
+            <controllingFieldValue>Pre mature penalty Months - 1st Year AED</controllingFieldValue>
+            <controllingFieldValue>Pre mature penalty Months - 2nd Year AED</controllingFieldValue>
+            <controllingFieldValue>Pre mature penalty Months - 3rd Year AED</controllingFieldValue>
+            <controllingFieldValue>Pre mature penalty Months - 4th Year AED</controllingFieldValue>
+            <controllingFieldValue>Pre mature penalty after issuing LPO</controllingFieldValue>
+            <controllingFieldValue>Pre mature penalty charge (School Transportation)</controllingFieldValue>
+            <valueName>TC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nursery term</controllingFieldValue>
+            <valueName>NRT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Breakdown Term</controllingFieldValue>
+            <valueName>BRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DARB consumption</controllingFieldValue>
+            <controllingFieldValue>SALIK consumption</controllingFieldValue>
+            <valueName>TGC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Impound Vehicle Recovery Charges</controllingFieldValue>
+            <valueName>IMP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Damage Penalty</controllingFieldValue>
+            <valueName>DMG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NOC Term</controllingFieldValue>
+            <valueName>NOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Insurance Excess Charge</controllingFieldValue>
+            <valueName>INS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quotation Validity</controllingFieldValue>
+            <valueName>QUOT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Deep Cleaning charges (per vehicle)</controllingFieldValue>
+            <valueName>VDC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Replacement</controllingFieldValue>
+            <valueName>RPL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laws or Decisions</controllingFieldValue>
+            <valueName>LD</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

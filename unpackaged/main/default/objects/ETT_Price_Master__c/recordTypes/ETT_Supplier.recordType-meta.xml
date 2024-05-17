@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Supplier</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>ETT_Price_Master</compactLayoutAssignment>
+    <label>Supplier</label>
+    <picklistValues>
+        <picklist>ETT_Party_Type__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Payment_Terms__c</picklist>
+        <values>
+            <fullName>120 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash on Delivery</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

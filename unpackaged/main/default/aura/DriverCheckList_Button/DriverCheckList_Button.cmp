@@ -1,0 +1,21 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes,force:lightningQuickAction,lightning:actionOverride,lightning:isUrlAddressable" access="global" >
+    
+    
+    <aura:handler event="force:refreshView" action="{!c.doInit}"/>
+    
+    
+    <lightning:overlayLibrary aura:id="overlayLib" />
+    <a href="" onclick="{!c.handleForm}">
+        
+        <div class="slds-col">
+            <div class="form-box-row2 createCaseSection" id="step-1">
+                <div class="slds-grid slds-grid_align-center">
+                    <img src="{!$Resource.ETST_SchoolBG1}"/>
+                </div>
+                <div class="rightsectiondiv">
+                    <h3 class="form-title">Daily Pre Inspection CheckList</h3> 
+                </div>
+            </div>
+        </div>
+    </a>
+</aura:component>

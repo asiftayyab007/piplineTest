@@ -1,0 +1,47 @@
+<template>
+    <lightning-record-edit-form object-api-name={termsAndCondition}>
+        <div class="slds-grid infoTabs">
+            <div class="slds-col slds-size_1-of-7">
+                <lightning-input-field 
+                    field-name={terms.NAME} 
+                ></lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-7">
+                <lightning-input-field 
+                    field-name={terms.TERMS_CODE} 
+                ></lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-7">
+                <lightning-input-field 
+                    field-name={terms.CHARGEABLE} 
+                ></lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-7">
+                <lightning-input-field 
+                    field-name={terms.CHARGE_TYPE} 
+                ></lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-7">
+                <lightning-input-field 
+                    field-name={terms.CHARGE_TYPE_VALUE} 
+                ></lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-7">
+                <lightning-input-field 
+                    field-name={terms.START_DATE} 
+                ></lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-7">
+                <lightning-input-field 
+                    field-name={terms.END_DATE} 
+                ></lightning-input-field>
+            </div>
+            
+            <div class="slds-hide">
+                <!-- <lightning-input-field data-id="customerQuoteId" value={customerQuoteId} field-name={customerQuoteFields.CUSTOMER_QUOTE}></lightning-input-field>
+                <lightning-input-field  value={lineitem.serviceType} field-name={customerQuoteFields.SERVICE_TYPE}></lightning-input-field> -->
+                <lightning-button variant="brand" type="submit" label="Save"> </lightning-button>
+            </div>
+        </div>
+    </lightning-record-edit-form>
+</template>

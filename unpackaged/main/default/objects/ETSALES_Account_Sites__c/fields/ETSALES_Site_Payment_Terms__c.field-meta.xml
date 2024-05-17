@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Site_Payment_Terms__c</fullName>
+    <description>Changed the type from text to drop down, as per Data Upload</description>
+    <externalId>false</externalId>
+    <label>Site Payment Terms</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Immediate</fullName>
+                <default>false</default>
+                <label>Immediate</label>
+            </value>
+            <value>
+                <fullName>15 Days</fullName>
+                <default>false</default>
+                <label>15 Days</label>
+            </value>
+            <value>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+                <label>30 Days</label>
+            </value>
+            <value>
+                <fullName>45 Days</fullName>
+                <default>false</default>
+                <label>45 Days</label>
+            </value>
+            <value>
+                <fullName>60 Days</fullName>
+                <default>false</default>
+                <label>60 Days</label>
+            </value>
+            <value>
+                <fullName>90 Days</fullName>
+                <default>false</default>
+                <label>90 Days</label>
+            </value>
+            <value>
+                <fullName>120 Days</fullName>
+                <default>false</default>
+                <label>120 Days</label>
+            </value>
+            <value>
+                <fullName>180 Days</fullName>
+                <default>false</default>
+                <label>180 Days</label>
+            </value>
+            <value>
+                <fullName>360 Days</fullName>
+                <default>false</default>
+                <label>360 Days</label>
+            </value>
+            <value>
+                <fullName>Term for chargeback or debit memo</fullName>
+                <default>false</default>
+                <label>Term for chargeback or debit memo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

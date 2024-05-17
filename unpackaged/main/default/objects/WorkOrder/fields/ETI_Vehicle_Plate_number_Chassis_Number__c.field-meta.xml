@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETI_Vehicle_Plate_number_Chassis_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(  !ISBLANK(Booking__r.Customer_Vehicle__r.Chassis_No__c) ,  Booking__r.Customer_Vehicle__r.Chassis_No__c ,  Booking__r.Customer_Vehicle__r.Plate_No__c + Booking__r.Customer_Vehicle__r.Plate_Color_Code__c	 + Booking__r.Customer_Vehicle__r.Plate_Source__c)</formula>
+    <label>Vehicle Plate number/Chassis Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

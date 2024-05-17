@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moto_Work_Order_Number_is_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName =&#39;Automotive_Service_CenterBodyShop&#39;, ISPICKVAL(StageName, &#39;Vehicle Delivery&#39;),
+ISBLANK(Work_Order_Number__c))</errorConditionFormula>
+    <errorDisplayField>Work_Order_Number__c</errorDisplayField>
+    <errorMessage>Work Order is mandatory</errorMessage>
+</ValidationRule>

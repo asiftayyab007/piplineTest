@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Student Behavior</fullName>
+                <default>false</default>
+                <label>Student Behavior</label>
+            </value>
+            <value>
+                <fullName>Student Attendance</fullName>
+                <default>false</default>
+                <label>Student Attendance</label>
+            </value>
+            <value>
+                <fullName>Pick up</fullName>
+                <default>false</default>
+                <label>Pick up</label>
+            </value>
+            <value>
+                <fullName>Drop off</fullName>
+                <default>false</default>
+                <label>Drop off</label>
+            </value>
+            <value>
+                <fullName>The student is absent</fullName>
+                <default>false</default>
+                <label>The student is absent</label>
+            </value>
+            <value>
+                <fullName>The students caught the wrong bus</fullName>
+                <default>false</default>
+                <label>The students caught the wrong bus</label>
+            </value>
+            <value>
+                <fullName>The student landed at the wrong place</fullName>
+                <default>false</default>
+                <label>The student landed at the wrong place</label>
+            </value>
+            <value>
+                <fullName>Student is returned to school</fullName>
+                <default>false</default>
+                <label>Student is returned to school</label>
+            </value>
+            <value>
+                <fullName>Students absence for each trip</fullName>
+                <default>false</default>
+                <label>Students absence for each trip</label>
+            </value>
+            <value>
+                <fullName>students absence for period of time</fullName>
+                <default>false</default>
+                <label>students absence for period of time</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

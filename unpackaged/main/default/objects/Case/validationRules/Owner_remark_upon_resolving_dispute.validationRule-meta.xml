@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_remark_upon_resolving_dispute</fullName>
+    <active>true</active>
+    <description>Please add owner&#39;s Remarks</description>
+    <errorConditionFormula>AND( ISBLANK(OwnerRemarks__c) ,ISPICKVAL(Status, &#39;Dispute Resolved&#39;) )</errorConditionFormula>
+    <errorMessage>Please add owner&#39;s Remarks before resolving</errorMessage>
+</ValidationRule>

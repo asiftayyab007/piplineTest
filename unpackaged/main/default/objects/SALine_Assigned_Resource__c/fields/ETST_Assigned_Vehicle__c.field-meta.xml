@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETST_Assigned_Vehicle__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Assigned Vehicle</label>
+    <referenceTo>SALine_Assigned_Vehicle__c</referenceTo>
+    <relationshipLabel>Assigned Resources</relationshipLabel>
+    <relationshipName>Assigned_Resources</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>BC Emirates Collection Centre Tyre</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>BC Emirates Collection Centre Tyre</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>BC_Emirates_Receptionist_Centre_Tyre</parentRole>
+</Role>

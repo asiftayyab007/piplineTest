@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_survey_Email</name>
+        <label>Send survey Email</label>
+        <locationX>176</locationX>
+        <locationY>815</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>CaseClosureSurveyTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record__Prior.Contact.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>etcares@et.ae</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Survey - Emirates Transport customer experience for Case {!$Record__Prior.CaseNumber}</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Email_assignment</name>
+        <label>Email assignment</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <assignmentItems>
+            <assignToReference>Contactemail</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.ContactId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Survey</targetReference>
+        </connector>
+    </assignments>
+    <interviewLabel>Case closure survey {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case closure survey</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Survey_Invitation</name>
+        <label>Create Survey Invitation</label>
+        <locationX>176</locationX>
+        <locationY>575</locationY>
+        <assignRecordIdToReference>SurveyInvitationID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Get_Survey_Invitation</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Case__c</field>
+            <value>
+                <elementReference>$Record__Prior.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CommunityId</field>
+            <value>
+                <stringValue>0DB3z000000bml4GAA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <stringValue>ET survey</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OptionsAllowGuestUserResponse</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OptionsAllowParticipantAccessTheirResponse</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParticipantId</field>
+            <value>
+                <elementReference>$Record__Prior.ContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SurveyId</field>
+            <value>
+                <elementReference>Survey.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>SurveyInvitation</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Survey</name>
+        <label>Get Survey</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Survey_Invitation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ET Customer Service</stringValue>
+            </value>
+        </filters>
+        <object>Survey</object>
+        <outputReference>Survey</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Survey_Invitation</name>
+        <label>Get Survey Invitation</label>
+        <locationX>176</locationX>
+        <locationY>695</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_survey_Email</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SurveyInvitationID</elementReference>
+            </value>
+        </filters>
+        <object>SurveyInvitation</object>
+        <outputReference>SurveyInvitation</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>InvitationLink</queriedFields>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Email_assignment</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <textTemplates>
+        <name>CaseClosureSurveyTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Thanks for creating a case with ET Services
+
+Dear valued customer,
+متعاملنا العزيز
+
+Request #{!$Record__Prior.CaseNumber} has been resolved/closed.
+تم حل/اغلاق الطلب رقم #{!$Record__Prior.CaseNumber} شكراً على تواصلكم معنا
+
+Please spend a few minutes to fill out the following survey. The feedback you provide will be used to improve our level of service.
+للتفضل بملء الاستبيان التالي للعلم فإنه سيتم النظر بالملاحظات التي تم تقديمها وذلك لتحسين مستوى الخدمة . شكراً
+
+{!SurveyInvitation.InvitationLink}
+
+Thank you,
+Emirates Transport</text>
+    </textTemplates>
+    <variables>
+        <name>Contactemail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Survey</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Survey</objectType>
+    </variables>
+    <variables>
+        <name>SurveyInvitation</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SurveyInvitation</objectType>
+    </variables>
+    <variables>
+        <name>SurveyInvitationID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

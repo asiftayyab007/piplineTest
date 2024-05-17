@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Complaint_Suggestion_Zone_C_T_L_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Complaint &amp; Suggestion - Zone C - T&amp;L</label>
+    <queue>Complaint_Suggestion_Zone_C_T_L</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

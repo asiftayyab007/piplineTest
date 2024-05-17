@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_with_Admin</fullName>
+    <columns>NAME</columns>
+    <columns>Policy_Number__c</columns>
+    <columns>Insurance_Type__c</columns>
+    <columns>Insurance_Company__c</columns>
+    <columns>Policy_Start_Date__c</columns>
+    <columns>Policy_End_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>Sum_Assured__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Insurance Admin Pending</value>
+    </filters>
+    <label>Pending with Admin</label>
+</ListView>

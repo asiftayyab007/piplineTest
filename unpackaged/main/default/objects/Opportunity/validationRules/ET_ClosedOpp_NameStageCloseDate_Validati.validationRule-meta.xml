@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_ClosedOpp_NameStageCloseDate_Validati</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF($RecordType.Name=&quot;Closed Opportunity&quot; &amp;&amp;  ( ISCHANGED( Name ) || ISCHANGED( CloseDate ) || ISCHANGED(  StageName ) ), true, false )</errorConditionFormula>
+    <errorMessage>Value change is not allowed for Close Opportunity.</errorMessage>
+</ValidationRule>

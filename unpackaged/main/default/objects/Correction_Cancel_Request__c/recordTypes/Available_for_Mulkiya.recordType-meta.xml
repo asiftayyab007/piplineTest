@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Available_for_Mulkiya</fullName>
+    <active>true</active>
+    <description>Make insurance online for Mulkiya</description>
+    <label>Available for Mulkiya</label>
+    <picklistValues>
+        <picklist>Correction_for__c</picklist>
+        <values>
+            <fullName>Chassis Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Make</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Journey_Status__c</picklist>
+        <values>
+            <fullName>1%2EInsurance Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compensation%2FClaim Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Created</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>NOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police Report Attached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prove Theft Report Attached</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Cancellation__c</picklist>
+        <values>
+            <fullName>Scrapped Vehicle Theft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Sold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Theft</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Status__c</picklist>
+        <values>
+            <fullName>Insurance Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Vehicle Found</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Theft_Location__c</picklist>
+        <values>
+            <fullName>Abu Dhabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dubai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fujairah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ras Al Khaimah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharjah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Umm Al Quwain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

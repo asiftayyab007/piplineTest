@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ETT_Accsess_to_Storekeeper</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ETT Accsess to Storekeeper</label>
+        <sharedTo>
+            <role>BC_Emirates_StoreKeeper_Centre_Tyre</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

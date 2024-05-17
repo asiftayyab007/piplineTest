@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finance_Document_Compact_Layout</fullName>
+    <fields>ET_Bill_To_Customer__c</fields>
+    <fields>Sync_status__c</fields>
+    <label>Finance Document Compact Layout</label>
+</CompactLayout>

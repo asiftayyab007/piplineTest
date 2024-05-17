@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(NOT(ISBLANK(ETT_Phone__c)),
+NOT(REGEX(ETT_Phone__c, &quot;(\\D?[+]\\D?[9]\\D?[7]\\D?[1])\\s?[0-9]{8,9}&quot;)),FALSE)</errorConditionFormula>
+    <errorMessage>Phone number should start with +971 and should have 8  or 9 digits after space.</errorMessage>
+</ValidationRule>

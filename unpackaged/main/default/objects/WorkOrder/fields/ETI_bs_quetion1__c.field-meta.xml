@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETI_bs_quetion1__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>GPS location of the bus available and communication duration 1 minute</description>
+    <externalId>false</externalId>
+    <label>GPS loc of bus available &amp; Range 1 Min</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

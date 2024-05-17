@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Lead_Cannot_be_Converted</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISPICKVAL(Status, &#39;Closed&#39;),
+ IsConverted
+)</errorConditionFormula>
+    <errorMessage>Closed Leads Can be Converted</errorMessage>
+</ValidationRule>

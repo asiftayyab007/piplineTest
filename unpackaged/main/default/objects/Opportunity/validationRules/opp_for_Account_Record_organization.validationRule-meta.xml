@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>opp_for_Account_Record_organization</fullName>
+    <active>true</active>
+    <description>Opportunity can not be made on Business (B2B) - School Account Record Type</description>
+    <errorConditionFormula>AND( ISNEW(), Account.RecordType.DeveloperName =&quot;Business_School&quot; )</errorConditionFormula>
+    <errorMessage>If Account type business B2B- School opportunity will not created..</errorMessage>
+</ValidationRule>

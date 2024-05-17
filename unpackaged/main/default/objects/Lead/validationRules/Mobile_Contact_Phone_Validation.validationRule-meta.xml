@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_Contact_Phone_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ NOT(OR(ISPICKVAL( LeadSource , &quot;Instagram&quot;)
+,ISPICKVAL(LeadSource, &quot;Facebook&quot;) 
+,ISPICKVAL(LeadSource, &quot;Twitter&quot;))) ,
+ISBLANK( MobilePhone ),
+ISBLANK( ETSALES_Contact_Phone__c ),
+ISBLANK( Phone )
+)</errorConditionFormula>
+    <errorMessage>Either Mobile or Contact Phone should exist</errorMessage>
+</ValidationRule>

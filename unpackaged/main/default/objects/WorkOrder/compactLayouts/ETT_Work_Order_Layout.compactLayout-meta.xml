@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Work_Order_Layout</fullName>
+    <fields>WorkOrderNumber</fields>
+    <fields>AccountId</fields>
+    <fields>ContactId</fields>
+    <fields>ETT_Opportunity__c</fields>
+    <fields>ETT_No_of_rejected_tyres__c</fields>
+    <fields>ETT_No_of_Tyres_accepted__c</fields>
+    <fields>ETT_Number_Of_Tyres__c</fields>
+    <fields>Status</fields>
+    <label>Work Order Layout</label>
+</CompactLayout>

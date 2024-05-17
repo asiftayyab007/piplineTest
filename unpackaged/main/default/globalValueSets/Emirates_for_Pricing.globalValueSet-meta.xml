@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>All</fullName>
+        <default>false</default>
+        <label>All</label>
+    </customValue>
+    <customValue>
+        <fullName>Abu Dhabi</fullName>
+        <default>false</default>
+        <label>Abu Dhabi</label>
+    </customValue>
+    <customValue>
+        <fullName>Ajman</fullName>
+        <default>false</default>
+        <label>Ajman</label>
+    </customValue>
+    <customValue>
+        <fullName>Dubai</fullName>
+        <default>false</default>
+        <label>Dubai</label>
+    </customValue>
+    <customValue>
+        <fullName>Fujairah</fullName>
+        <default>false</default>
+        <label>Fujairah</label>
+    </customValue>
+    <customValue>
+        <fullName>Ras Al Khaimah</fullName>
+        <default>false</default>
+        <label>Ras Al Khaimah</label>
+    </customValue>
+    <customValue>
+        <fullName>Sharjah</fullName>
+        <default>false</default>
+        <label>Sharjah</label>
+    </customValue>
+    <customValue>
+        <fullName>Umm Al Quwain</fullName>
+        <default>false</default>
+        <label>Umm Al Quwain</label>
+    </customValue>
+    <masterLabel>Emirates for Pricing</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

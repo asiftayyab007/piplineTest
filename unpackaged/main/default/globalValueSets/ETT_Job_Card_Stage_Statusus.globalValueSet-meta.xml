@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accepted</fullName>
+        <default>false</default>
+        <label>Accepted</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial Rejection</fullName>
+        <default>false</default>
+        <label>Initial Rejection</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Supervisor</fullName>
+        <default>false</default>
+        <label>Resubmitted by Supervisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Rejected by Supervisor</fullName>
+        <default>false</default>
+        <label>Rejected by Supervisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Rejected by HOO</fullName>
+        <default>false</default>
+        <label>Rejected by HOO</label>
+    </customValue>
+    <customValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by HOO</fullName>
+        <default>false</default>
+        <label>Resubmitted by HOO</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Factory Manager</fullName>
+        <default>false</default>
+        <label>Resubmitted by Factory Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Buffing</fullName>
+        <default>false</default>
+        <label>Resubmitted by Buffing</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Skiving</fullName>
+        <default>false</default>
+        <label>Resubmitted by Skiving</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Repair</fullName>
+        <default>false</default>
+        <label>Resubmitted by Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Cementing</fullName>
+        <default>false</default>
+        <label>Resubmitted by Cementing</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Filling</fullName>
+        <default>false</default>
+        <label>Resubmitted by Filling</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Thread Preparation</fullName>
+        <default>false</default>
+        <label>Resubmitted by Thread Preparation</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Building</fullName>
+        <default>false</default>
+        <label>Resubmitted by Building</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Rimming &amp; Enveloping</fullName>
+        <default>false</default>
+        <label>Resubmitted by Rimming &amp; Enveloping</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Curing</fullName>
+        <default>false</default>
+        <label>Resubmitted by Curing</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Final Inspection</fullName>
+        <default>false</default>
+        <label>Resubmitted by Final Inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Painting</fullName>
+        <default>false</default>
+        <label>Resubmitted by Painting</label>
+    </customValue>
+    <customValue>
+        <fullName>Waiting for Acceptance</fullName>
+        <default>false</default>
+        <label>Waiting for Acceptance</label>
+    </customValue>
+    <customValue>
+        <fullName>Defects Identified &amp; Sent Back</fullName>
+        <default>false</default>
+        <label>Defects Identified &amp; Sent Back</label>
+    </customValue>
+    <customValue>
+        <fullName>Approval In Progress</fullName>
+        <default>false</default>
+        <label>Approval In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>Process Again</fullName>
+        <default>false</default>
+        <label>Process Again</label>
+    </customValue>
+    <customValue>
+        <fullName>Resubmitted by Quality Control</fullName>
+        <default>false</default>
+        <label>Resubmitted by Quality Control</label>
+    </customValue>
+    <masterLabel>Job Card Stage Statusus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

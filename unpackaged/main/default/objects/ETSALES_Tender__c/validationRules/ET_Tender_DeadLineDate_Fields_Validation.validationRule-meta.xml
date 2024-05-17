@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Tender_DeadLineDate_Fields_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(ISBLANK(ETSALES_Tender_Deadline__c) &amp;&amp; ETSALES_Tender_Deadline__c &lt;  ETSALES_Date_Received__c,TRUE,FALSE)</errorConditionFormula>
+    <errorDisplayField>ETSALES_Tender_Deadline__c</errorDisplayField>
+    <errorMessage>Deadline date should not be less than Received Date</errorMessage>
+</ValidationRule>

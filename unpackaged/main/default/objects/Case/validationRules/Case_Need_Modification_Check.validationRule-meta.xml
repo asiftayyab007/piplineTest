@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Need_Modification_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName==&#39;ETST_Ministry_of_Education&#39;, ISBLANK(TEXT(Need_Modification__c)), ISPICKVAL(Status,&#39;Approved by ET Manager&#39;),OR(ISPICKVAL(Case_Types__c,&#39;Request for New Bus/Supervisors/Teachers Transfer&#39;),   ISPICKVAL(Case_Types__c,&#39;Requests for New Trips, Activities and Events&#39;)))</errorConditionFormula>
+    <errorDisplayField>Need_Modification__c</errorDisplayField>
+    <errorMessage>Please enter value for Need Modification before proceeding</errorMessage>
+</ValidationRule>

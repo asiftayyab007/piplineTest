@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Quote_Item__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Vehicle Quote Item</label>
+    <referenceTo>Customer_Vehicle_Quote_Item__c</referenceTo>
+    <relationshipLabel>Customer Financial Analysiss</relationshipLabel>
+    <relationshipName>Customer_Financial_Analysiss</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Body_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Body Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>4X4</fullName>
+                <default>false</default>
+                <label>4X4</label>
+            </value>
+            <value>
+                <fullName>Coupe</fullName>
+                <default>false</default>
+                <label>Coupe</label>
+            </value>
+            <value>
+                <fullName>Crossover</fullName>
+                <default>false</default>
+                <label>Crossover</label>
+            </value>
+            <value>
+                <fullName>Hatchback</fullName>
+                <default>false</default>
+                <label>Hatchback</label>
+            </value>
+            <value>
+                <fullName>Motorbike</fullName>
+                <default>false</default>
+                <label>Motorbike</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Sedan</fullName>
+                <default>false</default>
+                <label>Sedan</label>
+            </value>
+            <value>
+                <fullName>Sports Car</fullName>
+                <default>false</default>
+                <label>Sports Car</label>
+            </value>
+            <value>
+                <fullName>SUV</fullName>
+                <default>false</default>
+                <label>SUV</label>
+            </value>
+            <value>
+                <fullName>Van</fullName>
+                <default>false</default>
+                <label>Van</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

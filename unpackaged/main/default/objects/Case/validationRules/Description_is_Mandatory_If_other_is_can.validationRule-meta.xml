@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description_is_Mandatory_If_other_is_can</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(ETIN_Reason_for_Cancellation__c , &#39;Other&#39;) &amp;&amp; ISBLANK(Description)</errorConditionFormula>
+    <errorDisplayField>Description</errorDisplayField>
+    <errorMessage>Description is required if reason for correction is Other</errorMessage>
+</ValidationRule>

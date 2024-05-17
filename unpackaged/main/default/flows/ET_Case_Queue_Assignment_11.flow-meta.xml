@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_email_alert_to_B2B_users</name>
+        <label>Send email alert to B2B users</label>
+        <locationX>1370</locationX>
+        <locationY>1175</locationY>
+        <actionName>Case.Case_Owner_Assignment_Email_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Case_Owner_Assignment_Email_Notification</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_to_BRE_Group</name>
+        <label>Send Email to BRE Group</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <actionName>Case.Case_Owner_Assignment_Email_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Case_Owner_Assignment_Email_Notification</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_to_Maintenance_Group</name>
+        <label>Send Email to Maintenance Group</label>
+        <locationX>578</locationX>
+        <locationY>815</locationY>
+        <actionName>Case.Case_Owner_Assignment_Email_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Case_Owner_Assignment_Email_Notification</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email_to_RSA_Group</name>
+        <label>Send Email to RSA Group</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <actionName>Case.Case_Owner_Assignment_Email_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Case_Owner_Assignment_Email_Notification</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>ADNOC</name>
+        <label>ADNOC</label>
+        <locationX>1073</locationX>
+        <locationY>695</locationY>
+        <defaultConnector>
+            <targetReference>Top_20_Customers</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ADNOC</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>ADNOC</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ABU DHABI NATIONAL OIL COMPANY (HQ)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_to_B2B_Queue</targetReference>
+            </connector>
+            <label>TRUE_ADNOC</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Assign_case_to_B2B_Queue_users</name>
+        <label>Assign case to B2B Queue users</label>
+        <locationX>1502</locationX>
+        <locationY>935</locationY>
+        <defaultConnectorLabel>FALSE_Assign case to B2B Queue users</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Assign_case_to_B2B_Queue_users</name>
+            <conditionLogic>1 AND 2 AND (NOT 3) AND (NOT 4) AND (NOT 5) AND (NOT 6) AND (NOT 7) AND (NOT 8)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Organization</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Origin</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CRM Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Activities and Events Requests</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Special Needs Services Transport or Nanny Request</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Growth Requests for Vehicle,Nanny and Coordinator</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Companian - Handicap Transportation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Students Awareness Session Request</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Requests to provide transportation for trips, activities and Events</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_case_to_B2B_Queue_users1</targetReference>
+            </connector>
+            <label>TRUE_Assign case to B2B Queue users</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Assign_case_to_BRE_Group</name>
+        <label>Assign case to BRE Group</label>
+        <locationX>569</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Assign_case_to_Maintenance_Group</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Assign case to BRE Group</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Assign_case_to_BRE_Group</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Vehicle Device Issue</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_case_owner_to_BRE_Group</targetReference>
+            </connector>
+            <label>TRUE_Assign case to BRE Group</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Assign_case_to_Maintenance_Group</name>
+        <label>Assign case to Maintenance Group</label>
+        <locationX>825</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>ADNOC</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Assign case to Maintenance Group</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Assign_case_to_Maintenance_Group</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Vehicle Visual Defect</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_case_onwer_to_Maintenance_Group</targetReference>
+            </connector>
+            <label>TRUE_Assign case to Maintenance Group</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Assign_case_to_RSA_Group</name>
+        <label>Assign case to RSA Group</label>
+        <locationX>309</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Assign_case_to_BRE_Group</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Assign case to RSA Group</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Assign_case_to_RSA_Group</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Vehicle Breakdown</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_case_owner_to_RSA_Group</targetReference>
+            </connector>
+            <label>TRUE_Assign case to RSA Group</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Top_20_Customers</name>
+        <label>Top 20 Customers</label>
+        <locationX>1304</locationX>
+        <locationY>815</locationY>
+        <defaultConnector>
+            <targetReference>Assign_case_to_B2B_Queue_users</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Top 20 Customers</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Top_20_Customers</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Account_Categorization__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Strategic</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_to_Top_B2B_Queue</targetReference>
+            </connector>
+            <label>TRUE_Top 20 Customers</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>ET Case Queue Assignment_11 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ET Case Queue Assignment_11</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Add_to_B2B_Queue</name>
+        <label>Add to B2B Queue</label>
+        <locationX>842</locationX>
+        <locationY>815</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G3z000006GNaPEAW</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Assign_case_to_B2B_Queue_users1</name>
+        <label>Assign case to B2B Queue users1</label>
+        <locationX>1370</locationX>
+        <locationY>1055</locationY>
+        <connector>
+            <targetReference>Send_email_alert_to_B2B_users</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G3z000006GNaPEAW</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Assign_to_Top_B2B_Queue</name>
+        <label>Assign to Top B2B Queue</label>
+        <locationX>1106</locationX>
+        <locationY>935</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G3z000006Zgw2EAC</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_case_onwer_to_Maintenance_Group</name>
+        <label>Update case onwer to Maintenance Group</label>
+        <locationX>578</locationX>
+        <locationY>695</locationY>
+        <connector>
+            <targetReference>Send_Email_to_Maintenance_Group</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G3z000006ZYuEEAW</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_case_owner_to_BRE_Group</name>
+        <label>Update case owner to BRE Group</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>Send_Email_to_BRE_Group</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G3z000006ZYu8EAG</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_case_owner_to_RSA_Group</name>
+        <label>Update case owner to RSA Group</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>Send_Email_to_RSA_Group</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>00G3z000006ZYuDEAW</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>183</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_case_to_RSA_Group</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

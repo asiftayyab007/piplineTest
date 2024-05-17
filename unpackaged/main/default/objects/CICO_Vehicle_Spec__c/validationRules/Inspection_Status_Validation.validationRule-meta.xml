@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Status_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(Inspected__c) &amp;&amp; NOT(ISPICKVAL( Inspection_Status__c , &#39;Pending&#39;))</errorConditionFormula>
+    <errorDisplayField>Inspected__c</errorDisplayField>
+    <errorMessage>Inspected should be true</errorMessage>
+</ValidationRule>

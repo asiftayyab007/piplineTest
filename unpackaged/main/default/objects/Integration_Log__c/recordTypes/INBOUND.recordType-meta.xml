@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INBOUND</fullName>
+    <active>true</active>
+    <description>Record Type for any inbound web service calls</description>
+    <label>INBOUND</label>
+    <picklistValues>
+        <picklist>Integration_Type__c</picklist>
+        <values>
+            <fullName>INBOUND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUTBOUND</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

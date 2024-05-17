@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Email_should_be_triggered_after_180_days_If_Opp_is_not_closed</name>
+        <label>Email should be triggered after 180 days ,If Opp is not closed</label>
+        <locationX>588</locationX>
+        <locationY>417</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Owner.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>info@et.ae</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>$Record.Name</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>OpportunityEmailTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>OpportunityRecordURL</name>
+        <dataType>String</dataType>
+        <expression>LEFT($Api.Partner_Server_URL_260, FIND( &#39;/services&#39;, $Api.Partner_Server_URL_260))&amp;&quot;/&quot;&amp;{!$Record.Id}</expression>
+    </formulas>
+    <interviewLabel>created date of opportunity {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Reminder After 180  Days</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>449</locationX>
+        <locationY>48</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND(NOT(ISPICKVAL({!$Record.StageName},&#39;Closed Won&#39;)), OR( {!$Record.RecordType.DeveloperName} = &#39;ETSALES_Leasing&#39; , 
+ {!$Record.RecordType.DeveloperName} = &#39;ETSALES_Manpower&#39;, {!$Record.RecordType.DeveloperName} = &#39;ETSALES_Transportation&#39;  , 
+{!$Record.RecordType.DeveloperName} = &#39;ETSALES_Logistics&#39; , {!$Record.RecordType.DeveloperName} = &#39;ETSALES_Chauffeur_and_Limousine_B2B&#39; , 
+{!$Record.RecordType.DeveloperName} = &#39;ETSALES_Maintainance&#39; ) )</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>Opportunity_Reminder_after_180_Days</name>
+            <connector>
+                <targetReference>Email_should_be_triggered_after_180_days_If_Opp_is_not_closed</targetReference>
+            </connector>
+            <label>Opportunity Reminder after 180 Days</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>CreatedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>OpportunityEmailTemplate</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Dear {!$Record.Owner.FirstName} {!$Record.Owner.LastName} ,&lt;/p&gt;&lt;p&gt;     Your Opportunity &quot; {!$Record.ETSALES_Opportunity_Number__c}&quot;  is created more than 180 days . &lt;/p&gt;&lt;p&gt;&lt;strong&gt;     Salesforce Link :&lt;/strong&gt; Please  &lt;a href=&quot;{!OpportunityRecordURL}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Click here&lt;/a&gt; to close the oppotunity .&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

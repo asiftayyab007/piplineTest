@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Safety_of_electric_meters_and_wires__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>The Safety of electric meters and wires below the power steering system (to be recovered)</inlineHelpText>
+    <label>Safety of electric meters and wires</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

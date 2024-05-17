@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Web_Address_Validation</fullName>
+    <active>true</active>
+    <description>If web address is not in proper format then validation will through</description>
+    <errorConditionFormula>AND(
+ISCHANGED(ETT_Web_Address__c), LEFT(ETT_Web_Address__c,4) &lt;&gt; &#39;www.&#39;, 
+OR($RecordType.Name = &quot;Tyre - Cash Supplier&quot;,
+$RecordType.Name = &quot;Tyre - Credit/B2B Supplier&quot;,
+$RecordType.Name = &quot;Tyre - Refurbishing Services&quot;,
+$RecordType.Name = &quot;Tyre Cash Individual&quot;
+))</errorConditionFormula>
+    <errorMessage>Please enter proper website address.</errorMessage>
+</ValidationRule>

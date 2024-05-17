@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Individual_Unit</fullName>
+    <active>true</active>
+    <errorConditionFormula>PRIORVALUE(ETT_Individual_Unit_Value__c)!=ETT_Individual_Unit_Value__c</errorConditionFormula>
+    <errorDisplayField>ETT_Individual_Unit_Value__c</errorDisplayField>
+    <errorMessage>Individual unit value cannot be changed once added</errorMessage>
+</ValidationRule>

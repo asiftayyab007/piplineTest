@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Tools_Master__c</fullName>
+    <externalId>false</externalId>
+    <label>Master Record</label>
+    <referenceTo>ETT_Tools_Master__c</referenceTo>
+    <relationshipLabel>Tools/Material Allocation</relationshipLabel>
+    <relationshipName>Tools_Allocation</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Agreement_No_prv_mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Type, &#39;Renewal Business&#39;),
+
+ISPICKVAL( StageName , &#39;Decision&#39;),
+
+OR(
+$RecordType.DeveloperName = &quot;ETSALES_Leasing&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Manpower&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Transportation&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Logistics&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Rental_B2B&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Maintainance&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Chauffeur_and_Limousine_B2B&quot;
+),
+
+ISBLANK(  Sales_Agreement_No_Previous_Contract__c  )
+)</errorConditionFormula>
+    <errorMessage>Sales Agreement No (Previous Contract) is mandatory.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Staging_Quotation_Request</fullName>
+    <fields>ETT_Lead__c</fields>
+    <fields>ETT_Brand__c</fields>
+    <fields>ETT_Country__c</fields>
+    <fields>ETT_Tyre_Size_Master__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>ETT_Approve_Stage__c</fields>
+    <label>ETT Staging Quotation Request</label>
+</CompactLayout>

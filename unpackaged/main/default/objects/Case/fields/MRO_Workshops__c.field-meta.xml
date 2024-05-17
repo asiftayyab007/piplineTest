@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MRO_Workshops__c</fullName>
+    <externalId>false</externalId>
+    <label>MRO Workshops</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>City__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abu Dhabi khalifa-A City (Cng) Sub Store</fullName>
+                <default>false</default>
+                <label>Abu Dhabi khalifa-A City (Cng) Sub Store</label>
+            </value>
+            <value>
+                <fullName>AL Qusais 1-CNG</fullName>
+                <default>false</default>
+                <label>AL Qusais 1-CNG</label>
+            </value>
+            <value>
+                <fullName>Central Reg. Umm Al Quwain Workshop</fullName>
+                <default>false</default>
+                <label>Central Reg. Umm Al Quwain Workshop</label>
+            </value>
+            <value>
+                <fullName>Ras Al Khaimah Al Nakheel (M) Workshop</fullName>
+                <default>false</default>
+                <label>Ras Al Khaimah Al Nakheel (M) Workshop</label>
+            </value>
+            <value>
+                <fullName>Sharjah Ind. Area SHJ. (M) Workshop</fullName>
+                <default>false</default>
+                <label>Sharjah Ind. Area SHJ. (M) Workshop</label>
+            </value>
+            <value>
+                <fullName>East Coast Reg. Al Hail (M) Workshop</fullName>
+                <default>false</default>
+                <label>East Coast Reg. Al Hail (M) Workshop</label>
+            </value>
+            <value>
+                <fullName>East Coast Reg. Dibba Al Fujairah Quick Mnt. Servs</fullName>
+                <default>false</default>
+                <label>East Coast Reg. Dibba Al Fujairah Quick Mnt. Servs</label>
+            </value>
+            <value>
+                <fullName>East Coast Reg. Kalba Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>East Coast Reg. Kalba Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>Dubai Quick Service Workshop</fullName>
+                <default>false</default>
+                <label>Dubai Quick Service Workshop</label>
+            </value>
+            <value>
+                <fullName>Dubai Al Qusais Sub Store</fullName>
+                <default>false</default>
+                <label>Dubai Al Qusais Sub Store</label>
+            </value>
+            <value>
+                <fullName>Dubai Al Qouz Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>Dubai Al Qouz Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>Dubai Al Ramool (C) Commercial Workshop</fullName>
+                <default>false</default>
+                <label>Dubai Al Ramool (C) Commercial Workshop</label>
+            </value>
+            <value>
+                <fullName>Dubai Al Ramool (M) Workshop</fullName>
+                <default>false</default>
+                <label>Dubai Al Ramool (M) Workshop</label>
+            </value>
+            <value>
+                <fullName>Dubai Al Warsan (M) Workshop</fullName>
+                <default>false</default>
+                <label>Dubai Al Warsan (M) Workshop</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Baniyas Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Baniyas Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>East Coast Reg. Khorfakhan Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>East Coast Reg. Khorfakhan Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Al Adla Workshop</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Al Adla Workshop</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Etisalat Workshop</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Etisalat Workshop</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi (Gayathi - Al Ruwais) Workshop</fullName>
+                <default>false</default>
+                <label>Abu Dhabi (Gayathi - Al Ruwais) Workshop</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Al Gayathi Workshop</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Al Gayathi Workshop</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Mussafah - 1 (M) Workshop</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Mussafah - 1 (M) Workshop</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Mussafah -2 Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Mussafah -2 Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Mussafah - 4(M) Workshop</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Mussafah - 4(M) Workshop</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Mussafah - 3(M) Workshop</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Mussafah - 3(M) Workshop</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Shahama Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Shahama Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>Al Ain Ind. Area ALN 2(Snaya) Workshop</fullName>
+                <default>false</default>
+                <label>Al Ain Ind. Area ALN 2(Snaya) Workshop</label>
+            </value>
+            <value>
+                <fullName>Hatta Bus Renewal Unit Main Store</fullName>
+                <default>false</default>
+                <label>Hatta Bus Renewal Unit Main Store</label>
+            </value>
+            <value>
+                <fullName>Emirates Moto Al Quoz Bodyshop</fullName>
+                <default>false</default>
+                <label>Emirates Moto Al Quoz Bodyshop</label>
+            </value>
+            <value>
+                <fullName>Emirates Moto Al Quoz Mechanical Workshop</fullName>
+                <default>false</default>
+                <label>Emirates Moto Al Quoz Mechanical Workshop</label>
+            </value>
+            <value>
+                <fullName>Emirates Moto Al Quoz Workshop</fullName>
+                <default>false</default>
+                <label>Emirates Moto Al Quoz Workshop</label>
+            </value>
+            <value>
+                <fullName>Emirates Moto Sharjah Workshop</fullName>
+                <default>false</default>
+                <label>Emirates Moto Sharjah Workshop</label>
+            </value>
+            <value>
+                <fullName>Al Ain  Al Foah Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>Al Ain  Al Foah Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>Al Ain Al Saad Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>Al Ain Al Saad Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>Al Ain Mezyed Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>Al Ain Mezyed Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>Sharjah Al Azra Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>Sharjah Al Azra Quick Mnt. Services</label>
+            </value>
+            <value>
+                <fullName>Western Reg. Bidaa Zayed (M) Workshop</fullName>
+                <default>false</default>
+                <label>Western Reg. Bidaa Zayed (M) Workshop</label>
+            </value>
+            <value>
+                <fullName>Ajman Ind. Area AJ. (M) Workshop</fullName>
+                <default>false</default>
+                <label>Ajman Ind. Area AJ. (M) Workshop</label>
+            </value>
+            <value>
+                <fullName>Central Reg. Al Dhait (M) Workshop</fullName>
+                <default>false</default>
+                <label>Central Reg. Al Dhait (M) Workshop</label>
+            </value>
+            <value>
+                <fullName>Central Reg. Masfoot Quick Mnt. Services</fullName>
+                <default>false</default>
+                <label>Central Reg. Masfoot Quick Mnt. Services</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Masfoot</controllingFieldValue>
+            <valueName>Central Reg. Masfoot Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hatta</controllingFieldValue>
+            <valueName>Hatta Bus Renewal Unit Main Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Coast</controllingFieldValue>
+            <valueName>East Coast Reg. Al Hail (M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Coast</controllingFieldValue>
+            <valueName>East Coast Reg. Dibba Al Fujairah Quick Mnt. Servs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Coast</controllingFieldValue>
+            <valueName>East Coast Reg. Kalba Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Coast</controllingFieldValue>
+            <valueName>East Coast Reg. Khorfakhan Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi khalifa-A City (Cng) Sub Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi Baniyas Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi Al Adla Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi Etisalat Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi (Gayathi - Al Ruwais) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi Al Gayathi Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi Mussafah - 1 (M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi Mussafah -2 Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi Mussafah - 4(M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi Mussafah - 3(M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi</controllingFieldValue>
+            <valueName>Abu Dhabi Shahama Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ajman</controllingFieldValue>
+            <valueName>Ajman Ind. Area AJ. (M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>AL Qusais 1-CNG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>Dubai Quick Service Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>Dubai Al Qusais Sub Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>Dubai Al Qouz Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>Dubai Al Ramool (C) Commercial Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>Dubai Al Ramool (M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>Dubai Al Warsan (M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>Emirates Moto Al Quoz Bodyshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>Emirates Moto Al Quoz Mechanical Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai</controllingFieldValue>
+            <valueName>Emirates Moto Al Quoz Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ras Al Khaimah</controllingFieldValue>
+            <valueName>Ras Al Khaimah Al Nakheel (M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sharjah</controllingFieldValue>
+            <valueName>Sharjah Ind. Area SHJ. (M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sharjah</controllingFieldValue>
+            <valueName>Emirates Moto Sharjah Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sharjah</controllingFieldValue>
+            <valueName>Sharjah Al Azra Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Umm Al Quwain</controllingFieldValue>
+            <valueName>Central Reg. Umm Al Quwain Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Al Ain</controllingFieldValue>
+            <valueName>Al Ain  Al Foah Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Al Ain</controllingFieldValue>
+            <valueName>Al Ain Al Saad Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Al Ain</controllingFieldValue>
+            <valueName>Al Ain Mezyed Quick Mnt. Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beda Zayed</controllingFieldValue>
+            <valueName>Western Reg. Bidaa Zayed (M) Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Al Dhait</controllingFieldValue>
+            <valueName>Central Reg. Al Dhait (M) Workshop</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

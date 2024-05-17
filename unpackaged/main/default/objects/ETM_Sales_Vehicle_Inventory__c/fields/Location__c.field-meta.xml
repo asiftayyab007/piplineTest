@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EM-Dubai service</fullName>
+                <default>false</default>
+                <label>EM-Dubai service</label>
+            </value>
+            <value>
+                <fullName>EM-Dubai body shop</fullName>
+                <default>false</default>
+                <label>EM-Dubai body shop</label>
+            </value>
+            <value>
+                <fullName>EM-Dubai showroom</fullName>
+                <default>false</default>
+                <label>EM-Dubai showroom</label>
+            </value>
+            <value>
+                <fullName>EM-Sharjah service</fullName>
+                <default>false</default>
+                <label>EM-Sharjah service</label>
+            </value>
+            <value>
+                <fullName>EM-Sharjah body shop</fullName>
+                <default>false</default>
+                <label>EM-Sharjah body shop</label>
+            </value>
+            <value>
+                <fullName>EM-Sharjah showroom</fullName>
+                <default>false</default>
+                <label>EM-Sharjah showroom</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

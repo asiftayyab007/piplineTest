@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Division_AR__c</fullName>
+    <externalId>false</externalId>
+    <label>Student Division AR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>١</fullName>
+                <default>false</default>
+                <label>١</label>
+            </value>
+            <value>
+                <fullName>٢</fullName>
+                <default>false</default>
+                <label>٢</label>
+            </value>
+            <value>
+                <fullName>٣</fullName>
+                <default>false</default>
+                <label>٣</label>
+            </value>
+            <value>
+                <fullName>٤</fullName>
+                <default>false</default>
+                <label>٤</label>
+            </value>
+            <value>
+                <fullName>٥</fullName>
+                <default>false</default>
+                <label>٥</label>
+            </value>
+            <value>
+                <fullName>٦</fullName>
+                <default>false</default>
+                <label>٦</label>
+            </value>
+            <value>
+                <fullName>٧</fullName>
+                <default>false</default>
+                <label>٧</label>
+            </value>
+            <value>
+                <fullName>٨</fullName>
+                <default>false</default>
+                <label>٨</label>
+            </value>
+            <value>
+                <fullName>٩</fullName>
+                <default>false</default>
+                <label>٩</label>
+            </value>
+            <value>
+                <fullName>١٠</fullName>
+                <default>false</default>
+                <label>١٠</label>
+            </value>
+            <value>
+                <fullName>١١</fullName>
+                <default>false</default>
+                <label>١١</label>
+            </value>
+            <value>
+                <fullName>١٢</fullName>
+                <default>false</default>
+                <label>١٢</label>
+            </value>
+            <value>
+                <fullName>كلغ ١</fullName>
+                <default>false</default>
+                <label>كلغ ١</label>
+            </value>
+            <value>
+                <fullName>كلغ ٢</fullName>
+                <default>false</default>
+                <label>كلغ ٢</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

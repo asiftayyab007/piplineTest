@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_Resource_Vehicle_Mandatory</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL(Status, &quot;New&quot;),
+ISPICKVAL(Status ,&quot;Converted&quot;)),
+OR(
+$RecordType.Name = &quot;Leasing&quot;,
+$RecordType.Name = &quot;Manpower&quot;,
+$RecordType.Name = &quot;Transportation&quot;,
+$RecordType.Name = &quot;Logistics&quot;,
+$RecordType.Name = &quot;Rental -B2B&quot;,
+$RecordType.Name = &quot;Maintainance&quot;,
+$RecordType.Name = &quot;Chauffeur and Limousine -B2B&quot;
+),
+AND( 
+ISBLANK( No_of_Vehicles__c),
+ISBLANK( No_of_Resources__c),
+ISBLANK( No_of_Used_Vehicles__c )
+)
+)</errorConditionFormula>
+    <errorMessage>No. of New Vehicle (or) No. of Used Vehicle is mandatory (or) No. of Resources is mandatory</errorMessage>
+</ValidationRule>

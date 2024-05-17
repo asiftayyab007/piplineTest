@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disability_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Disability Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wheelchair (normal)</fullName>
+                <default>false</default>
+                <label>Wheelchair (normal)</label>
+            </value>
+            <value>
+                <fullName>Wheelchair (automatic)</fullName>
+                <default>false</default>
+                <label>Wheelchair (automatic)</label>
+            </value>
+            <value>
+                <fullName>Crutches</fullName>
+                <default>false</default>
+                <label>Crutches</label>
+            </value>
+            <value>
+                <fullName>Walker</fullName>
+                <default>false</default>
+                <label>Walker</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Autism</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Autism</label>
+            </value>
+            <value>
+                <fullName>Hyperactivity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hyperactivity</label>
+            </value>
+            <value>
+                <fullName>Impaired mobility</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Impaired mobility</label>
+            </value>
+            <value>
+                <fullName>Osteoporosis</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Osteoporosis</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

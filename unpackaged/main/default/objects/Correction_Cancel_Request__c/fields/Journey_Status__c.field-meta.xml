@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Journey_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Journey Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Created</fullName>
+                <default>true</default>
+                <label>Created</label>
+            </value>
+            <value>
+                <fullName>Police Report Attached</fullName>
+                <default>false</default>
+                <label>Police Report Attached</label>
+            </value>
+            <value>
+                <fullName>1.Insurance Pending</fullName>
+                <default>false</default>
+                <label>1.Insurance Pending</label>
+            </value>
+            <value>
+                <fullName>Prove Theft Report Attached</fullName>
+                <default>false</default>
+                <label>Prove Theft Report Attached</label>
+            </value>
+            <value>
+                <fullName>Compensation/Claim Created</fullName>
+                <default>false</default>
+                <label>Compensation/Claim Created</label>
+            </value>
+            <value>
+                <fullName>NOC</fullName>
+                <default>false</default>
+                <label>NOC</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>2.Insurance Pending</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2.Insurance Pending</label>
+            </value>
+            <value>
+                <fullName>PRO Notified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PRO Notified</label>
+            </value>
+            <value>
+                <fullName>Reminder Email Sent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reminder Email Sent</label>
+            </value>
+            <value>
+                <fullName>Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

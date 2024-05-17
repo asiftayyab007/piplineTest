@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountTrade_Tax_Details_Mandatory_part2</fullName>
+    <active>true</active>
+    <description>Goverement, Federal,Ministries</description>
+    <errorConditionFormula>AND(
+OR
+(
+ISPICKVAL(StageName,&quot;Closed Won&quot;),
+ISPICKVAL(StageName ,&quot;Sales Agreement&quot;)
+),
+OR(
+$RecordType.Name = &quot;Leasing&quot;,
+$RecordType.Name = &quot;Manpower&quot;,
+$RecordType.Name = &quot;Transportation&quot;,
+$RecordType.Name = &quot;Logistics&quot;,
+$RecordType.Name = &quot;Rental -B2B&quot;,
+$RecordType.Name = &quot;Maintainance&quot;,
+$RecordType.Name = &quot;Chauffeur and Limousine -B2B&quot;
+),
+OR(
+ISPICKVAL(Account.ETSALES_Profile_Class__c,&quot;Federal Government&quot;),
+ISPICKVAL(Account.ETSALES_Profile_Class__c,&quot;Ministries&quot;),
+ISPICKVAL(Account.ETSALES_Profile_Class__c,&quot;Government&quot;)),
+
+OR(
+ISBLANK( Account.ETSALES_Trade_License_Number__c),
+ISBLANK( Account.ETSALES_TaxRegistrationNo__c )
+)
+)</errorConditionFormula>
+    <errorMessage>Trade License Number and Tax Registration Number are mandatory in Opportunity Account.</errorMessage>
+</ValidationRule>

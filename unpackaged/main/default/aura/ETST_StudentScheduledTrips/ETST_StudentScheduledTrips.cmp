@@ -1,0 +1,76 @@
+<aura:component extends="c:ETST_BilingualCommunity" controller="ETSTStudentDetails" implements="force:hasRecordId,forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="selectedTabId" type="String"/>
+    <aura:attribute name="requestId" type="Id" />
+    <aura:attribute name="backgroundImageURL" type="String" default=""/>
+    <aura:attribute name="backgroundColor" type="String" />
+    <aura:attribute name="tripList" type="List"/>
+    <aura:attribute name="transportRequest" type="string" />
+    <aura:attribute name="noupdatesImage" type="string" default=""/>
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
+    
+    <div class="slds paymenttable" id="paymentshis">
+        <div class="slds-modal__bodyrtl slds-modal__body" aura:id="mainDiv"> 
+            <aura:if  isTrue="{!not(empty(v.tripList))}" >
+                <!--<h3 class="contentheading">{!$Label.c.ETST_Payments}</h3>-->
+                <div class="paymentsection">
+                    <aura:iteration items="{!v.tripList}" var="item">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Direction">Direction </div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Schedule pikcup time">Scheduled pikcup time</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Schedule drop off time">Scheduled drop off time</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="bus No">Bus No.</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate" title="Driver">Driver</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="slds-hint-parent">
+                                    <td data-label="Account Name">
+                                       {!item.ETST_Direction__c}
+                                    </td>
+                                    <td data-label="Close Date">
+                                       <lightning:formattedDateTime value="{!item.ETST_Schedule_pickup_time__c}"  
+                                                                                                                                   year="numeric" month="numeric" day="numeric" 
+                                                                                                                                   hour="2-digit" minute="2-digit"
+                                                                                                                                   timeZone="Asia/Dubai" hour12="true">
+                                            </lightning:formattedDateTime>                                        
+                                    </td>
+                                    <td data-label="Prospecting">
+                                       <lightning:formattedDateTime value="{!item.ETST_Schedule_drop_off_time__c}"  
+                                                                                                                                     year="numeric" month="numeric" day="numeric"  
+                                                                                                                                     hour="2-digit" minute="2-digit"
+                                                                                                                                     timeZone="Asia/Dubai" hour12="true">
+                                            </lightning:formattedDateTime>                                        
+                                    </td>
+                                    <td data-label="Confidence">
+                                        {!item.ETST_Bus_Number__c}
+                                    </td>
+                                    <td data-label="Amount">
+                                       {!item.ETST_Driver__c}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </aura:iteration>                     
+                </div>
+                <aura:set attribute="else">
+                    <!--<h3 class="norecordhead">{!v.clPaymentsInfo}</h3>-->
+                    <div class="norecorddiv">
+                        <div class="norecord">No Trips </div> 
+                    </div>
+                </aura:set>
+            </aura:if>
+        </div> 
+    </div>
+</aura:component>

@@ -1,0 +1,45 @@
+<aura:component
+  controller="ET_AccountBudgetVsActualUploadCtrl"
+  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+  access="global"
+>
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <!--Showing spinner while uploading -->
+
+  <!-- Import attributes start  -->
+  <aura:attribute name="ShowModule" type="boolean" default="false" />
+  <aura:attribute name="showcard" type="boolean" default="false" />
+
+  <div class="outer-div">
+    <aura:if isTrue="{!v.ShowModule}">
+      <lightning:spinner aura:id="Spinner" variant="brand" class="spinner2" />
+    </aura:if>
+
+    <div
+      ><lightning:card title="Upload File ">
+        <input
+          type="file"
+          accept=".csv"
+          class="file"
+          aura:id="file"
+          onchange="{!c.showfiledata}"
+        />
+        <lightning:button
+          label="Update Account"
+          onclick="{!c.updateRecords}"
+          class="slds-button slds-button--brand btn_table slds-p-horizontal_small"
+        />
+      </lightning:card>
+    </div>
+    <br />
+    <div>
+      <aura:if isTrue="{!v.showcard}">
+        <lightning:card>
+          <ui:scrollerWrapper class="scrllCustom">
+            <div id="divCSV" class="slds-scrollable" style="" />
+          </ui:scrollerWrapper>
+        </lightning:card>
+      </aura:if>
+    </div>
+  </div>
+</aura:component>

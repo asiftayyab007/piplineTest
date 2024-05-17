@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Terms_Description__c</fullName>
+    <externalId>false</externalId>
+    <label>Terms Description</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DARB consumption</fullName>
+                <default>false</default>
+                <label>DARB consumption</label>
+            </value>
+            <value>
+                <fullName>SALIK consumption</fullName>
+                <default>false</default>
+                <label>SALIK consumption</label>
+            </value>
+            <value>
+                <fullName>Insurance Excess Charge</fullName>
+                <default>false</default>
+                <label>Insurance Excess Charge</label>
+            </value>
+            <value>
+                <fullName>Accident Faulty Penalty</fullName>
+                <default>false</default>
+                <label>Accident Faulty Penalty</label>
+            </value>
+            <value>
+                <fullName>Pre mature penalty Months - 1st Year AED</fullName>
+                <default>false</default>
+                <label>Pre mature penalty Months - 1st Year AED</label>
+            </value>
+            <value>
+                <fullName>Pre mature penalty Months - 2nd Year AED</fullName>
+                <default>false</default>
+                <label>Pre mature penalty Months - 2nd Year AED</label>
+            </value>
+            <value>
+                <fullName>Pre mature penalty Months - 3rd Year AED</fullName>
+                <default>false</default>
+                <label>Pre mature penalty Months - 3rd Year AED</label>
+            </value>
+            <value>
+                <fullName>Pre mature penalty Months - 4th Year AED</fullName>
+                <default>false</default>
+                <label>Pre mature penalty Months - 4th Year AED</label>
+            </value>
+            <value>
+                <fullName>Pre mature penalty Months - 5th Year AED</fullName>
+                <default>false</default>
+                <label>Pre mature penalty Months - 5th Year AED</label>
+            </value>
+            <value>
+                <fullName>Pre mature penalty Months - 6th Year AED</fullName>
+                <default>false</default>
+                <label>Pre mature penalty Months - 6th Year AED</label>
+            </value>
+            <value>
+                <fullName>Pre mature penalty after issuing LPO</fullName>
+                <default>false</default>
+                <label>Pre mature penalty after issuing LPO</label>
+            </value>
+            <value>
+                <fullName>Pre mature penalty charge (School Transportation)</fullName>
+                <default>false</default>
+                <label>Pre mature penalty charge (School Transportation)</label>
+            </value>
+            <value>
+                <fullName>Quotation Validity</fullName>
+                <default>false</default>
+                <label>Quotation Validity</label>
+            </value>
+            <value>
+                <fullName>Replacement</fullName>
+                <default>false</default>
+                <label>Replacement</label>
+            </value>
+            <value>
+                <fullName>Payment terms</fullName>
+                <default>false</default>
+                <label>Payment terms</label>
+            </value>
+            <value>
+                <fullName>Laws or Decisions</fullName>
+                <default>false</default>
+                <label>Laws or Decisions</label>
+            </value>
+            <value>
+                <fullName>Traffic fines</fullName>
+                <default>false</default>
+                <label>Traffic fines</label>
+            </value>
+            <value>
+                <fullName>Traffic Fines Admin Fees</fullName>
+                <default>false</default>
+                <label>Traffic Fines Admin Fees</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Accident Repair</fullName>
+                <default>false</default>
+                <label>Accident Repair</label>
+            </value>
+            <value>
+                <fullName>Vehicle Insurance</fullName>
+                <default>false</default>
+                <label>Vehicle Insurance</label>
+            </value>
+            <value>
+                <fullName>Price (School Transportation)</fullName>
+                <default>false</default>
+                <label>Price (School Transportation)</label>
+            </value>
+            <value>
+                <fullName>Duty Service</fullName>
+                <default>false</default>
+                <label>Duty Service</label>
+            </value>
+            <value>
+                <fullName>Fuel Price</fullName>
+                <default>false</default>
+                <label>Fuel Price</label>
+            </value>
+            <value>
+                <fullName>Fuel differences</fullName>
+                <default>false</default>
+                <label>Fuel differences</label>
+            </value>
+            <value>
+                <fullName>The cost of extra trip</fullName>
+                <default>false</default>
+                <label>The cost of extra trip</label>
+            </value>
+            <value>
+                <fullName>Nursery term</fullName>
+                <default>false</default>
+                <label>Nursery term</label>
+            </value>
+            <value>
+                <fullName>Breakdown Term</fullName>
+                <default>false</default>
+                <label>Breakdown Term</label>
+            </value>
+            <value>
+                <fullName>Impound Vehicle Recovery Charges</fullName>
+                <default>false</default>
+                <label>Impound Vehicle Recovery Charges</label>
+            </value>
+            <value>
+                <fullName>Damage Penalty</fullName>
+                <default>false</default>
+                <label>Damage Penalty</label>
+            </value>
+            <value>
+                <fullName>NOC Term</fullName>
+                <default>false</default>
+                <label>NOC Term</label>
+            </value>
+            <value>
+                <fullName>VAT Term</fullName>
+                <default>false</default>
+                <label>VAT Term</label>
+            </value>
+            <value>
+                <fullName>Vehicle Deep Cleaning charges (per vehicle)</fullName>
+                <default>false</default>
+                <label>Vehicle Deep Cleaning charges (per vehicle)</label>
+            </value>
+            <value>
+                <fullName>Additional Terms</fullName>
+                <default>false</default>
+                <label>Additional Terms</label>
+            </value>
+            <value>
+                <fullName>Branding Installation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Branding Installation</label>
+            </value>
+            <value>
+                <fullName>Branding Removal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Branding Removal</label>
+            </value>
+            <value>
+                <fullName>Branding is done by ET or Client</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Branding is done by ET or Client</label>
+            </value>
+            <value>
+                <fullName>Cicpa pass</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cicpa pass</label>
+            </value>
+            <value>
+                <fullName>Delivery of the Vehicles Days Count</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Delivery of the Vehicles Days Count</label>
+            </value>
+            <value>
+                <fullName>Driver Drug Test charges</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Driver Drug Test charges</label>
+            </value>
+            <value>
+                <fullName>Driver Training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Driver Training</label>
+            </value>
+            <value>
+                <fullName>Extra Fittings -  dry box</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Extra Fittings -  dry box</label>
+            </value>
+            <value>
+                <fullName>Extra Fittings -  freezer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Extra Fittings -  freezer</label>
+            </value>
+            <value>
+                <fullName>Extra Fittings - chiller box</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Extra Fittings - chiller box</label>
+            </value>
+            <value>
+                <fullName>Extra Fittings - crane</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Extra Fittings - crane</label>
+            </value>
+            <value>
+                <fullName>Extra Fittings - roller cage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Extra Fittings - roller cage</label>
+            </value>
+            <value>
+                <fullName>Extra Fittings - tail lift</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Extra Fittings - tail lift</label>
+            </value>
+            <value>
+                <fullName>Extra Fittings - toe hock</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Extra Fittings - toe hock</label>
+            </value>
+            <value>
+                <fullName>Food Permit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Food Permit</label>
+            </value>
+            <value>
+                <fullName>GPS Tracking System</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GPS Tracking System</label>
+            </value>
+            <value>
+                <fullName>Kilometer Cap for the vehicle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kilometer Cap for the vehicle</label>
+            </value>
+            <value>
+                <fullName>Non-Food Permit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non-Food Permit</label>
+            </value>
+            <value>
+                <fullName>Parking card</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Parking card</label>
+            </value>
+            <value>
+                <fullName>Road Permit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Road Permit</label>
+            </value>
+            <value>
+                <fullName>SIRA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SIRA</label>
+            </value>
+            <value>
+                <fullName>Security Path</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Security Path</label>
+            </value>
+            <value>
+                <fullName>Service Charge of AED Amount</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Service Charge of AED Amount</label>
+            </value>
+            <value>
+                <fullName>Service Charge of fils AED</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Service Charge of fils AED</label>
+            </value>
+            <value>
+                <fullName>Vehicle Camera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vehicle Camera</label>
+            </value>
+            <value>
+                <fullName>Vehicle Deep Cleaning charges</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vehicle Deep Cleaning charges</label>
+            </value>
+            <value>
+                <fullName>Vehicle Washing cards limit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Vehicle Washing cards limit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Trailor</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Fleet_Inspection_Line_Item</compactLayoutAssignment>
+    <label>Trailor</label>
+    <picklistValues>
+        <picklist>ETT_Action__c</picklist>
+        <values>
+            <fullName>Repairable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retreadable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrap</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Bad_Reason_Complaint__c</picklist>
+        <values>
+            <fullName>Aging Crack%2FWeathering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alternate Lug Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Bead Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Spot Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bead Area Flow Crack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bead Damage From Curbing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bead Deformation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt Separation Repair Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bias Repair in Radial Tyre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bond Line Porosity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Branding Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Break Skid Flat Spot Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Break Skid%2FFlat Spot Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bridged Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buckled Tread</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burned Beads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chain Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Circumferential Fatigue Rupture %28Zipper%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cupping%2FScallop Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cuts and Snags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage Induced Sidewall Separation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delamination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagonal Cracking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagonal Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drive Axle Overall Fast Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drive Axle Shoulder Step%2FChamfer Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eccentric%2FOut-Of-Round Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Discharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erosion%2FRiver%2FChannel Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erratic Depression Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Inner Liner Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Repair %E2%80%93 Injury Not Removed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed Repair from Under Inflation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feather Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foreign Object Inner Liner Damage In Tubeless Tyre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forklift Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Shoulder Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heel%2FToe Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impact Break</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Nail Hole Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper Tread Width</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improperly Aligned repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inner Liner Bubbles%2C Blisters and Separations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inner Liner Cracking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kinked%2FDistorted Beads Condition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lug Base Cracking%2FTearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missed Puncture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Flat Spotting Wire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On the Wheel Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Inner Liner Splice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Sidewall Splice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Tread Splice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penetrating Object</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petro%2F Lubricant Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petroleum Product Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinch Shock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulled%2FLoose Cords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rapid Shoulder Wear %E2%80%93 Both Shoulder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rapid Shoulder Wear %E2%80%93 One Shoulder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reinforce %2F Chafer Separation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair Related Bulge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rib Depression%2FPunch Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Run Flat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shoulder Scrubbing%2FScuffing Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sidewall Abrasion%2FScuff Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sidewall Bumps %28Blisters%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sidewall Separation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skiving Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spot Repair Should be a Section Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spread%2FDamaged Cord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steer Axle One Sided Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steer Axle Overall Fast Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steer Axle Shoulder Step%2FChamfer Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tearing%2C Mount%2FDismount Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Torn Bead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trailer Axle One Sided Wear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tread Chunking at Splice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tread Edge Lifting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tread Separation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tread Separation %E2%80%93 Repair Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tread Surface Porosity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unfilled Nail Hole Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle%2FEquipment Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wing Lift</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Condition__c</picklist>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tyre_Status__c</picklist>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precured</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

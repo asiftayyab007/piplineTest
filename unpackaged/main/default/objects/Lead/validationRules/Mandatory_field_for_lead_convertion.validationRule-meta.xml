@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandatory_field_for_lead_convertion</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( Status , &quot;Converted&quot;)  &amp;&amp; 
+OR( ISBLANK( TEXT( Account_Type__c ) ),
+
+ISBLANK( TEXT(Profile_Class__c)),
+
+ISBLANK( TEXT(ETSALES_Customer_Type__c)))
+&amp;&amp;
+OR(
+$RecordType.Name = &quot;Leasing&quot;,
+$RecordType.Name = &quot;Rental -B2B&quot;,
+$RecordType.Name = &quot;Transportation&quot;,
+$RecordType.Name = &quot;Logistics&quot;,
+$RecordType.Name = &quot;Maintainance&quot;,
+$RecordType.Name = &quot;Chauffeur and Limousine -B2B&quot;)</errorConditionFormula>
+    <errorMessage>Please provide the Account Type, Customer type, Profile Class.</errorMessage>
+</ValidationRule>

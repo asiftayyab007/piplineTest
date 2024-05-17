@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>This is for configurable Button for ETI_DisplayServicePrice Component to enable the button and disable.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Display Service Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,18 @@
+<apex:page showHeader="false" setup="false" sidebar="false">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <apex:includeLightning />
+    <div  id="compContainer" />
+     <script>
+     $Lightning.use("c:CommunityLoginApp", function(){
+         $Lightning.createComponent("c:loginForm",
+              {
+                  theme:'{!$User.UIThemeDisplayed}'
+              },
+              "compContainer",
+             function(cmp) {
+                console.log("c:VFPageApp loaded successfully in VF page");
+             }); 
+     });
+  </script>
+</apex:page>

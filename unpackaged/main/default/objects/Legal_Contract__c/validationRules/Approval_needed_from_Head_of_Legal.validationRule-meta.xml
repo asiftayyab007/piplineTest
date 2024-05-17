@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_needed_from_Head_of_Legal</fullName>
+    <active>true</active>
+    <errorConditionFormula>if(Contract_Signed_by_Customer__c &amp;&amp; (RecordType.Name == &#39;Change Legal Contract&#39;),if( ISPICKVAL(Approval_Status__c, &#39;Approved by Head of Legal&#39;),false,true),false)</errorConditionFormula>
+    <errorMessage>Head of Legal approval is missing</errorMessage>
+</ValidationRule>

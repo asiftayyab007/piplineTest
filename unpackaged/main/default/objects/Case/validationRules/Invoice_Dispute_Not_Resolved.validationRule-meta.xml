@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Dispute_Not_Resolved</fullName>
+    <active>true</active>
+    <description>Please add the reason for not resolving the dispute</description>
+    <errorConditionFormula>AND(ISBLANK(NotResolvedRemarks__c),ISPICKVAL(Status , &#39;Dispute Not Resolved&#39;) )</errorConditionFormula>
+    <errorMessage>Please add the reason for not resolving the dispute</errorMessage>
+</ValidationRule>

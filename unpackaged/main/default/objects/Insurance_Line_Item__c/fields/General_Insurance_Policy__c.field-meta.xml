@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Insurance_Policy__c</fullName>
+    <externalId>false</externalId>
+    <label>General Insurance Policy</label>
+    <referenceTo>GI_General_Insurance_Policy__c</referenceTo>
+    <relationshipLabel>Insurance Line Items</relationshipLabel>
+    <relationshipName>Insurance_Line_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

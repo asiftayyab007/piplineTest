@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Approval__c</fullName>
+    <externalId>false</externalId>
+    <label>Next Approval</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending with Chief Commercial Officer</fullName>
+                <default>false</default>
+                <label>Pending with Chief Commercial Officer</label>
+            </value>
+            <value>
+                <fullName>Pending with CEO</fullName>
+                <default>false</default>
+                <label>Pending with CEO</label>
+            </value>
+            <value>
+                <fullName>Pending with Investments Committee</fullName>
+                <default>false</default>
+                <label>Pending with Investments Committee</label>
+            </value>
+            <value>
+                <fullName>Pending with School Transport Executive Director</fullName>
+                <default>false</default>
+                <label>Pending with School Transport Executive Director</label>
+            </value>
+            <value>
+                <fullName>Pending with Deputy CEO</fullName>
+                <default>false</default>
+                <label>Pending with Deputy CEO</label>
+            </value>
+            <value>
+                <fullName>Pending with Chief Transport &amp; Lease Officer</fullName>
+                <default>false</default>
+                <label>Pending with Chief Transport &amp; Lease Officer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

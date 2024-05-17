@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Observation_Compact_Layout</fullName>
+    <fields>AMAN_Receipt_No__c</fields>
+    <fields>Aman_Receipt__c</fields>
+    <fields>Break_Inspector_Id__c</fields>
+    <fields>Break_Inspector_Name__c</fields>
+    <fields>Is_Break_Inspection_Completed__c</fields>
+    <fields>OwnerId</fields>
+    <label>Inspection Observation Compact Layout</label>
+</CompactLayout>

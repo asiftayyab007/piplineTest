@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>General Rent</fullName>
+        <default>false</default>
+        <label>General Rent</label>
+    </customValue>
+    <customValue>
+        <fullName>Manpower Supply</fullName>
+        <default>false</default>
+        <label>Manpower Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>Motorcycle Services</fullName>
+        <default>false</default>
+        <label>Motorcycle Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Passengers Transportation</fullName>
+        <default>false</default>
+        <label>Passengers Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>General Equipment</fullName>
+        <default>false</default>
+        <label>General Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Agricultural Equipment</fullName>
+        <default>false</default>
+        <label>Agricultural Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Taxi Services</fullName>
+        <default>false</default>
+        <label>Taxi Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistic Services</fullName>
+        <default>false</default>
+        <label>Logistic Services</label>
+    </customValue>
+    <customValue>
+        <fullName>School Transportation</fullName>
+        <default>false</default>
+        <label>School Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Limousine Services</fullName>
+        <default>false</default>
+        <label>Limousine Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Ambulance Service</fullName>
+        <default>false</default>
+        <label>Ambulance Service</label>
+    </customValue>
+    <masterLabel>Oracle Pricing Service Types</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

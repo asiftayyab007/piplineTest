@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effective_Date_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISNEW() &amp;&amp;   Effective_Date__c &lt; TODAY()</errorConditionFormula>
+    <errorDisplayField>Effective_Date__c</errorDisplayField>
+    <errorMessage>Please enter valid Effective Date</errorMessage>
+</ValidationRule>

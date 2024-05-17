@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Police_Inspection</fullName>
+    <active>true</active>
+    <label>Police Inspection</label>
+    <picklistValues>
+        <picklist>Emirate__c</picklist>
+        <values>
+            <fullName>Abu Dhabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ajman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dubai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fujairah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ras al Khaimah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharjah</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Umm al Quwain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Premises__c</picklist>
+        <values>
+            <fullName>Customer Premises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Premises-B2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home%2FOffice Premise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home%2FOffice Premise-B2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ocean%2FIsland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ocean%2FIsland-B2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit ET Premises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WalkIn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Type__c</picklist>
+        <values>
+            <fullName>ADFCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPEA Inspection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

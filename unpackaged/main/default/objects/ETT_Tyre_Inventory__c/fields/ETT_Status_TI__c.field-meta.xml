@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Status_TI__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Collected</fullName>
+                <default>false</default>
+                <label>Collected</label>
+            </value>
+            <value>
+                <fullName>Receptionist Accepted</fullName>
+                <default>false</default>
+                <label>Receptionist Accepted</label>
+            </value>
+            <value>
+                <fullName>Inspection Team Accepted</fullName>
+                <default>false</default>
+                <label>Inspection Team Accepted</label>
+            </value>
+            <value>
+                <fullName>Inspection Team Rejected</fullName>
+                <default>false</default>
+                <label>Inspection Team Rejected</label>
+            </value>
+            <value>
+                <fullName>Job Card Created</fullName>
+                <default>false</default>
+                <label>Job Card Created</label>
+            </value>
+            <value>
+                <fullName>Buffing</fullName>
+                <default>false</default>
+                <label>Buffing</label>
+            </value>
+            <value>
+                <fullName>Skiving</fullName>
+                <default>false</default>
+                <label>Skiving</label>
+            </value>
+            <value>
+                <fullName>Repair</fullName>
+                <default>false</default>
+                <label>Repair</label>
+            </value>
+            <value>
+                <fullName>Cementing</fullName>
+                <default>false</default>
+                <label>Cementing</label>
+            </value>
+            <value>
+                <fullName>Filling</fullName>
+                <default>false</default>
+                <label>Filling</label>
+            </value>
+            <value>
+                <fullName>Thread Preparation</fullName>
+                <default>false</default>
+                <label>Thread Preparation</label>
+            </value>
+            <value>
+                <fullName>Building</fullName>
+                <default>false</default>
+                <label>Building</label>
+            </value>
+            <value>
+                <fullName>Rimming &amp; Enveloping</fullName>
+                <default>false</default>
+                <label>Rimming &amp; Enveloping</label>
+            </value>
+            <value>
+                <fullName>Curing</fullName>
+                <default>false</default>
+                <label>Curing</label>
+            </value>
+            <value>
+                <fullName>Final Inspection</fullName>
+                <default>false</default>
+                <label>Final Inspection</label>
+            </value>
+            <value>
+                <fullName>Painting</fullName>
+                <default>false</default>
+                <label>Painting</label>
+            </value>
+            <value>
+                <fullName>Removal of RIM Tube Flap</fullName>
+                <default>false</default>
+                <label>Removal of RIM Tube Flap</label>
+            </value>
+            <value>
+                <fullName>Quality Control</fullName>
+                <default>false</default>
+                <label>Quality Control</label>
+            </value>
+            <value>
+                <fullName>Estimation Accepted</fullName>
+                <default>false</default>
+                <label>Estimation Accepted</label>
+            </value>
+            <value>
+                <fullName>Purchase Order Created</fullName>
+                <default>false</default>
+                <label>Purchase Order Created</label>
+            </value>
+            <value>
+                <fullName>Delivery Note Created</fullName>
+                <default>false</default>
+                <label>Delivery Note Created</label>
+            </value>
+            <value>
+                <fullName>Delivery Note Approved</fullName>
+                <default>false</default>
+                <label>Delivery Note Approved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Moto Update Vehicle Status to Sold {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Moto Update Vehicle Status to Sold through auction/showroom</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Vehicle_Status_to_Sold</name>
+        <label>Update Vehicle Status to Sold</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Vehicle_Sales_Inventory__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ETM_Vehicle_Status__c</field>
+            <value>
+                <elementReference>$Record.Sales_Channel__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sold_To__c</field>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>ETM_Sales_Vehicle_Inventory__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Vehicle_Status_to_Sold</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>AND(ISPICKVAL({!$Record.StageName}, &#39;Vehicle Delivery&#39; ),{!$Record.RecordType.DeveloperName} = &#39;Automotive_Dealership_Vehicle_Inquiry_Trade_In&#39;,{!$Record.Vehicle_Sales_Inventory__r.Id} != Null, NOT(ISBLANK(TEXT({!$Record.Sales_Channel__c}))))</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

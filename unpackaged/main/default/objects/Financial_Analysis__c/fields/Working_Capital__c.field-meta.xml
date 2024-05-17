@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Working_Capital__c</fullName>
+    <externalId>false</externalId>
+    <formula>((( Total_Annual_Cost__c -
+( VALUE(Vehicle_Quote_Item__r.ET_Vehicle_Depreciation__c) + Vehicle_Quote_Item__r.ET_Vehicle_Financing__c + Corporate_Tax__c + 
+Vehicle_Quote_Item__r.ET_Vehicle_VAT_Cost__c + Workforce_Quote_Item__r.ET_End_of_Service__c  ))/365)*  Vehicle_Quote_Item__r.Credit_Period__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Working Capital</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

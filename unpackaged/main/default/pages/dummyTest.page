@@ -1,0 +1,384 @@
+<apex:page renderAs="pdf" applyBodyTag="false" >
+    <head>
+        <style>
+            @page {
+            size: A4;
+            margin:25mm 10mm;
+            @bottom-left {
+            content: element(footer);
+            }
+            @top-left {
+            content: element(header);
+            }
+            @bottom-right {
+            content: "Page " counter(page) " of " counter(pages);
+            font-size: 12px;
+            }
+            }
+            @page:first {
+            @bottom-left {
+            content: element(footer);
+            }
+            @top-left {
+            content: element(header);
+            }
+            } 
+            
+            div.divFooter {
+            display: block;
+            padding: 5px;
+            position: running(footer);
+            }
+            div.divHeader {
+            margin:20px 0px;
+            display: block;
+            padding: 5px;
+            position: running(header);
+            }
+            
+            table{
+            width: 100%;
+            }
+            div.divFooter {
+            display: block;
+            padding: 5px;
+            position: running(footer);
+            }
+            .termNCondition{
+            //page-break-before: always;
+            } 
+            .topContact{
+            font-size: 10px;
+            float: right;
+            margin: 1rem;
+            line-height: 24px;
+            }
+            .headerRight img{
+            float: right;
+            margin: 0 5px;
+            }
+            .grey40{
+            color: rgb(88 89 91);
+            }
+            .heading{
+            color:#000;
+            margin:0px;
+            padding:13px 15px;
+            font-size:28px;
+            display:inline-block;
+            float: left;
+            text-transform: capitalize;
+            border-left:2px solid #939393;
+            margin-top:-10px;
+            }
+            h6{
+            color:rgb(88 89 91);
+            margin:0px;
+            padding:0px;
+            }
+            .leftsection .value{
+            color:rgb(88 89 91);
+            font-size:13px;
+            }
+            .leftsection p{
+            margin:0px 0 10px 0;
+            }
+            .leftsection .info{
+            color:#b3b2b2;
+            width:150px;
+            font-size:13px;
+            display:inline-block;
+            }
+            .rightsection {
+            color:rgb(88 89 91);
+            font-size:13px;
+            }
+            .subject{
+            color:#b3b2b2;
+            font-size:13px;
+            }
+            .workorder{
+            color:rgb(88 89 91);
+            font-size:13px;
+            }
+            .order_table{
+            border-collapse: collapse;
+            }
+            .order_table tr th{
+            background:#f2f2f2;
+            padding:10px;
+            font-size:13px;
+            color:#000;
+            border: 1px solid #ccc;
+            font-weight: 300;
+            }
+            .order_table tr td{
+            border: 1px solid #ccc;
+            padding:10px;
+            font-size:13px;
+            color:#000;    
+            vertical-align: middle;
+            }
+            .border_bottom{
+            border-bottom:1px solid #dadada;
+            }
+            .order_table .values{
+            width:130px;
+            font-size:13px;
+            display:inline-block;
+            }
+            .subheading{
+            color:#878787;
+            font-size:15px;
+            margin-bottom:10px;
+            }
+            .subtext{
+            font-size:10px;
+            color:#878787;
+            }
+            .order_table .label_text{
+            float: left;
+            display: block;
+            width: 100%;
+            font-size:11px;
+            }
+            .order_table .label_value{
+            float: left;
+            padding: 10px 5px;
+            display: block;
+            width: 95%;
+            border-radius: 5px;
+            color: #000;
+            font-size:11px;
+            background:#f7f6f9;
+            }
+            
+            
+        </style>
+    </head>
+    <div class="divHeader">
+        <table>
+            <tr>
+                <td>
+                <!--    <img src="{!$Resource.Logo_pdf}" alt="FernekLogo" width="120" style="float: right;"/> -->
+                </td>
+            </tr>      
+        </table> 
+    </div>
+    <div class="divFooter">
+        <table class="paymentMethod">
+            <tr>
+                <!--<td><a><img src="{!$Resource.logo_footer_pdf}" alt="FooterLogo" width="40%"  /></a>
+                </td> -->
+            </tr>
+        </table>
+    </div> 
+    <p style="font-size: 32px; font-weight: 600;">Minutes</p>
+    <table class="order_table">
+        <tr>
+            <th width="25%">Date</th>
+            <th width="75%">27 Sep 2021</th>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">Time</label>
+            </td>
+            <td>
+                <label class="label_text">11:30 AM to 12:30 PM</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">Customer Name </label>
+            </td>
+            <td>
+                <label class="label_text">Masdar  </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">Meeting Name</label>
+            </td>
+            <td>
+                <label class="label_text">Masdar || Lease creation</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">Meeting Objective</label>
+            </td>
+            <td>
+                <label class="label_text">To create lease without registration</label>
+            </td>
+        </tr>
+        
+    </table>
+    <br/><br/>
+    <p style="font-size: 22px;">Attendees</p>
+    <table class="order_table">
+        <tr>
+            <th width="5%">#</th>
+            <th width="60%">Name &#38; Designation </th>
+            <th width="35%">Company </th>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">1</label>
+            </td>
+            <td>
+                <label class="label_text">[Name(s)]</label>
+            </td>
+            <td>
+                <label class="label_text"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">2</label>
+            </td>
+            <td>
+                <label class="label_text">[Name(s)]</label>
+            </td>
+            <td>
+                <label class="label_text"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">3</label>
+            </td>
+            <td>
+                <label class="label_text">[Name(s)]</label>
+            </td>
+            <td>
+                <label class="label_text"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">4</label>
+            </td>
+            <td>
+                <label class="label_text">[Name(s)]</label>
+            </td>
+            <td>
+                <label class="label_text"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">5</label>
+            </td>
+            <td>
+                <label class="label_text">[Name(s)]</label>
+            </td>
+            <td>
+                <label class="label_text"></label>
+            </td>
+        </tr>
+        
+    </table>
+    <br/><br/>
+    <table>
+        <tr>
+            <td>
+                <p style="font-size: 22px; margin-bottom: 0;">Discussion:</p>
+                <p style="font-size: 12px;" >
+                    To get started right away, just tap any placeholder text (such as this) and start typing to replace it with your own.
+                </p>
+            </td>
+        </tr>      
+    </table>
+    <br/><br/>
+    <table>
+        <tr>
+            <td>
+                <p style="font-size: 22px; margin-bottom: 0;">Conclusions:</p>
+                <p style="font-size: 12px;" >
+                    Enter conclusions here.
+                </p>
+            </td>
+        </tr>      
+    </table>
+    <p style="font-size: 22px;">Action Plan</p>
+    <table class="order_table">
+        <tr>
+            <th width="20%">Action Items</th>
+            <th width="15%">Owner(s) </th>
+            <th width="15%">Deadline </th>
+            <th width="50%">Status </th>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">[Action item]</label>
+            </td>
+            <td>
+                <label class="label_text">[Name(s)]</label>
+            </td>
+            <td>
+                <label class="label_text">[Date]</label>
+            </td>
+            <td>
+                <label class="label_text">[Status, such as In Progress or Complete]</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">[Action item]</label>
+            </td>
+            <td>
+                <label class="label_text">[Name(s)]</label>
+            </td>
+            <td>
+                <label class="label_text">[Date]</label>
+            </td>
+            <td>
+                <label class="label_text">[Status, such as In Progress or Complete]</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">[Action item]</label>
+            </td>
+            <td>
+                <label class="label_text">[Name(s)]</label>
+            </td>
+            <td>
+                <label class="label_text">[Date]</label>
+            </td>
+            <td>
+                <label class="label_text">[Status, such as In Progress or Complete]</label>
+            </td>
+        </tr><tr>
+        <td>
+            <label class="label_text">[Action item]</label>
+        </td>
+        <td>
+            <label class="label_text">[Name(s)]</label>
+        </td>
+        <td>
+            <label class="label_text">[Date]</label>
+        </td>
+        <td>
+            <label class="label_text">[Status, such as In Progress or Complete]</label>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label_text">[Action item]</label>
+            </td>
+            <td>
+                <label class="label_text">[Name(s)]</label>
+            </td>
+            <td>
+                <label class="label_text">[Date]</label>
+            </td>
+            <td>
+                <label class="label_text">[Status, such as In Progress or Complete]</label>
+            </td>
+        </tr>
+        
+    </table>
+    
+    
+</apex:page>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_Date_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+AND(
+NOT($Permission.ETC_Rental_By_Pass_Validations),
+NOT(ISBLANK(ETCAR_Pick_UP_Date_Time__c)),
+NOT(ISBLANK(ETCAR_Return_Date_Time__c))
+),
+OR(ETCAR_Return_Date_Time__c &lt;= NOW(),
+ETCAR_Return_Date_Time__c &lt;= ETCAR_Pick_UP_Date_Time__c
+),false
+)</errorConditionFormula>
+    <errorMessage>Return date time must be in future and greater than pick up date time.</errorMessage>
+</ValidationRule>

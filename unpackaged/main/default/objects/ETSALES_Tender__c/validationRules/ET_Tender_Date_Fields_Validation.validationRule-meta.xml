@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Tender_Date_Fields_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(ISBLANK(ETSALES_Date_Received__c) &amp;&amp; ETSALES_Date_Received__c &lt; TODAY(),TRUE,FALSE)</errorConditionFormula>
+    <errorDisplayField>ETSALES_Date_Received__c</errorDisplayField>
+    <errorMessage>Date Received  should not be less than Today</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+.bikeCurrency{
+    background-color: white;
+    padding: 2rem;
+}
+.bikeCurrency h3{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.footerButton{
+    text-align: right;
+}

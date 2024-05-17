@@ -1,0 +1,8 @@
+<apex:page standardController="Opportunity" extensions="MOTO_GetEstimation" showHeader="false" sidebar="false" >
+   
+    
+    <!-- delete this comp-->
+    <div style="width:100%">
+        <!--object data="data:application/pdf;base64,{!docValue}"></object-->  
+    </div>
+</apex:page>

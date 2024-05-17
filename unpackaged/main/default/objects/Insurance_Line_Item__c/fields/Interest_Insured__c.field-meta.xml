@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_Insured__c</fullName>
+    <externalId>false</externalId>
+    <label>Interest Insured</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BUILDING</fullName>
+                <default>false</default>
+                <label>BUILDING</label>
+            </value>
+            <value>
+                <fullName>COMPUTER ANDPERIPHERALS</fullName>
+                <default>false</default>
+                <label>COMPUTER ANDPERIPHERALS</label>
+            </value>
+            <value>
+                <fullName>FURNITURE AND FITTINGS</fullName>
+                <default>false</default>
+                <label>FURNITURE AND FITTINGS</label>
+            </value>
+            <value>
+                <fullName>MACHINERY AND EQUIPMENT</fullName>
+                <default>false</default>
+                <label>MACHINERY AND EQUIPMENT</label>
+            </value>
+            <value>
+                <fullName>OFFICE EQUIPMENT</fullName>
+                <default>false</default>
+                <label>OFFICE EQUIPMENT</label>
+            </value>
+            <value>
+                <fullName>SEMI PER CONST</fullName>
+                <default>false</default>
+                <label>SEMI PER CONST</label>
+            </value>
+            <value>
+                <fullName>STOCK IN TRADE</fullName>
+                <default>false</default>
+                <label>STOCK IN TRADE</label>
+            </value>
+            <value>
+                <fullName>STOCK OF DIESEL</fullName>
+                <default>false</default>
+                <label>STOCK OF DIESEL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

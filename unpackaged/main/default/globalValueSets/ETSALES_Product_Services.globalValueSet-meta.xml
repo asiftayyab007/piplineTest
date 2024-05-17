@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Scraped Materials Auction</fullName>
+        <default>false</default>
+        <label>Scraped Materials Auction</label>
+    </customValue>
+    <customValue>
+        <fullName>Site Management Centre</fullName>
+        <default>false</default>
+        <label>Site Management Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>Facilities Management Services</fullName>
+        <default>false</default>
+        <label>Facilities Management Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Assistance Services</fullName>
+        <default>false</default>
+        <label>Assistance Services</label>
+    </customValue>
+    <customValue>
+        <fullName>General Administration</fullName>
+        <default>false</default>
+        <label>General Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Development</fullName>
+        <default>false</default>
+        <label>Business Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Advertisement Spaces</fullName>
+        <default>false</default>
+        <label>Commercial Advertisement Spaces</label>
+    </customValue>
+    <customValue>
+        <fullName>Correspondents Employment</fullName>
+        <default>false</default>
+        <label>Correspondents Employment</label>
+    </customValue>
+    <customValue>
+        <fullName>Customs Clearance</fullName>
+        <default>false</default>
+        <label>Customs Clearance</label>
+    </customValue>
+    <customValue>
+        <fullName>Employee Recruitment</fullName>
+        <default>false</default>
+        <label>Employee Recruitment</label>
+    </customValue>
+    <customValue>
+        <fullName>Employee Relationship Management</fullName>
+        <default>false</default>
+        <label>Employee Relationship Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Budgeting &amp; Planning</fullName>
+        <default>false</default>
+        <label>Budgeting &amp; Planning</label>
+    </customValue>
+    <customValue>
+        <fullName>Auditing</fullName>
+        <default>false</default>
+        <label>Auditing</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk Assessment</fullName>
+        <default>false</default>
+        <label>Risk Assessment</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Operations</fullName>
+        <default>false</default>
+        <label>Financial Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Business IT Services</fullName>
+        <default>false</default>
+        <label>Business IT Services</label>
+    </customValue>
+    <customValue>
+        <fullName>ERP Services</fullName>
+        <default>false</default>
+        <label>ERP Services</label>
+    </customValue>
+    <customValue>
+        <fullName>IT Security Services and Security</fullName>
+        <default>false</default>
+        <label>IT Security Services and Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Maintenance Service : Quality/Operations Management</fullName>
+        <default>false</default>
+        <label>Maintenance Service : Quality/Operations Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Transport and Leasing : Quality/Operations Management</fullName>
+        <default>false</default>
+        <label>Transport and Leasing : Quality/Operations Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety Compliance Services</fullName>
+        <default>false</default>
+        <label>Safety Compliance Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Collection Services</fullName>
+        <default>false</default>
+        <label>Collection Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Maintenance Services - Contracted</fullName>
+        <default>false</default>
+        <label>Maintenance Services - Contracted</label>
+    </customValue>
+    <customValue>
+        <fullName>Maintenance Services - Non-Contracted</fullName>
+        <default>false</default>
+        <label>Maintenance Services - Non-Contracted</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxury Vehicles Maintenance</fullName>
+        <default>false</default>
+        <label>Luxury Vehicles Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Wash</fullName>
+        <default>false</default>
+        <label>Dry Wash</label>
+    </customValue>
+    <customValue>
+        <fullName>Tire Rethreading and Repair</fullName>
+        <default>false</default>
+        <label>Tire Rethreading and Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Road Side Assistance</fullName>
+        <default>false</default>
+        <label>Road Side Assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>Body-Accident Repair services</fullName>
+        <default>false</default>
+        <label>Body-Accident Repair services</label>
+    </customValue>
+    <customValue>
+        <fullName>Bus Refurbishment</fullName>
+        <default>false</default>
+        <label>Bus Refurbishment</label>
+    </customValue>
+    <customValue>
+        <fullName>CNG Conversion Services</fullName>
+        <default>false</default>
+        <label>CNG Conversion Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehicle Inspection services</fullName>
+        <default>false</default>
+        <label>Vehicle Inspection services</label>
+    </customValue>
+    <customValue>
+        <fullName>Government School Center</fullName>
+        <default>false</default>
+        <label>Government School Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Quran Studies Transportation</fullName>
+        <default>false</default>
+        <label>Quran Studies Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Private School Transportation</fullName>
+        <default>false</default>
+        <label>Private School Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>School Services</fullName>
+        <default>false</default>
+        <label>School Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Bus Supervisor Services</fullName>
+        <default>false</default>
+        <label>Bus Supervisor Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Canteen Supervisor Services</fullName>
+        <default>false</default>
+        <label>Canteen Supervisor Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertising Services</fullName>
+        <default>false</default>
+        <label>Advertising Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Transport</fullName>
+        <default>false</default>
+        <label>Government Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Long Term Vehicle Leasing</fullName>
+        <default>false</default>
+        <label>Long Term Vehicle Leasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Car Rental Services</fullName>
+        <default>false</default>
+        <label>Car Rental Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Employees &amp; Labours Transportation</fullName>
+        <default>false</default>
+        <label>Employees &amp; Labours Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Haj &amp; Umrah Transportation</fullName>
+        <default>false</default>
+        <label>Haj &amp; Umrah Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>University Transportation</fullName>
+        <default>false</default>
+        <label>University Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Club Members Transportation</fullName>
+        <default>false</default>
+        <label>Club Members Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Taxi Services</fullName>
+        <default>false</default>
+        <label>Taxi Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Limo Services</fullName>
+        <default>false</default>
+        <label>Limo Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Petroleum Transport Center</fullName>
+        <default>false</default>
+        <label>Petroleum Transport Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics-Refrigerated Transport</fullName>
+        <default>false</default>
+        <label>Logistics-Refrigerated Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics Services Center</fullName>
+        <default>false</default>
+        <label>Logistics Services Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Driving School</fullName>
+        <default>false</default>
+        <label>Driving School</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric Cars</fullName>
+        <default>false</default>
+        <label>Electric Cars</label>
+    </customValue>
+    <customValue>
+        <fullName>Valet Parking</fullName>
+        <default>false</default>
+        <label>Valet Parking</label>
+    </customValue>
+    <customValue>
+        <fullName>Motorcycles Rental</fullName>
+        <default>false</default>
+        <label>Motorcycles Rental</label>
+    </customValue>
+    <customValue>
+        <fullName>Fleet Management Services</fullName>
+        <default>false</default>
+        <label>Fleet Management Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Tax Compliance Check</fullName>
+        <default>false</default>
+        <label>Tax Compliance Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales and Marketing</fullName>
+        <default>false</default>
+        <label>Sales and Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Heavy Equipment Maintenance</fullName>
+        <default>false</default>
+        <label>Heavy Equipment Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehicle Auctioning</fullName>
+        <default>false</default>
+        <label>Vehicle Auctioning</label>
+    </customValue>
+    <masterLabel>Product &amp; Services</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

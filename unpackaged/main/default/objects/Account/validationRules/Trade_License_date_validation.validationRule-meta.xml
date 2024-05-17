@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trade_License_date_validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>(ETSALES_Trade_License_Expiry_Date__c ) &lt;= ( TODAY() )</errorConditionFormula>
+    <errorDisplayField>ETSALES_Trade_License_Expiry_Date__c</errorDisplayField>
+    <errorMessage>Trade license date is expired</errorMessage>
+</ValidationRule>

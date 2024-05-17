@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice Dispute</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Dispute Not Resolved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Dispute Resolved</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>New</fullName>
+        <default>true</default>
+    </values>
+</BusinessProcess>

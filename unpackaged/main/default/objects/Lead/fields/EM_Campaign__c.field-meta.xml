@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EM_Campaign__c</fullName>
+    <externalId>false</externalId>
+    <label>EM Campaign</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>313.95</fullName>
+                <default>false</default>
+                <label>313.95</label>
+            </value>
+            <value>
+                <fullName>508507077</fullName>
+                <default>false</default>
+                <label>508507077</label>
+            </value>
+            <value>
+                <fullName>580</fullName>
+                <default>false</default>
+                <label>580</label>
+            </value>
+            <value>
+                <fullName>Buy 2 get 2Tires for free Campaign</fullName>
+                <default>false</default>
+                <label>Buy 2 get 2Tires for free Campaign</label>
+            </value>
+            <value>
+                <fullName>Buy 2 get 2Tires for free Campaign,Oil &amp; Filter Change @AED 199 Campaign</fullName>
+                <default>false</default>
+                <label>Buy 2 get 2Tires for free Campaign,Oil &amp; Filter Change @AED 199 Campaign</label>
+            </value>
+            <value>
+                <fullName>code</fullName>
+                <default>false</default>
+                <label>code</label>
+            </value>
+            <value>
+                <fullName>EM.BP.Q4.21</fullName>
+                <default>false</default>
+                <label>EM.BP.Q4.21</label>
+            </value>
+            <value>
+                <fullName>EM.BP.Q4.21 EM.TS.Q4.21 </fullName>
+                <default>false</default>
+                <label>EM.BP.Q4.21 EM.TS.Q4.21 </label>
+            </value>
+            <value>
+                <fullName>EM.EW.Q1.22</fullName>
+                <default>false</default>
+                <label>EM.EW.Q1.22</label>
+            </value>
+            <value>
+                <fullName>EM.R.CC.2022</fullName>
+                <default>false</default>
+                <label>EM.R.CC.2022</label>
+            </value>
+            <value>
+                <fullName>EM.R.OC.2022</fullName>
+                <default>false</default>
+                <label>EM.R.OC.2022</label>
+            </value>
+            <value>
+                <fullName>EM.R.PRW.2022</fullName>
+                <default>false</default>
+                <label>EM.R.PRW.2022</label>
+            </value>
+            <value>
+                <fullName>EM.R.PRW.2022 \\\\ EM.EW.Q1.22</fullName>
+                <default>false</default>
+                <label>EM.R.PRW.2022 \\\\ EM.EW.Q1.22</label>
+            </value>
+            <value>
+                <fullName>EM.TS.Q4.21</fullName>
+                <default>false</default>
+                <label>EM.TS.Q4.21</label>
+            </value>
+            <value>
+                <fullName>EM.TS.Q4.21 is Tire Services</fullName>
+                <default>false</default>
+                <label>EM.TS.Q4.21 is Tire Services</label>
+            </value>
+            <value>
+                <fullName>ETmoto</fullName>
+                <default>false</default>
+                <label>ETmoto</label>
+            </value>
+            <value>
+                <fullName>JTHBK1GG4H2254871</fullName>
+                <default>false</default>
+                <label>JTHBK1GG4H2254871</label>
+            </value>
+            <value>
+                <fullName>Luxury Vehicles Maintenance unit</fullName>
+                <default>false</default>
+                <label>Luxury Vehicles Maintenance unit</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Filter Change @AED 199 Campaign</fullName>
+                <default>false</default>
+                <label>Oil &amp; Filter Change @AED 199 Campaign</label>
+            </value>
+            <value>
+                <fullName>Oil and oil filter offer EM.R.OC.2022</fullName>
+                <default>false</default>
+                <label>Oil and oil filter offer EM.R.OC.2022</label>
+            </value>
+            <value>
+                <fullName>Oil and oil filter offer EM.R.OC.2022 and more services</fullName>
+                <default>false</default>
+                <label>Oil and oil filter offer EM.R.OC.2022 and more services</label>
+            </value>
+            <value>
+                <fullName>Tire Campaign</fullName>
+                <default>false</default>
+                <label>Tire Campaign</label>
+            </value>
+            <value>
+                <fullName>Oil Exchange Campaign</fullName>
+                <default>false</default>
+                <label>Oil Exchange Campaign</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

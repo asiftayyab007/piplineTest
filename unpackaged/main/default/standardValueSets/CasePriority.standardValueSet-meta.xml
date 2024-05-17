@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Low</fullName>
+        <default>false</default>
+        <label>Low</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medium</fullName>
+        <default>false</default>
+        <label>Medium</label>
+    </standardValue>
+    <standardValue>
+        <fullName>High</fullName>
+        <default>false</default>
+        <label>High</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Emergency( Sensitive )-close within 8 hours</fullName>
+        <default>false</default>
+        <label>Emergency( Sensitive )-close within 8 hours</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Emergency - close within 24 hours</fullName>
+        <default>false</default>
+        <label>Emergency - close within 24 hours</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Normal - close within 2 working days</fullName>
+        <default>true</default>
+        <label>Normal - close within 2 working days</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Complicated - close within 11 working days</fullName>
+        <default>false</default>
+        <label>Complicated - close within 11 working days</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Trade_License_Number_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(NOT(ISBLANK(ETT_Trade_License_Number__c)),AND(AND(
+OR(ISCHANGED(ETT_Trade_License_Number__c),LEN(ETT_Trade_License_Number__c) &lt;&gt; 15),
+OR(
+$RecordType.Name = &quot;Tyre Supplier&quot;,
+$RecordType.Name = &quot;Tyre Customer&quot;,
+$RecordType.Name = &quot;Tyre Internal&quot;,
+$RecordType.Name = &quot;Tyre Internal Private&quot;
+))) ,false )</errorConditionFormula>
+    <errorMessage>The Trade Licenses Number should be a 15 digit number.</errorMessage>
+</ValidationRule>

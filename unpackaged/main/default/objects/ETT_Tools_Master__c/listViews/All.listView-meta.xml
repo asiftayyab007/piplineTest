@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>ETT_Status__c</columns>
+    <columns>ETT_Production_Areas__c</columns>
+    <columns>ETT_Unique_Code__c</columns>
+    <columns>ETT_Main_Stock_Units__c</columns>
+    <columns>ETT_Allocated_Units__c</columns>
+    <columns>Unit_Text__c</columns>
+    <columns>ETT_Unit_type__c</columns>
+    <columns>ETT_Individual_Unit_Value__c</columns>
+    <columns>ETT_Total_Unallocated_Stock_Value__c</columns>
+    <columns>ETT_Usage_type__c</columns>
+    <columns>ETT_Maintenance_Frquency__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

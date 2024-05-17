@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobility_Ads__c</fullName>
+    <externalId>false</externalId>
+    <label>Mobility Aids</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Autism spectrum disorder</fullName>
+                <default>false</default>
+                <label>Autism spectrum disorder</label>
+            </value>
+            <value>
+                <fullName>Attention Deficit Hyperactivity Disorder</fullName>
+                <default>false</default>
+                <label>Attention Deficit Hyperactivity Disorder</label>
+            </value>
+            <value>
+                <fullName>Physical disability</fullName>
+                <default>false</default>
+                <label>Physical disability</label>
+            </value>
+            <value>
+                <fullName>Diseases and health conditions</fullName>
+                <default>false</default>
+                <label>Diseases and health conditions</label>
+            </value>
+            <value>
+                <fullName>Intellectual disability</fullName>
+                <default>false</default>
+                <label>Intellectual disability</label>
+            </value>
+            <value>
+                <fullName>Psychological and dissociative disorders</fullName>
+                <default>false</default>
+                <label>Psychological and dissociative disorders</label>
+            </value>
+            <value>
+                <fullName>Crutches</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Crutches</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Walker</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Walker</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

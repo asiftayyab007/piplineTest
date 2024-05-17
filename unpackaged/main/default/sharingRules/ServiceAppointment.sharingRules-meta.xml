@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Accsess_to_Storekeeeper</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ETT_Accsess to Storekeeeper</label>
+        <sharedTo>
+            <role>BC_Emirates_StoreKeeper_Centre_Tyre</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tyre - Credit/B2B Supplier,Tyre - Refurbishing Services,Tyre - Cash Supplier</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SA_Access_to_CT</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ETT_SA Access to CT</label>
+        <sharedTo>
+            <role>BC_Emirates_Collection_Centre_Tyre</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tyre - Refurbishing Services,Tyre - Cash Supplier,Tyre - Credit/B2B Supplier,Tyre - Return Appointment</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

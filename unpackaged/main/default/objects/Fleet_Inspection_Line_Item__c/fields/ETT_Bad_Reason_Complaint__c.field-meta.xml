@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Bad_Reason_Complaint__c</fullName>
+    <externalId>false</externalId>
+    <label>Bad Reason Complaint</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Torn Bead</fullName>
+                <default>false</default>
+                <label>Torn Bead</label>
+            </value>
+            <value>
+                <fullName>Kinked/Distorted Beads Condition</fullName>
+                <default>false</default>
+                <label>Kinked/Distorted Beads Condition</label>
+            </value>
+            <value>
+                <fullName>Bead Deformation</fullName>
+                <default>false</default>
+                <label>Bead Deformation</label>
+            </value>
+            <value>
+                <fullName>Reinforce / Chafer Separation</fullName>
+                <default>false</default>
+                <label>Reinforce / Chafer Separation</label>
+            </value>
+            <value>
+                <fullName>Bead Damage From Curbing</fullName>
+                <default>false</default>
+                <label>Bead Damage From Curbing</label>
+            </value>
+            <value>
+                <fullName>Bead Area Flow Crack</fullName>
+                <default>false</default>
+                <label>Bead Area Flow Crack</label>
+            </value>
+            <value>
+                <fullName>Burned Beads</fullName>
+                <default>false</default>
+                <label>Burned Beads</label>
+            </value>
+            <value>
+                <fullName>Petro/ Lubricant Damage</fullName>
+                <default>false</default>
+                <label>Petro/ Lubricant Damage</label>
+            </value>
+            <value>
+                <fullName>Spread/Damaged Cord</fullName>
+                <default>false</default>
+                <label>Spread/Damaged Cord</label>
+            </value>
+            <value>
+                <fullName>Sidewall Separation</fullName>
+                <default>false</default>
+                <label>Sidewall Separation</label>
+            </value>
+            <value>
+                <fullName>Vehicle/Equipment Damage</fullName>
+                <default>false</default>
+                <label>Vehicle/Equipment Damage</label>
+            </value>
+            <value>
+                <fullName>Sidewall Abrasion/Scuff Damage</fullName>
+                <default>false</default>
+                <label>Sidewall Abrasion/Scuff Damage</label>
+            </value>
+            <value>
+                <fullName>Impact Break</fullName>
+                <default>false</default>
+                <label>Impact Break</label>
+            </value>
+            <value>
+                <fullName>Diagonal Cracking</fullName>
+                <default>false</default>
+                <label>Diagonal Cracking</label>
+            </value>
+            <value>
+                <fullName>Forklift Damage</fullName>
+                <default>false</default>
+                <label>Forklift Damage</label>
+            </value>
+            <value>
+                <fullName>Petroleum Product Damage</fullName>
+                <default>false</default>
+                <label>Petroleum Product Damage</label>
+            </value>
+            <value>
+                <fullName>Branding Damage</fullName>
+                <default>false</default>
+                <label>Branding Damage</label>
+            </value>
+            <value>
+                <fullName>Aging Crack/Weathering</fullName>
+                <default>false</default>
+                <label>Aging Crack/Weathering</label>
+            </value>
+            <value>
+                <fullName>Damage Induced Sidewall Separation</fullName>
+                <default>false</default>
+                <label>Damage Induced Sidewall Separation</label>
+            </value>
+            <value>
+                <fullName>Chain Damage</fullName>
+                <default>false</default>
+                <label>Chain Damage</label>
+            </value>
+            <value>
+                <fullName>Cuts and Snags</fullName>
+                <default>false</default>
+                <label>Cuts and Snags</label>
+            </value>
+            <value>
+                <fullName>Steer Axle Shoulder Step/Chamfer Wear</fullName>
+                <default>false</default>
+                <label>Steer Axle Shoulder Step/Chamfer Wear</label>
+            </value>
+            <value>
+                <fullName>Feather Wear</fullName>
+                <default>false</default>
+                <label>Feather Wear</label>
+            </value>
+            <value>
+                <fullName>Cupping/Scallop Wear</fullName>
+                <default>false</default>
+                <label>Cupping/Scallop Wear</label>
+            </value>
+            <value>
+                <fullName>Diagonal Wear</fullName>
+                <default>false</default>
+                <label>Diagonal Wear</label>
+            </value>
+            <value>
+                <fullName>Steer Axle Overall Fast Wear</fullName>
+                <default>false</default>
+                <label>Steer Axle Overall Fast Wear</label>
+            </value>
+            <value>
+                <fullName>Erratic Depression Wear</fullName>
+                <default>false</default>
+                <label>Erratic Depression Wear</label>
+            </value>
+            <value>
+                <fullName>Full Shoulder Wear</fullName>
+                <default>false</default>
+                <label>Full Shoulder Wear</label>
+            </value>
+            <value>
+                <fullName>Erosion/River/Channel Wear</fullName>
+                <default>false</default>
+                <label>Erosion/River/Channel Wear</label>
+            </value>
+            <value>
+                <fullName>Steer Axle One Sided Wear</fullName>
+                <default>false</default>
+                <label>Steer Axle One Sided Wear</label>
+            </value>
+            <value>
+                <fullName>Eccentric/Out-Of-Round Wear</fullName>
+                <default>false</default>
+                <label>Eccentric/Out-Of-Round Wear</label>
+            </value>
+            <value>
+                <fullName>Rib Depression/Punch Wear</fullName>
+                <default>false</default>
+                <label>Rib Depression/Punch Wear</label>
+            </value>
+            <value>
+                <fullName>Drive Axle Shoulder Step/Chamfer Wear</fullName>
+                <default>false</default>
+                <label>Drive Axle Shoulder Step/Chamfer Wear</label>
+            </value>
+            <value>
+                <fullName>Alternate Lug Wear</fullName>
+                <default>false</default>
+                <label>Alternate Lug Wear</label>
+            </value>
+            <value>
+                <fullName>Drive Axle Overall Fast Wear</fullName>
+                <default>false</default>
+                <label>Drive Axle Overall Fast Wear</label>
+            </value>
+            <value>
+                <fullName>Heel/Toe Wear</fullName>
+                <default>false</default>
+                <label>Heel/Toe Wear</label>
+            </value>
+            <value>
+                <fullName>Break Skid/Flat Spot Wear</fullName>
+                <default>false</default>
+                <label>Break Skid/Flat Spot Wear</label>
+            </value>
+            <value>
+                <fullName>Break Skid Flat Spot Wear</fullName>
+                <default>false</default>
+                <label>Break Skid Flat Spot Wear</label>
+            </value>
+            <value>
+                <fullName>Multiple Flat Spotting Wire</fullName>
+                <default>false</default>
+                <label>Multiple Flat Spotting Wire</label>
+            </value>
+            <value>
+                <fullName>Shoulder Scrubbing/Scuffing Wear</fullName>
+                <default>false</default>
+                <label>Shoulder Scrubbing/Scuffing Wear</label>
+            </value>
+            <value>
+                <fullName>Rapid Shoulder Wear – One Shoulder</fullName>
+                <default>false</default>
+                <label>Rapid Shoulder Wear – One Shoulder</label>
+            </value>
+            <value>
+                <fullName>Rapid Shoulder Wear – Both Shoulder</fullName>
+                <default>false</default>
+                <label>Rapid Shoulder Wear – Both Shoulder</label>
+            </value>
+            <value>
+                <fullName>Trailer Axle One Sided Wear</fullName>
+                <default>false</default>
+                <label>Trailer Axle One Sided Wear</label>
+            </value>
+            <value>
+                <fullName>Open Inner Liner Splice</fullName>
+                <default>false</default>
+                <label>Open Inner Liner Splice</label>
+            </value>
+            <value>
+                <fullName>Inner Liner Cracking</fullName>
+                <default>false</default>
+                <label>Inner Liner Cracking</label>
+            </value>
+            <value>
+                <fullName>Tearing, Mount/Dismount Damage</fullName>
+                <default>false</default>
+                <label>Tearing, Mount/Dismount Damage</label>
+            </value>
+            <value>
+                <fullName>Run Flat</fullName>
+                <default>false</default>
+                <label>Run Flat</label>
+            </value>
+            <value>
+                <fullName>Penetrating Object</fullName>
+                <default>false</default>
+                <label>Penetrating Object</label>
+            </value>
+            <value>
+                <fullName>Inner Liner Bubbles, Blisters and Separations</fullName>
+                <default>false</default>
+                <label>Inner Liner Bubbles, Blisters and Separations</label>
+            </value>
+            <value>
+                <fullName>Pulled/Loose Cords</fullName>
+                <default>false</default>
+                <label>Pulled/Loose Cords</label>
+            </value>
+            <value>
+                <fullName>Foreign Object Inner Liner Damage In Tubeless Tyre</fullName>
+                <default>false</default>
+                <label>Foreign Object Inner Liner Damage In Tubeless Tyre</label>
+            </value>
+            <value>
+                <fullName>Pinch Shock</fullName>
+                <default>false</default>
+                <label>Pinch Shock</label>
+            </value>
+            <value>
+                <fullName>Electrical Discharge</fullName>
+                <default>false</default>
+                <label>Electrical Discharge</label>
+            </value>
+            <value>
+                <fullName>Spot Repair Should be a Section Repair</fullName>
+                <default>false</default>
+                <label>Spot Repair Should be a Section Repair</label>
+            </value>
+            <value>
+                <fullName>Improperly Aligned repair</fullName>
+                <default>false</default>
+                <label>Improperly Aligned repair</label>
+            </value>
+            <value>
+                <fullName>Bridged Repair</fullName>
+                <default>false</default>
+                <label>Bridged Repair</label>
+            </value>
+            <value>
+                <fullName>Bad Bead Repair</fullName>
+                <default>false</default>
+                <label>Bad Bead Repair</label>
+            </value>
+            <value>
+                <fullName>Bias Repair in Radial Tyre</fullName>
+                <default>false</default>
+                <label>Bias Repair in Radial Tyre</label>
+            </value>
+            <value>
+                <fullName>Bad Spot Repair</fullName>
+                <default>false</default>
+                <label>Bad Spot Repair</label>
+            </value>
+            <value>
+                <fullName>Improper Nail Hole Repair</fullName>
+                <default>false</default>
+                <label>Improper Nail Hole Repair</label>
+            </value>
+            <value>
+                <fullName>Unfilled Nail Hole Repair</fullName>
+                <default>false</default>
+                <label>Unfilled Nail Hole Repair</label>
+            </value>
+            <value>
+                <fullName>On the Wheel Repair</fullName>
+                <default>false</default>
+                <label>On the Wheel Repair</label>
+            </value>
+            <value>
+                <fullName>Failed Repair – Injury Not Removed</fullName>
+                <default>false</default>
+                <label>Failed Repair – Injury Not Removed</label>
+            </value>
+            <value>
+                <fullName>Tread Separation</fullName>
+                <default>false</default>
+                <label>Tread Separation</label>
+            </value>
+            <value>
+                <fullName>Tread Separation – Repair Related</fullName>
+                <default>false</default>
+                <label>Tread Separation – Repair Related</label>
+            </value>
+            <value>
+                <fullName>Missed Puncture</fullName>
+                <default>false</default>
+                <label>Missed Puncture</label>
+            </value>
+            <value>
+                <fullName>Bond Line Porosity</fullName>
+                <default>false</default>
+                <label>Bond Line Porosity</label>
+            </value>
+            <value>
+                <fullName>Tread Chunking at Splice</fullName>
+                <default>false</default>
+                <label>Tread Chunking at Splice</label>
+            </value>
+            <value>
+                <fullName>Belt Separation Repair Related</fullName>
+                <default>false</default>
+                <label>Belt Separation Repair Related</label>
+            </value>
+            <value>
+                <fullName>Tread Edge Lifting</fullName>
+                <default>false</default>
+                <label>Tread Edge Lifting</label>
+            </value>
+            <value>
+                <fullName>Lug Base Cracking/Tearing</fullName>
+                <default>false</default>
+                <label>Lug Base Cracking/Tearing</label>
+            </value>
+            <value>
+                <fullName>Open Tread Splice</fullName>
+                <default>false</default>
+                <label>Open Tread Splice</label>
+            </value>
+            <value>
+                <fullName>Failed Inner Liner Repair</fullName>
+                <default>false</default>
+                <label>Failed Inner Liner Repair</label>
+            </value>
+            <value>
+                <fullName>Improper Tread Width</fullName>
+                <default>false</default>
+                <label>Improper Tread Width</label>
+            </value>
+            <value>
+                <fullName>Repair Related Bulge</fullName>
+                <default>false</default>
+                <label>Repair Related Bulge</label>
+            </value>
+            <value>
+                <fullName>Skiving Failure</fullName>
+                <default>false</default>
+                <label>Skiving Failure</label>
+            </value>
+            <value>
+                <fullName>Buckled Tread</fullName>
+                <default>false</default>
+                <label>Buckled Tread</label>
+            </value>
+            <value>
+                <fullName>Tread Surface Porosity</fullName>
+                <default>false</default>
+                <label>Tread Surface Porosity</label>
+            </value>
+            <value>
+                <fullName>Failed Repair from Under Inflation</fullName>
+                <default>false</default>
+                <label>Failed Repair from Under Inflation</label>
+            </value>
+            <value>
+                <fullName>Delamination</fullName>
+                <default>false</default>
+                <label>Delamination</label>
+            </value>
+            <value>
+                <fullName>Wing Lift</fullName>
+                <default>false</default>
+                <label>Wing Lift</label>
+            </value>
+            <value>
+                <fullName>Open Sidewall Splice</fullName>
+                <default>false</default>
+                <label>Open Sidewall Splice</label>
+            </value>
+            <value>
+                <fullName>Sidewall Bumps (Blisters)</fullName>
+                <default>false</default>
+                <label>Sidewall Bumps (Blisters)</label>
+            </value>
+            <value>
+                <fullName>Circumferential Fatigue Rupture (Zipper)</fullName>
+                <default>false</default>
+                <label>Circumferential Fatigue Rupture (Zipper)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

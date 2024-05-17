@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hourly</fullName>
+    <columns>NAME</columns>
+    <columns>Price_Per_Hour__c</columns>
+    <columns>ETC_Car_Model__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Cars_Price_Matrix__c.Hourly</value>
+    </filters>
+    <label>Hourly</label>
+</ListView>

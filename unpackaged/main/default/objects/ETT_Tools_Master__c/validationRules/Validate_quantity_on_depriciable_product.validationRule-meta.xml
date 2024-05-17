@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_quantity_on_depriciable_product</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(ISPICKVAL(ETT_Usage_type__c,&quot;Depreciable&quot;),OR(ETT_Allocated_Units__c!=1,TEXT(ETT_Unit_type__c)!=&#39;Quantity based&#39;),ETT_Individual_Unit_Value__c!=1)</errorConditionFormula>
+    <errorMessage>Available Units &amp; Individual unit value cannot be more than 1 for the usage type=&quot;Depreciable&quot; &amp; Unit type=&quot;Quantity based&quot;</errorMessage>
+</ValidationRule>

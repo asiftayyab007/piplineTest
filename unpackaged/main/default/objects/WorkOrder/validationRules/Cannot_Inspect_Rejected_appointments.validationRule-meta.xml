@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Inspect_Rejected_appointments</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName =&#39;Inspection_Work_Order&#39; &amp;&amp; 
+text(Status ) = &#39;None&#39; &amp;&amp;  ETI_Inspection_Completed__c = true</errorConditionFormula>
+    <errorMessage>Cannot do any operations on Rejected Appointments</errorMessage>
+</ValidationRule>

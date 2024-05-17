@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETST_Activity_Center__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(ISPICKVAL(Service_Request__r.ETST_Student__r.ETST_School_Name__r.ETST_Account_Type__c, &#39;Government School&#39;), &#39;Government School&#39;, &#39;Private School&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Activity Center</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

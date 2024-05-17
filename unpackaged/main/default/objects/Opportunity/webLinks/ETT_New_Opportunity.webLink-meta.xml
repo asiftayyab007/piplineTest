@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_New_Opportunity</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>New</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Opportunity/new?defaultFieldValues=StageName=Qualification,AccountId={!Account.Id}&amp;count=2&amp;nooverride=1&amp;useRecordTypeCheck=1&amp;navigationLocation=RELATED_LIST&amp;uid=160967724819723861&amp;backgroundContext=%2Flightning%2Fr%2FAccount%2F{!Account.Id}%2Fview&amp;recordTypeId=0123M0000000Ij8QAE</url>
+</WebLink>

@@ -1,0 +1,146 @@
+<aura:component controller = "MOTO_VehInspectionCtrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <!--Attributes for buttons and pages-->
+    <aura:attribute name="HomePage" type="Boolean"  default="true"/>
+    <aura:attribute name="vehSearchPage" type="Boolean" default="false"/>
+    <aura:attribute name="vehInspectionForm" type="Boolean" default="false"/>
+    <aura:attribute name="showPage3" type="Boolean" default="false"/>
+    
+    
+    <!--Attributes for records Search-->
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="name" type="String" />
+    <aura:attribute name="mobilenum" type="String" />
+    <aura:attribute name="MobileNumber" type="String"/>
+    <aura:attribute name="SelectedType" type="String" />
+    
+    <!--Attributes for displying list of records-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="opportunities" type="Opportunity" />
+    <aura:attribute name="objectName" type="string" default="Opportunity"  />
+    <aura:attribute name="fieldName" type="string" default="Name" />
+    <aura:attribute name="selectedOpp" type="Opportunity"  />
+
+    
+    
+    
+    
+    <!-- Home Page-->
+    <aura:if isTrue="{!v.HomePage}">
+        <div class="slds-p-around_small">
+            <div class="slds-grid slds-gutters">
+                <lightning:button  class="slds-col slds-size_1-of-5 slds-m-right_small"  variant="brand" 
+                                  label="Walk - In"
+                                  title="Walk - In"
+                                  onclick="{!c.WalkIn}" />
+                <lightning:button  class="slds-col slds-size_1-of-5 slds-m-right_small"  variant="brand" 
+                                  label="Appointment"
+                                  title="Appointment"
+                                  onclick="{!c.Appointment}" />           
+            </div>
+        </div>
+    </aura:if>
+    
+    <!-- 1.Search page-->
+    <aura:if isTrue="{!v.vehSearchPage}">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <div class="slds-form-element slds-is-editing">
+                    <lightning:select name="mySelect" label="Type" aura:id="mySelect"
+                                      value="{!v.SelectedType}"  required="true">
+                        <option>None</option>
+                        <option value="vehicle Receiving">Vehicle Receiving</option>
+                        <option value="36 points health check">36 Points Health Check</option>
+                        <option value="111 point inspection">111 Point Inspection</option>
+                    </lightning:select>
+                </div>
+            </div>
+        </div>
+        <lightning:recordEditForm objectApiName="Inspection_Report__c" recordId="{!v.recordId}" onsuccess="{!c.handleSuccess}">
+            <lightning:messages />
+            <lightning:inputField fieldName="Mobile_Number__c" value="{!v.MobileNumber}" />
+            <div class="slds-hide">
+                <!--add-->
+            </div>
+            <div class="slds-p-around_small">
+            <div class="slds-grid slds-gutters">
+                <lightning:button class="slds-col slds-size_1-of-5 slds-m-right_small"
+                                  variant="brand" 
+                                  label="Search"
+                                  title="Search"
+                                  onclick="{!c.handleSearch}" disabled="{!v.disabled}"/>
+                
+                <aura:if isTrue="{!v.vehSearchPage ||  v.vehInspectionForm}">
+                    <lightning:button  class="slds-col slds-size_1-of-5 slds-m-right_small"
+                                      variant="brand" 
+                                      label="Home"
+                                      title="Home"
+                                      onclick="{!c.Home}" />
+                </aura:if>
+            </div>
+            </div>
+            
+        </lightning:recordEditForm>
+    </aura:if>
+    
+    <!--2.displying list of records-->
+    <aura:if isTrue="{!v.vehSearchPage}">
+        <!-- {!v.recordList} -->
+        {!v.recordid}
+        <aura:iteration items="{!v.opportunities}" var="opp">
+            <a href="" onclick="{!c.handleSelect}" data-recordid="{!opp.Id}">
+                <div  class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-4 slds-p-around_small">
+                        <lightning:card  title="{!opp.ETSALES_Opportunity_Number__c}">
+                            <p class="slds-p-horizontal_small">
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_1-of-3">   
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-3">
+                                        {!opp.Name} <br/>
+                                        StageName :{!opp.StageName} <br/>
+                                        Customer Name  :  {!opp.Account.Name}
+                                    </div>
+                                </div>
+                            </p>
+                        </lightning:card>
+                    </div>
+                </div>
+            </a>
+        </aura:iteration>
+    </aura:if>
+    
+    <!--3.displying form-->  
+    
+    
+    <!--vehicle Receiving form-->
+    <aura:if isTrue="{!v.vehInspectionForm}">
+        <c:MOTO_VehReceivingForm  
+                                 selectedOpp="{!v.selectedOpp}" 
+                                 HomePage="{!v.HomePage}"
+                                 vehSearchPage="{!v.vehSearchPage}"
+                                 vehInspectionForm="{!v.vehInspectionForm}"
+                                 SelectedType="{!v.SelectedType}"
+                                 MobileNumber="{!v.MobileNumber}"
+                                 
+                                 />             
+    </aura:if>
+    
+    <!-- buttons and pages-->
+    <div class="slds-p-around_small">
+        <div class="slds-grid slds-gutters">
+            <aura:if isTrue="{!v.vehInspectionForm}">
+                <div class="slds-col slds-size_2-of-3">
+                    <!--add-->
+                </div>
+            </aura:if>
+            <aura:if isTrue="{!v.vehInspectionForm}">
+                <div class="slds-hide">
+                    <!--add-->
+                </div>
+            </aura:if>
+            
+            
+        </div>
+    </div>
+    
+</aura:component>

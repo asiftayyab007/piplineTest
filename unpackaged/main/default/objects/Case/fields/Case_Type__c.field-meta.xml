@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ministry of Education</fullName>
+                <default>false</default>
+                <label>Ministry of Education</label>
+            </value>
+            <value>
+                <fullName>Public/Private Schools</fullName>
+                <default>false</default>
+                <label>Public/Private Schools</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Transport service</fullName>
+                <default>false</default>
+                <label>Transport service</label>
+            </value>
+            <value>
+                <fullName>Limousine Services</fullName>
+                <default>false</default>
+                <label>Limousine Services</label>
+            </value>
+            <value>
+                <fullName>Driving School</fullName>
+                <default>false</default>
+                <label>Driving School</label>
+            </value>
+            <value>
+                <fullName>Vehicle Inspection Services</fullName>
+                <default>false</default>
+                <label>Vehicle Inspection Services</label>
+            </value>
+            <value>
+                <fullName>Auto Repair Services</fullName>
+                <default>false</default>
+                <label>Auto Repair Services</label>
+            </value>
+            <value>
+                <fullName>Auto Repair Services-B2C</fullName>
+                <default>false</default>
+                <label>Auto Repair Services-B2C</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

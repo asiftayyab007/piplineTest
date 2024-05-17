@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Possible_causes__c</fullName>
+    <externalId>false</externalId>
+    <label>Possible causes</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fuel pump defect</fullName>
+                <default>false</default>
+                <label>Fuel pump defect</label>
+            </value>
+            <value>
+                <fullName>Battery malfunction</fullName>
+                <default>false</default>
+                <label>Battery malfunction</label>
+            </value>
+            <value>
+                <fullName>Self starter motor malfunction</fullName>
+                <default>false</default>
+                <label>Self starter motor malfunction</label>
+            </value>
+            <value>
+                <fullName>Sensor fault</fullName>
+                <default>false</default>
+                <label>Sensor fault</label>
+            </value>
+            <value>
+                <fullName>Battery failure</fullName>
+                <default>false</default>
+                <label>Battery failure</label>
+            </value>
+            <value>
+                <fullName>Dynamo malfunction</fullName>
+                <default>false</default>
+                <label>Dynamo malfunction</label>
+            </value>
+            <value>
+                <fullName>Self starter failure</fullName>
+                <default>false</default>
+                <label>Self starter failure</label>
+            </value>
+            <value>
+                <fullName>Axle gear problem</fullName>
+                <default>false</default>
+                <label>Axle gear problem</label>
+            </value>
+            <value>
+                <fullName>Axle boot cut ( snoozing sound )</fullName>
+                <default>false</default>
+                <label>Axle boot cut ( snoozing sound )</label>
+            </value>
+            <value>
+                <fullName>Engine or gear mounting broken</fullName>
+                <default>false</default>
+                <label>Engine or gear mounting broken</label>
+            </value>
+            <value>
+                <fullName>Fuel supply interruption</fullName>
+                <default>false</default>
+                <label>Fuel supply interruption</label>
+            </value>
+            <value>
+                <fullName>Computer fault</fullName>
+                <default>false</default>
+                <label>Computer fault</label>
+            </value>
+            <value>
+                <fullName>Gear problem</fullName>
+                <default>false</default>
+                <label>Gear problem</label>
+            </value>
+            <value>
+                <fullName>Air filter clogged</fullName>
+                <default>false</default>
+                <label>Air filter clogged</label>
+            </value>
+            <value>
+                <fullName>Throttle body problem</fullName>
+                <default>false</default>
+                <label>Throttle body problem</label>
+            </value>
+            <value>
+                <fullName>Spark plugs problem</fullName>
+                <default>false</default>
+                <label>Spark plugs problem</label>
+            </value>
+            <value>
+                <fullName>Coolant boiling</fullName>
+                <default>false</default>
+                <label>Coolant boiling</label>
+            </value>
+            <value>
+                <fullName>Cold Weather or Extended Idling</fullName>
+                <default>false</default>
+                <label>Cold Weather or Extended Idling</label>
+            </value>
+            <value>
+                <fullName>Clogged fuel filter</fullName>
+                <default>false</default>
+                <label>Clogged fuel filter</label>
+            </value>
+            <value>
+                <fullName>Fuel pump problem</fullName>
+                <default>false</default>
+                <label>Fuel pump problem</label>
+            </value>
+            <value>
+                <fullName>Rich Fuel Mixture</fullName>
+                <default>false</default>
+                <label>Rich Fuel Mixture</label>
+            </value>
+            <value>
+                <fullName>Incomplete Combustion</fullName>
+                <default>false</default>
+                <label>Incomplete Combustion</label>
+            </value>
+            <value>
+                <fullName>Excessive EGR System Flow</fullName>
+                <default>false</default>
+                <label>Excessive EGR System Flow</label>
+            </value>
+            <value>
+                <fullName>Turbocharger Issues</fullName>
+                <default>false</default>
+                <label>Turbocharger Issues</label>
+            </value>
+            <value>
+                <fullName>Burning Oil</fullName>
+                <default>false</default>
+                <label>Burning Oil</label>
+            </value>
+            <value>
+                <fullName>Excessive Blow-by</fullName>
+                <default>false</default>
+                <label>Excessive Blow-by</label>
+            </value>
+            <value>
+                <fullName>Coolant Leak into the Combustion Chamber( cylinder head gasket)</fullName>
+                <default>false</default>
+                <label>Coolant Leak into the Combustion Chamber( cylinder head gasket)</label>
+            </value>
+            <value>
+                <fullName>Incorrect Fuel Additives</fullName>
+                <default>false</default>
+                <label>Incorrect Fuel Additives</label>
+            </value>
+            <value>
+                <fullName>Fuel System Issues</fullName>
+                <default>false</default>
+                <label>Fuel System Issues</label>
+            </value>
+            <value>
+                <fullName>Wheel Imbalance</fullName>
+                <default>false</default>
+                <label>Wheel Imbalance</label>
+            </value>
+            <value>
+                <fullName>Tyre Issues</fullName>
+                <default>false</default>
+                <label>Tyre Issues</label>
+            </value>
+            <value>
+                <fullName>Wheel Misalignment</fullName>
+                <default>false</default>
+                <label>Wheel Misalignment</label>
+            </value>
+            <value>
+                <fullName>Brake problems</fullName>
+                <default>false</default>
+                <label>Brake problems</label>
+            </value>
+            <value>
+                <fullName>Suspension Issues</fullName>
+                <default>false</default>
+                <label>Suspension Issues</label>
+            </value>
+            <value>
+                <fullName>CV Joint or Axle Problems</fullName>
+                <default>false</default>
+                <label>CV Joint or Axle Problems</label>
+            </value>
+            <value>
+                <fullName>Worn Bushings or Bearings</fullName>
+                <default>false</default>
+                <label>Worn Bushings or Bearings</label>
+            </value>
+            <value>
+                <fullName>Power Steering Issues</fullName>
+                <default>false</default>
+                <label>Power Steering Issues</label>
+            </value>
+            <value>
+                <fullName>Problems with the drivetrain, such as a damaged driveshaft or universal joint</fullName>
+                <default>false</default>
+                <label>Problems with the drivetrain, such as a damaged driveshaft or universal joint</label>
+            </value>
+            <value>
+                <fullName>Unequal Tyre Tread</fullName>
+                <default>false</default>
+                <label>Unequal Tyre Tread</label>
+            </value>
+            <value>
+                <fullName>Improperly Inflated Tyres</fullName>
+                <default>false</default>
+                <label>Improperly Inflated Tyres</label>
+            </value>
+            <value>
+                <fullName>Uneven Loading</fullName>
+                <default>false</default>
+                <label>Uneven Loading</label>
+            </value>
+            <value>
+                <fullName>Battery issues</fullName>
+                <default>false</default>
+                <label>Battery issues</label>
+            </value>
+            <value>
+                <fullName>Dynamo issues</fullName>
+                <default>false</default>
+                <label>Dynamo issues</label>
+            </value>
+            <value>
+                <fullName>Tyres</fullName>
+                <default>false</default>
+                <label>Tyres</label>
+            </value>
+            <value>
+                <fullName>Computer diagnostic to be held to identify the problem</fullName>
+                <default>false</default>
+                <label>Computer diagnostic to be held to identify the problem</label>
+            </value>
+            <value>
+                <fullName>Faulty Control Unit</fullName>
+                <default>false</default>
+                <label>Faulty Control Unit</label>
+            </value>
+            <value>
+                <fullName>Solenoid Malfunction</fullName>
+                <default>false</default>
+                <label>Solenoid Malfunction</label>
+            </value>
+            <value>
+                <fullName>Failed or Failing Pump</fullName>
+                <default>false</default>
+                <label>Failed or Failing Pump</label>
+            </value>
+            <value>
+                <fullName>Low Fluid</fullName>
+                <default>false</default>
+                <label>Low Fluid</label>
+            </value>
+            <value>
+                <fullName>Bad Speed Sensor or Wiring Problem</fullName>
+                <default>false</default>
+                <label>Bad Speed Sensor or Wiring Problem</label>
+            </value>
+            <value>
+                <fullName>Standard bulb check</fullName>
+                <default>false</default>
+                <label>Standard bulb check</label>
+            </value>
+            <value>
+                <fullName>Delayed or rough shifting</fullName>
+                <default>false</default>
+                <label>Delayed or rough shifting</label>
+            </value>
+            <value>
+                <fullName>Abnormal sounds</fullName>
+                <default>false</default>
+                <label>Abnormal sounds</label>
+            </value>
+            <value>
+                <fullName>Gear slipping</fullName>
+                <default>false</default>
+                <label>Gear slipping</label>
+            </value>
+            <value>
+                <fullName>Gear oil leakage</fullName>
+                <default>false</default>
+                <label>Gear oil leakage</label>
+            </value>
+            <value>
+                <fullName>Brake pad problem</fullName>
+                <default>false</default>
+                <label>Brake pad problem</label>
+            </value>
+            <value>
+                <fullName>Brake Disc problem</fullName>
+                <default>false</default>
+                <label>Brake Disc problem</label>
+            </value>
+            <value>
+                <fullName>Low Coolant Level</fullName>
+                <default>false</default>
+                <label>Low Coolant Level</label>
+            </value>
+            <value>
+                <fullName>Air in the Cooling System</fullName>
+                <default>false</default>
+                <label>Air in the Cooling System</label>
+            </value>
+            <value>
+                <fullName>Faulty Thermostat</fullName>
+                <default>false</default>
+                <label>Faulty Thermostat</label>
+            </value>
+            <value>
+                <fullName>Blocked Radiator</fullName>
+                <default>false</default>
+                <label>Blocked Radiator</label>
+            </value>
+            <value>
+                <fullName>Failed Water Pump</fullName>
+                <default>false</default>
+                <label>Failed Water Pump</label>
+            </value>
+            <value>
+                <fullName>Radiator Cap Issues</fullName>
+                <default>false</default>
+                <label>Radiator Cap Issues</label>
+            </value>
+            <value>
+                <fullName>Cooling System Leaks</fullName>
+                <default>false</default>
+                <label>Cooling System Leaks</label>
+            </value>
+            <value>
+                <fullName>Cooling fan problem</fullName>
+                <default>false</default>
+                <label>Cooling fan problem</label>
+            </value>
+            <value>
+                <fullName>Oil</fullName>
+                <default>false</default>
+                <label>Oil</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Coolants pipes leakage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Coolants pipes leakage</label>
+            </value>
+            <value>
+                <fullName>Cylinder head gasket</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cylinder head gasket</label>
+            </value>
+            <value>
+                <fullName>Fuel filter clogged</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fuel filter clogged</label>
+            </value>
+            <value>
+                <fullName>Oil cooler gasket</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oil cooler gasket</label>
+            </value>
+            <value>
+                <fullName>Radiator coolant leakage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Radiator coolant leakage</label>
+            </value>
+            <value>
+                <fullName>Spark plugs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Spark plugs</label>
+            </value>
+            <value>
+                <fullName>Temp. sensor malfunction</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Temp. sensor malfunction</label>
+            </value>
+            <value>
+                <fullName>Thermostat valve clogged</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Thermostat valve clogged</label>
+            </value>
+            <value>
+                <fullName>Throttle body defect</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Throttle body defect</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Invalid</fullName>
+        <default>false</default>
+        <label>Invalid</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted for ADEC</fullName>
+        <default>false</default>
+        <label>Submitted for ADEC</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted for ET Manager</fullName>
+        <default>false</default>
+        <label>Submitted for ET Manager</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved by ADEC</fullName>
+        <default>false</default>
+        <label>Approved by ADEC</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected by ADEC</fullName>
+        <default>false</default>
+        <label>Rejected by ADEC</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected by ET Manager</fullName>
+        <default>false</default>
+        <label>Rejected by ET Manager</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved by ET Manager</fullName>
+        <default>false</default>
+        <label>Approved by ET Manager</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending with Department Of School Activities</fullName>
+        <default>false</default>
+        <label>Pending with Department Of School Activities</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending with ET - School Transportation Manager</fullName>
+        <default>false</default>
+        <label>Pending with ET - School Transportation Manager</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending with Department Of School Services</fullName>
+        <default>false</default>
+        <label>Pending with Department Of School Services</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending with Personnel Management</fullName>
+        <default>false</default>
+        <label>Pending with Personnel Management</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending with Special Education</fullName>
+        <default>false</default>
+        <label>Pending with Special Education</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted to Statistics Coordinator</fullName>
+        <default>false</default>
+        <label>Submitted to Statistics Coordinator</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solution Completed</fullName>
+        <default>false</default>
+        <label>Solution Completed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Under Approval</fullName>
+        <default>false</default>
+        <label>Under Approval</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Under Process</fullName>
+        <default>false</default>
+        <label>Under Process</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress with HOO Approval</fullName>
+        <default>false</default>
+        <label>In Progress with HOO Approval</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress with FM Approval</fullName>
+        <default>false</default>
+        <label>In Progress with FM Approval</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Fine Adjustment In Progress</fullName>
+        <default>false</default>
+        <label>Fine Adjustment In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Note In Progress</fullName>
+        <default>false</default>
+        <label>Credit Note In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Reject</fullName>
+        <default>false</default>
+        <label>Reject</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress with Salesperson Approval</fullName>
+        <default>false</default>
+        <label>In Progress with Salesperson Approval</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected by HOO</fullName>
+        <default>false</default>
+        <label>Rejected by HOO</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected by FM</fullName>
+        <default>false</default>
+        <label>Rejected by FM</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected by Sales team</fullName>
+        <default>false</default>
+        <label>Rejected by Sales team</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Dispute Resolved</fullName>
+        <default>false</default>
+        <label>Dispute Resolved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Dispute Not Resolved</fullName>
+        <default>false</default>
+        <label>Dispute Not Resolved</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

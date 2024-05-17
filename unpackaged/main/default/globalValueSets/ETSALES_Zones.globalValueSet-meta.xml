@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Zone A</fullName>
+        <default>false</default>
+        <label>Zone A</label>
+    </customValue>
+    <customValue>
+        <fullName>Zone B</fullName>
+        <default>false</default>
+        <label>Zone B</label>
+    </customValue>
+    <customValue>
+        <fullName>Zone C</fullName>
+        <default>false</default>
+        <label>Zone C</label>
+    </customValue>
+    <customValue>
+        <fullName>Head Office</fullName>
+        <default>false</default>
+        <label>Head Office</label>
+    </customValue>
+    <customValue>
+        <fullName>MRO</fullName>
+        <default>false</default>
+        <label>MRO</label>
+    </customValue>
+    <customValue>
+        <fullName>KAM</fullName>
+        <default>false</default>
+        <label>KAM</label>
+    </customValue>
+    <masterLabel>Zones</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

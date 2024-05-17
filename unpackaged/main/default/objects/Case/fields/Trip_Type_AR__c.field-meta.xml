@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trip_Type_AR__c</fullName>
+    <externalId>false</externalId>
+    <label>Trip Type AR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>رحلة رياضية</fullName>
+                <default>false</default>
+                <label>رحلة رياضية</label>
+            </value>
+            <value>
+                <fullName>ثقافي</fullName>
+                <default>false</default>
+                <label>ثقافي</label>
+            </value>
+            <value>
+                <fullName>وسائل الترفيه</fullName>
+                <default>false</default>
+                <label>وسائل الترفيه</label>
+            </value>
+            <value>
+                <fullName>المشاركة في الفعالية الرسمية</fullName>
+                <default>false</default>
+                <label>المشاركة في الفعالية الرسمية</label>
+            </value>
+            <value>
+                <fullName>آخر</fullName>
+                <default>false</default>
+                <label>آخر</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

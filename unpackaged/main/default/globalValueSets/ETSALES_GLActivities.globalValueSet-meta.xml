@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Abu Dhabi Airport Taxi (Trans Ad)</fullName>
+        <default>false</default>
+        <label>Abu Dhabi Airport Taxi (Trans Ad)</label>
+    </customValue>
+    <customValue>
+        <fullName>Abu Dhabi city taxi project</fullName>
+        <default>false</default>
+        <label>Abu Dhabi city taxi project</label>
+    </customValue>
+    <customValue>
+        <fullName>Abu Dhabi Technical Service</fullName>
+        <default>false</default>
+        <label>Abu Dhabi Technical Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Abu Dhabi Transport and leasing</fullName>
+        <default>false</default>
+        <label>Abu Dhabi Transport and leasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertising Center</fullName>
+        <default>false</default>
+        <label>Advertising Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Ajman taxi</fullName>
+        <default>false</default>
+        <label>Ajman taxi</label>
+    </customValue>
+    <customValue>
+        <fullName>Al Wataneyah Auction Center</fullName>
+        <default>false</default>
+        <label>Al Wataneyah Auction Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Assistance Services</fullName>
+        <default>false</default>
+        <label>Assistance Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Body Shop Unit</fullName>
+        <default>false</default>
+        <label>Body Shop Unit</label>
+    </customValue>
+    <customValue>
+        <fullName>Car Rental Services</fullName>
+        <default>false</default>
+        <label>Car Rental Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Driving School</fullName>
+        <default>false</default>
+        <label>Driving School</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Wash Unit</fullName>
+        <default>false</default>
+        <label>Dry Wash Unit</label>
+    </customValue>
+    <customValue>
+        <fullName>East Coast Technical Service</fullName>
+        <default>false</default>
+        <label>East Coast Technical Service</label>
+    </customValue>
+    <customValue>
+        <fullName>East Coast Transport and leasing</fullName>
+        <default>false</default>
+        <label>East Coast Transport and leasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric Cars</fullName>
+        <default>false</default>
+        <label>Electric Cars</label>
+    </customValue>
+    <customValue>
+        <fullName>Emirates Technical Service Centre</fullName>
+        <default>false</default>
+        <label>Emirates Technical Service Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>Emirates Transport and leasing</fullName>
+        <default>false</default>
+        <label>Emirates Transport and leasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Emirates Tyre Centre</fullName>
+        <default>false</default>
+        <label>Emirates Tyre Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>EO Technical Service</fullName>
+        <default>false</default>
+        <label>EO Technical Service</label>
+    </customValue>
+    <customValue>
+        <fullName>EO Transport and Rental</fullName>
+        <default>false</default>
+        <label>EO Transport and Rental</label>
+    </customValue>
+    <customValue>
+        <fullName>General</fullName>
+        <default>false</default>
+        <label>General</label>
+    </customValue>
+    <customValue>
+        <fullName>General Administrative Stracture</fullName>
+        <default>false</default>
+        <label>General Administrative Stracture</label>
+    </customValue>
+    <customValue>
+        <fullName>Government School Center</fullName>
+        <default>false</default>
+        <label>Government School Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Transport</fullName>
+        <default>false</default>
+        <label>Government Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Limo Services</fullName>
+        <default>false</default>
+        <label>Limo Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics Services Center</fullName>
+        <default>false</default>
+        <label>Logistics Services Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxury Vehicles - Dubai ( A )</fullName>
+        <default>false</default>
+        <label>Luxury Vehicles - Dubai ( A )</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxury Vehicles Maintenance unit</fullName>
+        <default>false</default>
+        <label>Luxury Vehicles Maintenance unit</label>
+    </customValue>
+    <customValue>
+        <fullName>Petroleum Transport Center</fullName>
+        <default>false</default>
+        <label>Petroleum Transport Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Private School Transportation Center</fullName>
+        <default>false</default>
+        <label>Private School Transportation Center</label>
+    </customValue>
+    <customValue>
+        <fullName>RAK Technical Service</fullName>
+        <default>false</default>
+        <label>RAK Technical Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Rak Transport and leasing</fullName>
+        <default>false</default>
+        <label>Rak Transport and leasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Road Side Assistance</fullName>
+        <default>false</default>
+        <label>Road Side Assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>School Services Center</fullName>
+        <default>false</default>
+        <label>School Services Center</label>
+    </customValue>
+    <customValue>
+        <fullName>School Transportation Sector</fullName>
+        <default>false</default>
+        <label>School Transportation Sector</label>
+    </customValue>
+    <customValue>
+        <fullName>Site Management Centre</fullName>
+        <default>false</default>
+        <label>Site Management Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>Taxi Services</fullName>
+        <default>false</default>
+        <label>Taxi Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation and Leasing Division</fullName>
+        <default>false</default>
+        <label>Transportation and Leasing Division</label>
+    </customValue>
+    <customValue>
+        <fullName>UCNG</fullName>
+        <default>false</default>
+        <label>UCNG</label>
+    </customValue>
+    <customValue>
+        <fullName>Valet Parking and Motorcycles Rental Center</fullName>
+        <default>false</default>
+        <label>Valet Parking and Motorcycles Rental Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehicle Inspection Center</fullName>
+        <default>false</default>
+        <label>Vehicle Inspection Center</label>
+    </customValue>
+    <masterLabel>GL Activities</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

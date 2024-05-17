@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Lead_Driving_license_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Status,&#39;Test Drive&#39;),isBLANK(ETM_Driving_Licence__c)
+)</errorConditionFormula>
+    <errorDisplayField>ETM_Driving_Licence__c</errorDisplayField>
+    <errorMessage>Please fill the Driving Licence for Test Drive Stage</errorMessage>
+</ValidationRule>

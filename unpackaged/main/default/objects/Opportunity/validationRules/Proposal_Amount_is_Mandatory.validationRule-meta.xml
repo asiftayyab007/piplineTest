@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposal_Amount_is_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(StageName,&quot;Proposal&quot;),
+ISBLANK(Proposed_Amount__c)
+)</errorConditionFormula>
+    <errorDisplayField>Proposed_Amount__c</errorDisplayField>
+    <errorMessage>Proposal Amount is Mandatory.</errorMessage>
+</ValidationRule>

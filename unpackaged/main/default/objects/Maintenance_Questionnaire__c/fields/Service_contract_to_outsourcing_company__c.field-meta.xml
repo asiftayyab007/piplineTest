@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_contract_to_outsourcing_company__c</fullName>
+    <description>14.	Do you have any service contract with outsourcing company for the maintenance of workshop Equipment’s /Tools ?   If so kindly share the contract copies with us so as to understand the scope of works undertaken by them .</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>14.	Do you have any service contract with outsourcing company for the maintenance of workshop Equipment’s /Tools ?   If so kindly share the contract copies with us so as to understand the scope of works undertaken by them .</inlineHelpText>
+    <label>Service contract to outsourcing company</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

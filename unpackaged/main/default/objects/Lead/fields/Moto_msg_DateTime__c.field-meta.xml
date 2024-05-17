@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moto_msg_DateTime__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(WEEKDAY(DATEVALUE(Appointment_Date__c )),
+1,&#39;Sunday&#39;,
+2,&#39;Monday&#39;,
+3,&#39;Tuesday&#39;,
+4,&#39;Wednesday&#39;,
+5,&#39;Thursday&#39;,
+6,&#39;Friday&#39;,
+7,&#39;Saturday&#39;,
+&#39;&#39;
+)+&quot;, &quot;+CASE(MONTH(DATEVALUE(Appointment_Date__c)),
+1, &quot;January&quot;,
+2, &quot;February&quot;,
+3, &quot;March&quot;, 
+4, &quot;April&quot;, 
+5, &quot;May&quot;, 
+6, &quot;June&quot;,
+7, &quot;July&quot;,
+8, &quot;August&quot;,
+9, &quot;September&quot;,
+10, &quot;October&quot;,
+11, &quot;November&quot;,
+12, &quot;December&quot;,
+&quot;None&quot;)+&quot; &quot;+Text(DAY(DATEVALUE(Appointment_Date__c)))+&quot;, &quot;+Moto_Time__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Moto Custom Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Tyre_Inventory</fullName>
+    <fields>Name</fields>
+    <fields>ETT_Collection_Card_Number__c</fields>
+    <fields>ETT_Collection_Date__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>ETT_Tyre_Serial_Number__c</fields>
+    <fields>ETT_Status__c</fields>
+    <label>Tyre Inventory</label>
+</CompactLayout>

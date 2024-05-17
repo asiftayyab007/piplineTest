@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_POBox_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(NOT(ISBLANK(ETT_P_O_Box__c)),
+AND(
+OR(ISCHANGED(ETT_P_O_Box__c),
+   LEN(ETT_P_O_Box__c) &lt;&gt; 9),
+OR($RecordType.Name = &quot;Tyre - Cash Supplier&quot;,
+$RecordType.Name = &quot;Tyre - Credit/B2B Supplier&quot;,
+$RecordType.Name = &quot;Tyre - Refurbishing Services&quot;,
+$RecordType.Name = &quot;Tyre Cash Individual&quot;
+)),FALSE)</errorConditionFormula>
+    <errorMessage>Please enter the proper 9 digit PO Box Number.</errorMessage>
+</ValidationRule>

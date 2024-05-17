@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Tyre_Cash_Supplier_Draft_PO_Line</fullName>
+    <active>true</active>
+    <label>Tyre - Cash Supplier Draft PO Line</label>
+    <picklistValues>
+        <picklist>ETT_Type__c</picklist>
+        <values>
+            <fullName>Goods</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_UOM__c</picklist>
+        <values>
+            <fullName>Numbers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Vat_Percentage__c</picklist>
+        <values>
+            <fullName>5%25</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

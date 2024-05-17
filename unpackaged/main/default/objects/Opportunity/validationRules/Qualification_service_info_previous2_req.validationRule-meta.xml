@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualification_service_info_previous2_req</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ AND(
+  OR(
+   ISPICKVAL( StageName , &#39;Closed Won&#39;),
+   ISPICKVAL( StageName , &#39;Closed Lost&#39;),
+   ISPICKVAL( StageName , &#39;Requirement Analysis&#39;)),
+  ISPICKVAL( Type , &#39;Renewal Business&#39;)
+ ),
+ 
+OR(
+$RecordType.Name = &quot;Leasing&quot;,
+$RecordType.Name = &quot;Manpower&quot;,
+$RecordType.Name = &quot;Transportation&quot;,
+$RecordType.Name = &quot;Logistics&quot;,
+$RecordType.Name = &quot;Rental -B2B&quot;,
+$RecordType.Name = &quot;Maintainance&quot;,
+$RecordType.Name = &quot;Chauffeur and Limousine -B2B&quot;
+),
+ 
+AND( 
+  ISBLANK( Competitor_Before_ET_Previous_Contract__c ),  
+  ISBLANK( Old_No_of_New_Vehicles__c ),  
+  ISBLANK( Old_No_of_Used_Vehicles__c ),  
+  ISBLANK( Old_No_of_Resources__c )  
+ )
+)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Service Information : Competitor Before ET (Previous Contract), No. of New Vehicles (Previous Contract), No. of Used Vehicles (Previous Contract), No. of Resources (Previous Contract) are mandatory</errorMessage>
+</ValidationRule>

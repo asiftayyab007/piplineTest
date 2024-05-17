@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobilization_and_Agreement_Mandatory</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(StageName,&quot;Closed Won&quot;),
+OR(
+$RecordType.Name = &quot;Leasing&quot;,
+$RecordType.Name = &quot;Manpower&quot;,
+$RecordType.Name = &quot;Transportation&quot;,
+$RecordType.Name = &quot;Logistics&quot;,
+$RecordType.Name = &quot;Maintainance&quot;
+),
+OR(
+ISBLANK(ETSALES_Quotation_Ref_No__c),
+ISBLANK(ETSALES_Quotation_Date__c),
+ISBLANK(Mobilization_Date__c),
+ISBLANK(Agreement_Sign_Date__c),
+ISBLANK(Proposed_Amount__c)
+)
+)</errorConditionFormula>
+    <errorMessage>Proposed Amount, Quotation Ref No, Quotation Date, Mobilization date, Agreement sign date are mandatory.</errorMessage>
+</ValidationRule>

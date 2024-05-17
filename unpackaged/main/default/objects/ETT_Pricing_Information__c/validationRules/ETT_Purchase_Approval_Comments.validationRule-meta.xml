@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Purchase_Approval_Comments</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISNULL(ETT_Purchase_Agreed_Price__c)),ISCHANGED(ETT_Purchase_Agreed_Price__c),
+ISBLANK(ETT_Purchase_Approval_Comments__c ))</errorConditionFormula>
+    <errorMessage>Please enter the purchase approval comments</errorMessage>
+</ValidationRule>

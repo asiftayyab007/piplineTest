@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request__c</fullName>
+    <externalId>false</externalId>
+    <label>Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>School bus</fullName>
+                <default>false</default>
+                <label>School bus</label>
+            </value>
+            <value>
+                <fullName>Van</fullName>
+                <default>false</default>
+                <label>Van</label>
+            </value>
+            <value>
+                <fullName>Supervisor of safety and security</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Supervisor of safety and security</label>
+            </value>
+            <value>
+                <fullName>additional bus</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>additional bus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

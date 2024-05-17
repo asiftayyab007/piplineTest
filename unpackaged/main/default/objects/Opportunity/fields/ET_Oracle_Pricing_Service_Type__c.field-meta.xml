@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Oracle_Pricing_Service_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(ETSALES_GL_Services__c , &#39;Motor Cycle&#39;, &#39;Motorcycle Services&#39;, &#39;Electric Car&#39;, &#39;General Rent&#39;, &#39;Vehicle&#39;, &#39;General Rent&#39;, &#39;Government School&#39;, &#39;School Transportation&#39;, &#39;Quran Studies&#39;, &#39;School Transportation&#39;, &#39;Private School&#39;, &#39;School Transportation&#39;, &#39;Government Executive&#39;, &#39;Passengers Transportation&#39;, &#39;Staff-Employees and Labors&#39;, &#39;Passengers Transportation&#39;, &#39;Haj &amp; Umrah&#39;, &#39;Passengers Transportation&#39;, &#39;University&#39;, &#39;Passengers Transportation&#39;, &#39;Club Members&#39;, &#39;Passengers Transportation&#39;, &#39;Drivers&#39;, &#39;Manpower Supply&#39;, &#39;Bus Nanny&#39;, &#39;Manpower Supply&#39;, &#39;Coordinator&#39;, &#39;Manpower Supply&#39;, &#39;Supervisor&#39;, &#39;Manpower Supply&#39;, &#39;Accountant or Cashier&#39;, &#39;Manpower Supply&#39;, &#39;Other Employee&#39;, &#39;Manpower Supply&#39;, &#39;Valet Parking&#39;, &#39;Manpower Supply&#39;, &#39;General Equipment&#39;, &#39;General Equipment&#39;, &#39;Agricultural Equipment&#39;, &#39;Agricultural Equipment&#39;, &#39;&#39;)</formula>
+    <label>Oracle Pricing Service Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

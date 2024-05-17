@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Loss_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lost to Competitor</fullName>
+                <default>false</default>
+                <label>Lost to Competitor</label>
+            </value>
+            <value>
+                <fullName>No Budget / Lost Funding</fullName>
+                <default>false</default>
+                <label>No Budget / Lost Funding</label>
+            </value>
+            <value>
+                <fullName>No Decision / Non-Responsive</fullName>
+                <default>false</default>
+                <label>No Decision / Non-Responsive</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Not in scope</fullName>
+                <default>false</default>
+                <label>Not in scope</label>
+            </value>
+            <value>
+                <fullName>Short term contract</fullName>
+                <default>false</default>
+                <label>Short term contract</label>
+            </value>
+            <value>
+                <fullName>Stock availability</fullName>
+                <default>false</default>
+                <label>Stock availability</label>
+            </value>
+            <value>
+                <fullName>Credit assessment</fullName>
+                <default>false</default>
+                <label>Credit assessment</label>
+            </value>
+            <value>
+                <fullName>Customer Cancelled/Withdrawn</fullName>
+                <default>false</default>
+                <label>Customer Cancelled/Withdrawn</label>
+            </value>
+            <value>
+                <fullName>No Vehicle available</fullName>
+                <default>false</default>
+                <label>No Vehicle available</label>
+            </value>
+            <value>
+                <fullName>No Manpower available</fullName>
+                <default>false</default>
+                <label>No Manpower available</label>
+            </value>
+            <value>
+                <fullName>No Service available</fullName>
+                <default>false</default>
+                <label>No Service available</label>
+            </value>
+            <value>
+                <fullName>Vehicle in Poor Condition</fullName>
+                <default>false</default>
+                <label>Vehicle in Poor Condition</label>
+            </value>
+            <value>
+                <fullName>Customer wants More Money</fullName>
+                <default>false</default>
+                <label>Customer wants More Money</label>
+            </value>
+            <value>
+                <fullName>Customer Sold Elsewhere</fullName>
+                <default>false</default>
+                <label>Customer Sold Elsewhere</label>
+            </value>
+            <value>
+                <fullName>Management Decision</fullName>
+                <default>false</default>
+                <label>Management Decision</label>
+            </value>
+            <value>
+                <fullName>Vehicle Not Available</fullName>
+                <default>false</default>
+                <label>Vehicle Not Available</label>
+            </value>
+            <value>
+                <fullName>Out of Budget</fullName>
+                <default>false</default>
+                <label>Out of Budget</label>
+            </value>
+            <value>
+                <fullName>High Mileage</fullName>
+                <default>false</default>
+                <label>High Mileage</label>
+            </value>
+            <value>
+                <fullName>Car Condition</fullName>
+                <default>false</default>
+                <label>Car Condition</label>
+            </value>
+            <value>
+                <fullName>Bought Another Car</fullName>
+                <default>false</default>
+                <label>Bought Another Car</label>
+            </value>
+            <value>
+                <fullName>Bank Approval</fullName>
+                <default>false</default>
+                <label>Bank Approval</label>
+            </value>
+            <value>
+                <fullName>Price too High</fullName>
+                <default>false</default>
+                <label>Price too High</label>
+            </value>
+            <value>
+                <fullName>Parts Not Available</fullName>
+                <default>false</default>
+                <label>Parts Not Available</label>
+            </value>
+            <value>
+                <fullName>Quality of Service</fullName>
+                <default>false</default>
+                <label>Quality of Service</label>
+            </value>
+            <value>
+                <fullName>Budgetary request</fullName>
+                <default>false</default>
+                <label>Budgetary request</label>
+            </value>
+            <value>
+                <fullName>CICPA Issues</fullName>
+                <default>false</default>
+                <label>CICPA Issues</label>
+            </value>
+            <value>
+                <fullName>Open more than 6 months</fullName>
+                <default>false</default>
+                <label>Open more than 6 months</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost to Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Budget / Lost Funding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Decision / Non-Responsive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Not in scope</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Short term contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Stock availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Credit assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Customer Cancelled/Withdrawn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Vehicle available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Manpower available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Service available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Vehicle in Poor Condition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Customer wants More Money</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Customer Sold Elsewhere</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Management Decision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Vehicle Not Available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Out of Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>High Mileage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Car Condition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Bought Another Car</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Bank Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Price too High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Parts Not Available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Quality of Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Budgetary request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Open more than 6 months</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,757 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes,force:lightningQuickAction,lightning:actionOverride,lightning:isUrlAddressable" description="ET_Daily_PreTripInspecctionForm" 
+                controller="ET_DailyTripInspectionForm_Contoller" access="global" >
+     <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        
+        .btnsend {
+        background: #fe864d;
+        border: 1px solid #fe864d;
+        outline: none;
+        box-shadow: none;
+        margin: 1rem;
+        }
+        .slds-border_bottom {
+        border-bottom: 1px solid #f2f2f2;
+        }
+        .slds-modal__close {
+        top: .5rem;
+        right: .5rem;
+        border: 1px solid #d4d4d4;
+        }
+        .slds-modal__close svg.slds-button__icon.slds-button_icon-inverse {
+        fill: #000;
+        }
+        .slds-modal__container{
+        max-width: 65rem !important;
+        width:65% !important;
+        
+        }
+    </aura:html>
+    <aura:handler name="init" value="this" action="{!c.doInit}"/>
+    <aura:attribute name="currentUserName" type="String"/>
+    <aura:attribute name="userInfo" type="user"/> 
+    <aura:attribute name="today" type="Date" />
+    <aura:attribute name="sObjectName" type="String" default="Driver_Daily_Check_List__c" /> 
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="disabled" type="Boolean" default="false" />
+    <aura:attribute name="saved" type="Boolean" default="false" />
+    <aura:attribute name="showSpinner" type="Boolean" default="true" />
+    <aura:attribute name="selTabId" type="String" default="tab1" />
+    
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+    <aura:if isTrue="{!!v.saved}">
+   
+        
+        <div class="scroller-wrapper">
+  <div class="scroller-content">
+        
+        
+        <div class="inspectionForm">
+            <div class="mainForm">
+        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-border_bottom slds-hyphenate slds-align_absolute-center" style="border-bottom: 1px solid #f2f2f2;font-size: 16px;font-weight: 500!important;padding: 1rem;">
+            نموذج تفقد الحافلة قبل الرحلة اليومية / Daily Pre - Trip Inspection Form / روزانہ قبل ازسفر معائنہ کا فارم
+        </h2>
+         
+            
+        <div class="mainDiv slds-scrollable">
+            <lightning:layout horizontalAlign="center">
+            <lightning:recordEditForm
+                                      aura:id="createAccountForm"
+                                      onload="{!c.handleLoad}"
+                                      onsubmit="{!c.handleSubmit}"
+                                      onsuccess="{!c.handleSuccess}"
+                                      objectApiName="Driver_Daily_Check_List__c">
+                
+                <lightning:tabset variant="default" selectedTabId="{!v.selTabId}" >
+            <lightning:tab label="Driver Details" aura:id="tab1" tabindex="1" id="tab1" title="">
+                
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                        <label for="aid">Internal # رقـم الحـافلة</label>
+                        <lightning:inputField class="slds-visible" aura:id="aid" fieldName="Internal_Number__c" variant="label-hidden" />
+                    </div> 
+                    <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                        <label for="aid1">Station: المحـطـة</label>
+                        <lightning:inputField fieldName="Station__c" aura:id="aid1" variant="label-hidden" />
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                        <label for="aid1">Branch: الفـرع</label>
+                        <lightning:inputField fieldName="Branch__c" value="أبوظبي"  aura:id="aid1" variant="label-hidden"/>
+                    </div>
+                     <div class="slds-col slds-size_1-of-4 slds-p-around_medium slds-dropdown-trigger_click slds-is-open">
+                        <label for="aid1">Date: تاريخ</label>
+                         
+                        <lightning:inputField fieldName="Date__c" value="{!v.today}"  type="date" aura:id="aid1" variant="label-hidden" displayDatePicker="true"/>
+                    </div>
+                </div>    
+                <div class="slds-grid">
+                  
+                    <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                        <label for="aid1">Account: الحساب</label>
+                        <lightning:inputField fieldName="Account__c" value="" aura:id="aid1" variant="label-hidden"  /> 
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                        <label for="aid1">Assigned Resources</label>
+                        <lightning:inputField fieldName="Assigned_Resources__c"   aura:id="aid1" variant="label-hidden"/>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                        <label for="aid1">School Name</label>
+                        <lightning:inputField fieldName="School__c" aura:id="aid1" variant="label-hidden"   />
+                    </div>
+                </div>
+                </lightning:tab> 
+       
+                
+                <lightning:tab label="Safety of buses Check List" aura:id="tab2" tabindex="2" id="tab2" title="Safety of buses Check points">
+                    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered tableBorder" aria-labelledby="element-with-table-label other-element-with-table-label" style="width:100%; margin: 1rem 0;" >   
+                    
+                    
+                    <thead >   
+                        <tr >
+                            
+                            <th colspan="0" style="horizontal-align : middle;text-align:centre;width:10%;"> الإلجـــراء تصنــيف</th>
+                            <th colspan="0"  style="horizontal-align : middle;text-align:right;width:10;"></th>
+                             
+                            <th colspan="2" style="horizontal-align : middle;text-align:centre;width:25%;">
+                                Ensuring the Safety of buses particularly: التـأكـد من سـالمـة الحافالت و على وجـه الخصـوص التأكد من  </th>
+                            <th colspan="0" style="horizontal-align : middle;text-align:right;width:5%;">S.No: م</th>
+                        </tr>
+                        
+                        
+                    </thead>
+                    <tbody class="padtb" >
+                        <tr>
+                            <td rowspan="16" style="horizontal-align : middle;text-align:centre;">إجراءات <br></br>غير مسموح قيادة الحافلة بھالوجود<br></br> تأثيرخطر علىسالمة المنقولين</td>
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                
+                                <lightning:inputField variant="label-hidden" class="slds-visible" fieldName="Examination_of_bus_fluids__c"   type="checkbox" label="Examination of bus fluids (engine/power steering/clutch/brakes/cooling water)"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">
+                                
+                                فحص وتفقد زيوت الحافلة ) زيت الماكينه/ زيت المقود / زيت الكلتش / سائل الفرامل / ماء المبرد ( .
+                                <br></br>Examination of the bus fluids (engine/power steering/ clutch/ brakes/cooling water)<br></br>بس کے سيال مادوں )انجن/پاور اسٹيئرنگ/کلچ/بريکس/ٹھنڈا کرنے واال پانی( کا معائنہ</td>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">1</td>
+                        </tr>
+                        <tr>
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Safety_of_seats_and_seatbelts__c" type="checkbox" label="Safety of seats and seatbelts including the driver seat"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">
+                                The safety of seats and seatbelts including the driver seat مقعد فيھا بما المقاعد سالمة من التأكد <br></br> سيٹوں اور سيٹ بيلٹ کی حفاظت بشمول ڈرائيور کی سيٹ کے</td>
+                            <td style="horizontal-align : middle;text-align:right;">2</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Safety_of_electric_meters_and_wires__c" type="checkbox" label="The Safety of electric meters and wires below the power steering system (to be recovered)"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">
+                                سالمة العدادات واألسالك الكھربائية أسفل مقود الحافلة بحيث تكون غير مكشوفة <br></br> The safety of electric meters and wires below the power steering system (to be covered)<br></br>پاور اسٹيئرنگ نظام کے نيچے بجلی کے ميٹروں اور تاروں کی سالمتی )ڈھکا ہونا چاہيے( </td>
+                            <td style="horizontal-align : middle;text-align:right;">3</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="No_Air_and_fluid_leakage__c" type="checkbox" label="No Air and fluid leakage"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;"> عدم وجود تسرب للزيوت والھواء .leakage fluid and air No ہوا يا سيال مادوں کا کوئی رساؤ نہ ہو۔</td>
+                            <td style="horizontal-align : middle;text-align:right;">4</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="No_heavy_exhaust_of_fumes__c" type="checkbox" label="No heavy exhaust of fumes to protect the environment from pollution"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">
+                                No heavy exhaust of fumes to protect the environment from pollution <br></br> .للبيئة وملوثة ملحوظة بصورة العادم من كثيفة غازات خروج عدم <br></br>
+                                ماحوليات کو آلودگی سے بچانے کے ليے دھويں کا بہت زيادہ اخراج نہ ہو</td>
+                            <td style="horizontal-align : middle;text-align:right;">5</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="No_extraordinary_engine_noise__c" type="checkbox" label="No extraordinary engine noise during a trip"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">
+                                No extraordinary engine noise during a trip عدم صدور ضجيج غير عادي عن المحرك أثناء السير. <br></br> سفر کے دوران انجن ميں غير معمولی شور نہ ہو۔</td>
+                            <td style="horizontal-align : middle;text-align:right;">6</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Working_of_air_conditioning__c" type="checkbox" label="Make sure the air-conditioning system inside the school bus is working well"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">
+                                . جيد بشكل المدرسية الحافلة داخل التكييف منظومة عمل <br></br>Make sure the air-conditioning system inside the school bus is working well <br></br> ا س بات کو يقينی بنائيں کہ اسکول بس کے اندر ايئرکنڈيشنگ کا نظام ٹھيک چل رہا ہے
+                            </td>
+                            <td style="horizontal-align : middle;text-align:right;">7</td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Make_sure_seat_belts_are_valid__c" type="checkbox" label="Make sure seat belts are valid for use (If available)and seat belt cutter in case of an emergency"/>
+                            </td>
+                            <td colspan ="2"  style="horizontal-align : middle;text-align:right;">
+                                سالمة احزمة االمان من أي اعطال<br></br> ( ان وجدت على جميع المقاعد ) مع وجود اداة قطع االحزمة في حال الطوارئ <br></br> Make sure seat belts are valid for use (If available)and seat belt cutter in <br></br>case of an emergency <br></br> يقينی بنائيں کہ سيٹ بيلٹ استعمال کے لئے موزوں (ٹھيک ) ہيں. ( اگر تمام نشستوں پر دستياب ہيں)<br></br>ايمرجنسی کی صورت ميں بيلٹ کاٹنے کے آلے کے ساتھ۔</td>
+                            <td style="horizontal-align : middle;text-align:right;">8</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Safety_of_tires_and_air_pressure__c" type="checkbox" label="Safety of tires and air pressure"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">سالمة االطارات وضغط الھواء . .pressure air and tires of safety The ٹائروں کا تحفظ اور ہوا کا دباؤ۔ </td>
+                            <td style="horizontal-align : middle;text-align:right;">9</td>
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Safety_of_tires_and_air_pressure__c" type="checkbox" label="The Safety of signals, lights and windows"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">سالمة اإلشارات واألضواء و النوافذ <br></br>The Safety of signals, <br></br>lights and windows <br></br> سگنلوں اور الئٹوں کی سالمتی۔ کھڑکيوں</td>
+                            <td rowspan="2" style="horizontal-align : middle;text-align:right;"><div id="wrapping"> سالمة اإلشارات واألضواء و النوافذ و الزجاج األمامي و الخلفي للحافلة. <br></br>The Safety of signals, lights, <br></br>windows and bus rear and front glasses
+                                <br></br>سگنلوں اور الئٹوں کی سالمتی۔ کھڑکيوں اور بس كے پيچھے <br></br>اور سامنے كے شيشے
+                                کی حفاظت</div></td>
+                            <td rowspan="2" style="horizontal-align : middle;text-align:right;">10</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="The_Safety_of_bus_rear_and_front_glasses__c" type="checkbox" label="The Safety of bus rear and front glasses"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">سالمة الزجاج األمامي و الخلفي للحافلة <br></br> The Safety of bus rear and front glasses<br></br>بس كے پيچھے اور سامنے كے شيشے کی حفاظت</td>
+                            
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Safety_of_wheelchair_lift_and_belts__c" type="checkbox" label="The Safety of the special need wheelchair lift and belts"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">سالمة عمل مصعد نقل طلبة ذوي أصحاب الھمم و أحزمة التثبيت .<br></br>The Safety of the special need wheelchair lift and belts<br></br>خصوصی ضرورت والی وہيل چيئر لفٹ اور بيلٹ کی حفاظت کی جانچ پڑتال کرے</td>
+                            <td style="horizontal-align : middle;text-align:right;">11</td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="The_Safety_of_the_brakes__c" type="checkbox" label="The Safety of the brakes"/>
+                            </td>
+                            <td  colspan ="2" style="horizontal-align : middle;text-align:right;"> سالمة الفرامل. break of safefy The بريكوں كى سالمتى.</td>
+                            <td style="horizontal-align : middle;text-align:right;">12</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Safety_of_bus_door_driver__c" type="checkbox" label="The Safety of bus door in terms of driver control over opening and closing"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">سالمة باب الركوب من حيث التحكم بالفتح واالغالق بواسطة السائق <br></br>The Safety of bus door in terms of driver control over opening and closing<br></br>بس کے دروازے كوکھولنے اور بند کرنے كے سلسلے ميں ڈرائيور کے کنٹرول کے حوالے سے بس کا تخفظ</td>
+                            <td style="horizontal-align : middle;text-align:right;">13</td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Emergency_doors__c" type="checkbox" label="Emergency doors"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">Emergency doors يمرجنسی درواز ے أبواب الطوارئ </td>
+                            <td rowspan="2"  style="horizontal-align : middle;text-align:right;">سالمة أبواب الطوارئ و عالمة قف بما يضمن التأكد <br></br>من احكام غلقھا تماما وبما ا يسمح بانفتاحھا فجأه اثناء التحرك.<br></br>The Safety of Emergency and<br></br> stop sign doors in a way that ensures <br></br>they are kept securely closed <br></br>and cannot be opened during a trips
+                                <br></br>يمرجنسی اور رکنے کی عالمت والے دروازوں کا تحفظ تاکہ انہيں<br></br> محفوظ طور پر بند رکھا جاسکے اور سفر کے دوران وہ کھل نہ جائيں۔</td>
+                            <td rowspan="2" style="horizontal-align : middle;text-align:right;">14</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Stop_sign__c" type="checkbox" label="Stop sign"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">Stop sign رکنے کی عالمت ) نشان (عالمة قف </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="20" style="horizontal-align : middle;text-align:centre;"> إجراءات غير مسموح قيادة <br></br>
+                                الحافلة بھا بشرط<br></br> أن يتمصالح االعطال </td>
+                            <td style="horizontal-align : middle;text-align:right;">
+                                
+                                <lightning:inputField variant="label-hidden" fieldName="Safety_clarity_of_institution_poster__c" type="checkbox" label="The Safety and clarity of the institution poster (Institution logo - extension - school bus label - contact centre number) of bus rear and front glasses"/>
+                            </td>
+                            <td  colspan ="2" style="horizontal-align : middle;text-align:right;">سالمة ووضوح الملصقات الخاصة بالمؤسسة ) شعار شركة، الرقم <br></br>الداخلي، ملصق حافلة مدرسية ، رقم مركز االتصال 
+                                <br></br> The Safety and clarity of the institution poster (Institution logo - extension - <br></br>school bus label - contact centre number) of bus rear and front glasses <br></br> کا ليبل – رابطہ مرکز کا نمبر( کی سالمتی اور واضح ہونا۔<br></br>دارے کے پوسٹر )ادارے کا لوگو – ايکسٹنشن – اسکول بس
+                            </td>
+                            <td style="horizontal-align : middle;text-align:right;">15</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Safety_of_mirrors_cleanliness__c" type="checkbox" label="The Safety of side and internal mirrors in terms of cleanliness, numbers and the appropriate field of view"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">سالمة المرايا العاكسة الجانبية والداخلية ومن حيث نظافتھا واكتمال عددها ومجال الرؤيا المناسب. <br></br>The Safety of side and internal mirrors in terms of cleanliness,<br></br> numbers and the appropriate field of view <br></br>
+                                صفائی ، اعداد اور مناسب نظريہ کے لحاظ سے پہلو اور اندرونی آئينے کی حفاظت</td>
+                            <td style="horizontal-align : middle;text-align:right;">16</td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Rear_surveillance_camera__c" type="checkbox" label="Rear surveillance camera"/>   </td>
+                            <td  style="horizontal-align : middle;text-align:right;">كاميرات المراقبة الخلفية  <br></br>Rear surveillance camera <br></br>پيچھے كي نگرانی کے کيمرے</td>
+                            <td style="horizontal-align : middle;text-align:right;">سالمة عمل كاميرات المراقبة الخلفيه واالنذار الصوتي اثناء رجوع <br></br>الحافلة للخلف <br></br>
+                                The safety of rear surveillance camera<br></br> and the moving backward horn <br></br> پيچھے نگرانی والے<br></br> کيمرے اور پيچھے حرکت کرنے پر بجنے والے ہارن کی حفاظت</td>
+                            <td rowspan="2" style="horizontal-align : middle;text-align:right;">17</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Backward_horn__c" type="checkbox" label="Backward horn"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">انذار الصوتي  Backward horn <br></br> پيچھے حرکت کرنے پر بجنے والے ہارن</td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="The_Safety_of_windscreen__c" type="checkbox" label="The Safety of windscreen"/>
+                            </td>
+                            <td colspan ="2"  style="horizontal-align : middle;text-align:right;"> ونڈ اسکرين وائپرز کی حفاظت ۔ <br></br>The Safety of windscreen Wipers سالمة المساحات. </td>
+                            <td style="horizontal-align : middle;text-align:right;">18</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Safety_of_the_bus_body__c" type="checkbox" label="The Safety of the bus body without any impacts of accident and crashes"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">. والصدمات الحوادث آثار من وخلوه الحافلة هيكل سالمة <br></br>
+                                The Safety of the bus body without any impacts of accident and crashes <br></br> حادثات اور ٹوٹ پھوٹ کے کسی اثر کے بغير بس کے باڈی کی حفاظت ۔</td>
+                            <td style="horizontal-align : middle;text-align:right;">19</td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;"> 
+                                <lightning:inputField variant="label-hidden" fieldName="X2_fire_extinguishers__c" type="checkbox" label="2 fire extinguishers"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">عدد 2 طفايات حريق <br></br>extinguishers fire 2<br></br> آک بجھانے والے آلے 2 </td>
+                            <td rowspan="2" style="horizontal-align : middle;text-align:right;">وجود عدد 2 طفايات حريق <br></br>و صندوق إسعافات أولية مستوفي المكونات و صالحة
+                                لالستعمال.<br></br>There are 2 fire extinguishers and a first aid <br></br>kit that meets the component and is usable<br></br>2 آگ بجھانے والے آالت اور<br></br> فرسٹ ايڈ باکس کی موجودگی جو مکمل اور قابل</td>
+                            <td rowspan="2" style="horizontal-align : middle;text-align:right;">20</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Ambulance_box_meets_all_ingredients__c" type="checkbox" label="Ambulance box meets all ingredients"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">صندوق إسعافات أولية مستوفي المكونات <br></br>Ambulance box meets all ingredients<br></br>بتدائی طبی امداد کا ڈبہ جو مکمل اور قابل استعمال ہيں۔</td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="My_bus_doesn_t_have_supervisor__c" type="checkbox" label="Make sure the following electroninc systems in the school bus are in good working order (If available). My bus system that doesn't have transport and safety supervisor"/>
+                            </td>
+                            <td colspan ="2"  style="horizontal-align : middle;text-align:right;">عمل االنظمة اإللكترونية في الحافلة المدرسية ) ان وجدت (<br></br>
+                                Make sure the following electroninc systems in the school bus<br></br> are in good working order (If available). My bus system that doesn't <br></br>have transport and safety supervisor<br></br>
+                                اس بات کو يقينی بنائيں کہ اسکول بس ميں درج ذيل اليکٹرانک سسٹم اچھے ورکنگ آرڈر ميں ہيں<br></br>( اگر دستيا ب ہو تو .والسالمة النقل مشرف على التحتوي التي للحافالت حافلتي نظام- 1</td>
+                            <td style="horizontal-align : middle;text-align:right;">21</td>
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Emergency_button__c" type="checkbox" label="Emergency button"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">زر الطوارئ /  emergency button / ايمرجنسی بٹن</td>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">2 .انظمة حماية الطلب ( زر التفقد اخر الحافلة ، كاشف الحركة) <br></br>Empty Bus alert, movement sensor <br></br>کاؤنٹر" خالی بس کے الرٹ کا نظام "حرکت والے سينسر</td>
+                            
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">22</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Thermometer__c" type="checkbox" label="Thermometer"/> </td>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">جھاز قياس الحرارة / Thermometer / تھرماميٹر</td>
+                            
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Check_up_system__c" type="checkbox" label="Check-up system"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">التفقد   Check up system چيک اپ نظام</td>
+                            
+                        </tr>
+                        <tr>
+                            
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Motion_Detector__c" type="checkbox" label="Motion Detector"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">كاشف الحركة  Motion detector حرکت والے سينسر</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="External_cameras_4_visible_on_screen__c" type="checkbox" label="External cameras 4 visible on screen"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">External cameras 4 visible on screen <br></br>n الشاشة على ظاهرة خارجية كاميرات 4<br></br> اسکرين پر نظر آنے والے 4 بيرونی کيمرے ۔</td>
+                            <td rowspan="3" style="horizontal-align : middle;text-align:right;">أنظمة الكاميرات CCTV کيمرے کے نظام</td>
+                            <td rowspan="3" style="horizontal-align : middle;text-align:right;">23</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="CCTV_3_internal_cameras_appears_on_the_s__c" type="checkbox" label="CCTV 3 internal cameras appears on the screen"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">ة على تظھر داخلية كاميرات 3 <br></br>CCTV 3 internal cameras <br></br>appears on the screen<br></br>3 اندرونی کيمرے اسکرين پر ظاہر ہوتے ہيں۔ </td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Rear_camera_appears_on_the_screen__c" type="checkbox" label="Rear camera appears on the screen"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">الشاشة على تظھر الخليفة ا<br></br> Rear camera appears on the screen <br></br> پچھال کيمرہ اسکرين پر نظر آتے ہيں۔ </td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Make_sure_Main_storage_device_working__c" type="checkbox" label="MDVR-Make sure the main storage device working"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;"> الرئيسي التخزين جھاز عمل من التأ<br></br>MDVR-Make sure the main storage device working<br></br>اثبات كريں کہ مين اسٹوريج آله کام کرتا ہے۔</td>
+                            <td style="horizontal-align : middle;text-align:right;">24</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Make_sure_main_screen_works_driver__c" type="checkbox" label="Make sure main screen works infront of driver"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;"> السائق امام الرئيسية الشاشة عمل من الت<br></br>Make sure main screen works infront of driver<br></br>اثبات كريں کہ ھوم اسکرين ڈرائيور کے سامنے کام کرتی ہے</td>
+                            <td style="horizontal-align : middle;text-align:right;">25</td>
+                        </tr>
+                        <tr>
+                            
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="X4_6_emergency_hammers_to_break_glass__c" type="checkbox" label="Make sure there are 4 to 6 emergency hammers to break the glass of the emergency exit depending on the size of bus"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">لتأكد من وجود 4 الى 6 مطرقة طوارئ لكسر زجاج مخرج الطوارئ على حسب حجم الحافلة<br></br>Make sure there are 4 to 6 emergency hammers to break <br></br>the glass of the emergency exit depending on the size of bus<br></br>اس بات کو يقينی بنائيں کہ ايمرجنسی<br></br> ايگزٹ کے شيشے کو توڑنے کے ليے 4 سے 6 ايمرجنسی ہتھوڑے ہيں جو کہ بس کے سائز پر منحصر ہے۔</td>
+                            <td style="horizontal-align : middle;text-align:right;">26</td>
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Make_sure_the_route_e_board_works__c" type="checkbox" label="Make sure the route e - board works"/>
+                            </td>
+                            <td colspan ="2"  style="horizontal-align : middle;text-align:right;">التأكد من عمل اللوحة االلكترونية لخط السير<br></br>Make sure the route E - board works<br></br>ثبات كريں کہ ای بورڈ روٹ کے ليے کام کرتا ہے</td>
+                            <td style="horizontal-align : middle;text-align:right;">27</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="20" style="horizontal-align : middle;text-align:centre;"> <br></br> إجراءات غير<br></br>
+                                مسموح قيادة
+                                الحافلة بھا وال<br></br>
+                                تؤثر على السالمة</td>
+                            <td  style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="The_bus_internal_and_external_cleanness__c" type="checkbox" label="The bus internal and external cleanness"/>
+                            </td>
+                            <td colspan ="2" style="horizontal-align : middle;text-align:right;">بس کی اندرونی اور باہری ) خارجي ( صفائی۔<br></br>The bus internal and external cleanness<br></br>نظافة الحافالت من الخارج والداخل.</td>
+                            <td style="horizontal-align : middle;text-align:right;">28</td>
+                        </tr>
+                        
+                        
+                    </tbody>  
+                </table>
+                    </lightning:tab>
+      
+                    <lightning:tab label="Covid-19 Check List" aura:id="tab3" tabindex="3" id="tab3" title="Covid-19 Check List">
+                        <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+                    
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered tableBorder" aria-labelledby="element-with-table-label other-element-with-table-label" style="width=70%" >
+                    
+                    
+                    
+                    <caption style="horizontal-align : middle;text-align:center;font-weight:bold"> اجراءات الفحص ضع عالمة ) √ ) في حال سالمة الفحص وعالمة ) x ) في حال عدم سالمة الفحص <br></br> INSPECTION PROCEDURE PUT(√) IF INSPECTION IS POSITIVE AND (X) IS NEGATIVE <br></br>معائنے کا طريقہ کار :اگر معائنہ مثبت ہے تو ( √ (اور اگر معائنہ منفی ہے تو ( X ( لگائيں </caption>
+                    <thead>   
+                        <tr class="">
+                            <th  style="horizontal-align : middle;text-align:left;width=20%;"> 
+                                تصنــيف
+                                اإلجراء</th>
+                            <th  style="horizontal-align : middle;text-align:left;width=10%;"> </th>
+                            <th  style="horizontal-align : middle;text-align:left;width=30%;"> </th>
+                            <th   style="horizontal-align : middle;text-align:centre;width=10%;"> COVID 19/19 كوفيد</th>
+                            <th   style="horizontal-align : middle;text-align:right;width=5%;">S.No: م</th>
+                            
+                        </tr>
+                        
+                    </thead>
+                    <tbody class="padtb">
+                        <tr>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">إجــراءات<br></br>
+                                مـــسموح بھا <br></br>
+                                بشرط ازالتھا</td>
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Morning_Trip__c" type="checkbox" label="Morning Trip "/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">الرحلة الصباحية  Morning Trip صبح کی پرواز</td>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">نظافة الحافلة من الداخل وخلوھا من السوائل الحيوية <br></br>Bus interiors tidness and <br></br>cleanness from Biological wastes<br></br>بس اندر سے صاف ہے اور حياتياتی سيال سے خالی نہيں ہے</td>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">1</td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Second_Morning_Trip_Double_Trips__c" type="checkbox" label="Second Morning Trip (Double Trips)"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">الرحلة الصباحية الثانية )خطوط مزدوجة(<br></br>Second Morning Trip (Double Trips)<br></br>صبح کی دوسری پرواز )ڈبل الئنز(</td>
+                        </tr><tr>
+                        
+                        <td style="horizontal-align : middle;text-align:right;">
+                            <lightning:inputField variant="label-hidden" fieldName="Afternoon_Trip__c" type="checkbox" label="Afternoon Trip"/></td>
+                        <td style="horizontal-align : middle;text-align:right;">الرحلة المسائية  Afternoon Trip شام کا سفر</td>
+                        </tr><tr>
+                        
+                        <td style="horizontal-align : middle;text-align:right;">
+                            <lightning:inputField variant="label-hidden" fieldName="Second_Afternoon_Trip_Double_Trips__c" type="checkbox" label="Second Afternoon Trip (Double Trips)"/> </td>
+                        <td style="horizontal-align : middle;text-align:right;">الرحلة المسائية الثانية )خطوط مزدوجة( <br></br>Second Afternoon Trip (Double Trips) <br></br>شام کا دوسرا سفر )ڈبل الئنز(</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">
+                                
+                                إجراءات غير<br></br>
+                                مسموح بھا<br></br>
+                                لوجود <br></br>
+                                خطر على<br></br>
+                                سالمة<br></br>
+                                المنقولين </td>
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Morning_Trip_2__c" type="checkbox" label="Morning Trip"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">الرحلة الصباحية  Morning Trip صبح کی پرواز </td>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">الجھاز اليدوي لقياس حرارة المنقولين <br></br>Thermal Screening Manual Device<br></br>تھرمل اسکريننگ دستی ڈيوائس</td>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">2</td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Second_Morning_Trip_Double_Trips_2__c" type="checkbox" label="Second Morning Trip (Double Trips)"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">الرحلة الصباحية الثانية )خطوط مزدوجة(<br></br>Second Morning Trip (Double Trips)<br></br>صبح کی دوسری پرواز )ڈبل الئنز(</td>
+                        </tr><tr>
+                        
+                        <td style="horizontal-align : middle;text-align:right;">
+                            <lightning:inputField variant="label-hidden" fieldName="Afternoon_Trip_2__c" type="checkbox" label="Afternoon Trip"/> </td>
+                        <td style="horizontal-align : middle;text-align:right;">الرحلة المسائية  Afternoon Trip شام کا سفر</td>
+                        </tr><tr>
+                        
+                        <td style="horizontal-align : middle;text-align:right;">
+                            <lightning:inputField variant="label-hidden" fieldName="Second_Afternoon_Trip_Double_Trips_2__c" type="checkbox" label="Second Afternoon Trip (Double Trips)"/></td>
+                        <td style="horizontal-align : middle;text-align:right;">الرحلة المسائية الثانية )خطوط مزدوجة( <br></br>Second Afternoon Trip (Double Trips) <br></br>شام کا دوسرا سفر )ڈبل الئنز(</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">جراءات<br></br>
+                                مسموح قيادة<br></br>
+                                الحافلة بھا وال<br></br>
+                                تؤثر على<br></br>
+                                السالمة  </td>
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Morning_Trip_3__c" type="checkbox" label="Morning Trip"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">الرحلة الصباحية  Morning Trip صبح کی پرواز</td>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">ملصقات التباعد اإلجتماعي بمقاعد الحافلة<br></br>Social Distancing Seat's Stickers<br></br>بس سيٹ سوشل اسپيسنگ اسٹيکرز</td>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">3</td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Second_Morning_Trip_Double_Trips_3__c" type="checkbox" label="Second Morning Trip (Double Trips)"/> </td>
+                            <td style="horizontal-align : middle;text-align:right;">الرحلة الصباحية الثانية )خطوط مزدوجة(<br></br>Second Morning Trip (Double Trips)<br></br>صبح کی دوسری پرواز )ڈبل الئنز(</td>
+                        </tr><tr>
+                        
+                        <td style="horizontal-align : middle;text-align:right;">
+                            <lightning:inputField variant="label-hidden" fieldName="Afternoon_Trip_3__c" type="checkbox" label="Afternoon Trip"/> </td>
+                        <td style="horizontal-align : middle;text-align:right;">الرحلة المسائية  Afternoon Trip شام کا سفر </td>
+                        </tr><tr>
+                        
+                        <td style="horizontal-align : middle;text-align:right;">
+                            <lightning:inputField variant="label-hidden" fieldName="Second_Afternoon_Trip_Double_Trips_3__c" type="checkbox" label="Second Afternoon Trip (Double Trips)"/></td>
+                        <td style="horizontal-align : middle;text-align:right;">الرحلة المسائية الثانية )خطوط مزدوجة( <br></br>Second Afternoon Trip (Double Trips) <br></br>شام کا دوسرا سفر )ڈبل الئنز(</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;"> إجراءات غير<br></br>
+                                مسموح قيادة<br></br>
+                                الحافلة بھا <br></br>
+                                لوجود تأثير <br></br>
+                                خطر على <br></br>
+                                سالمة المنقولين</td>
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Morning_Trip_4__c" type="checkbox" label="Morning Trip"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">الرحلة الصباحية  Morning Trip صبح کی پرواز</td>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;"> تھوية الحافلة لمدة 5دقائق قبل الرحلة<br></br>Bus Ventilation for 5 Minutes Before Each Trip<br></br>پرواز سے 5 منٹ پہلے بس پروينٹيليٹ کريں</td>
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">4</td>
+                        </tr>
+                        <tr>
+                            
+                            <td style="horizontal-align : middle;text-align:right;">
+                                <lightning:inputField variant="label-hidden" fieldName="Second_Morning_Trip_Double_Trips_4__c" type="checkbox" label="Second Morning Trip (Double Trips)"/></td>
+                            <td style="horizontal-align : middle;text-align:right;">الرحلة الصباحية الثانية )خطوط مزدوجة(<br></br>Second Morning Trip (Double Trips)<br></br>صبح کی دوسری پرواز )ڈبل الئنز(</td>
+                        </tr><tr>
+                        
+                        <td style="horizontal-align : middle;text-align:right;">
+                            <lightning:inputField variant="label-hidden" fieldName="Afternoon_Trip_4__c" type="checkbox" label="Afternoon Trip"/> </td>
+                        <td style="horizontal-align : middle;text-align:right;">الرحلة المسائية  Afternoon Trip شام کا سفر</td>
+                        </tr><tr>
+                        
+                        <td style="horizontal-align : middle;text-align:right;">
+                            <lightning:inputField variant="label-hidden" fieldName="Second_Afternoon_Trip_Double_Trips_4__c" type="checkbox" label="Second Afternoon Trip (Double Trips)"/> </td>
+                        <td style="horizontal-align : middle;text-align:right;">الرحلة المسائية الثانية )خطوط مزدوجة( <br></br>Second Afternoon Trip (Double Trips) <br></br>شام کا دوسرا سفر )ڈبل الئنز(</td>
+                        </tr>
+                        
+                    </tbody>  
+                </table>
+                        </lightning:tab>
+                    
+                    
+                    
+                 <lightning:tab label="Post Inspection Procedures" aura:id="tab4" tabindex="4" id="tab4" title="Post Inspection Procedures">
+                     <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if>
+                <table style="margin: 10px 0;" class="slds-table slds-table_cell-buffer slds-table_bordered tableBorder" aria-labelledby="element-with-table-label other-element-with-table-label">
+                    
+                    
+                    <thead>   
+                        <tr class="">
+                            <th colspan="0" style="vertical-align : middle;text-align:right;"> تصنيف اإلجراء</th>
+                            
+                            <th colspan="0" style="vertical-align : middle;text-align:right;">Post Inspection Procedures:</th>
+                            <th colspan="0" style="vertical-align : middle;text-align:right;"></th>
+                            <th colspan="0" style="vertical-align : middle;text-align:left;">: إجراءات مـا بعـد التفقـد </th>
+                            
+                        </tr>
+                        
+                    </thead>
+                    <tbody >
+                        <tr style="font-weight:bold;height:30px">
+                            <th colspan="2" style="horizontal-align : middle;text-align:right;font-weight:bold;height:30px">Driver</th>
+                            <th colspan="" style="horizontal-align : middle;slds-align_absolute-center;font-weight:bold"></th>
+                            <th colspan="" style="horizontal-align : middle;slds-align_absolute-center;font-weight:bold">السائق</th>
+                        </tr>
+                        <tr class="padtb">
+                            
+                            <td rowspan="4" style="horizontal-align : middle;text-align:right;">
+                                
+                                إجــراءات<br></br>
+                                مســموح قيــادة<br></br>
+                                الحافلة بھــــا وال<br></br>
+                                تؤثـــر عــلــــى<br></br>
+                                السـالمة</td>
+                            <td style="horizontal-align : middle;text-align:right;">Vital bus inspections completed before operation</td>
+                            <td style="horizontal-align : middle;text-align:right;"><lightning:inputField variant="label-hidden" type="checkbox" fieldName="Vital_bus_inspections_completed__c" label="Observations to not affect the safety of the bus"/></td>
+                            
+                            <td style="horizontal-align : middle;text-align:left;">تم التأكد من سالمة الحافلة قبل الحركة .</td>
+                        </tr>
+                        <tr class="padtb">
+                            
+                            <td style="horizontal-align : middle;text-align:right;">Observations to not affect the safety of the bus</td>
+                            <td style="horizontal-align : middle;text-align:right;"><lightning:inputField variant="label-hidden" type="checkbox" fieldName="Observations_to_not_affect_the_safety_of__c" label="Observations to not affect the safety of the bus"/></td>
+                            <td style="horizontal-align : middle;text-align:left;">المالحظات غير مؤثرة على سالمة الحافلة . </td>
+                        </tr>
+                        <tr class="padtb">
+                            
+                            <td style="horizontal-align : middle;text-align:right;">Observations affect the safety of the bus; bus should be replaced</td>
+                            
+                            <td style="horizontal-align : middle;text-align:right;"><lightning:inputField variant="label-hidden" type="checkbox" fieldName="Observation_affect_safety_bus_replaced__c" label="Observations to not affect the safety of the bus"/></td>
+                            <td style="horizontal-align : middle;text-align:left;"> المالحظات تؤثر على سالمة الحافلة والحافلة بحاجة لإلستبدال .</td>
+                        </tr>
+                        <tr class="padtb">
+                            
+                            <td style="horizontal-align : middle;text-align:right;">Contact traffic coordinator for replacement</td>
+                            
+                            <td style="horizontal-align : middle;text-align:right;"><lightning:inputField variant="label-hidden" type="checkbox" fieldName="Contact_traffic_coordinator_for_replacem__c" label="Contact traffic coordinator for replacement"/></td>
+                            <td style="horizontal-align : middle;text-align:left;">بالغ منسق الحركة لإلستبدال .</td>
+                        </tr>
+                        <tr class="slds-line-height_reset;height:30px">
+                            <th colspan="2" style="horizontal-align : middle;text-align:right;font-weight:bold;height:30px">Traffic Coordinator</th>
+                             <th colspan="" style="horizontal-align : middle;slds-align_absolute-center;font-weight:bold"></th>
+                            <th colspan="" style="horizontal-align : middle;slds-align_absolute-center;font-weight:bold"> منسق احلركة</th>
+                        </tr>
+                        <tr class="padtb">
+                            <td rowspan="3" style="horizontal-align : middle;text-align:right;">
+                                إجـــراءات<br></br>
+                                مسـموح قــيادة<br></br>
+                                الـــحـــافلة بھــا<br></br>
+                                بشـرط أن يتم<br></br>
+                                اصالح األعطل</td>
+                            <td style="horizontal-align : middle;text-align:right;">Ensure inspection observations are correct</td>
+                            
+                            <td style="horizontal-align : middle;text-align:right;"><lightning:inputField variant="label-hidden" type="checkbox" fieldName="Ensure_inspection_observations_are_corre__c" label="Ensure inspection observations are correct "/></td>
+                            <td style="horizontal-align : middle;text-align:left;">التأكد من سالمة المالحظات .</td>
+                        </tr >
+                        <tr class="padtb">
+                           
+                            <td style="horizontal-align : middle;text-align:right;">Contact internal mobile workshop</td>
+                            
+                            <td style="horizontal-align : middle;text-align:right;"><lightning:inputField variant="label-hidden" type="checkbox" fieldName="Contact_internal_mobile_workshop__c" label="Contact internal mobile workshop"/></td>
+                            <td style="horizontal-align : middle;text-align:left;"> إستدعـاء الورشـة الداخليـة المتحـركة .</td>
+                        </tr>
+                        <tr class="padtb">
+                            
+                            <td style="horizontal-align : middle;text-align:right;">Replace the bus</td>
+                            
+                            <td style="horizontal-align : middle;text-align:right;"><lightning:inputField variant="label-hidden" type="checkbox" fieldName="Replace_the_bus__c" label="Replace the bus"/></td>
+                            <td style="horizontal-align : middle;text-align:left;">استبدال الحافلة .</td>
+                        </tr>
+                        <tr class="slds-line-height_reset;height:30px">
+                            <th colspan="2" style="horizontal-align : middle;text-align:right;font-weight:bold;height:30px">The station management</th>
+                             <th colspan="0" style="horizontal-align : middle;slds-align_absolute-center;font-weight:bold"></th>
+                            <th colspan="0" style="horizontal-align : middle;slds-align_absolute-center;font-weight:bold">احملطـة إدارة </th>
+                        </tr>
+                        <tr class="padtb">
+                            <td rowspan="2" style="horizontal-align : middle;text-align:right;">
+                                إجــــراءات غــير<br></br>
+                                مـــسموح قــيادة<br></br>
+                                الحــــافلة بھا<br></br>
+                                لوجـود تأثير خطر<br></br>
+                                علــى ســــالمــة<br></br>
+                                المنـقـــولين</td>
+                            <td style="horizontal-align : middle;text-align:right;">Bus sent to workshop and replacement requested</td>
+                            
+                            <td style="horizontal-align : middle;text-align:right;"><lightning:inputField variant="label-hidden" type="checkbox" fieldName="Bus_replacement_requested__c" label="Bus sent to workshop and replacement requested"/></td>
+                            <td style="horizontal-align : middle;text-align:left;">تحول الحافلة للورشة و يتم االستبدال .</td>
+                        </tr>
+                        <tr class="padtb">
+                            
+                            <td style="horizontal-align : middle;text-align:right;">Administrative charge for the transfer of the workshop and follow-up reform</td>
+                            
+                            <td style="horizontal-align : middle;text-align:right;"><lightning:inputField variant="label-hidden" type="checkbox" fieldName="Administrative_charge_for_the_transfer__c" label="Administrative charge for the transfer of the workshop and follow-up reform"/></td>
+                            <td style="horizontal-align : middle;text-align:left;"> المكلف االداري للتحويل للورشة ومتابعة االصالح</td>
+                        </tr>
+                    </tbody>  
+                </table>
+                      
+                
+                     </lightning:tab>
+                     
+        <div class="slds-float_left">
+            <!--disabled the back button on first Tab-->   
+            <lightning:button disabled="{!v.selTabId == 'tab1'}" variant="neutral" class="btnsend" label="Previous" onclick="{!c.back}" />
+        </div>
+        <div class="slds-float_right">
+            <!--disabled the back button on last Tab-->
+            <lightning:button variant="brand" disabled="{!v.selTabId == 'tab4'}" class="btnsend" label="Next" onclick="{!c.next}" />
+            <lightning:button variant="Brand" class="btnsend" 
+                                      label="Cancel" 
+                                      onclick="{! c.OnCancel}"/>
+            <lightning:button disabled="{!or(
+ or(v.selTabId == 'tab1',v.selTabId == 'tab2'),v.selTabId == 'tab3')}" variant="brand" type="submit" class="btnsend" name="save" label="Save" />
+        </div>
+                       
+                     </lightning:tabset>
+            </lightning:recordEditForm>
+                 </lightning:layout>
+            <aura:set attribute="else">
+                <p>Saved!</p>
+            </aura:set>
+            
+        </div>
+                
+            
+             
+        </div>
+        </div>
+            </div>
+        </div>
+        
+    </aura:if>
+    
+</aura:component>

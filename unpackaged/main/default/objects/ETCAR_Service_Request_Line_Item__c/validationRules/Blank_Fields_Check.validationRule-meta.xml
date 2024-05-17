@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blank_Fields_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+NOT($Permission.ETC_Rental_By_Pass_Validations),
+OR 
+(
+ISBLANK( ETST_Pick_Up_From__c ) , ISBLANK( ETST_Drop_Off_To__c ),  ISBLANK( ETC_Guest_Name__c )  
+)
+)</errorConditionFormula>
+    <errorMessage>Fields cannot be blank</errorMessage>
+</ValidationRule>

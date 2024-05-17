@@ -1,0 +1,29 @@
+<template>
+    <template if:true={isLoading}>
+
+    </template>
+    <template if:false={isLoading}>
+        <lightning-accordion allow-multiple-sections-open active-section-name="X">
+            <lightning-record-edit-form object-api-name={contractLineObject} onsuccess={handleSuccess}>
+                <div class="slds-grid infoTabs condition_div">
+                    <div class="slds-hide">
+                        <div class="slds-col">
+                            <lightning-input-field field-name={contractLineFields.NAME} value={article.Name} disabled="true" ></lightning-input-field>
+                        </div>
+                        <div class="slds-col">
+                            <lightning-button variant="brand" class="slds-m-top_small" onclick={handleTermsDelete} label="Remove" ></lightning-button>
+                        </div>
+                        <lightning-input-field data-id="contractHeaderId" value={contractHeaderId} field-name={contractLineFields.CONTRACT_HEAD}></lightning-input-field>
+                        <lightning-input-field value={article.articleLineNo} field-name={contractLineFields.MASTER_LINE_NO}></lightning-input-field>
+                        <lightning-button variant="brand" type="submit" label="Save"> </lightning-button>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+            <lightning-accordion-section key={article.Id}  label={article.Name}>
+                <template for:each={article.subCaluses} for:item="subclause">
+                    <c-generate-contract-sub-lines key={subclause.Id} sub-caluse={subclause} ondeletesubclause ={handleDeleteSubClause} ></c-generate-contract-sub-lines>
+                </template>
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </template>
+</template>

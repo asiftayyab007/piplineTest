@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>ETST_ETransport__c</columns>
+    <columns>ETST_Latitude__c</columns>
+    <columns>ETST_Longitude__c</columns>
+    <columns>ETST_ParentEID__c</columns>
+    <columns>ETST_Phone__c</columns>
+    <columns>ETST_Whatsapp_No__c</columns>
+    <columns>ETST_StudentKey__c</columns>
+    <columns>ETST_Secondary_Mobile_Number__c</columns>
+    <columns>ETST_Preferred_Language__c</columns>
+    <columns>ETST_Emirates_Id__c</columns>
+    <columns>ETST_Child_count__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

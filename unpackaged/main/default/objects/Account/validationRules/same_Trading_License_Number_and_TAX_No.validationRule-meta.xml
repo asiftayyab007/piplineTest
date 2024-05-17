@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>same_Trading_License_Number_and_TAX_No</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+    ETSALES_Trade_License_Number__c  !=  Parent.ETSALES_Trade_License_Number__c ,
+ ETSALES_TaxRegistrationNo__c !=  Parent.ETSALES_TaxRegistrationNo__c   
+)</errorConditionFormula>
+    <errorMessage>You please check Trade License Number or Tax Registration Number are same or not with parent account</errorMessage>
+</ValidationRule>

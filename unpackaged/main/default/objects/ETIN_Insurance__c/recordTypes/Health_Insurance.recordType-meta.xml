@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Health_Insurance</fullName>
+    <active>true</active>
+    <label>Health Insurance</label>
+    <picklistValues>
+        <picklist>Insurance_Current_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Member_Status__c</picklist>
+        <values>
+            <fullName>Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>National_Id_Type__c</picklist>
+        <values>
+            <fullName>Emirates ID</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>UID No%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plan_Type__c</picklist>
+        <values>
+            <fullName>EBP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Plan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plan__c</picklist>
+        <values>
+            <fullName>Basic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAT 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAT 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Core Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Core Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enhanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enhanced Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enhanced silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secure Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Select Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Select Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Not Eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending with HR Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending with Zone Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Process</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

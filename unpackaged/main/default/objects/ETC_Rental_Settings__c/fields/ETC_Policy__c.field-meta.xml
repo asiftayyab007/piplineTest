@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETC_Policy__c</fullName>
+    <externalId>false</externalId>
+    <label>Policy</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Modify Booking</fullName>
+                <default>false</default>
+                <label>Modify Booking</label>
+            </value>
+            <value>
+                <fullName>Flat Refund</fullName>
+                <default>false</default>
+                <label>Flat Refund</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

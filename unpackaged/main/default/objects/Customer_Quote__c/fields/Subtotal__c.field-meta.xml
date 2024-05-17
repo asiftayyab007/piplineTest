@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal__c</fullName>
+    <externalId>false</externalId>
+    <label>Subtotal</label>
+    <summarizedField>Customer_Quote_Line_Item__c.Subtotal__c</summarizedField>
+    <summaryForeignKey>Customer_Quote_Line_Item__c.Customer_Quote_Name__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

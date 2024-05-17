@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>QHSE Inspection</label>
+    <navType>Standard</navType>
+    <tabs>QHSE_Inspection</tabs>
+    <tabs>QHSE_Inspection_Line__c</tabs>
+    <tabs>QHSE_Inspection__c</tabs>
+    <tabs>TermsAndCondition__c</tabs>
+    <tabs>Bike__c</tabs>
+    <tabs>Contract_Master__c</tabs>
+    <tabs>Contract_Pdf_Header__c</tabs>
+    <tabs>Contract_Line__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>QHSE_Inspection_UtilityBar</utilityBar>
+</CustomApplication>

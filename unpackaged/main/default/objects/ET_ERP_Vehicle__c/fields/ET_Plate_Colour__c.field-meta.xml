@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Plate_Colour__c</fullName>
+    <externalId>false</externalId>
+    <label>Plate Colour</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SIXTH CATEGORY</fullName>
+                <default>false</default>
+                <label>SIXTH CATEGORY</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

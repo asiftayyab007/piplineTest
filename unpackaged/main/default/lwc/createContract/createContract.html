@@ -1,0 +1,12 @@
+<template>
+    <div class="bikeCurrency">
+        <h3>LWC Bike Currency</h3>
+        <div>
+            <lightning-input data-id="newCurrency" type="text" pattern="[A-Z]{3}$" message-when-pattern-mismatch="Please enter correct currency format,e.g. USD, EUR, SEK" label="New Currency"></lightning-input>
+        </div>
+        <br/>
+        <div class="footerButton">
+            <lightning-button label="Update Currency" onclick={handleUpdateCurrency}></lightning-button>
+        </div>
+    </div>    
+</template>

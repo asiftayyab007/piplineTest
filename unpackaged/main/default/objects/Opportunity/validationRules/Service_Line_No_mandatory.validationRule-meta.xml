@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Line_No_mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( StageName , &#39;Sales Agreement&#39;),
+
+OR(
+$RecordType.DeveloperName = &quot;ETSALES_Leasing&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Manpower&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Transportation&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Logistics&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Rental_B2B&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Maintainance&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Chauffeur_and_Limousine_B2B&quot;
+),
+
+ISBLANK( Service_Line_Number_s__c )
+)</errorConditionFormula>
+    <errorMessage>Service Line Number is mandatory.</errorMessage>
+</ValidationRule>

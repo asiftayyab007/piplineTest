@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>The Private Affairs Department of H.H Sheikha Fatima Bint Muba Partner User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>The Private Affairs Department of H.H Sheikha Fatima Bint Muba Partner User</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>BC_AUH_Inspection_Controller</parentRole>
+</Role>

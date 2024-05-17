@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Module__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Module</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Paid By Type</fullName>
+                <default>true</default>
+                <label>Paid By Type</label>
+            </value>
+            <value>
+                <fullName>Transport Type</fullName>
+                <default>false</default>
+                <label>Transport Type</label>
+            </value>
+            <value>
+                <fullName>Service Type</fullName>
+                <default>false</default>
+                <label>Service Type</label>
+            </value>
+            <value>
+                <fullName>Emirate</fullName>
+                <default>false</default>
+                <label>Emirate</label>
+            </value>
+            <value>
+                <fullName>Cancellation Types</fullName>
+                <default>false</default>
+                <label>Cancellation Types</label>
+            </value>
+            <value>
+                <fullName>Cancellation Reasons</fullName>
+                <default>false</default>
+                <label>Cancellation Reasons</label>
+            </value>
+            <value>
+                <fullName>Parent Cancellation Reasons</fullName>
+                <default>false</default>
+                <label>Parent Cancellation Reasons</label>
+            </value>
+            <value>
+                <fullName>Transport Area</fullName>
+                <default>false</default>
+                <label>Transport Area</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

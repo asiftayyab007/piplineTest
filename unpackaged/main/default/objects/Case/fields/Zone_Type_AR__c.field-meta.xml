@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zone_Type_AR__c</fullName>
+    <externalId>false</externalId>
+    <label>Zone Type AR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>منطقة أبوظبي التعليمية</fullName>
+                <default>false</default>
+                <label>منطقة أبوظبي التعليمية</label>
+            </value>
+            <value>
+                <fullName>أبو منذر شعبيات - مركز تم</fullName>
+                <default>false</default>
+                <label>أبو منذر شعبيات - مركز تم</label>
+            </value>
+            <value>
+                <fullName>أدنوك - أدنوك</fullName>
+                <default>false</default>
+                <label>أدنوك - أدنوك</label>
+            </value>
+            <value>
+                <fullName>منطقة العين التعليمية</fullName>
+                <default>false</default>
+                <label>منطقة العين التعليمية</label>
+            </value>
+            <value>
+                <fullName>العامرية - مدرسة المعراج</fullName>
+                <default>false</default>
+                <label>العامرية - مدرسة المعراج</label>
+            </value>
+            <value>
+                <fullName>الأشغال - بيت القوة</fullName>
+                <default>false</default>
+                <label>الأشغال - بيت القوة</label>
+            </value>
+            <value>
+                <fullName>العوامر - مدرسة زايد الخير</fullName>
+                <default>false</default>
+                <label>العوامر - مدرسة زايد الخير</label>
+            </value>
+            <value>
+                <fullName>الباهية</fullName>
+                <default>false</default>
+                <label>الباهية</label>
+            </value>
+            <value>
+                <fullName>أ- مركز شرطة الرحبة</fullName>
+                <default>false</default>
+                <label>أ- مركز شرطة الرحبة</label>
+            </value>
+            <value>
+                <fullName>ب- جرف الباهية</fullName>
+                <default>false</default>
+                <label>ب- جرف الباهية</label>
+            </value>
+            <value>
+                <fullName>البطين - البطين</fullName>
+                <default>false</default>
+                <label>البطين - البطين</label>
+            </value>
+            <value>
+                <fullName>بيت كهرباء الظفرة</fullName>
+                <default>false</default>
+                <label>بيت كهرباء الظفرة</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

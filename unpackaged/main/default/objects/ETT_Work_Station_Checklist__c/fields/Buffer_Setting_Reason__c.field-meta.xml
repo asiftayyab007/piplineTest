@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Buffer_Setting_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Buffer Setting Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rim Change</fullName>
+                <default>false</default>
+                <label>Rim Change</label>
+            </value>
+            <value>
+                <fullName>Radius Setting</fullName>
+                <default>false</default>
+                <label>Radius Setting</label>
+            </value>
+            <value>
+                <fullName>Bead Adjustment</fullName>
+                <default>false</default>
+                <label>Bead Adjustment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

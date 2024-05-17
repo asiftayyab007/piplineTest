@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prefered_End_Date_Validation_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>Preferred_End_Date__c &lt; Preferred_Date__c</errorConditionFormula>
+    <errorDisplayField>Preferred_End_Date__c</errorDisplayField>
+    <errorMessage>Preferred End Date should be greater than Preferred Start Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Accept_once_Rejected</fullName>
+    <active>true</active>
+    <description>Rejected Request Cannot be Accepted Again.</description>
+    <errorConditionFormula>RecordType.DeveloperName =&#39;Inspection_Service_Appointment&#39; &amp;&amp;   ETI_Accepted__c = true &amp;&amp;  ISCHANGED( ETI_Accepted__c ) &amp;&amp; ETI_Rejected__c = true</errorConditionFormula>
+    <errorMessage>Appointment once Rejected, Cannot be Accepted</errorMessage>
+</ValidationRule>

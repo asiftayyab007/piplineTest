@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fleet_Inspection</fullName>
+    <fields>Name</fields>
+    <fields>Lead__c</fields>
+    <fields>ETT_Type__c</fields>
+    <fields>ETT_Location__c</fields>
+    <fields>ETT_Date__c</fields>
+    <label>Fleet Inspection</label>
+</CompactLayout>

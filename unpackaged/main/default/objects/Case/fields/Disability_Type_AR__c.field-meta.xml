@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disability_Type_AR__c</fullName>
+    <externalId>false</externalId>
+    <label>Disability Type AR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(كرسي متحرك (عادي</fullName>
+                <default>false</default>
+                <label>(كرسي متحرك (عادي</label>
+            </value>
+            <value>
+                <fullName>كرسي متحرك (آلي)</fullName>
+                <default>false</default>
+                <label>كرسي متحرك (آلي)</label>
+            </value>
+            <value>
+                <fullName>عكازات</fullName>
+                <default>false</default>
+                <label>عكازات</label>
+            </value>
+            <value>
+                <fullName>مشاية</fullName>
+                <default>false</default>
+                <label>مشاية</label>
+            </value>
+            <value>
+                <fullName>أخرى</fullName>
+                <default>false</default>
+                <label>أخرى</label>
+            </value>
+            <value>
+                <fullName>اعاقة حركية</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>اعاقة حركية</label>
+            </value>
+            <value>
+                <fullName>الخوض</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>الخوض</label>
+            </value>
+            <value>
+                <fullName>فرط النشاط</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>فرط النشاط</label>
+            </value>
+            <value>
+                <fullName>هشاشة العظام</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>هشاشة العظام</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

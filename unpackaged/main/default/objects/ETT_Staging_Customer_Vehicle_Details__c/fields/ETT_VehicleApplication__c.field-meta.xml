@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_VehicleApplication__c</fullName>
+    <externalId>false</externalId>
+    <label>Application</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Regional</fullName>
+                <default>false</default>
+                <label>Regional</label>
+            </value>
+            <value>
+                <fullName>Long Hole</fullName>
+                <default>false</default>
+                <label>Long Hole</label>
+            </value>
+            <value>
+                <fullName>Short Hole</fullName>
+                <default>false</default>
+                <label>Short Hole</label>
+            </value>
+            <value>
+                <fullName>Inter City</fullName>
+                <default>false</default>
+                <label>Inter City</label>
+            </value>
+            <value>
+                <fullName>Off Road</fullName>
+                <default>false</default>
+                <label>Off Road</label>
+            </value>
+            <value>
+                <fullName>Off and Good</fullName>
+                <default>false</default>
+                <label>Off and Good</label>
+            </value>
+            <value>
+                <fullName>Ready Mix Concrete</fullName>
+                <default>false</default>
+                <label>Ready Mix Concrete</label>
+            </value>
+            <value>
+                <fullName>Passenger Transport</fullName>
+                <default>false</default>
+                <label>Passenger Transport</label>
+            </value>
+            <value>
+                <fullName>Rock Transportation</fullName>
+                <default>false</default>
+                <label>Rock Transportation</label>
+            </value>
+            <value>
+                <fullName>Cement Bulker</fullName>
+                <default>false</default>
+                <label>Cement Bulker</label>
+            </value>
+            <value>
+                <fullName>Inter State Operation</fullName>
+                <default>false</default>
+                <label>Inter State Operation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

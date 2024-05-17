@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rental_B2B_Mandatory_fields</fullName>
+    <active>false</active>
+    <description>26/09/22: Merged in another validation rule - Agreement_Section_Mandatory</description>
+    <errorConditionFormula>AND(
+OR(ISPICKVAL(StageName,&quot;Closed Won&quot;),
+ISPICKVAL(StageName, &quot;Sales Agreement&quot;)),$RecordType.Name = &quot;Rental -B2B&quot;,
+OR(
+ISBLANK(ETSALES_Quotation_Date__c),
+ISBLANK(Mobilization_Date__c),
+ISBLANK(Agreement_Sign_Date__c),
+ISBLANK(Proposed_Amount__c)
+)
+)</errorConditionFormula>
+    <errorMessage>Proposed Amount, Quotation Date, Mobilization date, Agreement sign date are mandatory.</errorMessage>
+</ValidationRule>

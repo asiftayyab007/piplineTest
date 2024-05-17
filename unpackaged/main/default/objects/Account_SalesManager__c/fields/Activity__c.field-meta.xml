@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity__c</fullName>
+    <externalId>false</externalId>
+    <label>Activity</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abu Dhabi Transport and leasing</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Transport and leasing</label>
+            </value>
+            <value>
+                <fullName>Private School Transportation Center</fullName>
+                <default>false</default>
+                <label>Private School Transportation Center</label>
+            </value>
+            <value>
+                <fullName>Limo Services</fullName>
+                <default>false</default>
+                <label>Limo Services</label>
+            </value>
+            <value>
+                <fullName>Government Transport</fullName>
+                <default>false</default>
+                <label>Government Transport</label>
+            </value>
+            <value>
+                <fullName>Emirates Transport and leasing</fullName>
+                <default>false</default>
+                <label>Emirates Transport and leasing</label>
+            </value>
+            <value>
+                <fullName>Rak Transport and leasing</fullName>
+                <default>false</default>
+                <label>Rak Transport and leasing</label>
+            </value>
+            <value>
+                <fullName>East Coast Transport and leasing</fullName>
+                <default>false</default>
+                <label>East Coast Transport and leasing</label>
+            </value>
+            <value>
+                <fullName>Last mile</fullName>
+                <default>false</default>
+                <label>Last mile</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi city taxi project</fullName>
+                <default>false</default>
+                <label>Abu Dhabi city taxi project</label>
+            </value>
+            <value>
+                <fullName>School Services Center</fullName>
+                <default>false</default>
+                <label>School Services Center</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi Airport Taxi (Trans Ad)</fullName>
+                <default>false</default>
+                <label>Abu Dhabi Airport Taxi (Trans Ad)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

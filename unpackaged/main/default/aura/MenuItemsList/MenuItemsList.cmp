@@ -1,0 +1,74 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" controller='ET_B2BController'
+                extends="c:ET_MOE_BilingualCommunity">
+    <aura:attribute name="properties" type="Integer" default="4"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="userName" type="String" /> 
+    <aura:attribute name="profileName" type="String" />
+    <aura:attribute name="MOEprofileName" type="Boolean" default="false"/>
+    <div class="topmenu">
+        <!--<h2 class="username" style="color:#000;display:inline;">Welcome <span>{!v.userName}</span></h2>-->
+        <!--<img src="{!$Resource.ET_business_logo}" class="comp_logo"/>
+        <div class="menudropdowndiv1">            
+            <button class="dropmenubtn1"> <img class="profileimg" src="{!$Resource.ET_userimg}" /></button>
+            <span  class="profileText">Hi {!v.userName}</span>
+            <div class="dropdown-content1">
+                <ul>
+                    <li><a onclick="{!c.homeSelected}" >Home</a></li>                    
+                    <li><a href="javascript:void(0)" onclick="{!c.myBusinessSelected}">{!v.clMyBusiness}</a></li>
+                    <li><a href="javascript:void(0)" onclick="{!c.customerCareSelected}">{!v.clCustomerCare}</a></li>
+                    <li><a href="javascript:void(0)" onclick="{!c.exploreServicesSelected}">Explore</a></li>
+                    <li><a href="javascript:void(0)" onclick="{!c.handleLogout}" >Logout</a></li>
+                </ul>
+            </div>
+        </div>-->
+        <!--    <aura:if isTrue="{!or(v.profileName =='P-Private School Partner User Login',v.MOEprofileName)}">-->
+      
+        <aura:if isTrue="{!v.MOEprofileName}">
+            <div class="servicesdiv" >
+                <span aura:id="specialReq" class="itemlistspan">
+                    <a onclick="{!c.specialRequestSelected}">
+                        {!v.clSpecialRequest}
+                    </a>
+                </span>
+            </div> 
+        </aura:if>
+      <!--  <aura:if isTrue="{!v.MOEprofileName}">
+            <div class="servicesdiv" >
+                <span aura:id="genReq" class="itemlistspan">
+                    <a onclick="{!c.generalCaseSelected}">
+                        {!v.clGeneralCases}
+                    </a>
+                </span>
+            </div> 
+        </aura:if>  -->
+        <div class="servicesdiv" >
+            <span aura:id="care" class="itemlistspan">
+                <a onclick="{!c.customerCareSelected}">
+                    {!v.clCustomerCare}
+                </a>
+            </span>
+        </div>        
+        <div class="slds-col servicesdiv" >
+            <span aura:id="explore" class="itemlistspan">
+                <a onclick="{!c.exploreServicesSelected}">
+                    {!v.clExplore}
+                </a>
+            </span>
+        </div>
+        <div class="servicesdiv" >
+            <span aura:id="business" class="itemlistspan">
+                <a onclick="{!c.myBusinessSelected}">
+                    {!v.clMyBusiness}
+                </a>
+            </span>
+        </div>
+        <div class="slds-col servicesdiv" >
+            <span aura:id="home" class="itemlistspan">
+                <a onclick="{!c.homeSelected}">
+                    {!v.clHome}
+                </a> 
+            </span>
+        </div>
+    </div>
+    <br/> 
+</aura:component>

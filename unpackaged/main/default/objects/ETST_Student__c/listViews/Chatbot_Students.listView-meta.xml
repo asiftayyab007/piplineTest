@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chatbot_Students</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>ETST_ETransport__c</columns>
+    <columns>ETST_Latitude__c</columns>
+    <columns>ETST_Longitude__c</columns>
+    <columns>ETST_ParentEID__c</columns>
+    <columns>ETST_Phone__c</columns>
+    <columns>ETST_Emirate__c</columns>
+    <columns>ETST_Emirates_Id__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ETST_Latitude__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Chatbot Students</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Fuel_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>text(ET_Vehicle_Fuel_Master__r.ET_Fuel_Type__c)</formula>
+    <label>Fuel Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

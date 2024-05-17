@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drop_off_Zone__c</fullName>
+    <externalId>false</externalId>
+    <label>Drop off Zone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>DUBAI AIRPORT</fullName>
+                <default>false</default>
+                <label>DUBAI AIRPORT</label>
+            </value>
+            <value>
+                <fullName>DEIRA</fullName>
+                <default>false</default>
+                <label>DEIRA</label>
+            </value>
+            <value>
+                <fullName>SILICON OASIS</fullName>
+                <default>false</default>
+                <label>SILICON OASIS</label>
+            </value>
+            <value>
+                <fullName>BUR DUBAI</fullName>
+                <default>false</default>
+                <label>BUR DUBAI</label>
+            </value>
+            <value>
+                <fullName>Jumeirah</fullName>
+                <default>false</default>
+                <label>Jumeirah</label>
+            </value>
+            <value>
+                <fullName>PALM JUMEIRAH</fullName>
+                <default>false</default>
+                <label>PALM JUMEIRAH</label>
+            </value>
+            <value>
+                <fullName>JEBEL ALI</fullName>
+                <default>false</default>
+                <label>JEBEL ALI</label>
+            </value>
+            <value>
+                <fullName>SHARJAH</fullName>
+                <default>false</default>
+                <label>SHARJAH</label>
+            </value>
+            <value>
+                <fullName>AJMAN</fullName>
+                <default>false</default>
+                <label>AJMAN</label>
+            </value>
+            <value>
+                <fullName>SHARJAH AIRPORT</fullName>
+                <default>false</default>
+                <label>SHARJAH AIRPORT</label>
+            </value>
+            <value>
+                <fullName>UMM AL QUWAIN</fullName>
+                <default>false</default>
+                <label>UMM AL QUWAIN</label>
+            </value>
+            <value>
+                <fullName>AL MAHA/BAB AL SHAMS</fullName>
+                <default>false</default>
+                <label>AL MAHA/BAB AL SHAMS</label>
+            </value>
+            <value>
+                <fullName>ABU DHABI AIRPORT</fullName>
+                <default>false</default>
+                <label>ABU DHABI AIRPORT</label>
+            </value>
+            <value>
+                <fullName>ABU DHABI CITY</fullName>
+                <default>false</default>
+                <label>ABU DHABI CITY</label>
+            </value>
+            <value>
+                <fullName>AL AIN</fullName>
+                <default>false</default>
+                <label>AL AIN</label>
+            </value>
+            <value>
+                <fullName>RAS AL KHAIMA</fullName>
+                <default>false</default>
+                <label>RAS AL KHAIMA</label>
+            </value>
+            <value>
+                <fullName>FUJAIRAH</fullName>
+                <default>false</default>
+                <label>FUJAIRAH</label>
+            </value>
+            <value>
+                <fullName>HATTA</fullName>
+                <default>false</default>
+                <label>HATTA</label>
+            </value>
+            <value>
+                <fullName>RUWAIS</fullName>
+                <default>false</default>
+                <label>RUWAIS</label>
+            </value>
+            <value>
+                <fullName>ZIGHY BAY</fullName>
+                <default>false</default>
+                <label>ZIGHY BAY</label>
+            </value>
+            <value>
+                <fullName>DIBBA</fullName>
+                <default>false</default>
+                <label>DIBBA</label>
+            </value>
+            <value>
+                <fullName>GHANTOOT</fullName>
+                <default>false</default>
+                <label>GHANTOOT</label>
+            </value>
+            <value>
+                <fullName>Bab Al Shams</fullName>
+                <default>false</default>
+                <label>Bab Al Shams</label>
+            </value>
+            <value>
+                <fullName>MARINA MALL</fullName>
+                <default>false</default>
+                <label>MARINA MALL</label>
+            </value>
+            <value>
+                <fullName>SALAM STREET</fullName>
+                <default>false</default>
+                <label>SALAM STREET</label>
+            </value>
+            <value>
+                <fullName>MUSSAFAH</fullName>
+                <default>false</default>
+                <label>MUSSAFAH</label>
+            </value>
+            <value>
+                <fullName>YAS ISLAND</fullName>
+                <default>false</default>
+                <label>YAS ISLAND</label>
+            </value>
+            <value>
+                <fullName>MADINAT ZAYED</fullName>
+                <default>false</default>
+                <label>MADINAT ZAYED</label>
+            </value>
+            <value>
+                <fullName>DUBAI</fullName>
+                <default>false</default>
+                <label>DUBAI</label>
+            </value>
+            <value>
+                <fullName>UMM AL NAAR</fullName>
+                <default>false</default>
+                <label>UMM AL NAAR</label>
+            </value>
+            <value>
+                <fullName>ADNEC</fullName>
+                <default>false</default>
+                <label>ADNEC</label>
+            </value>
+            <value>
+                <fullName>SAADIYAT ISLAND</fullName>
+                <default>false</default>
+                <label>SAADIYAT ISLAND</label>
+            </value>
+            <value>
+                <fullName>QASAR AL SARAB</fullName>
+                <default>false</default>
+                <label>QASAR AL SARAB</label>
+            </value>
+            <value>
+                <fullName>DWC</fullName>
+                <default>false</default>
+                <label>DWC</label>
+            </value>
+            <value>
+                <fullName>Citibank Zone A</fullName>
+                <default>false</default>
+                <label>Citibank Zone A</label>
+            </value>
+            <value>
+                <fullName>Citibank Zone B</fullName>
+                <default>false</default>
+                <label>Citibank Zone B</label>
+            </value>
+            <value>
+                <fullName>Citibank Zone C</fullName>
+                <default>false</default>
+                <label>Citibank Zone C</label>
+            </value>
+            <value>
+                <fullName>Citibank Zone D</fullName>
+                <default>false</default>
+                <label>Citibank Zone D</label>
+            </value>
+            <value>
+                <fullName>Citibank Zone F</fullName>
+                <default>false</default>
+                <label>Citibank Zone F</label>
+            </value>
+            <value>
+                <fullName>Citibank Zone H</fullName>
+                <default>false</default>
+                <label>Citibank Zone H</label>
+            </value>
+            <value>
+                <fullName>Citibank Zone I</fullName>
+                <default>false</default>
+                <label>Citibank Zone I</label>
+            </value>
+            <value>
+                <fullName>Citibank Zone G</fullName>
+                <default>false</default>
+                <label>Citibank Zone G</label>
+            </value>
+            <value>
+                <fullName>SHAMKAH</fullName>
+                <default>false</default>
+                <label>SHAMKAH</label>
+            </value>
+            <value>
+                <fullName>SHAKBOUT CITY</fullName>
+                <default>false</default>
+                <label>SHAKBOUT CITY</label>
+            </value>
+            <value>
+                <fullName>BANIYAS</fullName>
+                <default>false</default>
+                <label>BANIYAS</label>
+            </value>
+            <value>
+                <fullName>SHAHAMA</fullName>
+                <default>false</default>
+                <label>SHAHAMA</label>
+            </value>
+            <value>
+                <fullName>AL RAHA</fullName>
+                <default>false</default>
+                <label>AL RAHA</label>
+            </value>
+            <value>
+                <fullName>AL WATHBA</fullName>
+                <default>false</default>
+                <label>AL WATHBA</label>
+            </value>
+            <value>
+                <fullName>SAMHA</fullName>
+                <default>false</default>
+                <label>SAMHA</label>
+            </value>
+            <value>
+                <fullName>AL FALAH</fullName>
+                <default>false</default>
+                <label>AL FALAH</label>
+            </value>
+            <value>
+                <fullName>TAWEELA</fullName>
+                <default>false</default>
+                <label>TAWEELA</label>
+            </value>
+            <value>
+                <fullName>AL QUAA AL AIN</fullName>
+                <default>false</default>
+                <label>AL QUAA AL AIN</label>
+            </value>
+            <value>
+                <fullName>Shaikh Zayed Road</fullName>
+                <default>false</default>
+                <label>Shaikh Zayed Road</label>
+            </value>
+            <value>
+                <fullName>General Zone</fullName>
+                <default>false</default>
+                <label>General Zone</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi</fullName>
+                <default>false</default>
+                <label>Abu Dhabi</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi/Al Ain</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Abu Dhabi/Al Ain</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi/Al Ain/Ras Al Khaima/Fujairah</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Abu Dhabi/Al Ain/Ras Al Khaima/Fujairah</label>
+            </value>
+            <value>
+                <fullName>Deira/Bur Dubai</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deira/Bur Dubai</label>
+            </value>
+            <value>
+                <fullName>Jebel Ali/DWC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Jebel Ali/DWC</label>
+            </value>
+            <value>
+                <fullName>Jumeirah/Palm Jumeirah</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Jumeirah/Palm Jumeirah</label>
+            </value>
+            <value>
+                <fullName>Ras Al Khaima/Fujairah</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ras Al Khaima/Fujairah</label>
+            </value>
+            <value>
+                <fullName>Sharjah/Ajman/Umm Al Quwain</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sharjah/Ajman/Umm Al Quwain</label>
+            </value>
+            <value>
+                <fullName>Zone A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Zone A</label>
+            </value>
+            <value>
+                <fullName>Zone B</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Zone B</label>
+            </value>
+            <value>
+                <fullName>Zone C</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Zone C</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

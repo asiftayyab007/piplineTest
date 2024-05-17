@@ -1,0 +1,99 @@
+<aura:component controller="testschoool" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+  <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-modal__container{
+        width: 90% !important;
+        max-width: 95rem !important;
+        }
+        header,footer{display:none;}
+        
+    </aura:html>
+    
+  
+ <!-- <aura:attribute name="studentName" type="ETST_Student__c[]" />-->
+    
+     <aura:attribute name="StudentName" type="String" />
+  
+    <!--<aura:attribute name="recordId" type="String" />-->
+    
+     <aura:attribute name="studentDetails" type="ETST_School__c[]" />
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+        
+    <div class="slds-m-around--xx-large">
+        <div class="slds-float_right slds-p-bottom_small">
+            <h1 class="slds-page-header__title">Add Row 
+                <lightning:buttonIcon iconName="utility:add"  size="large" variant="bare" alternativeText="Add" onclick="{!c.addRow}"/>
+            </h1> 
+        </div>
+     
+      <div class="container">
+            
+            <lightning:recordEditForm   objectApiName="ETST_School__c">
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer"> 
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="Sr">SR No</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Student Name">Student Name</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Parent Name">Parent Name</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Nationality">Nationality</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Vehical">Vehical</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Action">Action</div>
+                        </th>
+                    </tr>
+                </thead>   
+                <tbody> 
+                          
+                        <aura:iteration items="{!v.studentDetails}" var="item" indexVar="index">   
+                      <tr>
+						
+                            <td>
+                                {!index+1}
+                            </td>
+                            
+                          <td >
+                              <lightning:inputField variant="label-hidden" data-index="{!index}"  onchange="{!c.handleChange}"  fieldName="Student__c" value="{!item.Id}"  /> 
+                          </td> 
+                         
+                           <td>
+                                <lightning:input  variant="label-hidden" fieldName="ETST_Account_Name__c" value="{!item.ETST_Account_Name__r.Name}" />
+                            </td>
+                            <td>
+                                <lightning:input  variant="label-hidden" fieldName="ETST_Nationality__c"  value="{!item.ETST_Nationality__c}"/>
+                            </td>
+                            <td>
+                                <lightning:input  variant="label-hidden" fieldName="ETST_Primary_Assigned_Vehicle__c" value="{!item.ETST_Primary_Assigned_Vehicle__r.Name}"/>
+                            </td>
+                            <td>
+                                <a onclick="{!c.removeRow}" data-record="{!index}">
+                                    <lightning:icon iconName="utility:delete" size="small" alternativeText="Delete"/>
+                                    <span class="slds-assistive-text">Delete</span>
+                                </a>
+                            </td> 
+                       
+                     </tr>
+                         </aura:iteration>
+                </tbody>
+            </table> 
+            </lightning:recordEditForm>  
+          
+     
+        </div>
+    </div>
+
+    
+    </aura:component>

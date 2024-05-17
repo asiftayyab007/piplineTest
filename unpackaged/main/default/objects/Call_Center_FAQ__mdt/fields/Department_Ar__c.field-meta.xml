@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department_Ar__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Department Ar</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>خدمات النقل والتأجير</fullName>
+                <default>true</default>
+                <label>خدمات النقل والتأجير</label>
+            </value>
+            <value>
+                <fullName>خدمات المزاد</fullName>
+                <default>false</default>
+                <label>خدمات المزاد</label>
+            </value>
+            <value>
+                <fullName>معهد مواصلات الإمارات للسياقة</fullName>
+                <default>false</default>
+                <label>معهد مواصلات الإمارات للسياقة</label>
+            </value>
+            <value>
+                <fullName>المدرسة والنقل</fullName>
+                <default>false</default>
+                <label>المدرسة والنقل</label>
+            </value>
+            <value>
+                <fullName>الصيانة والإصلاح والعمليات</fullName>
+                <default>false</default>
+                <label>الصيانة والإصلاح والعمليات</label>
+            </value>
+            <value>
+                <fullName>القسم الرقمي</fullName>
+                <default>false</default>
+                <label>القسم الرقمي</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

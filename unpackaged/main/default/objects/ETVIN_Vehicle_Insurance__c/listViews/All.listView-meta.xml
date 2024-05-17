@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>ETVIN_Insurance_Policy_Number__c</columns>
+    <columns>ETVIN_Insurance_Company__c</columns>
+    <columns>ETVIN_Insurance_Status__c</columns>
+    <columns>Vehicle__c</columns>
+    <columns>Zone__c</columns>
+    <columns>ETVIN_Request_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_color_Type__c</fullName>
+    <defaultValue>&quot;Mat&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Vehicle color Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mat</fullName>
+                <default>false</default>
+                <label>Mat</label>
+            </value>
+            <value>
+                <fullName>Multi</fullName>
+                <default>false</default>
+                <label>Multi</label>
+            </value>
+            <value>
+                <fullName>Normal</fullName>
+                <default>false</default>
+                <label>Normal</label>
+            </value>
+            <value>
+                <fullName>metallic</fullName>
+                <default>false</default>
+                <label>metallic</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

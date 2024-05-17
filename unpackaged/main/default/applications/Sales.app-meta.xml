@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Custom Sales App</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Sales</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>ETI_Location_Services__c</tabs>
+    <tabs>Disposition_Code__c</tabs>
+    <tabs>Collector_Logs__c</tabs>
+    <tabs>Survey__c</tabs>
+    <tabs>LegalContract__c</tabs>
+    <tabs>Student_Vehicle_Mapping__c</tabs>
+    <tabs>Vehicle_Receiving_Info__c</tabs>
+    <tabs>ETDI_Trainers__c</tabs>
+    <tabs>X36_Points_Health_Check__c</tabs>
+    <tabs>X111_Point_Check__c</tabs>
+    <tabs>Parents_Data_Update</tabs>
+    <tabs>Partial_delivery__c</tabs>
+    <tabs>Customer_Quote__c</tabs>
+    <tabs>Customer_Workforce_Quote_Item__c</tabs>
+    <tabs>Customer_Quote_Line_Item__c</tabs>
+    <tabs>Customer_Vehicle_Quote_Item__c</tabs>
+    <tabs>VRTS_Master__c</tabs>
+    <tabs>VRTS_Observation__c</tabs>
+    <tabs>TermsAndCondition__c</tabs>
+    <tabs>Bike__c</tabs>
+    <tabs>Contract_Master__c</tabs>
+    <tabs>Contract_Pdf_Header__c</tabs>
+    <tabs>Contract_Line__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Sales_UtilityBar1</utilityBar>
+</CustomApplication>

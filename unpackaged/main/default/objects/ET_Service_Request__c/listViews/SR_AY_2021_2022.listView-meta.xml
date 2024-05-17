@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SR_AY_2021_2022</fullName>
+    <columns>NAME</columns>
+    <columns>ET_Account__c</columns>
+    <columns>ETST_Student_Name__c</columns>
+    <columns>ETST_School_Name__c</columns>
+    <columns>ETST_Fare_Charges__c</columns>
+    <columns>ETST_Status__c</columns>
+    <columns>ETST_Transport_Type__c</columns>
+    <columns>ETST_Service_Type__c</columns>
+    <columns>ETST_Pick_Up_Start_Date__c</columns>
+    <columns>ETST_Pick_Up_End_Date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>School_Admin_Comments__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ETST_Pick_Up_Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>8/1/2021</value>
+    </filters>
+    <filters>
+        <field>ETST_Pick_Up_End_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>6/30/2022</value>
+    </filters>
+    <label>SR AY 2021-2022</label>
+    <language>en_IE</language>
+    <sharedTo>
+        <group>ET_Zone_A_Group</group>
+        <group>ET_Zone_B_Group</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_LEAD_conversion_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR( 
+ISPICKVAL( PRIORVALUE ( Status ), &#39;Junk&#39;), 
+ISPICKVAL( PRIORVALUE ( Status ), &#39;Not Qualified&#39;) 
+),
+ISCHANGED( Status ),
+OR( 
+ISPICKVAL(Status, &#39;Converted&#39;),
+ISPICKVAL(Status, &#39;Qualified&#39;) 
+)
+)</errorConditionFormula>
+    <errorMessage>Junk and Not Qualified leads conversion is not allowed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Whose_Mistake__c</fullName>
+    <externalId>false</externalId>
+    <label>Whose Mistake</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Driver</fullName>
+                <default>false</default>
+                <label>Driver</label>
+            </value>
+            <value>
+                <fullName>ET Staff</fullName>
+                <default>false</default>
+                <label>ET Staff</label>
+            </value>
+            <value>
+                <fullName>Other Vehicle</fullName>
+                <default>false</default>
+                <label>Other Vehicle</label>
+            </value>
+            <value>
+                <fullName>Bad Weather</fullName>
+                <default>false</default>
+                <label>Bad Weather</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

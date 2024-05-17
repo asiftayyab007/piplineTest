@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moto_ServiceBdyShp_ClosedWon_Mandatory</fullName>
+    <active>false</active>
+    <description>i.	 Payment Type and Deposit Amount
+ii.	Service Manager Approval for Estimation
+iii.	Customer Approval
+iv.	Payment Type 
+v.	Payment Made
+vi.	Oracle Order Number
+vii.	Delivery Status</description>
+    <errorConditionFormula>RecordType.DeveloperName =&#39;Automotive_Service_CenterBodyShop&#39; &amp;&amp;  ISPICKVAL(StageName, &#39;Vehicle Delivery&#39;) &amp;&amp; OR(ISBLANk(Text(Payment_Type__c)),ISBLANk(Vehicle_Internal_Number__c), ISBLANk(Oracle_Order_No__c), ISBLANK(TEXT(Service_Manager_Approval_for_Estimation__c)),ISBLANK(TEXT(Customer_Approval__c)),ISBLANk(Text( Payment_Made__c )),ISBLANK(TEXT(ETM_Delivery_Status__c)) )</errorConditionFormula>
+    <errorMessage>Please Enter Payment Type,Service Manager Approval for Estimation,Customer Approval,Payment Type, Service Estimation No.,Payment Made, Internal no. and Delivery Status</errorMessage>
+</ValidationRule>

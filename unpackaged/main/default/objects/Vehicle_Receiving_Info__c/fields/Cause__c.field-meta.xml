@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cause__c</fullName>
+    <externalId>false</externalId>
+    <label>Cause</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oil leaks</fullName>
+                <default>false</default>
+                <label>Oil leaks</label>
+            </value>
+            <value>
+                <fullName>Coolant leaks</fullName>
+                <default>false</default>
+                <label>Coolant leaks</label>
+            </value>
+            <value>
+                <fullName>Transmission fluid leaks</fullName>
+                <default>false</default>
+                <label>Transmission fluid leaks</label>
+            </value>
+            <value>
+                <fullName>Other warning lights on the dashboard (besides the check engine light)</fullName>
+                <default>false</default>
+                <label>Other warning lights on the dashboard (besides the check engine light)</label>
+            </value>
+            <value>
+                <fullName>Vehicle pulling to one side</fullName>
+                <default>false</default>
+                <label>Vehicle pulling to one side</label>
+            </value>
+            <value>
+                <fullName>Strange noises when turning</fullName>
+                <default>false</default>
+                <label>Strange noises when turning</label>
+            </value>
+            <value>
+                <fullName>Rough or bumpy ride</fullName>
+                <default>false</default>
+                <label>Rough or bumpy ride</label>
+            </value>
+            <value>
+                <fullName>Steering vibration</fullName>
+                <default>false</default>
+                <label>Steering vibration</label>
+            </value>
+            <value>
+                <fullName>Squeaking or grinding brakes</fullName>
+                <default>false</default>
+                <label>Squeaking or grinding brakes</label>
+            </value>
+            <value>
+                <fullName>Soft or spongy brake pedal</fullName>
+                <default>false</default>
+                <label>Soft or spongy brake pedal</label>
+            </value>
+            <value>
+                <fullName>ABS warning light on</fullName>
+                <default>false</default>
+                <label>ABS warning light on</label>
+            </value>
+            <value>
+                <fullName>Flat tire</fullName>
+                <default>false</default>
+                <label>Flat tire</label>
+            </value>
+            <value>
+                <fullName>Vibration at certain speeds</fullName>
+                <default>false</default>
+                <label>Vibration at certain speeds</label>
+            </value>
+            <value>
+                <fullName>Uneven tire wear</fullName>
+                <default>false</default>
+                <label>Uneven tire wear</label>
+            </value>
+            <value>
+                <fullName>Tire pressure problems</fullName>
+                <default>false</default>
+                <label>Tire pressure problems</label>
+            </value>
+            <value>
+                <fullName>Wheel balancing issues</fullName>
+                <default>false</default>
+                <label>Wheel balancing issues</label>
+            </value>
+            <value>
+                <fullName>Battery failure</fullName>
+                <default>false</default>
+                <label>Battery failure</label>
+            </value>
+            <value>
+                <fullName>Self starter failure</fullName>
+                <default>false</default>
+                <label>Self starter failure</label>
+            </value>
+            <value>
+                <fullName>Electrical shorts</fullName>
+                <default>false</default>
+                <label>Electrical shorts</label>
+            </value>
+            <value>
+                <fullName>Power windows or locks not working</fullName>
+                <default>false</default>
+                <label>Power windows or locks not working</label>
+            </value>
+            <value>
+                <fullName>Unusual or excessive exhaust smoke</fullName>
+                <default>false</default>
+                <label>Unusual or excessive exhaust smoke</label>
+            </value>
+            <value>
+                <fullName>Problems with emissions control systems</fullName>
+                <default>false</default>
+                <label>Problems with emissions control systems</label>
+            </value>
+            <value>
+                <fullName>Checking for leaks in the exhaust system</fullName>
+                <default>false</default>
+                <label>Checking for leaks in the exhaust system</label>
+            </value>
+            <value>
+                <fullName>Check engine light on</fullName>
+                <default>false</default>
+                <label>Check engine light on</label>
+            </value>
+            <value>
+                <fullName>Engine overheating</fullName>
+                <default>false</default>
+                <label>Engine overheating</label>
+            </value>
+            <value>
+                <fullName>Strange noises from the engine</fullName>
+                <default>false</default>
+                <label>Strange noises from the engine</label>
+            </value>
+            <value>
+                <fullName>Rough idling</fullName>
+                <default>false</default>
+                <label>Rough idling</label>
+            </value>
+            <value>
+                <fullName>Transmission slipping</fullName>
+                <default>false</default>
+                <label>Transmission slipping</label>
+            </value>
+            <value>
+                <fullName>Difficulty shifting gears</fullName>
+                <default>false</default>
+                <label>Difficulty shifting gears</label>
+            </value>
+            <value>
+                <fullName>Unusual noises during gear changes</fullName>
+                <default>false</default>
+                <label>Unusual noises during gear changes</label>
+            </value>
+            <value>
+                <fullName>Low pickup/acceleration</fullName>
+                <default>false</default>
+                <label>Low pickup/acceleration</label>
+            </value>
+            <value>
+                <fullName>Difficulty starting the vehicle</fullName>
+                <default>false</default>
+                <label>Difficulty starting the vehicle</label>
+            </value>
+            <value>
+                <fullName>Poor fuel efficiency</fullName>
+                <default>false</default>
+                <label>Poor fuel efficiency</label>
+            </value>
+            <value>
+                <fullName>Unusual fuel odors</fullName>
+                <default>false</default>
+                <label>Unusual fuel odors</label>
+            </value>
+            <value>
+                <fullName>Problems with key fob</fullName>
+                <default>false</default>
+                <label>Problems with key fob</label>
+            </value>
+            <value>
+                <fullName>Keyless entry not working</fullName>
+                <default>false</default>
+                <label>Keyless entry not working</label>
+            </value>
+            <value>
+                <fullName>Issues with Bluetooth connectivity</fullName>
+                <default>false</default>
+                <label>Issues with Bluetooth connectivity</label>
+            </value>
+            <value>
+                <fullName>Malfunctions in the hands-free calling system</fullName>
+                <default>false</default>
+                <label>Malfunctions in the hands-free calling system</label>
+            </value>
+            <value>
+                <fullName>Problems with GPS navigation</fullName>
+                <default>false</default>
+                <label>Problems with GPS navigation</label>
+            </value>
+            <value>
+                <fullName>Problems with audio system functionality</fullName>
+                <default>false</default>
+                <label>Problems with audio system functionality</label>
+            </value>
+            <value>
+                <fullName>Issues with touchscreen or control interface</fullName>
+                <default>false</default>
+                <label>Issues with touchscreen or control interface</label>
+            </value>
+            <value>
+                <fullName>Malfunctions in entertainment connectivity (USB, Bluetooth)</fullName>
+                <default>false</default>
+                <label>Malfunctions in entertainment connectivity (USB, Bluetooth)</label>
+            </value>
+            <value>
+                <fullName>Malfunctioning gauges</fullName>
+                <default>false</default>
+                <label>Malfunctioning gauges</label>
+            </value>
+            <value>
+                <fullName>Issues with infotainment system</fullName>
+                <default>false</default>
+                <label>Issues with infotainment system</label>
+            </value>
+            <value>
+                <fullName>Problems with instrument cluster</fullName>
+                <default>false</default>
+                <label>Problems with instrument cluster</label>
+            </value>
+            <value>
+                <fullName>Unusual noises from the drivetrain</fullName>
+                <default>false</default>
+                <label>Unusual noises from the drivetrain</label>
+            </value>
+            <value>
+                <fullName>Vibration during acceleration</fullName>
+                <default>false</default>
+                <label>Vibration during acceleration</label>
+            </value>
+            <value>
+                <fullName>Issues with constant velocity (CV) joints</fullName>
+                <default>false</default>
+                <label>Issues with constant velocity (CV) joints</label>
+            </value>
+            <value>
+                <fullName>Cracked or chipped windshield</fullName>
+                <default>false</default>
+                <label>Cracked or chipped windshield</label>
+            </value>
+            <value>
+                <fullName>Wipers not working properly</fullName>
+                <default>false</default>
+                <label>Wipers not working properly</label>
+            </value>
+            <value>
+                <fullName>Fluid level low for windshield washer</fullName>
+                <default>false</default>
+                <label>Fluid level low for windshield washer</label>
+            </value>
+            <value>
+                <fullName>Scratches or dents</fullName>
+                <default>false</default>
+                <label>Scratches or dents</label>
+            </value>
+            <value>
+                <fullName>Broken or missing exterior parts</fullName>
+                <default>false</default>
+                <label>Broken or missing exterior parts</label>
+            </value>
+            <value>
+                <fullName>Issues with lights (headlights, taillights, indicators)</fullName>
+                <default>false</default>
+                <label>Issues with lights (headlights, taillights, indicators)</label>
+            </value>
+            <value>
+                <fullName>Damaged or bent rims</fullName>
+                <default>false</default>
+                <label>Damaged or bent rims</label>
+            </value>
+            <value>
+                <fullName>Corrosion or rust on exterior surfaces</fullName>
+                <default>false</default>
+                <label>Corrosion or rust on exterior surfaces</label>
+            </value>
+            <value>
+                <fullName>Non-functioning or malfunctioning controls (AC, radio, etc.)</fullName>
+                <default>false</default>
+                <label>Non-functioning or malfunctioning controls (AC, radio, etc.)</label>
+            </value>
+            <value>
+                <fullName>Interior stains or damage</fullName>
+                <default>false</default>
+                <label>Interior stains or damage</label>
+            </value>
+            <value>
+                <fullName>Strange odors in the cabin</fullName>
+                <default>false</default>
+                <label>Strange odors in the cabin</label>
+            </value>
+            <value>
+                <fullName>Unusual odors from the vehicle</fullName>
+                <default>false</default>
+                <label>Unusual odors from the vehicle</label>
+            </value>
+            <value>
+                <fullName>Unusual sounds during driving</fullName>
+                <default>false</default>
+                <label>Unusual sounds during driving</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moto_Sales_Channel_is_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName =&#39;Automotive_Dealership_Vehicle_Inquiry_Trade_In&#39;, ISPICKVAL(StageName, &#39;Vehicle Delivery&#39;),
+ISBLANK(TEXT(Sales_Channel__c)))</errorConditionFormula>
+    <errorDisplayField>Sales_Channel__c</errorDisplayField>
+    <errorMessage>Sales Channel is mandatory to deliver the vehicle</errorMessage>
+</ValidationRule>

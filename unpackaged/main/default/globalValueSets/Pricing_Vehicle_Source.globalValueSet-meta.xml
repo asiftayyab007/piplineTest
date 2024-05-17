@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Main</fullName>
+        <default>true</default>
+        <label>Main</label>
+    </customValue>
+    <customValue>
+        <fullName>optional</fullName>
+        <default>false</default>
+        <label>optional</label>
+    </customValue>
+    <customValue>
+        <fullName>Substitutional</fullName>
+        <default>false</default>
+        <label>Substitutional</label>
+    </customValue>
+    <masterLabel>Pricing Vehicle Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

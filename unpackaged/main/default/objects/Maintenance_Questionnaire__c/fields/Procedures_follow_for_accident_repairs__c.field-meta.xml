@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Procedures_follow_for_accident_repairs__c</fullName>
+    <description>6.	What are the procedures to follow for the accident repairs ? Name of the Insurance companies dealt by you?</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>6.	What are the procedures to follow for the accident repairs ? Name of the Insurance companies dealt by you?</inlineHelpText>
+    <label>Procedures follow for accident repairs</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

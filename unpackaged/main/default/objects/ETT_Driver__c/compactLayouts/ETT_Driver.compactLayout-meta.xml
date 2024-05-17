@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Driver</fullName>
+    <fields>Name</fields>
+    <fields>ETT_Mobile_Number__c</fields>
+    <fields>ETT_Employee_ID__c</fields>
+    <fields>ETT_Designation_Code__c</fields>
+    <fields>ETT_License_Number__c</fields>
+    <label>ETT Driver</label>
+</CompactLayout>

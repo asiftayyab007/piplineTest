@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enrollment_date_cant_be_past_date</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNEW() &amp;&amp; ETVIN_Enrollment_Date__c &lt; TODAY()</errorConditionFormula>
+    <errorDisplayField>ETVIN_Enrollment_Date__c</errorDisplayField>
+    <errorMessage>Please enter valid Enrollment Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETST_Get_PickUp_Location_Link__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;http://www.google.com/maps/search/?api=1&amp;query=&quot; + IF( ETST_Location__Latitude__s&lt; 1,&quot;0&quot; + TEXT ( ETST_Location__Latitude__s), TEXT( ETST_Location__Latitude__s))+ &quot;,&quot; + IF(ETST_Location__Longitude__s&lt; 1, &quot;0&quot; + TEXT(ETST_Location__Longitude__s), TEXT (ETST_Location__Longitude__s)),&quot;View PickUp Location in Maps&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PickUp Location Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

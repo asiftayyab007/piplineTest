@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GIN_Status_active_Validations</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( TEXT(Status__c) ==&#39;Active&#39; &amp;&amp; (  ISBLANK(Sum_Assured__c )||  ISBLANK(Policy_Number__c ) || ISBLANK( Policy_Start_Date__c )|| ISBLANK(  Policy_End_Date__c  )), true, false)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Policy Number or Start Date or End Date or Sum assured should not be blank</errorMessage>
+</ValidationRule>

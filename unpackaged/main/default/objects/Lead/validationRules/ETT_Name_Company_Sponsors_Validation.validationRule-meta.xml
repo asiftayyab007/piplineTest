@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Name_Company_Sponsors_Validation</fullName>
+    <active>true</active>
+    <description>If any numeric characters is present in the value through an error.</description>
+    <errorConditionFormula>AND(
+OR(
+NOT(ISBLANK(FirstName)),
+NOT(ISBLANK(LastName)),
+NOT(ISBLANK(ETT_Name_of_Owners_Sponsors__c)),
+NOT(ISBLANK(ETT_Name_of_Owners_Sponsors_1__c)),
+NOT(ISBLANK(ETT_Name_of_Owners_Sponsors_2__c))),
+OR(
+NOT(REGEX(FirstName,&quot;^[a-z A-Z]*$&quot;)),
+NOT(REGEX(LastName,&quot;^[a-z A-Z]*$&quot;)),
+NOT(REGEX( ETT_Name_of_Owners_Sponsors__c,&quot;^[a-z A-Z]*$&quot;)),
+NOT(REGEX( ETT_Name_of_Owners_Sponsors_1__c,&quot;^[a-z A-Z]*$&quot;)),
+NOT(REGEX( ETT_Name_of_Owners_Sponsors_2__c,&quot;^[a-z A-Z]*$&quot;))),
+OR(
+$RecordType.Name = &quot;Tyre - Cash Supplier&quot;,
+$RecordType.Name = &quot;Tyre - Credit/B2B Supplier&quot;,
+$RecordType.Name = &quot;Tyre - Refurbishing Services&quot;,
+$RecordType.Name = &quot;Tyre Cash Individual&quot;
+))</errorConditionFormula>
+    <errorMessage>Please enter only alphabetical letters in Name, 
+and Sponsor&#39;s fields.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>03010</fullName>
+        <default>false</default>
+        <label>Mussafah Inspection Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>04023</fullName>
+        <default>false</default>
+        <label>Al Ain Inspection Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>03077</fullName>
+        <default>false</default>
+        <label>Al Faya Inspection Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>04070</fullName>
+        <default>false</default>
+        <label>Al Hayer Inspection Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>03060</fullName>
+        <default>false</default>
+        <label>Al Jaber Inspection Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>04071</fullName>
+        <default>false</default>
+        <label>Al Quaa Inspection Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>04069</fullName>
+        <default>false</default>
+        <label>Al Saad Inspection Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>02006</fullName>
+        <default>false</default>
+        <label>Ghayathi Inspection Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>02004</fullName>
+        <default>false</default>
+        <label>Madeenat Zayed Inspection Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>10048</fullName>
+        <default>false</default>
+        <label>Fujairah Inspection Center</label>
+    </customValue>
+    <customValue>
+        <fullName>06034</fullName>
+        <default>false</default>
+        <label>Sharjah Spea Inspection Centre</label>
+    </customValue>
+    <masterLabel>Inspection Centers</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

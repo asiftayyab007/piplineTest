@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ETT_Accsess_to_Storekeeper</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ETT Accsess to Storekeeper</label>
+        <sharedTo>
+            <role>BC_Emirates_StoreKeeper_Centre_Tyre</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tyre - Credit/B2B Supplier,Tyre - Refurbishing Services,Tyre - Cash Supplier</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>WOLI_Accsess_to_CT</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ETT_WOLI Accsess to CT</label>
+        <sharedTo>
+            <role>BC_Emirates_Collection_Centre_Tyre</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tyre - Credit/B2B Supplier,Tyre - Refurbishing Services,Tyre - Cash Supplier</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>WO_Accsess_to_Inspection_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ETT_WO Accsess to Inspection Team</label>
+        <sharedTo>
+            <role>BC_Emirates_Inspection_Centre_Tyre</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tyre - Credit/B2B Supplier,Tyre - Refurbishing Services,Tyre - Cash Supplier</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

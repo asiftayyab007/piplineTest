@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auction_Fees__c</fullName>
+    <externalId>false</externalId>
+    <label>Auction Fees</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Heavy Vehicle AED 1000</fullName>
+                <default>false</default>
+                <label>Heavy Vehicle AED 1000</label>
+            </value>
+            <value>
+                <fullName>Light Vehicle AED 500</fullName>
+                <default>false</default>
+                <label>Light Vehicle AED 500</label>
+            </value>
+            <value>
+                <fullName>No Fees</fullName>
+                <default>false</default>
+                <label>No Fees</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

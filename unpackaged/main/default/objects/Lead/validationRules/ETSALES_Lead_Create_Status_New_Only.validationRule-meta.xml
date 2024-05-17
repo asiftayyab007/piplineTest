@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Lead_Create_Status_New_Only</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISNEW(),NOT(ISPICKVAL(Status, &#39;New&#39;)))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Status must be &#39;New&#39; while creating the Lead.</errorMessage>
+</ValidationRule>

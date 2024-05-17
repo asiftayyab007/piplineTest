@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Intimation_No__c</columns>
+    <columns>PO_Header_ID__c</columns>
+    <columns>Vendor_ID__c</columns>
+    <columns>Location_Code__c</columns>
+    <columns>Total_Vehicle_Quantity__c</columns>
+    <columns>Total_Inspected_Vehicles__c</columns>
+    <columns>Intimation_Status__c</columns>
+    <columns>Inspected_By__c</columns>
+    <columns>Show_in_App__c</columns>
+    <columns>Intimation_Received_Date__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

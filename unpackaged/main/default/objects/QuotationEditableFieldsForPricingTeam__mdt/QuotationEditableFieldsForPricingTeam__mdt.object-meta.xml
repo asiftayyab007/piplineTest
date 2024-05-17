@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Tracks all the fields editable for Pricing team for each category like Vehicle, Driver, Nanny etc..</description>
+    <label>Quot Editable Fields For Pricing Team</label>
+    <pluralLabel>Quot Editable Fields For Pricing Teams</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

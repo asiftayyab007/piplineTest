@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Next Activity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending with Department Of School Activities</fullName>
+                <default>false</default>
+                <label>Pending with Department Of School Activities</label>
+            </value>
+            <value>
+                <fullName>Pending with School Transportation Manager</fullName>
+                <default>false</default>
+                <label>Pending with School Transportation Manager</label>
+            </value>
+            <value>
+                <fullName>Pending with Department Of School Services</fullName>
+                <default>false</default>
+                <label>Pending with Department Of School Services</label>
+            </value>
+            <value>
+                <fullName>Pending with Personnel Management</fullName>
+                <default>false</default>
+                <label>Pending with Personnel Management</label>
+            </value>
+            <value>
+                <fullName>Pending with Special Education</fullName>
+                <default>false</default>
+                <label>Pending with Special Education</label>
+            </value>
+            <value>
+                <fullName>Pending with Statistics Coordinator</fullName>
+                <default>false</default>
+                <label>Pending with Statistics Coordinator</label>
+            </value>
+            <value>
+                <fullName>Pending with Branch Manager</fullName>
+                <default>false</default>
+                <label>Pending with Branch Manager</label>
+            </value>
+            <value>
+                <fullName>Pending with Routes Efficient and Design Director</fullName>
+                <default>false</default>
+                <label>Pending with Routes Efficient and Design Director</label>
+            </value>
+            <value>
+                <fullName>Pending with First Transport Specialist</fullName>
+                <default>false</default>
+                <label>Pending with First Transport Specialist</label>
+            </value>
+            <value>
+                <fullName>Pending with Head of Safety Unit</fullName>
+                <default>false</default>
+                <label>Pending with Head of Safety Unit</label>
+            </value>
+            <value>
+                <fullName>Pending with Students Safety Specialist</fullName>
+                <default>false</default>
+                <label>Pending with Students Safety Specialist</label>
+            </value>
+            <value>
+                <fullName>Pending with Safety and Health Specialist</fullName>
+                <default>false</default>
+                <label>Pending with Safety and Health Specialist</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Pending with Main School</fullName>
+                <default>false</default>
+                <label>Pending with Main School</label>
+            </value>
+            <value>
+                <fullName>Pending Hemam for Inclusive Education services</fullName>
+                <default>false</default>
+                <label>Pending Hemam for Inclusive Education services</label>
+            </value>
+            <value>
+                <fullName>Pending with Inclusive Education Department in ESE</fullName>
+                <default>false</default>
+                <label>Pending with Inclusive Education Department in ESE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

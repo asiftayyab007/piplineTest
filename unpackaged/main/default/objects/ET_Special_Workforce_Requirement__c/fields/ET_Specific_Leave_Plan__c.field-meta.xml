@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Specific_Leave_Plan__c</fullName>
+    <externalId>false</externalId>
+    <label>Specific Leave Plan</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 month every year</fullName>
+                <default>false</default>
+                <label>1 month every year</label>
+            </value>
+            <value>
+                <fullName>1 month every 6 months</fullName>
+                <default>false</default>
+                <label>1 month every 6 months</label>
+            </value>
+            <value>
+                <fullName>1 month every 4 months</fullName>
+                <default>false</default>
+                <label>1 month every 4 months</label>
+            </value>
+            <value>
+                <fullName>1 month every 3 months</fullName>
+                <default>false</default>
+                <label>1 month every 3 months</label>
+            </value>
+            <value>
+                <fullName>Half month every 6 months</fullName>
+                <default>false</default>
+                <label>Half month every 6 months</label>
+            </value>
+            <value>
+                <fullName>Half month every 4 months</fullName>
+                <default>false</default>
+                <label>Half month every 4 months</label>
+            </value>
+            <value>
+                <fullName>Half month every 3 months</fullName>
+                <default>false</default>
+                <label>Half month every 3 months</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

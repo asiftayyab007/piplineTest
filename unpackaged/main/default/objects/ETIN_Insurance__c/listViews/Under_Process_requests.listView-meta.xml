@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Under_Process_requests</fullName>
+    <columns>NAME</columns>
+    <columns>Employee_ID__c</columns>
+    <columns>Relation__c</columns>
+    <columns>EmployeeAcc__c</columns>
+    <columns>Employee_Family__c</columns>
+    <columns>Insurance_Current_Status__c</columns>
+    <columns>Status__c</columns>
+    <columns>Insurance_Company__c</columns>
+    <columns>Employee_Zone__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Sent_to_Partner_Date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Under Process</value>
+    </filters>
+    <label>Under Process</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Health_Insurance_Technical_Services_HR</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Health_Zone_A_HR</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Health_Zone_B_HR</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Health_Zone_C_HR</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

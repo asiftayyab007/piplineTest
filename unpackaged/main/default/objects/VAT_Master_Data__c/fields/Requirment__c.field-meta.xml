@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requirment__c</fullName>
+    <externalId>false</externalId>
+    <label>Requirment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vehicle with fuel</fullName>
+                <default>false</default>
+                <label>Vehicle with fuel</label>
+            </value>
+            <value>
+                <fullName>Vehicle With Driver</fullName>
+                <default>false</default>
+                <label>Vehicle With Driver</label>
+            </value>
+            <value>
+                <fullName>Vehicle With Fuel and Driver</fullName>
+                <default>false</default>
+                <label>Vehicle With Fuel and Driver</label>
+            </value>
+            <value>
+                <fullName>Vehicle Without fuel and Manpower</fullName>
+                <default>false</default>
+                <label>Vehicle Without fuel and Manpower</label>
+            </value>
+            <value>
+                <fullName>Vehicle With Fuel, Driver and other manpower</fullName>
+                <default>false</default>
+                <label>Vehicle With Fuel, Driver and other manpower</label>
+            </value>
+            <value>
+                <fullName>Drivers Only</fullName>
+                <default>false</default>
+                <label>Drivers Only</label>
+            </value>
+            <value>
+                <fullName>Supervisors Only</fullName>
+                <default>false</default>
+                <label>Supervisors Only</label>
+            </value>
+            <value>
+                <fullName>Coordinator Only</fullName>
+                <default>false</default>
+                <label>Coordinator Only</label>
+            </value>
+            <value>
+                <fullName>Cashier /Accountant Only</fullName>
+                <default>false</default>
+                <label>Cashier /Accountant Only</label>
+            </value>
+            <value>
+                <fullName>Other Manpower Only</fullName>
+                <default>false</default>
+                <label>Other Manpower Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

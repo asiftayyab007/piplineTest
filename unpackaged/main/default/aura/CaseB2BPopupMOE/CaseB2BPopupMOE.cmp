@@ -1,0 +1,1178 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction"
+                controller="ET_BusinessCommunityController" access="global" extends="c:ET_MOE_BilingualCommunity">
+    <aura:attribute name="selectedLookUpRecord" type="sObject" default="{'sObjectType':'Account'}"/>
+    <aura:attribute name="AwarenessSession" type="boolean" />
+    <aura:attribute name="noofpassengerError" type="boolean" default='false'/>
+    <aura:attribute name="noofattendanceError" type="boolean" default='false'/>
+    <aura:attribute name="noofstudentsError" type="boolean" default='false'/> 
+    <aura:attribute name="noofteachersError" type="boolean" default='false'/> 
+    <aura:attribute name="schoolnameError" type="boolean" default='false'/> 
+    <aura:attribute name="AccountId" type="String" />
+    <aura:attribute name="AccountName" type="String" />
+    <aura:attribute name="AccountARName" type="String" />
+    <aura:attribute name="noofpassenger" type="Integer" />
+    <aura:attribute name="noofattendance" type="Integer" />
+    <aura:attribute name="noofstudents" type="Integer" />
+    <aura:attribute name="noofteachers" type="Integer" />
+    <aura:attribute name="contactId" type="String" />
+    <aura:attribute name="newCaseId" type="Id" />
+    <aura:attribute name="RecordTypeId" type="String" />
+    <aura:handler event="force:refreshView" action="{!c.refresh}"/>
+    <aura:attribute name="loaded" type="Boolean" default="true" />
+    <c:ETST_UtilityMethods aura:id="ETST_UtilityMethods"/>
+    <aura:attribute name="openMap" type="boolean" />
+    <aura:attribute name="searchText" type="String" />
+    <aura:attribute name="tripLoc" type="String" />
+    <aura:attribute name="mapLoaded" type="Boolean" default="true" />
+    <aura:attribute name="loadEdirForm" type="Boolean" default="false" />
+    <aura:attribute name="vfUrl" type="String" />
+    <aura:attribute name="lat" type="String"/>
+    <aura:attribute name="lon" type="String"/>
+    <aura:registerEvent name="Actionname" type="c:ETST_sendDataEvent"/>
+    <aura:attribute name="isDisabled" type="boolean" default="false" />
+    <aura:attribute name="NewTeacherTransport" type="boolean" />
+    <aura:attribute name="NewTripsRequest" type="boolean" />
+    <aura:attribute name="HandicapService" type="boolean" />
+    <aura:attribute name="GrowthRequest" type="boolean" />
+     <aura:attribute name="RequestaboardingpassforCompanionHandycamptransportation" type="boolean" />
+    <aura:attribute name="EvaluationofSchools" type="boolean" />
+    <aura:attribute name="newCase" type="boolean" />
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <lightning:overlayLibrary aura:id="cmp1" /> 
+    <aura:attribute name="startDate" type="Datetime"/>
+    <aura:attribute name="endDate" type="Datetime"/>
+    <aura:attribute name="existingCase" type="case" />
+    <aura:attribute name="msg" type="string" default="" />
+    <aura:attribute name="userParentProfileWrap" type="ET_BusinessCommunityController.ResultWrapper" />
+    <aura:attribute name="caseRecord" type="Case"  
+                    default="{'sObjectType':'Case', 'Preferred_Date__c':'','Preferred_End_Date__c':''}" />
+    <!--lightning:spinner aura:id="spinner" variant="brand" /-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:messages aura:id="OppMessage" />
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" 
+             aria-modal="true" aria-describedby="modal-content-id-1" 
+             class="slds-modal slds-fade-in-open slds-modal_small">
+        <div class="slds-modal__container" aura:id="mainDiv">
+            <!-- ###### MODAL BOX HEADER Start ######-->
+            <header class="slds-modal__header">
+                <lightning:buttonIcon iconName="utility:close"
+                                      onclick="{!c.closeModel}"
+                                      alternativeText="close"
+                                      variant="bare-inverse"
+                                      class="slds-modal__close"/>
+                <h1 class="slds-text-heading--medium">{!v.clHowcanwehelpyou}</h1>
+            </header>
+            
+            
+            <lightning:select name="mySelect" label="{!v.clSelectRequestType}" aura:id="mySelect"
+                              onchange="{!c.toggle}" class="{!v.clLang =='ar' ? 'selectsearchrtl' : 'selectsearch'}">
+                <option>{!v.clNone}</option>
+                <!--  <option>Printing New Card - Drivers and Transportation Supervisors</option>
+                             <option>Evaluation of Schools/Services</option>
+                                <option>Printing New Card - Student</option>-->
+                <option>{!v.clGrowthRequestsforVehicleNannyandCoordinator}</option>
+                <option>{!v.clHandicapServicesTransportationorNannyRequest}</option>
+                 <option>{!v.clRequestaboardingpassforCompanionHandycamptransportation}</option>
+                <option>{!v.clActivitiesEvents}</option>
+                <option>{!v.clTeachersTransportationRequest}</option>
+                <option>{!v.clAwarenessSessionRequest}</option>
+            </lightning:select>
+            <aura:if isTrue="{! v.loadEdirForm }">
+                <lightning:recordEditForm objectApiName="Case" aura:id="caseFormMOE" onload="{!c.handleOnLoad}"
+                                          onsubmit="{!c.handleOnSubmit}" onsuccess="{!c.handleOnSuccess}" onerror="{!c.handleOnError}"
+                                          recordTypeId="{!v.RecordTypeId}" >
+                    <lightning:messages/>
+                    <div  class="slds-modal__content slds-p-around--medium" style="height:250px;">
+                        <aura:if isTrue="{! v.loaded }">
+                            <div class="documentmain">
+                                <!--<h3 class="Headingcontent">Create Complaint</h3>-->
+                                <aura:if isTrue="{!v.AwarenessSession}"> 
+                                    <!--vinod changes - start -->
+                                    <!--
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div aura:id="lookupField" class="slds-show" onchange="{!c.onchangeSchool}">
+                                                <lightning:input type="dateTime" name="" messageWhenValueMissing="Complete this field" label="{!v.clPreferredStartDate}" disabled="false" 
+                                                                 aura:id="Preferred_Date__c" required="true" value="{!v.caseRecord.Preferred_Date__c}" autocomplete="off"/>
+                                            </div>
+                                        </div>  
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <lightning:input type="dateTime" name="" messageWhenValueMissing="Complete this field" label="{!v.clPreferredEndDate}" disabled="false"  
+                                                             aura:id="Preferred_End_Date__c" required="true" value="{!v.caseRecord.Preferred_End_Date__c}" autocomplete="off"/>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <lightning:input type="text" name="" messageWhenValueMissing="Complete this field" label="{!v.clAudience}" disabled="false"  
+                                                             aura:id="Audience__c" required="true" value="{!v.caseRecord.Audience__c}" autocomplete="off"/>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <lightning:input type="text" name="" messageWhenValueMissing="Complete this field" label="{!v.clProgramType}" disabled="false"  
+                                                             aura:id="Program_Type__c" required="true" value="{!v.caseRecord.Program_Type__c}" autocomplete="off"/>
+                                        </div>
+                                    </div> -->
+                                    <!-- vinod changes - end -->
+                                    
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}"> 
+                                            <label for="startid"><span class="reqspan">*</span>{!v.clPreferredStartDate}</label>
+                                            <div class="slds-datepicker"> 
+                                                <span><lightning:inputField required="true" displayDatePicker="true" fieldName="Preferred_Date__c" value="{!v.startDate}" variant="label-hidden"/></span>
+                                            </div>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <label for="startid"><span class="reqspan">*</span>{!v.clPreferredEndDate}</label>
+                                            <span class="slds-datepicker"><lightning:inputField required="true" displayDatePicker="true" fieldName="Preferred_End_Date__c" value="{!v.endDate}" variant="label-hidden"/></span>
+                                        </div> 
+                                    </div>  
+                                    <div class="slds-grid slds-gutters">
+                                        <aura:if isTrue="{!v.clLang =='ar'}">
+                                            <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                <label for="startid"><span class="reqspan">*</span>{!v.clAudience}</label>
+                                                <span><lightning:inputField required="true"  fieldName="Audience_AR__c" variant="label-hidden" /></span>
+                                            </div>
+                                            <aura:set attribute="else">
+                                                <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                    <label for="startid"><span class="reqspan">*</span>{!v.clAudience}</label>
+                                                    <span><lightning:inputField required="true"  fieldName="Audience__c" variant="label-hidden" /></span>
+                                                </div>
+                                            </aura:set>
+                                        </aura:if>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <label for="startid">{!v.clProgramType}</label>
+                                            <span> <lightning:inputField fieldName="Program_Type__c" variant="label-hidden" />  </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col schoolname'}">
+                                            <label for="aid"><span class="reqspan">*</span>{!v.clSchoolName}</label>
+                                            <lightning:outputField variant="label-hidden" fieldName="AccountId" value="{!v.accRecord}" />
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <span>{!v.AccountARName}</span>
+                                                <aura:set attribute="else">
+                                                    <span>{!v.AccountName}</span>
+                                                </aura:set>
+                                            </aura:if>   
+                                            <!--   <span><ui:OutputText class="field" value="{!v.AccountName}"/></span>
+                                          
+                                            <c:casecustomLookup objectAPIName="Account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" />
+                                            <lightning:inputField fieldName="AccountId" required="true" variant="label-hidden" />
+                                            <aura:if isTrue="{!v.schoolnameError}">
+                                                <span style="color:red;"> 
+                                                    Please select School Name
+                                                </span>
+                                            </aura:if> -->
+                                        </div>     
+                                        <aura:if isTrue="{!v.clLang =='ar'}">
+                                            <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                <label for="startid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                <span><lightning:inputField required="true"  fieldName="Coordinator_Number__c" variant="label-hidden" /></span>
+                                            </div>
+                                            <aura:set attribute="else">
+                                                <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                    <label for="startid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                    <span><lightning:inputField required="true"  fieldName="Coordinator_Number__c" variant="label-hidden" /></span>
+                                                </div>
+                                            </aura:set>
+                                        </aura:if>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <span>  <label for="aid"><span class="reqspan">*</span>{!v.clCoordinatorName}</label>
+                                                <!--  <lightning:inputField aura:id="assResId" required="true"  fieldName="Assigned_Resource__c" variant="label-hidden"/> -->
+                                                <lightning:inputField aura:id="assResId" required="true"  fieldName="Coordinator_Name__c" variant="label-hidden"/>
+                                            </span>
+                                        </div>
+                                        <!--   <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <label for="startid">{!v.clParentPhone}</label>
+                                            <lightning:outputField aura:id="assVehId" fieldName="Parent_Phone__c" variant="label-hidden"/>
+                                        </div>-->
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <span> 
+                                                <div class="{!v.clLang =='ar' ? 'pickupdatails_AR' : 'pickupdatails'}">
+                                                    <lightning:input type="text" autocomplete="off" name="Trip Destination" label="{!v.clTripDestination}" 
+                                                                     aura:id="ETST_Pick_Up_From__c" required="false"
+                                                                     value="{!v.tripLoc}" id="TripDestination" />
+                                                    <span onclick="{!c.openMapController}">{!v.clGetLocation}</span> 
+                                                    <!--<lightning:button variant="brand"  label="{!v.clGetLocation}" onclick="{!c.openMapController}" class="{!v.clLang =='ar' ? 'spacebottom_AR' : 'spacebottom'}" />-->
+                                                    <lightning:icon iconName="utility:checkin" alternativeText="Trip Destination" title="" 
+                                                                    onclick="{!c.openMapController}" class="{!v.clLang =='ar' ? 'picklocatioblink_AR' : 'picklocatioblink'}"/>
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <label for="startid"><span class="reqspan">*</span>{!v.clNoofAttendance}</label>
+                                            <lightning:inputField aura:id="assVehId" required="true" fieldName="No_of_Attendance__c" variant="label-hidden" value="{!v.noofattendance}"/>
+                                            <aura:if isTrue="{!v.noofattendanceError}">
+                                                <span style="color:red;"> 
+                                                    No of attendance should not be less than or equal to 0(zero)
+                                                </span>
+                                            </aura:if>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="ccmid"><span class="reqspan">*</span>{!v.clCCMRemarks}</label>
+                                                    <lightning:inputField fieldName="CCM_Remarks__c" required="true"  variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                                
+                                <aura:if isTrue="{!v.HandicapService}">      
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="disabilitytypeid"><span class="reqspan">*</span>{!v.clDisabilityType}</label>
+                                                        <lightning:inputField fieldName="Disability_Type_AR__c" required="true" variant="label-hidden" />
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="disabilitytypeid"><span class="reqspan">*</span>{!v.clDisabilityType}</label>
+                                                            <lightning:inputField fieldName="Disability_Type__c" required="true" variant="label-hidden" />
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}"> <aura:if isTrue="{!v.clLang =='ar'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="mobilityid"><span class="reqspan">*</span>{!v.clMobilityAids}</label>
+                                                    <lightning:inputField aura:id="assVehId" fieldName="Mobility_Aids_AR__c" required="true" variant="label-hidden" />
+                                                </div>
+                                            </div>
+                                            <aura:set attribute="else">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="mobilityid"><span class="reqspan">*</span>{!v.clMobilityAids}</label>
+                                                        <lightning:inputField aura:id="assVehId" fieldName="Mobility_Ads__c" required="true" variant="label-hidden" />
+                                                    </div>
+                                                </div>
+                                            </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <!--  <aura:if isTrue="{!v.clLang =='ar'}">
+                                            <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                <label for="requestid"><span class="reqspan">*</span>{!v.clRequest}</label>
+                                                <lightning:inputField fieldName="Request_AR__c"  variant="label-hidden" />
+                                            </div> 
+                                            <aura:set attribute="else">
+                                                <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                    <label for="requestid"><span class="reqspan">*</span>{!v.clRequest}</label>
+                                                    <lightning:inputField fieldName="Request__c"  variant="label-hidden" />
+                                                </div>
+                                            </aura:set>
+                                        </aura:if> -->
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="requestTypeid"><span class="reqspan">*</span>{!v.clRequestType}</label>
+                                                        <lightning:inputField fieldName="Request_Type_AR__c" required="true" variant="label-hidden" />
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="requestTypeid"><span class="reqspan">*</span>{!v.clRequestType}</label>
+                                                            <lightning:inputField fieldName="Request_Type__c" required="true" variant="label-hidden" />
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col schoolname'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="aid"><span class="reqspan">*</span>{!v.clSchoolName}</label>
+                                                    <lightning:outputField variant="label-hidden" fieldName="AccountId" value="{!v.accRecord}" />
+                                                    <aura:if isTrue="{!v.clLang =='ar'}">
+                                                        <span>{!v.AccountARName}</span>
+                                                        <aura:set attribute="else">
+                                                            <span>{!v.AccountName}</span>
+                                                        </aura:set>
+                                                    </aura:if> 
+                                                    <!--<lightning:inputField fieldName="AccountId" required="true"  variant="label-hidden"/>
+                                                    <c:casecustomLookup objectAPIName="account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" /> -->
+                                                </div>
+                                            </div>
+                                            <!--  <aura:if isTrue="{!v.schoolnameError}">
+                                                <span style="color:red;"> 
+                                                    Please select School Name
+                                                </span>
+                                            </aura:if> -->
+                                        </div>
+                                        <aura:if isTrue="{!v.clLang =='ar'}">
+                                            <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                <label for="cityid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                <lightning:inputField fieldName="Coordinator_Number__c" required="true" variant="label-hidden" />
+                                            </div>
+                                            <aura:set attribute="else">
+                                                <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                    <label for="cityid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                    <lightning:inputField fieldName="Coordinator_Number__c" required="true" variant="label-hidden" />
+                                                </div>
+                                            </aura:set>
+                                        </aura:if>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="assignedResourceid"><span class="reqspan">*</span>{!v.clAssignedResources}</label>
+                                                    <!-- <lightning:inputField fieldName="Assigned_Resource__c" required="true" variant="label-hidden" /> 
+                                                   <c:casecustomLookup objectAPIName="user" IconName="standard:user" selectedRecord="{!v.selectedLookUpRecord}" /> -->
+                                                    <lightning:inputField fieldName="Coordinator_Name__c" required="true" variant="label-hidden" /> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="aid"><span class="reqspan">*</span>{!v.clPhone}</label>
+                                                    <lightning:inputField aura:id="assVehId" fieldName="Phone_Number__c" required="true" variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element ">
+                                                <div class="slds-form-element__control">
+                                                    <div class="{!v.clLang =='ar' ? 'pickupdatails_AR' : 'pickupdatails'}">
+                                                        <lightning:input type="text" autocomplete="off" name="Trip Destination" label="{!v.clTripDestination}" 
+                                                                         aura:id="Trip_Destination__c" 
+                                                                         value="{!v.tripLoc}" id="TripDestination" />
+                                                        <span onclick="{!c.openMapController}">{!v.clGetLocation}</span>
+                                                        <lightning:icon iconName="utility:checkin" alternativeText="{!v.clTripDestination}" title="" 
+                                                                        onclick="{!c.openMapController}" class="{!v.clLang =='ar' ? 'picklocatioblink_AR' : 'picklocatioblink'}"/>  
+                                                        <!--<lightning:inputField aura:id="assResId" required="true" 
+                                                                          fieldName="" />-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="studentid">{!v.clStudent}</label>
+                                                    <lightning:inputField fieldName="ETST_Student__c" variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="aid">{!v.clSISNumber}</label>
+                                                    <lightning:inputField aura:id="assVehId" fieldName="SIS_Number__c" variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <label for="gradeid">{!v.clGrade}</label>
+                                            <lightning:inputField fieldName="Grade__c" variant="label-hidden" />
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="parentnameid">{!v.clParentName}</label>
+                                                    <lightning:inputField fieldName="Parent_Name__c" variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--   <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="parentphoneid">{!v.clParentPhone}</label>
+                                                    <lightning:outputField aura:id="assVehId" fieldName="Parent_Phone__c" variant="label-hidden" />
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <label for="personnameid">{!v.clDelegatedPersonName}</label>
+                                            <lightning:inputField fieldName="Delegated_Person_Name__c" variant="label-hidden"/>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="personphoneid">{!v.clDelegatedPersonPhone}</label>
+                                                    <lightning:inputField fieldName="Delegated_Person_Phone__c" variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="remareksid">{!v.clCCMRemarks}</label>
+                                                    <lightning:inputField aura:id="assVehId" fieldName="CCM_Remarks__c"  variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                                
+                                <aura:if isTrue="{!v.NewTeacherTransport}">
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="Requestid"><span class="reqspan">*</span>{!v.clRequest}</label>
+                                                        <lightning:inputField required="true" fieldName="Request_AR__c" variant="label-hidden"/>
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="Requestid"><span class="reqspan">*</span>{!v.clRequest}</label>
+                                                            <lightning:inputField required="true" fieldName="Request__c" variant="label-hidden"/>
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element ">
+                                                <div class="slds-form-element__control">
+                                                    <div class="{!v.clLang =='ar' ? 'pickupdatails_AR' : 'pickupdatails'}">
+                                                        <lightning:input type="text" autocomplete="off" name="Trip Destination" label="{!v.clTripDestination}" 
+                                                                         aura:id="Trip_Destination__c" 
+                                                                         value="{!v.tripLoc}" id="TripDestination" />
+                                                        <span onclick="{!c.openMapController}">{!v.clGetLocation}</span>
+                                                        <lightning:icon iconName="utility:checkin" alternativeText="{!v.clTripDestination}" title="" 
+                                                                        onclick="{!c.openMapController}" class="{!v.clLang =='ar' ? 'picklocatioblink_AR' : 'picklocatioblink'}"/>  
+                                                        <!--<lightning:inputField aura:id="assResId" required="true" 
+                                                                          fieldName="" />-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col schoolname'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="aid"><span class="reqspan">*</span>{!v.clSchoolName}</label>
+                                                    <lightning:outputField variant="label-hidden" fieldName="AccountId" value="{!v.accRecord}" />
+                                                    <aura:if isTrue="{!v.clLang =='ar'}">
+                                                        <span>{!v.AccountARName}</span>
+                                                        <aura:set attribute="else">
+                                                            <span>{!v.AccountName}</span>
+                                                        </aura:set>
+                                                    </aura:if> 
+                                                    <!--   <lightning:inputField fieldName="AccountId" required="true"  variant="label-hidden"/>
+                                                    <c:casecustomLookup objectAPIName="account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" /> -->
+                                                </div>
+                                            </div>
+                                            <!-- <aura:if isTrue="{!v.schoolnameError}">
+                                                <span style="color:red;"> 
+                                                    Please select School Name
+                                                </span>
+                                            </aura:if> -->
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="phoneid"><span class="reqspan">*</span>{!v.clPhone}</label>
+                                                    <lightning:inputField aura:id="assResId" required="true"  fieldName="Phone_Number__c" variant="label-hidden" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="slds-grid slds-gutters">
+                                            <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <!--label for="aid">Coordinator Name</label-->
+                                                        <label for="assignedid"><span class="reqspan">*</span>{!v.clAssignedResources}</label>
+                                                        <!--  <lightning:inputField required="true" fieldName="Assigned_Resource__c" variant="label-hidden" /> -->
+                                                        <lightning:inputField required="true" fieldName="Coordinator_Name__c" variant="label-hidden" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <!--label for="aid">Teachers Count</label-->
+                                                        <label for="noofTeachersid"><span class="reqspan">*</span>{!v.clNoofTeachers}</label>
+                                                        <lightning:inputField required="true" fieldName="No_of_Teachers__c" variant="label-hidden" value="{!v.noofteachers}"/>
+                                                    </div>
+                                                </div>
+                                                <aura:if isTrue="{!v.noofteachersError}">
+                                                    <span style="color:red;"> 
+                                                        No of teachers should not be less than or equal to 0(zero)
+                                                    </span>
+                                                </aura:if>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang=='ar'}" >
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="cityid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                        <lightning:inputField fieldName="Coordinator_Number__c" required="true" variant="label-hidden"/>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else" >
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="cityid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                            <lightning:inputField fieldName="Coordinator_Number__c" required="true" variant="label-hidden"/>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                                
+                                <aura:if isTrue="{!v.NewTripsRequest}">
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <aura:if isTrue="{!v.clLang =='ar'}">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="triptypeid"><span class="reqspan">*</span>{!v.clTripType}</label>
+                                                        <lightning:inputField fieldName="Trip_Type_AR__c" required="true" variant="label-hidden" />
+                                                    </div>
+                                                    <aura:set attribute="else">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="triptypeid"><span class="reqspan">*</span>{!v.clTripType}</label>
+                                                            <lightning:inputField fieldName="Trip_Type__c" required="true" variant="label-hidden" />
+                                                        </div>
+                                                    </aura:set>
+                                                </aura:if>
+                                            </div>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="modeid">{!v.clMode}</label>
+                                                        <lightning:inputField aura:id="assResId" fieldName="Mode_AR__c" variant="label-hidden"/>
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="modeid">{!v.clMode}</label>
+                                                            <lightning:inputField aura:id="assResId" fieldName="Mode__c" variant="label-hidden"/>
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="startid"><span class="reqspan">*</span>{!v.clPreferredStartDate}</label>
+                                                    <lightning:inputField fieldName="Preferred_Date__c" required="true" value="{!v.startDate}" autocomplete="off" variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="endid"><span class="reqspan">*</span>{!v.clPreferredEndDate}</label>
+                                                    <lightning:inputField fieldName="Preferred_End_Date__c" required="true" value="{!v.endDate}" variant="label-hidden"/>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="tripid">{!v.clTripCoordinator}</label>
+                                                    <!--   <lightning:inputField aura:id="assResId" fieldName="Assigned_Resource__c" variant="label-hidden"/> -->
+                                                    <lightning:inputField aura:id="assResId" fieldName="Coordinator_Name__c" variant="label-hidden"/>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <label for="phoneid">{!v.clPhone}</label>
+                                                <lightning:inputField fieldName="Phone_Number__c" variant="label-hidden"/>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col schoolname'}">
+                                            <div class="slds-form-element">
+                                                <label for="aid"><span class="reqspan">*</span>{!v.clSchoolName}</label>
+                                                <lightning:outputField variant="label-hidden" fieldName="AccountId" value="{!v.accRecord}" />
+                                                <aura:if isTrue="{!v.clLang =='ar'}">
+                                                    <span>{!v.AccountARName}</span>
+                                                    <aura:set attribute="else">
+                                                        <span>{!v.AccountName}</span>
+                                                    </aura:set>
+                                                </aura:if> 
+                                                <!--    <c:casecustomLookup objectAPIName="account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" />
+                                                  <lightning:inputField fieldName="AccountId" required="true" variant="label-hidden"/> -->
+                                            </div>
+                                            <!--  <aura:if isTrue="{!v.schoolnameError}">
+                                                <span style="color:red;"> 
+                                                    Please select School Name
+                                                </span>
+                                            </aura:if> -->
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element ">
+                                                <div class="slds-form-element__control">
+                                                    <div class="{!v.clLang =='ar' ? 'pickupdatails_AR' : 'pickupdatails'}">
+                                                        <lightning:input type="text" autocomplete="off" name="Trip Destination" label="{!v.clTripDestination}" 
+                                                                         aura:id="ETST_Pick_Up_From__c" required="true"
+                                                                         value="{!v.tripLoc}" id="TripDestination" />
+                                                        <span onclick="{!c.openMapController}">{!v.clGetLocation}</span>
+                                                        <lightning:icon iconName="utility:checkin" alternativeText="Trip Destination" title="" 
+                                                                        onclick="{!c.openMapController}" class="{!v.clLang =='ar' ? 'picklocatioblink_AR' : 'picklocatioblink'}"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element ">
+                                                <div class="slds-form-element__control">
+                                                    <!-- <label for="aid">No of Passengers</label> -->
+                                                    <label for="noofPassengersid"><span class="reqspan">*</span>{!v.clNoofPassengers}</label>
+                                                    <lightning:inputField fieldName="No_of_Passengers__c" aura:id="NoofPassengers" required="true" variant="label-hidden" value="{!v.noofpassenger}" />  
+                                                    
+                                                </div>
+                                                <aura:if isTrue="{!v.noofpassengerError}">
+                                                    <span style="color:red;"> 
+                                                        No of passengers should not be less than or equal to 0(zero)
+                                                    </span>
+                                                </aura:if>
+                                            </div> 
+                                        </div>
+                                        
+                                        
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="cityid"><span class="reqspan">*</span>{!v.clCity}</label>
+                                                        <lightning:inputField aura:id="assResId" required="true" fieldName="City_AR__c" variant="label-hidden"/>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="cityid"><span class="reqspan">*</span>{!v.clCity}</label>
+                                                            <lightning:inputField aura:id="assResId" required="true" fieldName="City__c" variant="label-hidden"/>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <div class="slds-form-element__control">
+                                                    <label for="genderid"><span class="reqspan">*</span>{!v.clGender}</label>
+                                                    <lightning:inputField fieldName="Gender_AR__c" required="true" variant="label-hidden" />
+                                                    
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="genderid"><span class="reqspan">*</span>{!v.clGender}</label>
+                                                            <lightning:inputField fieldName="Students_Gender__c" required="true" variant="label-hidden" />
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div> 
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="studentDivisionid"><span class="reqspan">*</span>{!v.clStudentDivision}</label>
+                                                        <lightning:inputField aura:id="assResId" required="true" fieldName="Student_Division_AR__c" variant="label-hidden"/>
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="studentDivisionid"><span class="reqspan">*</span>{!v.clStudentDivision}</label>
+                                                            <lightning:inputField aura:id="assResId" required="true" fieldName="Student_Division__c" variant="label-hidden"/>
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="noofdisabledStudentsid"><span class="reqspan">*</span>{!v.clNoofDisabledStudents}</label>
+                                                    <lightning:inputField fieldName="No_of_Disabled_Students__c" required="true" variant="label-hidden" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="disabledStudentsid">{!v.clEscortforDisabledStudents}</label>
+                                                    <lightning:inputField aura:id="assResId" fieldName="Escort_for_Disbaled_Students__c" variant="label-hidden" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="BusSupervisorAvailableid">{!v.clBusSupervisorAvailable}</label>
+                                                    <lightning:inputField aura:id="busupId" fieldName="Bus_Supervisor_Available__c" variant="label-hidden" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="ccmid"><span class="reqspan">*</span>{!v.clCCMRemarks}</label>
+                                                    <lightning:inputField fieldName="CCM_Remarks__c" required="true"  variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                   
+                                </aura:if>
+                                
+                                <aura:if isTrue="{!v.GrowthRequest}">
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col schoolname'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="aid"><span class="reqspan">*</span>{!v.clSchoolName}</label>
+                                                    <lightning:outputField variant="label-hidden" fieldName="AccountId" value="{!v.accRecord}" />
+                                                    <aura:if isTrue="{!v.clLang =='ar'}">
+                                                        <span>{!v.AccountARName}</span>
+                                                        <aura:set attribute="else">
+                                                            <span>{!v.AccountName}</span>
+                                                        </aura:set>
+                                                    </aura:if> 
+                                                    <!--    <lightning:inputField fieldName="AccountId" required="true" variant="label-hidden"/>
+                                                    <c:casecustomLookup objectAPIName="account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" /> -->
+                                                </div>
+                                            </div>
+                                            <!-- <aura:if isTrue="{!v.schoolnameError}">
+                                                <span style="color:red;"> 
+                                                    Please select School Name
+                                                </span>
+                                            </aura:if> -->
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="aid"><span class="reqspan">*</span>{!v.clCoordinatorName}</label>
+                                                    <!--<lightning:inputField aura:id="assResId" required="true" variant="label-hidden" fieldName="Assigned_Resource__c" /> -->
+                                                    <lightning:inputField aura:id="assResId" required="true" variant="label-hidden" fieldName="Coordinator_Name__c" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid  slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang=='ar'}" >
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="Requestid">{!v.clRequest}</label>
+                                                        <lightning:inputField fieldName="Request_AR__c" variant="label-hidden" />
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="Requestid">{!v.clRequest}</label>
+                                                            <lightning:inputField fieldName="Request__c" variant="label-hidden" />
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                        
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="phoneid">{!v.clPhone}</label>
+                                                    <lightning:inputField fieldName="Phone_Number__c" variant="label-hidden" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang=='ar'}" >
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="cityid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                        <lightning:inputField fieldName="Coordinator_Number__c" required="true" variant="label-hidden"/>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else" >
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="cityid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                            <lightning:inputField fieldName="Coordinator_Number__c" required="true" variant="label-hidden"/>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang=='ar'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="zoneid">{!v.clZoneType}</label>
+                                                        <lightning:inputField aura:id="assResId" fieldName="Zone_Type_AR__c" variant="label-hidden" />
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="zoneid">{!v.clZoneType}</label>
+                                                            <lightning:inputField aura:id="assResId" fieldName="Zone_Type__c" variant="label-hidden" />
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid  slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="nofoSudentsid"><span class="reqspan">*</span>{!v.clNoofStudents}</label>
+                                                    <lightning:inputField fieldName="No_of_Students__c" required="true" variant="label-hidden" value="{!v.noofstudents}"/>
+                                                </div>
+                                            </div>
+                                            <aura:if isTrue="{!v.noofstudentsError}">
+                                                <span style="color:red;"> 
+                                                    No of students should not be less than or equal to 0(zero)
+                                                </span>
+                                            </aura:if>
+                                        </div>
+                                        
+                                         <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <div class="slds-form-element__control">
+                                                    <label for="genderid"><span class="reqspan">*</span>{!v.clGender}</label>
+                                                    <lightning:inputField fieldName="Gender_AR__c" required="true" variant="label-hidden" />
+                                                    
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="genderid"><span class="reqspan">*</span>{!v.clGender}</label>
+                                                            <lightning:inputField fieldName="Students_Gender__c" required="true" variant="label-hidden" />
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class="slds-grid slds-gutters">
+                                        <!-- <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="noofVehiclesid">{!v.clNoofVehicles}</label>
+                                                    <lightning:inputField fieldName="No_of_Vehicle__c" variant="label-hidden" />
+                                                    
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="noofAttendantsid">{!v.clNoofAttendants}</label>
+                                                    <lightning:inputField aura:id="assResId" fieldName="No_of_Attendance__c" variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <!--<div class="slds-col ">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <label for="aid">Student Count</label>
+                                        <lightning:inputField fieldName="No_of_Students__c" />
+                                    </div>
+                                </div>
+                            </div>-->
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <!--label for="aid">Reason</label-->
+                                                    <label for="descriptionid"><span class="reqspan">*</span>{!v.clDescription}</label>
+                                                    <lightning:inputField fieldName="Description" required="true" variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="ccmid"><span class="reqspan">*</span>{!v.clCCMRemarks}</label>
+                                                    <lightning:inputField fieldName="CCM_Remarks__c" required="true"  variant="label-hidden"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                         
+                                
+                         
+                                
+                                
+                                <aura:if isTrue="{!v.RequestaboardingpassforCompanionHandycamptransportation}">
+                                   
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang =='ar'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="Requestid"><span class="reqspan">*</span>{!v.clRequest}</label>
+                                                        <lightning:inputField required="true" fieldName="Request_AR__c" variant="label-hidden"/>
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="Requestid"><span class="reqspan">*</span>{!v.clRequest}</label>
+                                                            <lightning:inputField required="true" fieldName="Request__c" variant="label-hidden"/>
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element ">
+                                                <div class="slds-form-element__control">
+                                                    <div class="{!v.clLang =='ar' ? 'pickupdatails_AR' : 'pickupdatails'}">
+                                                        <lightning:input type="text" autocomplete="off" name="Trip Destination" label="{!v.clTripDestination}" 
+                                                                         aura:id="Trip_Destination__c" 
+                                                                         value="{!v.tripLoc}" id="TripDestination" />
+                                                        <span onclick="{!c.openMapController}">{!v.clGetLocation}</span>
+                                                        <lightning:icon iconName="utility:checkin" alternativeText="{!v.clTripDestination}" title="" 
+                                                                        onclick="{!c.openMapController}" class="{!v.clLang =='ar' ? 'picklocatioblink_AR' : 'picklocatioblink'}"/>  
+                                                        <!--<lightning:inputField aura:id="assResId" required="true" 
+                                                                          fieldName="" />-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col schoolname'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="aid"><span class="reqspan">*</span>{!v.clSchoolName}</label>
+                                                    <lightning:outputField variant="label-hidden" fieldName="AccountId" value="{!v.accRecord}" />
+                                                    <aura:if isTrue="{!v.clLang =='ar'}">
+                                                        <span>{!v.AccountARName}</span>
+                                                        <aura:set attribute="else">
+                                                            <span>{!v.AccountName}</span>
+                                                        </aura:set>
+                                                    </aura:if> 
+                                                    <!--   <lightning:inputField fieldName="AccountId" required="true"  variant="label-hidden"/>
+                                                    <c:casecustomLookup objectAPIName="account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" /> -->
+                                                </div>
+                                            </div>
+                                            <!-- <aura:if isTrue="{!v.schoolnameError}">
+                                                <span style="color:red;"> 
+                                                    Please select School Name
+                                                </span>
+                                            </aura:if> -->
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control">
+                                                    <label for="phoneid"><span class="reqspan">*</span>{!v.clPhone}</label>
+                                                    <lightning:inputField aura:id="assResId" required="true"  fieldName="Phone_Number__c" variant="label-hidden" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="slds-grid slds-gutters">
+                                            <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <!--label for="aid">Coordinator Name</label-->
+                                                        <label for="assignedid"><span class="reqspan">*</span>{!v.clAssignedResources}</label>
+                                                        <!--  <lightning:inputField required="true" fieldName="Assigned_Resource__c" variant="label-hidden" /> -->
+                                                        <lightning:inputField required="true" fieldName="Coordinator_Name__c" variant="label-hidden" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <!--label for="aid">Teachers Count</label-->
+                                                        <label for="noofTeachersid"><span class="reqspan">*</span>{!v.clNoofTeachers}</label>
+                                                        <lightning:inputField required="true" fieldName="No_of_Teachers__c" variant="label-hidden" value="{!v.noofteachers}"/>
+                                                    </div>
+                                                </div>
+                                                <aura:if isTrue="{!v.noofteachersError}">
+                                                    <span style="color:red;"> 
+                                                        No of teachers should not be less than or equal to 0(zero)
+                                                    </span>
+                                                </aura:if>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="{!v.clLang =='ar' ? 'slds-colrtl' : 'slds-col'}">
+                                            <aura:if isTrue="{!v.clLang=='ar'}" >
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+                                                        <label for="cityid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                        <lightning:inputField fieldName="Coordinator_Number__c" required="true" variant="label-hidden"/>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else" >
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label for="cityid"><span class="reqspan">*</span>{!v.clCoordinator}</label>
+                                                            <lightning:inputField fieldName="Coordinator_Number__c" required="true" variant="label-hidden"/>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                                
+                                
+                                <aura:set attribute="else">
+                                    <lightning:spinner alternativeText="Loading" />
+                                </aura:set>
+                            </div>
+                        </aura:if>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!--div class="slds-grid">
+            <div class="slds-col">
+                <div class="slds-form-element slds-is-editing">
+                    <div class="slds-form-element__control" style="text-align:center;">
+                        <lightning:button class="slds-m-top_small btbupdate" variant="brand" type="submit" name="Save" label="Save"/>
+                    </div>
+                </div>
+            </div>
+        </div-->   
+                        <div aura:id="uploadImage" id="uploadImage" class="slds-hide" style="text-align: center;">
+                            <p class="uploadimg">{!v.clAttachments}</p>
+                            <lightning:fileUpload label=""
+                                                  name="fileUploader"
+                                                  multiple="true"
+                                                  disabled="false"                                              
+                                                  recordId="{!v.newCaseId}"
+                                                  onuploadfinished="{!c.handleUploadFinished}" class="uploadbtn"/>
+                            <lightning:button aura:id="Skip" class="slds-m-top_small btbupdate fullwidth" variant="brand" name="Skip" label="{!v.clSkip}" onclick="{!c.skipModel}"/>
+                            
+                        </div> 
+                        <aura:if  isTrue="{!v.openMap}" >  
+                            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" 
+                                     aria-modal="true" aria-describedby="modal-content-id-1" 
+                                     class="slds-modal slds-fade-in-open slds-modal_small">
+                                <div class="slds-modal__container" id="location_search">
+                                    <div class="slds-modal__content slds-p-around--medium" style="height:410px;padding:1rem;">
+                                        <div class="searchlocationdiv"> 
+                                            <lightning:input type="text" autocomplete="off" placeholder="{!v.clSearchLocation}" 
+                                                             label="" 
+                                                             aura:id="searchText" required="false" onkeyup="{!c.getSearchResultbyEnter}"
+                                                             value="{!v.searchText}" id="searchText" />
+                                            <p aura:id="invalidLoc" style="color:rgb(194, 57, 52);padding-top:5px;" class="slds-hide">{!v.clCouldnotfindthelocation}</p>
+                                            <lightning:button variant="brand"  label="{!v.clSearch}" onclick="{!c.getSearchResult}" class="btn_table" />
+                                        </div> 
+                                        <aura:if isTrue="{! v.mapLoaded }">
+                                            <iframe aura:id="vfFrame" src="{!v.vfUrl}" 
+                                                    width="100%" frameBorder="0" height="330px" />
+                                            <aura:set attribute="else">
+                                                <lightning:spinner alternativeText="Loading"/>
+                                            </aura:set>
+                                        </aura:if>
+                                    </div>
+                                    <footer class="slds-modal__footer">
+                                        <lightning:button variant="brand" 
+                                                          label="{!v.clSelectLocation}"
+                                                          title="{!v.clSelectLocation}"
+                                                          onclick="{!c.getLocationDetails}" class="btnsave"/>
+                                        <lightning:button variant="brand" 
+                                                          label="{!v.clClose}"
+                                                          title="{!v.clEnterAddressManually}"
+                                                          onclick="{!c.closeMapModel}" class="btnsave"/>
+                                        
+                                    </footer>
+                                </div>
+                            </section>
+                            <!--<div class="slds-backdrop slds-backdrop_open"></div> -->
+                        </aura:if>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning:button aura:id="submit" class="slds-m-top_small btbupdate fullwidth" variant="brand" type="submit" name="Save" label="{!v.clSave}"/>
+                        
+                    </footer>  
+                </lightning:recordEditForm>
+            </aura:if>
+        </div>
+    </section>
+</aura:component>

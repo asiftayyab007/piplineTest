@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETI_Not_Cancelled_Booking_Count__c</fullName>
+    <description>This Field using to refund status to &quot;Refund Requested&quot;</description>
+    <externalId>false</externalId>
+    <label>Not Cancelled Booking Count</label>
+    <summaryFilterItems>
+        <field>ETI_Booking__c.Booking_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled</value>
+    </summaryFilterItems>
+    <summaryForeignKey>ETI_Booking__c.Service_Request__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

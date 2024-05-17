@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_VehicleorResource_Mandatory</fullName>
+    <active>true</active>
+    <description>26/9/22: Added - Requirement Analysis in the condition</description>
+    <errorConditionFormula>AND(
+
+NOT(ISPICKVAL( ETSALES_GL_Services__c ,&#39;Additional Services&#39;)),
+
+OR(ISPICKVAL(StageName,&quot;Decision&quot;),
+ISPICKVAL(StageName,&quot;Pricing Request&quot;),
+ISPICKVAL(StageName,&quot;Proposal&quot;),
+ISPICKVAL(StageName,&quot;Negotiation&quot;),
+ISPICKVAL(StageName,&quot;Legal Contract&quot;),
+ISPICKVAL(StageName,&quot;Sales Agreement&quot;),
+ISPICKVAL(StageName,&quot;Closed Won&quot;),
+ISPICKVAL(StageName ,&quot;Sales Agreement&quot;)
+),
+
+OR(
+$RecordType.DeveloperName = &quot;ETSALES_Leasing&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Manpower&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Transportation&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Logistics&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Rental_B2B&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Maintainance&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Chauffeur_and_Limousine_B2B&quot;
+),
+AND(
+ISBLANK(No_of_Vehicles__c),
+ISBLANK(No_of_Used_Vehicles__c),
+ISBLANK(No_of_Resources__c)
+)
+)</errorConditionFormula>
+    <errorMessage>No. of New Vehicle OR No. of Used Vehicle is mandatory OR No. of Resources is mandatory</errorMessage>
+</ValidationRule>

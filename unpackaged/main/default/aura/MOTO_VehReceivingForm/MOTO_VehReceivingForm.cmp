@@ -1,0 +1,121 @@
+<aura:component controller = "MOTO_VehInspectionCtrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <!-- buttons and pages-->
+    <aura:attribute name="HomePage" type="Boolean"  />
+    <aura:attribute name="vehSearchPage" type="Boolean" />
+    <aura:attribute name="vehInspectionForm" type="Boolean" />
+    <aura:attribute name="showPage3" type="Boolean" />
+    <aura:attribute name="liked" default="" type="Boolean" />
+    <aura:attribute name="selectedOpp" type="Object"/>
+    <aura:attribute name="SelectedType" type="String" />
+    <aura:attribute name="MobileNumber" type="String"/>
+
+    <aura:attribute name="VehReceivingRec" type="Vehicle_Receiving_Info__c[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!--displying form-->
+    <p>Opportunity Name: {!v.selectedOpp.ETSALES_Opportunity_Number__c}</p>
+    <p>Opportunity Name: {!v.selectedOpp.Name}</p>
+    <p>Opportunity Name: {!v.selectedOpp.StageName}</p>
+    
+    
+    <div>
+        <label>Vehcile Regirstation</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Vehicle_registration__c" selected="{!v.VehReceivingRec[0].Vehicle_registration__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Vehicle_registration__c" selected="{!!v.VehReceivingRec[0].Vehicle_registration__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Service Book</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Service_Book__c" selected="{!v.VehReceivingRec[0].Service_Book__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Service_Book__c" selected="{!!v.VehReceivingRec[0].Service_Book__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>A/C Functionality</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="A_C_Functionality__c" selected="{!v.VehReceivingRec[0].A_C_Functionality__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="A_C_Functionality__c" selected="{!!v.VehReceivingRec[0].A_C_Functionality__c}"  onclick="{! c.handleNoClick }" />
+    </div>    
+    <div>
+        <label>Dashboard</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Dashboard__c" selected="{!v.VehReceivingRec[0].Dashboard__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Dashboard__c" selected="{!!v.VehReceivingRec[0].Dashboard__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Fire Extinguisher</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Fire_Extinguisher__c" selected="{!v.VehReceivingRec[0].Fire_Extinguisher__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Fire_Extinguisher__c" selected="{!!v.VehReceivingRec[0].Fire_Extinguisher__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Floor Mats</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Floor_Mats__c" selected="{!v.VehReceivingRec[0].Floor_Mats__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Floor_Mats__c" selected="{!!v.VehReceivingRec[0].Floor_Mats__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Infotainment System Screen</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Infotainment_System_Screen__c" selected="{!v.VehReceivingRec[0].Infotainment_System_Screen__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Infotainment_System_Screen__c" selected="{!!v.VehReceivingRec[0].Infotainment_System_Screen__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Jack</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Jack__c" selected="{!v.VehReceivingRec[0].Jack__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Jack__c" selected="{!!v.VehReceivingRec[0].Jack__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Key</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Key__c" selected="{!v.VehReceivingRec[0].Key__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Key__c" selected="{!!v.VehReceivingRec[0].Key__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Mirrors</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Mirrors__c" selected="{!v.VehReceivingRec[0].Mirrors__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Mirrors__c" selected="{!!v.VehReceivingRec[0].Mirrors__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Radio Knobs Panel</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Radio_Knobs_Panel__c" selected="{!v.VehReceivingRec[0].Radio_Knobs_Panel__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Radio_Knobs_Panel__c" selected="{!!v.VehReceivingRec[0].Radio_Knobs_Panel__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Remote</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Remote__c" selected="{!v.VehReceivingRec[0].Remote__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Remote__c" selected="{!!v.VehReceivingRec[0].Remote__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Seat belts</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Seat_belts__c" selected="{!v.VehReceivingRec[0].Seat_belts__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Seat_belts__c" selected="{!!v.VehReceivingRec[0].Seat_belts__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Seats</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Seats__c" selected="{!v.VehReceivingRec[0].Seats__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Seats__c" selected="{!!v.VehReceivingRec[0].Seats__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Spare wheel</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Spare_wheel__c" selected="{!v.VehReceivingRec[0].Spare_wheel__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Spare_wheel__c" selected="{!!v.VehReceivingRec[0].Spare_wheel__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Tools</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Tools__c" selected="{!v.VehReceivingRec[0].Tools__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Tools__c" selected="{!!v.VehReceivingRec[0].Tools__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Warning Triangle</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Warning_Triangle__c" selected="{!v.VehReceivingRec[0].Warning_Triangle__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Warning_Triangle__c" selected="{!!v.VehReceivingRec[0].Warning_Triangle__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+    <div>
+        <label>Windows</label>
+        <lightning:buttonIconStateful iconName="utility:check" name="Windows__c" selected="{!v.VehReceivingRec[0].Windows__c}" onclick="{! c.handleYesClick }"/>
+        <lightning:buttonIconStateful iconName="utility:close" name="Windows__c" selected="{!!v.VehReceivingRec[0].Windows__c}"  onclick="{! c.handleNoClick }" />
+    </div>
+ 
+    
+    <div class="slds-p-around_xx-small">
+        <lightning:button  class="slds-float_left" variant="brand" 
+                          label="Previous"
+                          title="Previous"
+                          onclick="{!c.previousButton}" />
+        <lightning:button  class="slds-float_left" variant="brand"   label="Save"  onclick="{!c.saveHandler}" />
+    </div>
+    
+</aura:component>

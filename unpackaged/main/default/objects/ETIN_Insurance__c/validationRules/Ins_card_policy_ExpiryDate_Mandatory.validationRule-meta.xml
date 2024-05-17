@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ins_card_policy_ExpiryDate_Mandatory</fullName>
+    <active>false</active>
+    <description>Ins Card, Policy number and Expiry date Mandatory</description>
+    <errorConditionFormula>(ISBLANK(Insurance_Policy_Number__c)|| ISBLANK( Card_Number__c ) || ISBLANK( Expiry_Date__c )) &amp;&amp;  ISPICKVAL(Insurance_Current_Status__c , &#39;Active&#39;)</errorConditionFormula>
+    <errorDisplayField>Insurance_Current_Status__c</errorDisplayField>
+    <errorMessage>Insurance Card Number, Policy Number and expiry date are mandatory.</errorMessage>
+</ValidationRule>

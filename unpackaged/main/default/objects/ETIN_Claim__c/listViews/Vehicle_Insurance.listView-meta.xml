@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Insurance</fullName>
+    <columns>NAME</columns>
+    <columns>ETIN_Insurance_Partner__c</columns>
+    <columns>Claim_for__c</columns>
+    <columns>ETIN_Claim_Status__c</columns>
+    <columns>Vehicle_Master__c</columns>
+    <columns>Claim_Amount__c</columns>
+    <columns>Accident_By__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>ETIN_Claim__c.Vehicle_Insurance</value>
+    </filters>
+    <label>Vehicle Insurance</label>
+    <sharedTo>
+        <role>Vehicle_Workshop</role>
+    </sharedTo>
+</ListView>

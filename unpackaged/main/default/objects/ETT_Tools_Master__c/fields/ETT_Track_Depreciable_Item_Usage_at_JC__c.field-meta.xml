@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Track_Depreciable_Item_Usage_at_JC__c</fullName>
+    <externalId>false</externalId>
+    <label>Track Depreciable Item Usage at JC?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ETT_Usage_type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Track</fullName>
+                <default>false</default>
+                <label>Track</label>
+            </value>
+            <value>
+                <fullName>Ignore</fullName>
+                <default>false</default>
+                <label>Ignore</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Depreciable</controllingFieldValue>
+            <valueName>Track</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Depreciable</controllingFieldValue>
+            <valueName>Ignore</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Portal_Tabs__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Portal Tabs</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fleet Service Request</fullName>
+                <default>false</default>
+                <label>Fleet Service Request</label>
+            </value>
+            <value>
+                <fullName>Traffic Fines</fullName>
+                <default>false</default>
+                <label>Traffic Fines</label>
+            </value>
+            <value>
+                <fullName>Accident History</fullName>
+                <default>false</default>
+                <label>Accident History</label>
+            </value>
+            <value>
+                <fullName>Transportation Agreement</fullName>
+                <default>false</default>
+                <label>Transportation Agreement</label>
+            </value>
+            <value>
+                <fullName>Maintenance Agreement</fullName>
+                <default>false</default>
+                <label>Maintenance Agreement</label>
+            </value>
+            <value>
+                <fullName>Variation Order</fullName>
+                <default>false</default>
+                <label>Variation Order</label>
+            </value>
+            <value>
+                <fullName>HSE Info</fullName>
+                <default>false</default>
+                <label>HSE Info</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>Custom Dashboard</fullName>
+                <default>false</default>
+                <label>Custom Dashboard</label>
+            </value>
+            <value>
+                <fullName>Visits</fullName>
+                <default>false</default>
+                <label>Visits</label>
+            </value>
+            <value>
+                <fullName>Standard Dashboard</fullName>
+                <default>false</default>
+                <label>Standard Dashboard</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Event</fullName>
+        <default>false</default>
+        <label>Customer Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employee Referral</fullName>
+        <default>false</default>
+        <label>Employee Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AdWords</fullName>
+        <default>false</default>
+        <label>AdWords</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchased List</fullName>
+        <default>false</default>
+        <label>Purchased List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Show</fullName>
+        <default>false</default>
+        <label>Trade Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chatter Post</fullName>
+        <default>false</default>
+        <label>Chatter Post</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reporting</fullName>
+        <default>false</default>
+        <label>Reporting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media</fullName>
+        <default>false</default>
+        <label>Social Media</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct Lead</fullName>
+        <default>false</default>
+        <label>Direct Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer visit</fullName>
+        <default>false</default>
+        <label>Customer visit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Walk-In</fullName>
+        <default>false</default>
+        <label>Walk-In</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Center</fullName>
+        <default>false</default>
+        <label>Call Center</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WhatsApp</fullName>
+        <default>false</default>
+        <label>WhatsApp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Facebook</fullName>
+        <default>false</default>
+        <label>Facebook</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Twitter</fullName>
+        <default>false</default>
+        <label>Twitter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Instagram</fullName>
+        <default>false</default>
+        <label>Instagram</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Linkedin</fullName>
+        <default>false</default>
+        <label>Linkedin</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pinterest</fullName>
+        <default>false</default>
+        <label>Pinterest</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dubizzle</fullName>
+        <default>false</default>
+        <label>Dubizzle</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral</fullName>
+        <default>false</default>
+        <label>Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Google</fullName>
+        <default>false</default>
+        <label>Google</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Staff Offer</fullName>
+        <default>false</default>
+        <label>Staff Offer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound Call</fullName>
+        <default>false</default>
+        <label>Inbound Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound Call</fullName>
+        <default>false</default>
+        <label>Outbound Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Yahoo</fullName>
+        <default>false</default>
+        <label>Yahoo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Taboola</fullName>
+        <default>false</default>
+        <label>Taboola</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbrain</fullName>
+        <default>false</default>
+        <label>Outbrain</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Speakol</fullName>
+        <default>false</default>
+        <label>Speakol</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dubicars</fullName>
+        <default>false</default>
+        <label>Dubicars</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fazaa</fullName>
+        <default>false</default>
+        <label>Fazaa</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Esaad</fullName>
+        <default>false</default>
+        <label>Esaad</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outdoor Ads</fullName>
+        <default>false</default>
+        <label>Outdoor Ads</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SMS</fullName>
+        <default>false</default>
+        <label>SMS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contracted Insurance</fullName>
+        <default>false</default>
+        <label>Contracted Insurance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bing</fullName>
+        <default>false</default>
+        <label>Bing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Snapchat</fullName>
+        <default>false</default>
+        <label>Snapchat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TikTok</fullName>
+        <default>false</default>
+        <label>TikTok</label>
+    </standardValue>
+    <standardValue>
+        <fullName>YallaMotors</fullName>
+        <default>false</default>
+        <label>YallaMotors</label>
+    </standardValue>
+</StandardValueSet>

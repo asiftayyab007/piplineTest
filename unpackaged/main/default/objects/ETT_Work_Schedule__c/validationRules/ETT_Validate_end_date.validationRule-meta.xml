@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Validate_end_date</fullName>
+    <active>true</active>
+    <errorConditionFormula>ETT_End_time__c&lt; NOW()</errorConditionFormula>
+    <errorDisplayField>ETT_End_time__c</errorDisplayField>
+    <errorMessage>End time should be a future time.</errorMessage>
+</ValidationRule>

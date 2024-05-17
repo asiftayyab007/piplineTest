@@ -1,0 +1,32 @@
+<aura:component  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="opportunities" type="Opportunity[]" />
+    <aura:attribute name="selectedOpportunities" type="Opportunity[]" />
+    <aura:attribute name="Showpagedetails" type="Boolean" />
+    <aura:attribute name="objectName" type="string" default="Opportunity"  />
+    <aura:attribute name="fieldName" type="string" default="Name" />
+
+    
+    
+     
+        <!-- {!v.recordList} -->
+        {!v.recordid}
+          <div  class="slds-grid slds-wrap">
+            <aura:iteration items="{!v.opportunities}" var="opp">
+                <div class="slds-col slds-size_1-of-4 slds-p-around_small">
+                <lightning:card  title="{!opp.Name}" footer="{!opp.ETSALES_Opportunity_Number__c}"
+                                iconName="custom:custom7">
+               
+                    <div class="slds-p-left_medium">
+                        <lightning:input type="checkbox" aura:id="checkbox" value="{!opp.Id}" onchange="{!c.handleSelect}" />
+                    </div>
+                    
+                
+                    </lightning:card>
+                     </div>
+            </aura:iteration>
+        
+
+    </div>
+    
+</aura:component>

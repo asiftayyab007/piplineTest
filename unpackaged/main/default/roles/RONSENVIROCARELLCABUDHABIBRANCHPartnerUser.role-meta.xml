@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>RONS ENVIRO CARE LLC ABU DHABI BRANCH Partner User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>RONS ENVIRO CARE LLC ABU DHABI BRANCH Partner User</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>BC_AUH_Inspection_Controller</parentRole>
+</Role>

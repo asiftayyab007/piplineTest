@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurance_Age_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>ETIN_Age__c &gt;= 18 &amp;&amp;  RecordType.DeveloperName ==&#39;ETIN_Employee_Family&#39;</errorConditionFormula>
+    <errorMessage>You cannot add child age over 18 years</errorMessage>
+</ValidationRule>

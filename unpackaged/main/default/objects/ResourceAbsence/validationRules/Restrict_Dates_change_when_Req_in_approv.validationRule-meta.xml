@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Dates_change_when_Req_in_approv</fullName>
+    <active>true</active>
+    <description>Restrict Changing of Absence Request Start Date and End Dates when Request under Approval.</description>
+    <errorConditionFormula>(ISCHANGED( Start ) ||  ISCHANGED( End ) ) &amp;&amp; CONTAINS($Profile.Name, &#39;SPEA&#39;)</errorConditionFormula>
+    <errorMessage>Absence Request Dates cannot be changed once it&#39;s Submitted. For any Modification, Please Delete the Request and Create a New one.</errorMessage>
+</ValidationRule>

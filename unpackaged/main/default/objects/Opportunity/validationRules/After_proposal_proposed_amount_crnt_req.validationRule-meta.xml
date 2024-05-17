@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>After_proposal_proposed_amount_crnt_req</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+$RecordType.DeveloperName = &quot;ETSALES_Leasing&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Manpower&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Transportation&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Logistics&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Rental_B2B&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Maintainance&quot;,
+$RecordType.DeveloperName = &quot;ETSALES_Chauffeur_and_Limousine_B2B&quot;
+),
+OR(
+ISPICKVAL( StageName , &#39;Negotiation&#39;),
+ISPICKVAL( StageName , &#39;Legal Contract&#39;),
+ISPICKVAL( StageName , &#39;Sales Agreement&#39;),
+ISPICKVAL( StageName , &#39;Closed Won&#39;)
+
+),
+
+ISBLANK( Proposed_Amount__c )
+)</errorConditionFormula>
+    <errorMessage>Price Information: Proposed Amount (Current Contract) is mandatory</errorMessage>
+</ValidationRule>

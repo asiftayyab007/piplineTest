@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Vehicle_Type_Master__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Vehicle Type Master del</label>
+    <referenceTo>ET_Vehicle_Type_Master__c</referenceTo>
+    <relationshipLabel>Vehicle Depreciation Masters</relationshipLabel>
+    <relationshipName>Vehicle_Depreciation_Masters</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

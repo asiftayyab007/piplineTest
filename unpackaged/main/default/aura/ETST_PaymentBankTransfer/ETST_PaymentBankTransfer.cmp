@@ -1,0 +1,127 @@
+<aura:component extends="c:ETST_BilingualCommunity" implements="force:hasRecordId,forceCommunity:availableForAllPageTypes"  access="global">
+    <aura:attribute name="showForm" type="boolean" />
+    <aura:attribute name="showSpinner" type="Boolean" default="true" />
+    <aura:attribute name="transportRequest" type="ET_Service_Request__c" />
+    <aura:attribute name="fileType" type="String" />
+    <aura:attribute name="fileContent" type="String" />
+    <aura:attribute name="fileName" type="String" default="" />
+    <aura:attribute name="disabled" type="boolean" />
+    <c:ETST_UtilityMethods aura:id="ETST_UtilityMethods"/>
+    <aura:attribute name="chequeOptions" type="String[]" default="Direct,Courier"/>
+    <aura:attribute name="selected" type="string" />
+    <aura:attribute name="paymentType" type="String" />
+    <aura:attribute name="courierName" type="string" />
+    <aura:attribute name="courierRefNumber" type="string" />
+    <aura:attribute name="chequeNumber" type="string" />
+    <aura:attribute name="bankName" type="string" />
+    <aura:attribute name="reciptNumber" type="string" />
+    <aura:attribute name="transactionDate" type="date" />
+    <aura:attribute name="amount" type="decimal" />
+    <aura:attribute name="iBAN" type="string" />
+    <aura:attribute name="bankAccountNumber" type="string" />
+    <aura:attribute name="addresstoCourier" type="string" />
+    <aura:attribute name="courierAddress" type="String"/> 
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner />
+    </aura:if> 
+    
+    <lightning:recordEditForm
+                              aura:id="BankTransferForm"
+                              onload="{!c.onLoad}"
+                              onsubmit="{!c.onSubmit}"
+                              onsuccess="{!c.onSuccess}"
+                              onerror="{!c.onError}"
+                              objectApiName="Invoice__c" >
+        <lightning:layoutItem padding="around-small" flexibility="auto" class="paymenttransfer">
+            <!--<img class="bgimgcont" src="{!$Resource.ETST_AddStudentImage}" />-->
+            <div class="onpremisepay1 animated slideInLeft">
+                <div >
+                    <aura:if isTrue="{!v.paymentType == '3'}"> 
+                        <h1 class="custom_label">{!v.clBankTransfer}</h1>
+                        <br></br>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!v.paymentType == '4'}"> 
+                        <h1 class="custom_label">{!v.clChequeDetails}</h1> 
+                        <br></br>
+                    </aura:if>
+                    
+                </div> 
+                <lightning:inputField fieldName="Service_Request__c" style="display:none;" value="{!v.transportRequest.Id}" />
+                <lightning:inputField fieldName="Customer__c" style="display:none;" value="{!v.transportRequest.ET_Account__c}" /> 
+                <!--  <lightning:inputField fieldName="ETST_Coordinator__c" style="display:none;" value="{!v.transportRequest.ETST_Coordinator__c}" /> -->
+                <lightning:messages aura:id="displayErrorMessage" />
+                <div class="sub-entry" > 
+                    <aura:if isTrue="{!v.paymentType == '4'}" >                            
+                        <lightning:select aura:id="formFieldToValidate" name="selected" value="{!v.selected}" label="{!v.clSubmittedBy}" required="true" onchange="{!c.onSelectSubmittedBy}">
+                            <aura:iteration items="{!v.chequeOptions}" var="opt">
+                                <option text="{!opt}" id="{!opt}"></option>
+                            </aura:iteration>
+                        </lightning:select>
+                        <aura:if isTrue="{!v.selected == 'Courier'}" >
+                            <lightning:input aura:id="formFieldToValidate" required="true" name="address" label="{!v.clAddresstoCourier}" value="{!v.addresstoCourier}" disabled="true" />
+                            <lightning:inputField aura:id="formFieldToValidate" required="true" fieldName="ETST_Courier_Name__c" variant="label-stacked"/>
+                            <lightning:inputField aura:id="formFieldToValidate" required="true" fieldName="ETST_Courier__c" variant="label-stacked"/>
+                        </aura:if> 
+                        <lightning:inputField aura:id="formFieldToValidate" required="true" fieldName="ETST_Cheque__c" variant="label-stacked"/>
+                        <lightning:inputField aura:id="formFieldToValidate" required="true" fieldName="Total_Inv_Amount__c" variant="label-stacked"/>
+                        <lightning:inputField aura:id="formFieldToValidate" required="true" fieldName="Trx_Date__c" variant="label-stacked"/>
+                        <aura:set attribute="else">
+                            <div  aura:id="DivID1" class="slds-m-around--small">  
+                                <lightning:input aura:id="formFieldToValidate" required="true" name="BankName" label="{!v.clETBankName}" value="{!v.bankName}" disabled="true" />
+                                <lightning:input aura:id="formFieldToValidate" required="true" name="AccountNumber" label="{!v.clETBankACNumber}" value="{!v.bankAccountNumber}" disabled="true" />
+                                <lightning:input aura:id="formFieldToValidate" required="true" name="IBAN" label="{!v.clETBankIBAN}" value="{!v.iBAN}" disabled="true" />
+                                <lightning:input aura:id="formFieldToValidate" required="true" name="invoiceAmount" label="{!v.clTotalInvAmount}" value="{!v.transportRequest.ETST_Fare_Charges__c}" disabled="true" />
+                                <!--  <div class="slds-form-element"> -->
+                                <label class="slds-checkbox_toggle slds-grid">
+                                    <span class="slds-form-element__label slds-m-bottom_none">{!v.clHaveyoutransferedamount}</span>
+                                    <ui:inputCheckbox change="{!c.selectChange}"/>
+                                    <span id="toggle-desc" class="slds-checkbox_faux_container" aria-live="assertive">
+                                        <span class="slds-checkbox_faux"></span>
+                                        <span class="slds-checkbox_on">{!v.clShow}</span>
+                                        <span class="slds-checkbox_off">{!v.clHide}</span>
+                                    </span>
+                                </label>
+                                <!-- </div> -->
+                            </div>
+                            <div aura:id="DivID2" class="slds-hide">
+                                <!-- <lightning:input aura:id="formFieldToValidate" required="true" name="BankName" label="ET Bank Name" value="{!v.bankName}" disabled="true" />
+                                <lightning:input aura:id="formFieldToValidate" required="true" name="AccountNumber" label="ET Bank A/C Number" value="{!v.bankAccountNumber}" disabled="true" />
+                                <lightning:input aura:id="formFieldToValidate" required="true" name="IBAN" label="ET Bank IBAN #" value="{!v.iBAN}" disabled="true" />
+                                <lightning:input aura:id="formFieldToValidate" required="true" name="invoiceAmount" label="Total Inv Amount" value="{!v.transportRequest.ETST_Fare_Charges__c}" disabled="true" /> -->
+                                <!-- <lightning:inputField aura:id="formFieldToValidate" required="true" fieldName="ETST_Bank_Name__c" variant="label-stacked"/> -->
+                                <!-- <lightning:inputField aura:id="formFieldToValidate" required="true" fieldName="Total_Inv_Amount__c" variant="label-stacked"/> -->
+                                <lightning:inputField aura:id="formFieldToValidate" required="true" fieldName="Trx_Date__c" variant="label-stacked" />
+                                <lightning:inputField aura:id="formFieldToValidate" required="true" fieldName="Trx_Number__c" variant="label-stacked" />
+                            </div>  
+                            <div style="text-align: right;" aura:id="DivID5" class="slds-show ">
+                                <lightning:button variant="brand" name="Back" label="{!v.clBack}" onclick="{!c.cancelSave}" class="btn_back"/>
+                            </div>
+                        </aura:set>
+                        <div class="sub-entry slds-show" aura:id="DivID6" style="margin-bottom: 20px;">
+                            <lightning:input aura:id="formFieldToValidate" required="true" accept='.pdf, .json, .pmg, .jpg, .jpeg' onchange="{!c.handleFilesChange}" type="file" name="file" label="{!v.clFileUpload}" multiple="false"/>
+                            <div class="slds-text-body_small slds-text-color_error">{!v.fileName} </div>
+                        </div> 
+                        <div style="text-align: right;" aura:id="DivID7" class="slds-show ">
+                            <lightning:button variant="brand" name="Back" label="{!v.clBack}" onclick="{!c.cancelSave}" class="btn_back"/>
+                            <lightning:button disabled="{!v.disabled}" variant="brand" name="save" label="{!v.clSave}" type="submit" value="{!c.onSubmit}" class="btn_table" />
+                        </div>
+                    </aura:if>
+                </div> 
+                <div class="sub-entry slds-hide" aura:id="DivID3" style="margin-bottom: 20px;">
+                    <lightning:input aura:id="formFieldToValidate" required="true" accept='.pdf, .json, .pmg, .jpg, .jpeg' onchange="{!c.handleFilesChange}" type="file" name="file" label="{!v.clFileUpload}" multiple="false"/>
+                    <div class="slds-text-body_small slds-text-color_error">{!v.fileName} </div>
+                </div> 
+                <!-- <div class="sub-entry slds-hide" aura:id="DivID9" style="margin-bottom: 20px;">
+                    <c:ETST_TermsandConditions aura:Id="termsandconditions" />
+                </div> -->
+                <div>
+                    <div style="text-align: right;" aura:id="DivID4" class="slds-hide">
+                        <lightning:button variant="brand" name="Back" label="{!v.clBack}" onclick="{!c.cancelSave}" class="btn_back"/>
+                        <lightning:button disabled="{!v.disabled}" variant="brand" name="save" label="{!v.clSave}" type="submit" value="{!c.onSubmit}" class="btn_table" />
+                    </div>
+                </div>
+            </div>
+        </lightning:layoutItem>                
+    </lightning:recordEditForm> 
+</aura:component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>ETT_Delivery_Date_Time__c</columns>
+    <columns>ETT_Brand_Master__c</columns>
+    <columns>ETT_Tyre_Size__c</columns>
+    <columns>ETT_Pattern_Master__c</columns>
+    <columns>ETT_Quantity__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>ETT_Job_Type__c</columns>
+    <columns>ETT_Receiver_Name__c</columns>
+    <columns>ETT_Delivery_Note__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

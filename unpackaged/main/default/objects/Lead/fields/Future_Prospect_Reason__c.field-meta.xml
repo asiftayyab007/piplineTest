@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Future_Prospect_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Future Prospect Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Interested Now</fullName>
+                <default>false</default>
+                <label>Not Interested Now</label>
+            </value>
+            <value>
+                <fullName>Vehicle Not Available</fullName>
+                <default>false</default>
+                <label>Vehicle Not Available</label>
+            </value>
+            <value>
+                <fullName>Not Premium Vehicle</fullName>
+                <default>false</default>
+                <label>Not Premium Vehicle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

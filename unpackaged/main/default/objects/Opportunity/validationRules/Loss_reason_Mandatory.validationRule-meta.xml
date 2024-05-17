@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_reason_Mandatory</fullName>
+    <active>true</active>
+    <description>For Closed won Opportunities Loss Reason is Mandatory.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(StageName, &#39;Closed Lost&#39;),
+ISBLANK(TEXT(ETSALES_Loss_Reason__c))
+)</errorConditionFormula>
+    <errorMessage>Loss Reason is Mandatory for Closed Lost Opportunities.</errorMessage>
+</ValidationRule>

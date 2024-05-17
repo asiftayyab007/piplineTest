@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MOTO_Work_Order_Number_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(Work_Order_Number__c )),
+NOT(REGEX(Work_Order_Number__c , &quot;^[0-9.]+$&quot;)))</errorConditionFormula>
+    <errorDisplayField>Work_Order_Number__c</errorDisplayField>
+    <errorMessage>Please enter only numbers</errorMessage>
+</ValidationRule>

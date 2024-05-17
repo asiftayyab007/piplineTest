@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allocated_Lane__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Allocated Lane</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>ETI_Lane_Details__c.ET_Location__r.Id</field>
+            <operation>equals</operation>
+            <valueField>$Source.ET_Location__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>ETI_Lane_Details__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Certificate_Lane</value>
+        </filterItems>
+        <filterItems>
+            <field>ETI_Lane_Details__c.Lane_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ETI_Lane_Details__c</referenceTo>
+    <relationshipLabel>Bookings</relationshipLabel>
+    <relationshipName>Bookings</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

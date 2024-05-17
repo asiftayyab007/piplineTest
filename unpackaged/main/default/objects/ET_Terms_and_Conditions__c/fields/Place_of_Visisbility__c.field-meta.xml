@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Place_of_Visisbility__c</fullName>
+    <externalId>false</externalId>
+    <label>Place of Visisbility</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vehicle Registration</fullName>
+                <default>false</default>
+                <label>Vehicle Registration</label>
+            </value>
+            <value>
+                <fullName>Vehicle Unregistered</fullName>
+                <default>false</default>
+                <label>Vehicle Unregistered</label>
+            </value>
+            <value>
+                <fullName>Payment Page</fullName>
+                <default>false</default>
+                <label>Payment Page</label>
+            </value>
+            <value>
+                <fullName>School Payment</fullName>
+                <default>false</default>
+                <label>School Payment</label>
+            </value>
+            <value>
+                <fullName>Add Child</fullName>
+                <default>false</default>
+                <label>Add Child</label>
+            </value>
+            <value>
+                <fullName>Book Service</fullName>
+                <default>false</default>
+                <label>Book Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bus</fullName>
+        <default>false</default>
+        <label>Bus</label>
+    </customValue>
+    <customValue>
+        <fullName>Club Car</fullName>
+        <default>false</default>
+        <label>Club Car</label>
+    </customValue>
+    <customValue>
+        <fullName>Cooling Unit</fullName>
+        <default>false</default>
+        <label>Cooling Unit</label>
+    </customValue>
+    <customValue>
+        <fullName>Equipment</fullName>
+        <default>false</default>
+        <label>Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Four Wheel</fullName>
+        <default>false</default>
+        <label>Four Wheel</label>
+    </customValue>
+    <customValue>
+        <fullName>Motorcycle</fullName>
+        <default>false</default>
+        <label>Motorcycle</label>
+    </customValue>
+    <customValue>
+        <fullName>Pick up</fullName>
+        <default>false</default>
+        <label>Pick up</label>
+    </customValue>
+    <customValue>
+        <fullName>Sedan</fullName>
+        <default>false</default>
+        <label>Sedan</label>
+    </customValue>
+    <customValue>
+        <fullName>SUV</fullName>
+        <default>false</default>
+        <label>SUV</label>
+    </customValue>
+    <customValue>
+        <fullName>Tanker</fullName>
+        <default>false</default>
+        <label>Tanker</label>
+    </customValue>
+    <customValue>
+        <fullName>Taxi Four Wheel</fullName>
+        <default>false</default>
+        <label>Taxi Four Wheel</label>
+    </customValue>
+    <customValue>
+        <fullName>Taxi Sedan</fullName>
+        <default>false</default>
+        <label>Taxi Sedan</label>
+    </customValue>
+    <customValue>
+        <fullName>Taxi SUV</fullName>
+        <default>false</default>
+        <label>Taxi SUV</label>
+    </customValue>
+    <customValue>
+        <fullName>Trailer</fullName>
+        <default>false</default>
+        <label>Trailer</label>
+    </customValue>
+    <customValue>
+        <fullName>Truck</fullName>
+        <default>false</default>
+        <label>Truck</label>
+    </customValue>
+    <customValue>
+        <fullName>Van</fullName>
+        <default>false</default>
+        <label>Van</label>
+    </customValue>
+    <customValue>
+        <fullName>All</fullName>
+        <default>false</default>
+        <label>All</label>
+    </customValue>
+    <customValue>
+        <fullName>School Bus</fullName>
+        <default>false</default>
+        <label>School Bus</label>
+    </customValue>
+    <customValue>
+        <fullName>Ambulance Service</fullName>
+        <default>false</default>
+        <label>Ambulance Service</label>
+    </customValue>
+    <masterLabel>Vehicle Type Value Set</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

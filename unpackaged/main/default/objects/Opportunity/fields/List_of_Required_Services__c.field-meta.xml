@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_of_Required_Services__c</fullName>
+    <externalId>false</externalId>
+    <label>List of Required Services</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>A/C service</fullName>
+                <default>false</default>
+                <label>A/C service</label>
+            </value>
+            <value>
+                <fullName>Accident Repair</fullName>
+                <default>false</default>
+                <label>Accident Repair</label>
+            </value>
+            <value>
+                <fullName>Battery services</fullName>
+                <default>false</default>
+                <label>Battery services</label>
+            </value>
+            <value>
+                <fullName>Brake service</fullName>
+                <default>false</default>
+                <label>Brake service</label>
+            </value>
+            <value>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+                <label>Campaign</label>
+            </value>
+            <value>
+                <fullName>Car &amp; Panel Painting</fullName>
+                <default>false</default>
+                <label>Car &amp; Panel Painting</label>
+            </value>
+            <value>
+                <fullName>Car Detailing</fullName>
+                <default>false</default>
+                <label>Car Detailing</label>
+            </value>
+            <value>
+                <fullName>Car disinfection</fullName>
+                <default>false</default>
+                <label>Car disinfection</label>
+            </value>
+            <value>
+                <fullName>Car Wash</fullName>
+                <default>false</default>
+                <label>Car Wash</label>
+            </value>
+            <value>
+                <fullName>Electrical &amp; Computer Diagnostic</fullName>
+                <default>false</default>
+                <label>Electrical &amp; Computer Diagnostic</label>
+            </value>
+            <value>
+                <fullName>Engine Services</fullName>
+                <default>false</default>
+                <label>Engine Services</label>
+            </value>
+            <value>
+                <fullName>Extended Warranty Contract</fullName>
+                <default>false</default>
+                <label>Extended Warranty Contract</label>
+            </value>
+            <value>
+                <fullName>Gearbox &amp; Transmission services</fullName>
+                <default>false</default>
+                <label>Gearbox &amp; Transmission services</label>
+            </value>
+            <value>
+                <fullName>Headlight alignment</fullName>
+                <default>false</default>
+                <label>Headlight alignment</label>
+            </value>
+            <value>
+                <fullName>Major service</fullName>
+                <default>false</default>
+                <label>Major service</label>
+            </value>
+            <value>
+                <fullName>Minor service</fullName>
+                <default>false</default>
+                <label>Minor service</label>
+            </value>
+            <value>
+                <fullName>Oil change</fullName>
+                <default>false</default>
+                <label>Oil change</label>
+            </value>
+            <value>
+                <fullName>Paintless dent removal</fullName>
+                <default>false</default>
+                <label>Paintless dent removal</label>
+            </value>
+            <value>
+                <fullName>Paint Protection Film</fullName>
+                <default>false</default>
+                <label>Paint Protection Film</label>
+            </value>
+            <value>
+                <fullName>Pre-Purchase Inspection</fullName>
+                <default>false</default>
+                <label>Pre-Purchase Inspection</label>
+            </value>
+            <value>
+                <fullName>Restoration</fullName>
+                <default>false</default>
+                <label>Restoration</label>
+            </value>
+            <value>
+                <fullName>Rim &amp; Brake Caliper painting</fullName>
+                <default>false</default>
+                <label>Rim &amp; Brake Caliper painting</label>
+            </value>
+            <value>
+                <fullName>Rim refurbishment</fullName>
+                <default>false</default>
+                <label>Rim refurbishment</label>
+            </value>
+            <value>
+                <fullName>Service Contract</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Service Contract</label>
+            </value>
+            <value>
+                <fullName>Suspension services</fullName>
+                <default>false</default>
+                <label>Suspension services</label>
+            </value>
+            <value>
+                <fullName>Tire Services</fullName>
+                <default>false</default>
+                <label>Tire Services</label>
+            </value>
+            <value>
+                <fullName>Wheel Alignment</fullName>
+                <default>false</default>
+                <label>Wheel Alignment</label>
+            </value>
+            <value>
+                <fullName>Window tinting</fullName>
+                <default>false</default>
+                <label>Window tinting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

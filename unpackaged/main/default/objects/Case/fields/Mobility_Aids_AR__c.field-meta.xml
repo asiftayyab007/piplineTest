@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobility_Aids_AR__c</fullName>
+    <externalId>false</externalId>
+    <label>Mobility Aids AR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>اضطراب طيف التوحد</fullName>
+                <default>false</default>
+                <label>اضطراب طيف التوحد</label>
+            </value>
+            <value>
+                <fullName>اضطراب قصور الإنتباه والنشاط الزائد</fullName>
+                <default>false</default>
+                <label>اضطراب قصور الإنتباه والنشاط الزائد</label>
+            </value>
+            <value>
+                <fullName>إعاقة جسدية</fullName>
+                <default>false</default>
+                <label>إعاقة جسدية</label>
+            </value>
+            <value>
+                <fullName>الأمراض والظروف الصحية</fullName>
+                <default>false</default>
+                <label>الأمراض والظروف الصحية</label>
+            </value>
+            <value>
+                <fullName>إعاقة ذهنية</fullName>
+                <default>false</default>
+                <label>إعاقة ذهنية</label>
+            </value>
+            <value>
+                <fullName>الاضطرابات النفسية والانفصالية</fullName>
+                <default>false</default>
+                <label>الاضطرابات النفسية والانفصالية</label>
+            </value>
+            <value>
+                <fullName>آخر</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>آخر</label>
+            </value>
+            <value>
+                <fullName>كرسي متحرك</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>كرسي متحرك</label>
+            </value>
+            <value>
+                <fullName>ووكر</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ووكر</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

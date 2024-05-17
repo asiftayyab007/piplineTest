@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Opp_Record_Type__c</fullName>
+    <description>Displays Opportunity RecordType on Lead</description>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.DeveloperName=&quot;ETSALES_Auction_Center&quot;, $Label.Auction_Center_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Body_shop&quot;, $Label.Body_Shop_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Bus_Furbished_Unit&quot;, $Label.Bus_Furbished_Unit_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Chauffeur_and_Limousine_B2B&quot;, $Label.Chauffeur_and_Limousine_B2B_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_CNG&quot;,$Label.CNG_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Driving_School_B2B&quot;,$Label.Driving_School_B2B_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Dry_Wash_Unit&quot;,$Label.Dry_Wash_Unit_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_ET_Tyre&quot;,$Label.ET_Tyre_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Inspection_B2B&quot;,$Label.Inspection_B2B_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Leasing&quot;,$Label.Leasing_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Logistics&quot;,$Label.Logistics_RT,
+IF(RecordType.DeveloperName=&quot;Moto_Service_Center_Body_Shop&quot;,$Label.Moto_ServiceCenter_BodyShop_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Maintainance&quot;,$Label.Maintainance_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Manpower&quot;,$Label.Manpower_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Rental_B2B&quot;,$Label.Rental_B2B_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_RSA_B2B&quot;,$Label.RSA_B2B_RT,
+IF(RecordType.DeveloperName=&quot;ETSALES_Transportation&quot;,$Label.Transportation_RT,
+IF(RecordType.DeveloperName=&quot;ETT_Cash_Supplier&quot;,$Label.ETT_Cash_Supplier,
+IF(RecordType.DeveloperName=&quot;ETT_Credit_B2B_Supplier&quot;,$Label.ETT_Tyre_Credit_B2B_Supplier_CL,
+IF(RecordType.DeveloperName=&quot;ETT_Tyre_Cash_Individual&quot;,$Label.ETT_Cash_Supplier,
+IF(RecordType.DeveloperName=&quot;ETT_Tyre_Refurbishing_Services&quot;,$Label.ETT_Tyre_Refurbishing_Services_CL,
+IF(RecordType.DeveloperName=&quot;ETSALES_Weighing_Centre&quot;,$Label.Weighing_Centre_RT,
+IF(RecordType.DeveloperName=&quot;Tyre_Supplier&quot;,$Label.ETT_TyreSupplier,
+IF(RecordType.DeveloperName=&quot;Moto_Dealership_Vehicle_Inquiry_Trade_In&quot;,$Label.Moto_VehicleTradeIn_RT,
+IF(RecordType.DeveloperName=&quot;Moto_Dealership_Vehicle_Purchase&quot;,$Label.Moto_VehiclePurchase_RT,&quot;No Rec Type for Opp&quot;
+)))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Opp RecordType</inlineHelpText>
+    <label>Opp Record Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

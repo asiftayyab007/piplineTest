@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Inspection</fullName>
+    <active>true</active>
+    <label>Vehicle Inspection</label>
+    <picklistValues>
+        <picklist>ETCARS_Customer_Type__c</picklist>
+        <values>
+            <fullName>Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visitor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETCAR_Drop_Off_Zone__c</picklist>
+        <values>
+            <fullName>Zone A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETCAR_Pickup_Zone__c</picklist>
+        <values>
+            <fullName>Zone A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zone C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETCAR_Request_Type__c</picklist>
+        <values>
+            <fullName>Manual</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETCAR_Status__c</picklist>
+        <values>
+            <fullName>Booking Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Collected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Delivered</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETC_Flight_Type__c</picklist>
+        <values>
+            <fullName>Arrival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Departure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETC_Miscellaneous_Payment_Status__c</picklist>
+        <values>
+            <fullName>Await3D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Captured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETC_Payment_Status__c</picklist>
+        <values>
+            <fullName>Await3D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Captured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Initiated</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On Premise Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reversed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETC_Service_Type__c</picklist>
+        <values>
+            <fullName>Limo Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETI_Payment_Type__c</picklist>
+        <values>
+            <fullName>Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Premises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETST_Cancellation_Reason__c</picklist>
+        <values>
+            <fullName>Not satisfied with services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETST_Change_Request_Type__c</picklist>
+        <values>
+            <fullName>Dropoff Location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pickup Location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport Type</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETST_Paid_By__c</picklist>
+        <values>
+            <fullName>Employer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETST_Parent_Cancellation_Reason__c</picklist>
+        <values>
+            <fullName>I want to change my service details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pickup%2Fdrop off timings provided by coordinator not suitable%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETST_Reason_for_Cancellation__c</picklist>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Cancellation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETST_Service_Type__c</picklist>
+        <values>
+            <fullName>Half Yearly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-demand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Select Dates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETST_Status__c</picklist>
+        <values>
+            <fullName>Auto Deactivated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School Changed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Updated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETST_Transport_Type__c</picklist>
+        <values>
+            <fullName>Drop off only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick up only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two Way</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Status__c</picklist>
+        <values>
+            <fullName>Await3D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Captured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fully Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Initiated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Premise Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reversed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

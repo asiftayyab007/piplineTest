@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ETIN_Insurance__c.Employee_ID__c</field>
+    </columns>
+    <columns>
+        <field>ETIN_Insurance__c.Member_Name__c</field>
+    </columns>
+    <columns>
+        <field>ETIN_Insurance__c.Plan__c</field>
+    </columns>
+    <columns>
+        <field>ETIN_Insurance__c.Insurance_Current_Status__c</field>
+    </columns>
+    <columns>
+        <field>ETIN_Insurance__c.Visa_Emirates__c</field>
+    </columns>
+    <currency>AED</currency>
+    <format>Tabular</format>
+    <name>All Health Policies</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$ETIN_Insurance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Terms_Description__c</columns>
+    <columns>Term_Code__c</columns>
+    <columns>Default_SCH__c</columns>
+    <columns>Default_TL__c</columns>
+    <columns>Charge_Type__c</columns>
+    <columns>Charge_Value__c</columns>
+    <columns>Charge_Type_Value__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>IsRequired_TL_Term__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IsMaster__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All</label>
+</ListView>

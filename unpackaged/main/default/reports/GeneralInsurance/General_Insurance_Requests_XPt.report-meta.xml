@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>GI_General_Insurance_Request__c.Policy_Type__c</field>
+    </columns>
+    <columns>
+        <field>GI_General_Insurance_Request__c.Request_Type__c</field>
+    </columns>
+    <columns>
+        <field>GI_General_Insurance_Request__c.Request_Status__c</field>
+    </columns>
+    <columns>
+        <field>GI_General_Insurance_Request__c.Comments__c</field>
+    </columns>
+    <currency>AED</currency>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$GI_General_Insurance_Policy__c.Location__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>General Insurance Requests</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$GI_General_Insurance_Request__c@GI_General_Insurance_Request__c.Insurance_Policy__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>GI_General_Insurance_Request__c.Approved_Date_Time__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

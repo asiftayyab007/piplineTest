@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Opportunity_Cant_be_Closed_Lost</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL (StageName, &#39;Closed Lost&#39;)
+&amp;&amp;
+ISPICKVAL (ETSALES_Approval_Status__c, &#39;Approved&#39;)</errorConditionFormula>
+    <errorMessage>Approved Opportunity Cannot be Closed Lost</errorMessage>
+</ValidationRule>

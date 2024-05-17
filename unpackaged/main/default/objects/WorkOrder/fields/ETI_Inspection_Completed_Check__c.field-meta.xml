@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETI_Inspection_Completed_Check__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is field is to - avoid Re Submitting the Checklist, after initial Submission</description>
+    <externalId>false</externalId>
+    <label>Inspection Completed Check</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

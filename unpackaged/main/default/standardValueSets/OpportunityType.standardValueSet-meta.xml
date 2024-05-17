@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Growth Business</fullName>
+        <default>false</default>
+        <label>Growth Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Business</fullName>
+        <default>false</default>
+        <label>New Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renewal Business</fullName>
+        <default>false</default>
+        <label>Renewal Business</label>
+    </standardValue>
+</StandardValueSet>

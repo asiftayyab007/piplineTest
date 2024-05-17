@@ -1,0 +1,237 @@
+<apex:page standardController="X36_Points_Health_Check__c" renderAs="pdf" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <html>
+        <head>
+            <style>
+                
+                h3{
+                margin: 0px;
+                padding: 50px 0px 15px;
+                font-weight: bold;
+                font-family: sans-serif;
+                font-size: 14px;
+                color: #000;
+                }
+                p{
+                margin: 0px;
+                font-weight: bold;
+                font-family: sans-serif;
+                font-size: 14px;
+                color: #000;
+                }
+                
+                .diagram{
+                margin-top:300px;
+                margin-bottom:40px;
+                }
+                
+                
+            </style>
+        </head>
+    </html>
+    
+    <body>
+        <h1 style="text-align:center">
+            36 Points Health Check
+        </h1>
+        <table>
+            <apex:pageBlock title="CAN IN BAY ">
+            
+            </apex:pageBlock>
+            <tr>
+                <th>Name</th>
+                <td>{!X36_Points_Health_Check__c.Name}</td>
+            </tr>
+            <tr>
+                <th>All Doors Hinges Locks</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.All_Doors_Hinges_Locks__c}"/></td>
+            </tr>
+            <tr>
+                <th>Front Rear Wiper Blades</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Front_Rear_Wiper_Blades__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Body Check Dents Corrosion</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Body_Check_Dents_Corrosion__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Internal Lights Guages</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Internal_Lights_Guages__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Opern Lights Horn Wipers Washers</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Opern_Lights_Horn_Wipers_Washers__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Power Window</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Power_Window__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>AII Seat Belts Operation</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.AII_Seat_Belts_Operation__c}"/>
+                </td>
+            </tr>
+            <apex:pageBlock title="UNDER BONNET">
+            
+            </apex:pageBlock>
+            <tr>
+                <th>Airbag SRS System</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Airbag_SRS_System__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Spark Plugs Platinum lridium</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Spark_Plugs_Platinum_lridium__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Air filter</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Air_filter__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>coolant LLC</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.coolant_LLC__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Coolant SLLC</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Coolant_SLLC__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Battery Connections</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Battery_Connections__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Air Conditioner Filter</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Air_Conditioner_Filter__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Brake Fluid</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Brake_Fluid__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Power Steering Fluid</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Power_Steering_Fluid__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Drive Belts</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Drive_Belts__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Leaks Oil Fluids</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Leaks_Oil_Fluids__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>windshield Fluid</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.windshield_Fluid__c}"/>
+                </td>
+            </tr>
+            <apex:pageBlock title="UNDER CAR">
+            
+            </apex:pageBlock>
+            <tr>
+                <th>Engine Oil Oil Filter</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Engine_Oil_Oil_Filter__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>ATM Oil</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.ATM_Oil__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Tranfer Box Oil</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Tranfer_Box_Oil__c}"/>
+                </td>
+            </tr>
+           <tr>
+                <th>Differential Oil</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Differential_Oil__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Brake Pipes Hoses</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Brake_Pipes_Hoses__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Fuel Lines Connections</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Fuel_Lines_Connections__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Steering Wear Leaks</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Steering_Wear_Leaks__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Steering Knuckle Grease If fitted</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Steering_Knuckle_Grease_If_fitted__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Propeller Shaft</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Propeller_Shaft__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Drive Shah Boots</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Drive_Shah_Boots__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Ball Joints Dust Cover</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Ball_Joints_Dust_Cover__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Fr Rr Susp Bushes Shock Absorber</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Fr_Rr_Susp_Bushes_Shock_Absorber__c}"/>
+                </td>
+            </tr>
+           
+            <tr>
+                <th>Exhaust Pipes Gaskets</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Exhaust_Pipes_Gaskets__c}"/>
+                </td>
+            </tr>
+            <apex:pageBlock title="LIFT HALF RAISED ">
+            
+            </apex:pageBlock>
+            <tr>
+                <th>Brake Pads Discs Shoes</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Brake_Pads_Discs_Shoes__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Parking Brake</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Parking_Brake__c}"/>
+                </td>
+            </tr>
+            <tr>
+                <th>All Tyre Condition Pressure</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.All_Tyre_Condition_Pressure__c}"/>
+                </td>
+            </tr>
+            
+             <tr>
+                <th>Other Remarks</th>
+                <td> <apex:outputField value="{!X36_Points_Health_Check__c.Other_Remarks__c}"/>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</apex:page>

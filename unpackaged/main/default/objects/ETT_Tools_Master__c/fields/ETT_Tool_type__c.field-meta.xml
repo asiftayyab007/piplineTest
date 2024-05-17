@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Tool_type__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blade</fullName>
+                <default>false</default>
+                <label>Blade</label>
+            </value>
+            <value>
+                <fullName>Motor</fullName>
+                <default>false</default>
+                <label>Motor</label>
+            </value>
+            <value>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+                <label>Accessories</label>
+            </value>
+            <value>
+                <fullName>Side Buffer</fullName>
+                <default>false</default>
+                <label>Side Buffer</label>
+            </value>
+            <value>
+                <fullName>Suction Pipeline</fullName>
+                <default>false</default>
+                <label>Suction Pipeline</label>
+            </value>
+            <value>
+                <fullName>Suction Filter</fullName>
+                <default>false</default>
+                <label>Suction Filter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

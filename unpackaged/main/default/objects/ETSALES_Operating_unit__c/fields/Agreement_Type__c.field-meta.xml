@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Agreement Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1121</fullName>
+                <default>false</default>
+                <label>ATSC-Maintenance Lumpsum</label>
+            </value>
+            <value>
+                <fullName>ATAL-COVID-19</fullName>
+                <default>false</default>
+                <label>ATAL-COVID-19</label>
+            </value>
+            <value>
+                <fullName>ATAL-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ATAL-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ATAL-Open Contract</fullName>
+                <default>false</default>
+                <label>ATAL-Open Contract</label>
+            </value>
+            <value>
+                <fullName>Trans AD</fullName>
+                <default>false</default>
+                <label>Trans AD</label>
+            </value>
+            <value>
+                <fullName>ECTC-COVID-19</fullName>
+                <default>false</default>
+                <label>ECTC-COVID-19</label>
+            </value>
+            <value>
+                <fullName>ECTC-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ECTC-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ECTC-Open Contract</fullName>
+                <default>false</default>
+                <label>ECTC-Open Contract</label>
+            </value>
+            <value>
+                <fullName>ECC-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ECC-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ETSC-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ETSC-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ETSC-Maintenance Labor</fullName>
+                <default>false</default>
+                <label>ETSC-Maintenance Labor</label>
+            </value>
+            <value>
+                <fullName>ETSC-Maintenance Lumpsum</fullName>
+                <default>false</default>
+                <label>ETSC-Maintenance Lumpsum</label>
+            </value>
+            <value>
+                <fullName>LSS-Lease and Rental</fullName>
+                <default>false</default>
+                <label>LSS-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ETAL-COVID-19</fullName>
+                <default>false</default>
+                <label>ETAL-COVID-19</label>
+            </value>
+            <value>
+                <fullName>ETAL-COVID-19-Open Contract</fullName>
+                <default>false</default>
+                <label>ETAL-COVID-19-Open Contract</label>
+            </value>
+            <value>
+                <fullName>ETAL-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ETAL-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ETAL-Open Contract</fullName>
+                <default>false</default>
+                <label>ETAL-Open Contract</label>
+            </value>
+            <value>
+                <fullName>GT-AJM-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-AJM-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>GT-ALN-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-ALN-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>GT-AUH-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-AUH-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>GT-CR-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-CR-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>GT-DXB-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-DXB-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>GT-EC-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-EC-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>GT-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>GT-RAK-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-RAK-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>GT-SHJ-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-SHJ-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>GT-WR-Lease and Rental</fullName>
+                <default>false</default>
+                <label>GT-WR-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ET-Advertisement Contract</fullName>
+                <default>false</default>
+                <label>ET-Advertisement Contract</label>
+            </value>
+            <value>
+                <fullName>ET-IT Services</fullName>
+                <default>false</default>
+                <label>ET-IT Services</label>
+            </value>
+            <value>
+                <fullName>PTC-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PTC-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PTC-Open Contract</fullName>
+                <default>false</default>
+                <label>PTC-Open Contract</label>
+            </value>
+            <value>
+                <fullName>PST-AJM-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-AJM-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PST-ALN-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-ALN-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PST-AUH-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-AUH-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PST-CR-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-CR-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PST-DXB-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-DXB-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PST-EC-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-EC-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PST-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PST-RAK-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-RAK-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PST-SHJ-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-SHJ-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>PST-WR-Lease and Rental</fullName>
+                <default>false</default>
+                <label>PST-WR-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>RAK-Open Contract</fullName>
+                <default>false</default>
+                <label>RAK-Open Contract</label>
+            </value>
+            <value>
+                <fullName>RTC-COVID-19</fullName>
+                <default>false</default>
+                <label>RTC-COVID-19</label>
+            </value>
+            <value>
+                <fullName>RTC-Lease and Rental</fullName>
+                <default>false</default>
+                <label>RTC-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ST-ALN-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ST-ALN-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ST-Advertisement Contract</fullName>
+                <default>false</default>
+                <label>ST-Advertisement Contract</label>
+            </value>
+            <value>
+                <fullName>ST-CR-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ST-CR-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ST-DXB-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ST-DXB-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ST-Employee Supervisor</fullName>
+                <default>false</default>
+                <label>ST-Employee Supervisor</label>
+            </value>
+            <value>
+                <fullName>ST-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ST-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ST-SHJ-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ST-SHJ-Lease and Rental</label>
+            </value>
+            <value>
+                <fullName>ST-WR-Lease and Rental</fullName>
+                <default>false</default>
+                <label>ST-WR-Lease and Rental</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_rule_for_Out_Source</fullName>
+    <active>true</active>
+    <description>If the user selects &quot;Outsource&quot;, then only the supplier details is mandatory.</description>
+    <errorConditionFormula>AND( ETT_Out_Source__c = True,
+ISBLANK( ETT_Supplier_Details__c) 
+)</errorConditionFormula>
+    <errorMessage>Please mention the supplier details.</errorMessage>
+</ValidationRule>

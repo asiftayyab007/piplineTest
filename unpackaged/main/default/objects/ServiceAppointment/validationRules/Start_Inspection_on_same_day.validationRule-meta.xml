@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Inspection_on_same_day</fullName>
+    <active>true</active>
+    <description>Inspection can be accepted on Scheduled start date of inspection</description>
+    <errorConditionFormula>RecordType.DeveloperName =&#39;Inspection_Service_Appointment&#39; &amp;&amp; ETI_Accepted__c = true &amp;&amp; TODAY() &lt;&gt; DATEVALUE(SchedStartTime)</errorConditionFormula>
+    <errorMessage>Inspection can be accepted on the same day of Inspection. Please Try on the Inspection Date.</errorMessage>
+</ValidationRule>

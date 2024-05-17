@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspector_Required_by_HOO</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( $Profile.Name ==&quot;ETT_Head of Operations&quot;,   IF( ISBLANK( ETT_Inspector__c) , true , false) , false)</errorConditionFormula>
+    <errorMessage>Please provide Inspector to Fleet Analysis Request</errorMessage>
+</ValidationRule>

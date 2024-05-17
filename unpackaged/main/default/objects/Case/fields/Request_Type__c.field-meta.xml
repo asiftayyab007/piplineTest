@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Equipped Bus</fullName>
+                <default>false</default>
+                <label>Equipped Bus</label>
+            </value>
+            <value>
+                <fullName>Equipped Vehicle</fullName>
+                <default>false</default>
+                <label>Equipped Vehicle</label>
+            </value>
+            <value>
+                <fullName>Extra Attendant</fullName>
+                <default>false</default>
+                <label>Extra Attendant</label>
+            </value>
+            <value>
+                <fullName>Normal Bus</fullName>
+                <default>false</default>
+                <label>Normal Bus</label>
+            </value>
+            <value>
+                <fullName>Normal Vehicle</fullName>
+                <default>false</default>
+                <label>Normal Vehicle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETI_Issue_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Issue Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Online Services</fullName>
+                <default>false</default>
+                <label>Online Services</label>
+            </value>
+            <value>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+                <label>Financial Services</label>
+            </value>
+            <value>
+                <fullName>Service Compliance</fullName>
+                <default>false</default>
+                <label>Service Compliance</label>
+            </value>
+            <value>
+                <fullName>Service Quality</fullName>
+                <default>false</default>
+                <label>Service Quality</label>
+            </value>
+            <value>
+                <fullName>Driver/Staff Behavior</fullName>
+                <default>false</default>
+                <label>Driver/Staff Behavior</label>
+            </value>
+            <value>
+                <fullName>Request</fullName>
+                <default>false</default>
+                <label>Request</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation</fullName>
+                <default>false</default>
+                <label>Traffic Violation</label>
+            </value>
+            <value>
+                <fullName>Internal Issues</fullName>
+                <default>false</default>
+                <label>Internal Issues</label>
+            </value>
+            <value>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <fullName>Thank you and appreciation</fullName>
+                <default>false</default>
+                <label>Thank you and appreciation</label>
+            </value>
+            <value>
+                <fullName>Follow up</fullName>
+                <default>false</default>
+                <label>Follow up</label>
+            </value>
+            <value>
+                <fullName>notice</fullName>
+                <default>false</default>
+                <label>notice</label>
+            </value>
+            <value>
+                <fullName>Get service</fullName>
+                <default>false</default>
+                <label>Get service</label>
+            </value>
+            <value>
+                <fullName>Inquiries</fullName>
+                <default>false</default>
+                <label>Inquiries</label>
+            </value>
+            <value>
+                <fullName>Cancel service</fullName>
+                <default>false</default>
+                <label>Cancel service</label>
+            </value>
+            <value>
+                <fullName>Update information</fullName>
+                <default>false</default>
+                <label>Update information</label>
+            </value>
+            <value>
+                <fullName>Driver Behaviour</fullName>
+                <default>false</default>
+                <label>Driver Behaviour</label>
+            </value>
+            <value>
+                <fullName>Accident/Emergency</fullName>
+                <default>false</default>
+                <label>Accident/Emergency</label>
+            </value>
+            <value>
+                <fullName>Safety Issue</fullName>
+                <default>false</default>
+                <label>Safety Issue</label>
+            </value>
+            <value>
+                <fullName>Theft</fullName>
+                <default>false</default>
+                <label>Theft</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

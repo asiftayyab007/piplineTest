@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Insert_Negative_Values1</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+AND( 
+$RecordType.Name = &quot;Maintainance&quot;,
+ETSALES_Number_of_Cordinator__c &lt; 0
+),
+AND(
+OR(
+$RecordType.Name = &quot;Transportation&quot;,
+$RecordType.Name = &quot;Manpower&quot;
+),
+OR(
+
+)))</errorConditionFormula>
+    <errorMessage>Cannot Insert Negative Value to Number of Drivers, Number of Nannies, Number of Coordinators, Number Of Supervisors, Number Of Accountants Or Cashiers, No Of Other Staffs.</errorMessage>
+</ValidationRule>

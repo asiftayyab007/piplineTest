@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emirates__c</fullName>
+    <externalId>false</externalId>
+    <label>Emirate</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Abu dhabi</fullName>
+                <default>false</default>
+                <label>Abu dhabi</label>
+            </value>
+            <value>
+                <fullName>Abu-Dhabi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Abu-Dhabi</label>
+            </value>
+            <value>
+                <fullName>Ajman</fullName>
+                <default>false</default>
+                <label>Ajman</label>
+            </value>
+            <value>
+                <fullName>Dubai</fullName>
+                <default>false</default>
+                <label>Dubai</label>
+            </value>
+            <value>
+                <fullName>Fujairah</fullName>
+                <default>false</default>
+                <label>Fujairah</label>
+            </value>
+            <value>
+                <fullName>Ras al Khaimah</fullName>
+                <default>false</default>
+                <label>Ras al Khaimah</label>
+            </value>
+            <value>
+                <fullName>Sharjah</fullName>
+                <default>false</default>
+                <label>Sharjah</label>
+            </value>
+            <value>
+                <fullName>Umm al Quwain</fullName>
+                <default>false</default>
+                <label>Umm al Quwain</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

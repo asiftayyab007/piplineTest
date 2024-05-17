@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Tyre_Opp_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Tyre Opp Sharing Rule</label>
+        <sharedTo>
+            <group>Tyre_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tyre Supplier,Tyre Refurbishing Services</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Access_to_Pricing_Team</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>opportunity Access to Pricing Team, which are owned by Sales team.</description>
+        <label>Access to Pricing Team</label>
+        <sharedTo>
+            <group>ET_Pricing_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>ET_Zone_Sales_Team</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Opportunity_Access_To_Receptionist</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity Access To Receptionist</label>
+        <sharedTo>
+            <role>BC_Emirates_Receptionist_Centre_Tyre</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>General_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

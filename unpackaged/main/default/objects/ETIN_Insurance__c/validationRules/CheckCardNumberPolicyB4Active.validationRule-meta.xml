@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckCardNumberPolicyB4Active</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISBLANK(Card_Number__c)|| ISBLANK( Expiry_Date__c ) ) &amp;&amp;  
+ISPICKVAL(Insurance_Current_Status__c,&#39;Active&#39;)</errorConditionFormula>
+    <errorMessage>Please fill Card number before insurance status to active</errorMessage>
+</ValidationRule>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETST_Complaint_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Complaint Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accident/Emergency</fullName>
+                <default>false</default>
+                <label>Accident/Emergency</label>
+            </value>
+            <value>
+                <fullName>Bus tracking Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bus tracking Issue</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Complaint on Driver</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Complaint on Driver</label>
+            </value>
+            <value>
+                <fullName>Complaint on facilities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Complaint on facilities</label>
+            </value>
+            <value>
+                <fullName>Contract Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contract Issue</label>
+            </value>
+            <value>
+                <fullName>Driver/Staff Behaviour</fullName>
+                <default>false</default>
+                <label>Driver/Staff Behaviour</label>
+            </value>
+            <value>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+                <label>Feedback</label>
+            </value>
+            <value>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+                <label>Financial Services</label>
+            </value>
+            <value>
+                <fullName>Functionality Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Functionality Issue</label>
+            </value>
+            <value>
+                <fullName>Invoice Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice Issue</label>
+            </value>
+            <value>
+                <fullName>Online Services</fullName>
+                <default>false</default>
+                <label>Online Services</label>
+            </value>
+            <value>
+                <fullName>Other Requests</fullName>
+                <default>false</default>
+                <label>Other Requests</label>
+            </value>
+            <value>
+                <fullName>Payment Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Payment Issue</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>Refund Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Refund Issue</label>
+            </value>
+            <value>
+                <fullName>Request for New Service</fullName>
+                <default>false</default>
+                <label>Request for New Service</label>
+            </value>
+            <value>
+                <fullName>Return</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Return</label>
+            </value>
+            <value>
+                <fullName>Safety Issue</fullName>
+                <default>false</default>
+                <label>Safety Issue</label>
+            </value>
+            <value>
+                <fullName>Service Quality &amp; Compliance</fullName>
+                <default>false</default>
+                <label>Service Quality &amp; Compliance</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Slot Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Slot Issue</label>
+            </value>
+            <value>
+                <fullName>Theft</fullName>
+                <default>false</default>
+                <label>Theft</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation</fullName>
+                <default>false</default>
+                <label>Traffic Violation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

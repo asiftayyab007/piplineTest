@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Period_prv__c</fullName>
+    <externalId>false</externalId>
+    <formula>(365*( 4*( (12* VALUE(BLANKVALUE(TEXT(  Contract_Years_Previous_Contract__c  ),&#39;0&#39;))) + VALUE(BLANKVALUE(TEXT(  Contract_Months_Previous_Contract__c  ),&#39;0&#39;)) ) + VALUE(BLANKVALUE(TEXT(  Contract_Weeks_Previous_Contract__c  ),&#39;0&#39;)) ) + (48*VALUE(BLANKVALUE(TEXT(  Contract_Days_Previous_Contract__c  ),&#39;0&#39;))))/(48*365)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Period(prv)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

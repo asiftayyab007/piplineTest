@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Health_Insurance</fullName>
+    <columns>NAME</columns>
+    <columns>ETIN_Claim_Status__c</columns>
+    <columns>ETIN_Insurance_Partner__c</columns>
+    <columns>Employee__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>ETIN_Claim__c.ETIN_Inprogress_Claim,ETIN_Claim__c.New_Claim</value>
+    </filters>
+    <label>Health Insurance</label>
+    <sharedTo>
+        <role>Health_Insurance_Zone_A</role>
+        <role>Health_Zone_A_HR</role>
+        <role>Insurance_Admin</role>
+    </sharedTo>
+</ListView>

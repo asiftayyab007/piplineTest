@@ -1,0 +1,28 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+  
+<div class="slds-box slds-box_small">
+ <div class="slds-modal__content slds-p-around_medium">
+       <div class="slds-form slds-form_stacked">
+      <div class="slds-form-element">
+      <lightning:input type="text" name="NameStr" label="Name" value=""/>
+      </div>
+     
+     </div>
+    
+    
+    </div>
+  
+    <footer class="slds-modal__footer">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_10-of-12 slds-text-align--left">
+               
+            </div>
+            <div class="slds-col slds-size_2-of-12">
+                <lightning:button variant="brand" label="Next" title="Brand action" onclick="{! c.handleClick }" />
+            </div>
+        </div>
+        
+        
+    </footer>
+</div>
+</aura:component>

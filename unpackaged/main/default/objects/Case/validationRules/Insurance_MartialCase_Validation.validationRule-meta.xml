@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurance_MartialCase_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Contact.ETIN_Marital_Status__c , &#39;Married&#39;) &amp;&amp;  ISPICKVAL(ETIN_Correction_for__c, &#39;Marital Status&#39;)</errorConditionFormula>
+    <errorDisplayField>ETIN_Correction_for__c</errorDisplayField>
+    <errorMessage>You cannot create correction request for Employee is already Married</errorMessage>
+</ValidationRule>

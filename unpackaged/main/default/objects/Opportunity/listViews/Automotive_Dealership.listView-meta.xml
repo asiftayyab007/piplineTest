@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automotive_Dealership</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.RECORDTYPE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Create_Date__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Automotive_Service_CenterBodyShop,Opportunity.Automotive_Dealership_Vehicle_Inquiry_Trade_In,Opportunity.Automotive_Dealership_Veh_Purchase</value>
+    </filters>
+    <label>Automotive Dealership</label>
+    <sharedTo>
+        <group>Emirates_Moto_Group</group>
+        <group>Sales_Excellence_Team</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SA_Inspection_Highlight_Panel</fullName>
+    <fields>AppointmentNumber</fields>
+    <fields>AccountId</fields>
+    <fields>ParentRecordId</fields>
+    <fields>Status</fields>
+    <fields>SchedStartTime</fields>
+    <fields>SchedEndTime</fields>
+    <fields>Duration</fields>
+    <label>Inspection Highlight Panel</label>
+</CompactLayout>

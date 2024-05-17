@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Whatsapp_Request__c.Emirates_ID__c</field>
+    </columns>
+    <columns>
+        <field>Whatsapp_Request__c.Language__c</field>
+    </columns>
+    <columns>
+        <field>Whatsapp_Request__c.Location__c</field>
+    </columns>
+    <columns>
+        <field>Whatsapp_Request__c.Number_of_Students__c</field>
+    </columns>
+    <columns>
+        <field>Whatsapp_Request__c.Primary_PhoneNumber__c</field>
+    </columns>
+    <columns>
+        <field>Whatsapp_Request_List_Item__c.Student_Emirated_ID__c</field>
+    </columns>
+    <currency>AED</currency>
+    <format>Tabular</format>
+    <name>Govt School Service request whatsapp</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Whatsapp_Request__c$Whatsapp_Request_List_Item__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,831 @@
+<apex:page standardController="Vehicle_Receiving_Info__c" renderAs="pdf" extensions="moto_VehRecinfoPdfCntr" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <html>
+        <head>
+            <style>
+                @page {
+            size: A4;
+            margin:20mm;
+            @bottom-left {
+            content: element(footer);
+            }
+            @top-left {
+            content: element(header);
+            } 
+            @bottom-right {
+            content: "Page " counter(page) " of " counter(pages);
+            font-size: 12px;
+            font-family: Calibri, sans-serif; 
+            }
+            }
+            @page:first {
+            @bottom-left {
+            content: element(footer);
+            }
+            @top-left {
+            content: element(header);
+            }
+            } 
+            div.divFooter {
+            display: block;
+            padding: 5px;
+            position: running(footer);
+            }
+            div.divHeader {
+            margin:20px 0px;
+            display: block;
+            padding: 5px;
+            position: running(header);
+            }
+            
+
+            body {
+            font-size:14px;
+            font-family: Calibri, sans-serif; 
+            }
+                
+                #col1,#col2,#col3{width:31%;display:inline-block;}
+                #check1{width:40%; display:inline-block;}
+                #check2{width:40%; display:inline-block;}
+                h3{
+                margin: 0px;
+                padding: 50px 0px 15px;
+                font-weight: bold;
+                font-family: sans-serif;
+                font-size: 14px;
+                color: #000;
+                }
+                p{
+                margin: 0px;
+                font-weight: bold;
+                font-family: sans-serif;
+                font-size: 14px;
+                color: #000;
+                }
+                
+                .diagram{
+                margin-top:300px;
+                margin-bottom:40px;
+                }
+                
+                .fieldHeader {
+                font-weight: bold;
+                }
+                .cust_table{
+                border-collapse: collapse;
+                width: 100%;
+                }
+                .cust_table tr th, .cust_table tr td{
+                border: 1px solid #ccc;
+                padding: 10px;
+                min-width: 60px;
+                font-size: 12px;
+                }
+                .headerData{
+                	text-align:center; 
+                background: #dc452e; 
+                color: #000; 
+                padding: 8px; 
+                font-size: 16px;
+                }
+                .imageBox{
+                	width:180px;
+                	height:180px;
+                	display:inline-block;
+                	margin:10px;
+                	overflow:hidden;
+                	border:0.5px solid #ccc;
+                }
+                 img.imageBox{
+                	width:180px !important;
+                	height:180px !important;
+                    max-width:100%;
+                    max-height:100%;
+                    object-fit:contain;
+                 }
+                .noImage{
+                width:100%;
+                padding:20px;
+                text-align:center;
+                font-size:16px;
+                font-weight:bold;
+                background:#efefef;
+                color:#000;
+                }
+            </style>
+        </head>
+    </html>
+    
+    <body>
+        <div class="divHeader">
+            <table>
+                <tr>
+                    <td style="text-align: left;">
+                        <img src="{!$Resource.headerPDF}" alt="logo_left" width="150" />
+                        
+                    </td>
+                    
+                </tr>      
+            </table> 
+        </div>
+        <h1 class="headerData">
+            Vehicle Receiving Form
+        </h1>
+        
+        <table class="cust_table">
+            <tr>
+                <th>Customer Name:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Name}</td>
+                <th>Mobile Number:</th>
+                <td style="width:170px;">{!customerNum}</td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Account.PersonEmail}</td>
+                <th>Vehicle Brand:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Vehicle_Brand__r.Name}</td>
+            </tr>
+            <tr>
+                <th>Vehicle Model:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Vehicle_Model__r.Name}</td>
+                <th>Model Year:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Vehicle_Model_Year__c}</td>
+            </tr>
+            <tr>
+                <th>Internal Number:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Vehicle_Internal_Number__c}</td>
+                <th>Plate Number:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Vehicle_Plate_Number__c}</td>
+            </tr>
+            <tr>
+                <th>Chassis Number:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Chassis_Number__c}</td>
+                <th>Service Number:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Service_Number__c}</td>
+           </tr>
+            <tr>
+                <th>Document Number:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Doc_No__c}</td>
+                <th>Workshop Location:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Workshop_Location__r.Name}</td>
+            </tr>
+        </table>
+        <!--      <div id="col1">
+<apex:pageBlock >
+<apex:pageBlockSection >
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Opportunity__r.Name}" label="Customer Name:"/><br/><br/>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Opportunity__r.Vehicle_Brand__r.Name}" label="Vehicle Brand:"/><br/> 
+</apex:pageBlockSection>
+</apex:pageBlock>
+
+</div>
+
+<div id="col2">
+
+<apex:pageBlock >
+<apex:pageBlockSection >
+<apex:outputText value="{!customerNum}" label="Mobile Number:"/><br/><br/>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Opportunity__r.Vehicle_Model__r.Name}" label="Vehicle Model:"/><br/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</div>
+<div id="col3">
+<apex:pageBlock >
+<apex:pageBlockSection >
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Opportunity__r.Account.PersonEmail}" label="Email:"/><br/><br/>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Opportunity__r.Vehicle_Model_Year__c}" label="Model Year:"/><br/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+
+</div>
+-->
+        <hr style="border:0px;border-top: 1px solid #ccc; margin: 20px 0;" />
+        
+        <h4 style="text-align:center">
+            VEHICLE CHECKLIST
+        </h4>
+        
+        <table class="cust_table">
+            <thead>
+                <tr>
+                    <th width="300px" class="headerData">Body Check Details</th>
+                    <th width="300px" class="headerData" colspan="2">Check List</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width:300px;" rowspan="10">
+                        <apex:outputPanel rendered="{!MarkedDiagram}">
+                            <div style="width: 100%;">
+                                <apex:repeat value="{!imageData['MarkedDiagram']}" var="markedDiagramId">
+                                    <img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!markedDiagramId}" style="width: 300px; object-fit:contain;" />
+                                </apex:repeat> 
+                            </div> 
+                        </apex:outputPanel>
+                    </td>
+                    <td style="width:150px;"><apex:outputField value="{!Vehicle_Receiving_Info__c.Fire_Extinguisher__c}"/>&nbsp;<span>Fire Extinguisher</span>  </td>
+                    <td style="width:150px;"> <apex:outputField value="{!Vehicle_Receiving_Info__c.Dashboard__c}"/> &nbsp;
+                        <span>Dashboard</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:outputField value="{!Vehicle_Receiving_Info__c.Seat_belts__c}"/>&nbsp; 
+                        <span>Seat belts</span>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!Vehicle_Receiving_Info__c.Infotainment_System_Screen__c}"/>&nbsp;
+                        <span>Infotainment System Screen</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <apex:outputField value="{!Vehicle_Receiving_Info__c.A_C_Functionality__c}"/>&nbsp;
+                        <!--<apex:outputPanel rendered="{!ACFunctionality}">
+                            <apex:repeat value="{!imageData['AC Functionality']}" var="ACFunctionalityId">
+                                <img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!ACFunctionalityId}" width="80" height="60" style=""/>
+                            </apex:repeat>  
+                        </apex:outputPanel>--> 
+                        <span style="">A/C Functionality</span>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!Vehicle_Receiving_Info__c.Radio_Knobs_Panel__c}"/>&nbsp; 
+                        <span>Radio Knobs Panel</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Spare_wheel__c}"/>
+                        &nbsp;
+                        <span>Spare wheel</span>
+                    </td>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Floor_Mats__c}"/>
+                        &nbsp;
+                        <span>Floor Mats</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Warning_Triangle__c}"/>
+                        &nbsp;
+                        <span>Warning Triangle</span>
+                    </td>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Name}" label="Name"/>
+                        &nbsp;
+                        <span>Name</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Vehicle_registration__c}"/>
+                        &nbsp;
+                        <span>Vehicle registration</span>
+                    </td>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Service_Book__c}"/>
+                        &nbsp;
+                        <span>Service Book</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><apex:outputField style="margin-top:30px;" value="{!Vehicle_Receiving_Info__c.Remote__c}"/>
+                        &nbsp;
+                        <span>Remote</span>
+                    </td>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Key__c}"/>
+                        &nbsp;
+                        <span>Key</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Jack__c}"/>&nbsp;
+                        <span>Jack</span>
+                    </td>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Tools__c}"/>&nbsp;
+                        <span>Tools</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Mirrors__c}"/>&nbsp;
+                        <span>Mirrors</span>
+                    </td>
+                    <td><apex:outputField value="{!Vehicle_Receiving_Info__c.Windows__c}"/> &nbsp; 
+                        <span>Windows</span>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                       <apex:outputField value="{!Vehicle_Receiving_Info__c.Seats__c}"/>&nbsp;
+                        <span>Seats</span>
+                        
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!--div style="margin: 40px 0 100px 0;"></div> 
+        
+        <hr style="border:0px;border-top: 1px solid #ccc; margin: 20px 0;" /-->
+        
+        <h4 style="page-break-before:always; text-align:center"> 
+            ISSUE CHECKLIST
+        </h4>
+        <table class="cust_table">
+            <tr>
+                <th style="width:140px">Symptom Type:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Symptom_Type__c}</td>
+                <th>Symptom:</th>
+                <td>{!Vehicle_Receiving_Info__c.Opportunity__r.Symptoms__c}</td> 
+            </tr>
+            <tr>
+                <th>Possible Cause:</th>
+                <td colspan="5">{!Vehicle_Receiving_Info__c.Opportunity__r.Possible_cause__c}</td>
+            </tr>
+            <tr>
+                <th>Customer Concerns:</th>
+                <td colspan="5">{!Vehicle_Receiving_Info__c.Comments__c}</td>
+            </tr>
+            
+        </table>
+      
+         
+        <hr style="border:0px;border-top: 1px solid #ccc; margin:60px 0 20px 0;" />
+        
+        <h4 style="text-align:center"> 
+            DAMAGES
+        </h4>
+        <hr style="border:0px;border-top: 1px solid #ccc; margin: 20px 0;" />
+        
+        <table style="width: 100%;">
+            <tr>
+                 <td style="text-align: center;">
+                  
+                     <div> 
+                         <apex:outputPanel rendered="{!noImages}">
+                             <div class="noImage">
+                             	No Damage Image    
+                             </div>
+                               
+                         </apex:outputPanel>
+                     </div>
+                     <apex:outputPanel rendered="{!CanvasImage}">
+                            <apex:repeat value="{!imageData['CanvasFiles_images']}" var="CanvasImageId">
+                                <img class="imageBox" alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!CanvasImageId}" width="80" height="60" style=""/>
+                            </apex:repeat>                            
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!Seatbelts}">
+                            <apex:repeat value="{!imageData['Seat belts']}" var="SeatbeltsId">
+                                <img class="imageBox" alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!SeatbeltsId}" width="80" height="60" style=""/>
+                            </apex:repeat>                            
+                        </apex:outputPanel>
+                   
+                        <apex:outputPanel rendered="{!ACFunctionality}">
+                            <apex:repeat value="{!imageData['AC Functionality']}" var="ACFunctionalityId">
+                                <img class="imageBox" alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!ACFunctionalityId}" style=""/>
+                            </apex:repeat>  
+                        </apex:outputPanel>
+                     
+                        <apex:outputPanel rendered="{!Seats}">
+                            <apex:repeat value="{!imageData['Seats']}" var="SeatsId">
+                                <img class="imageBox" alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!SeatsId}" style=""/>
+                            </apex:repeat>   
+                        </apex:outputPanel> 
+                     
+                        <apex:outputPanel rendered="{!windows}">
+                            <apex:repeat value="{!imageData['windows']}" var="windowsId">
+                                <img class="imageBox" alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!windowsId}" style=""/>
+                            </apex:repeat>
+                        </apex:outputPanel>
+                      
+						<apex:outputPanel rendered="{!RadioKnobsPanel}">
+                            <apex:repeat value="{!imageData['RadioKnobsPanel']}" var="RadioKnobsPanelId">
+                                <img class="imageBox" alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!RadioKnobsPanelId}" style=""/>
+                            </apex:repeat>  
+                        </apex:outputPanel> 
+                    
+                        <apex:outputPanel rendered="{!Infotainment}">
+                            <apex:repeat value="{!imageData['Infotainment System Screen']}" var="InfotainmentSystemScreenId">
+                                <img class="imageBox" alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!InfotainmentSystemScreenId}" style=""/>
+                            </apex:repeat>
+                        </apex:outputPanel>
+                    
+                    
+                		<apex:outputPanel rendered="{!Dashboard}">
+                            <apex:repeat value="{!imageData['Dashboard']}" var="DashboardId">
+                                <img class="imageBox" alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!DashboardId}" width="80" height="60" style=""/>
+                            </apex:repeat> 
+                        </apex:outputPanel> 
+                    
+                </td>
+            </tr>
+        </table>
+        
+          <br/>
+        
+        <table style="width: 100%;">
+            <tr>
+                <td style="text-align: center;">
+                    <apex:outputPanel rendered="{!AdvisorSignature}">
+                        <apex:repeat value="{!imageData['AdvisorSignature']}" var="AdvisorSignatureId">
+                            <img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!AdvisorSignatureId}" width="200" height="100" style=""/>
+                        </apex:repeat>
+                    </apex:outputPanel>
+                    <h5>Customer Signature</h5>
+                </td> 
+                <td style="text-align: center;">
+                    <apex:outputPanel rendered="{!CustomerSignature}">
+                        <apex:repeat value="{!imageData['CustomerSignature']}" var="CustomerSignatureId">
+                            <img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!CustomerSignatureId}" width="200" height="100" style=""/>
+                        </apex:repeat>
+                    </apex:outputPanel>
+                    <h5 style="text-align: center;">Service Advisor Signature</h5>
+                </td>
+            </tr>
+        </table>
+        
+        
+        <!--  <div id="check1" >
+<apex:pageBlock >
+<apex:pageBlockSection >
+<br/>
+<br/>
+<br/>
+<br/>
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Fire_Extinguisher__c}"/>  
+</span>
+<br/>
+<br/>
+<br/>
+
+<span >
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Dashboard__c}"/>
+<br/>
+<apex:outputPanel rendered="{!Dashboard}">
+<apex:repeat value="{!imageData['Dashboard']}" var="DashboardId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!DashboardId}" width="80" height="60" style=""/>
+</apex:repeat> 
+</apex:outputPanel>
+</span>
+<br/>
+<br/>
+<br/>
+
+
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Seat_belts__c}"/>
+<br/> 
+<apex:outputPanel rendered="{!Seatbelts}">
+<apex:repeat value="{!imageData['Seat belts']}" var="SeatbeltsId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!SeatbeltsId}" width="80" height="60" style=""/>
+</apex:repeat>                            
+</apex:outputPanel>
+</span>
+<br/>
+<br/>
+<br/>
+
+
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Infotainment_System_Screen__c}"/>
+<br/>
+<apex:outputPanel rendered="{!Infotainment}">
+<apex:repeat value="{!imageData['Infotainment System Screen']}" var="InfotainmentSystemScreenId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!InfotainmentSystemScreenId}" width="80" height="60" style=""/>
+</apex:repeat>
+</apex:outputPanel>
+</span>
+<br/>
+<br/>
+<br/>
+
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.A_C_Functionality__c}"/>
+<br/>
+<apex:outputPanel rendered="{!ACFunctionality}">
+<apex:repeat value="{!imageData['AC Functionality']}" var="ACFunctionalityId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!ACFunctionalityId}" width="80" height="60" style=""/>
+</apex:repeat>  
+</apex:outputPanel>
+</span>
+<br/>
+<br/>
+<br/>
+
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Radio_Knobs_Panel__c}"/>
+<br/>
+<apex:outputPanel rendered="{!RadioKnobsPanel}">
+<apex:repeat value="{!imageData['RadioKnobsPanel']}" var="RadioKnobsPanelId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!RadioKnobsPanelId}" width="80" height="60" style=""/>
+</apex:repeat>  
+</apex:outputPanel>
+</span>
+<br/>
+<br/>
+<br/>
+
+
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Spare_wheel__c}"/>
+</span>
+<br/>
+<br/>
+<br/>
+
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Floor_Mats__c}"/>
+</span>
+
+<br/>
+<br/>
+<br/>
+
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Warning_Triangle__c}"/>
+</span>
+
+
+
+
+</apex:pageBlockSection>
+</apex:pageBlock>
+
+</div> 
+
+<div id="check2">
+<apex:pageBlock >
+<apex:pageBlockSection >
+<br/>
+<br/>
+<br/>
+<br/>
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Name}" label="Name"/>
+</span>
+
+<br/>
+<br/>
+<br/>
+
+<span >
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Vehicle_registration__c}"/>
+</span>
+<br/>
+<br/>
+<br/>
+
+
+<span style="padding-top:30px;">
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Service_Book__c}"/>
+</span>
+<br/>
+<br/>
+<br/>
+
+
+<apex:outputField style="margin-top:30px;" value="{!Vehicle_Receiving_Info__c.Remote__c}"/>
+
+<br/>
+<br/>
+<br/>
+
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Key__c}"/>
+
+<br/>
+<br/>
+<br/>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Jack__c}"/>
+
+<br/>
+<br/>
+<br/>
+
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Tools__c}"/>
+
+<br/>
+<br/>
+<br/>
+
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Mirrors__c}"/>
+
+
+<br/>
+<br/>
+<br/>
+
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Windows__c}"/>
+<br/>
+<apex:outputPanel rendered="{!windows}">
+<apex:repeat value="{!imageData['windows']}" var="windowsId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!windowsId}" width="80" height="60" style=""/>
+</apex:repeat>
+</apex:outputPanel>
+<br/>
+<br/>
+<br/>
+
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Seats__c}"/>
+<br/>
+<apex:outputPanel rendered="{!Seats}">
+<apex:repeat value="{!imageData['Seats']}" var="SeatsId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!SeatsId}" width="80" height="60" style=""/>
+</apex:repeat>   
+</apex:outputPanel>
+
+</apex:pageBlockSection>
+</apex:pageBlock>
+</div> 
+-->
+        
+        
+        
+        <!--<div id="check2">
+<apex:pageBlock >
+<apex:pageBlockSection >
+
+<br/>
+<br/>
+<!--<th>Seat belts</th>
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Seat_belts__c}"/>
+</span>
+<br/>
+<span>
+<apex:outputPanel rendered="{!Seatbelts}">
+<apex:repeat value="{!imageData['Seat belts']}" var="SeatbeltsId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!SeatbeltsId}" width="80" height="60" style=""/>
+</apex:repeat>                            
+</apex:outputPanel>
+</span>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<!--<th>Fire Extinguisher</th>
+<span>
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Fire_Extinguisher__c}"/>
+</span>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<!--<th>Dashboard</th>
+<span>     
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Dashboard__c}"/>
+</span>	
+<br/>
+<span> 
+<apex:outputPanel rendered="{!Dashboard}">
+<apex:repeat value="{!imageData['Dashboard']}" var="DashboardId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!DashboardId}" width="80" height="60" style=""/>
+</apex:repeat> 
+</apex:outputPanel>
+</span>                               
+<br/>
+<br/>
+<br/>
+
+<!--<th>Infotainment System Screen</th>
+<span>     
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Infotainment_System_Screen__c}"/>
+</span> 
+<br/>
+<span>
+<apex:outputPanel rendered="{!Infotainment}">
+<apex:repeat value="{!imageData['Infotainment System Screen']}" var="InfotainmentSystemScreenId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!InfotainmentSystemScreenId}" width="80" height="60" style=""/>
+</apex:repeat>
+</apex:outputPanel>
+</span>
+<br/>
+<br/>
+<br/>
+
+<!--<th>AC Functionality</th>
+<span>     
+<apex:outputField value="{!Vehicle_Receiving_Info__c.A_C_Functionality__c}"/>
+</span> 
+<br/>
+<span>
+<apex:outputPanel rendered="{!ACFunctionality}">
+<apex:repeat value="{!imageData['AC Functionality']}" var="ACFunctionalityId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!ACFunctionalityId}" width="80" height="60" style=""/>
+</apex:repeat>  
+</apex:outputPanel>
+</span>
+<br/>
+<br/>
+<br/>
+
+<!--<th>Radio Knobs Panel</th>
+<span>    
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Radio_Knobs_Panel__c}"/>
+</span>
+<br/>
+<span>
+<apex:outputPanel rendered="{!RadioKnobsPanel}">
+<apex:repeat value="{!imageData['RadioKnobsPanel']}" var="RadioKnobsPanelId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!RadioKnobsPanelId}" width="80" height="60" style=""/>
+</apex:repeat>  
+</apex:outputPanel>
+</span>
+<br/>
+<br/>
+<br/>                            
+<!--<th>Spare wheel</th>
+<span>     
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Spare_wheel__c}"/>
+</span>
+<br/>
+<br/>
+<br/>
+
+<!--<th>Floor Mats</th>
+<span>    
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Floor_Mats__c}"/>
+</span>
+<br/>
+<br/>
+<br/>
+
+<!--<th>Warning Triangle</th>
+<span>     
+<apex:outputField value="{!Vehicle_Receiving_Info__c.Warning_Triangle__c}"/>
+</span>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</div>-->
+        
+        <!--<div id="check2">
+<apex:pageBlock >
+<apex:pageBlockSection >
+<table>
+<tr>
+<th>Seat belts</th>
+<td> <apex:outputField value="{!Vehicle_Receiving_Info__c.Seat_belts__c}" label=""/>
+</td>
+<td>
+<apex:outputPanel rendered="{!Seatbelts}">
+<apex:repeat value="{!imageData['Seat belts']}" var="SeatbeltsId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!SeatbeltsId}" width="80" height="60" style=""/>
+</apex:repeat>                            
+</apex:outputPanel>
+</td>
+</tr>
+<tr>
+<th>Seat belts</th>
+<td> <apex:outputField value="{!Vehicle_Receiving_Info__c.Seat_belts__c}" label=""/>
+</td>
+<td>
+<apex:outputPanel rendered="{!Seatbelts}">
+<apex:repeat value="{!imageData['Seat belts']}" var="SeatbeltsId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!SeatbeltsId}" width="80" height="60" style=""/>
+</apex:repeat>                            
+</apex:outputPanel>
+</td>
+</tr>
+<!-- Repeat the above structure for other fields
+<tr>
+<th>Fire Extinguisher</th>
+<td> <apex:outputField value="{!Vehicle_Receiving_Info__c.Fire_Extinguisher__c}" label=""/>
+</td>
+
+</tr>
+<!-- Repeat for other fields...
+<tr>
+<th>Dashboard</th>
+<td> <apex:outputField value="{!Vehicle_Receiving_Info__c.Dashboard__c}" label =""/>
+</td>
+<td> 
+
+<apex:outputPanel rendered="{!Dashboard}">
+<apex:repeat value="{!imageData['Dashboard']}" var="DashboardId">
+<img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!DashboardId}" width="80" height="60" style=""/>
+</apex:repeat> 
+</apex:outputPanel>
+</td>
+</tr>
+</table>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</div>
+        
+        
+        <p class="diagram">Inspection Summary</p>
+        <apex:outputPanel rendered="{!MarkedDiagram}">
+            <apex:repeat value="{!imageData['MarkedDiagram']}" var="markedDiagramId">
+                <img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!markedDiagramId}" width="500" height="400" style=""/>
+            </apex:repeat>
+        </apex:outputPanel>
+        <br/>
+        <apex:outputPanel rendered="{!AdvisorSignature}">
+            <apex:repeat value="{!imageData['AdvisorSignature']}" var="AdvisorSignatureId">
+                <img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!AdvisorSignatureId}" width="200" height="100" style=""/>
+            </apex:repeat>
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!CustomerSignature}">
+            <apex:repeat value="{!imageData['CustomerSignature']}" var="CustomerSignatureId">
+                <img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!CustomerSignatureId}" width="200" height="100" style=""/>
+            </apex:repeat>
+        </apex:outputPanel>
+        -->
+    </body>
+</apex:page>

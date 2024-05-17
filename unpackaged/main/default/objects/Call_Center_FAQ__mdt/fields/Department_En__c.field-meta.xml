@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department_En__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Department En</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transportation and Lease services</fullName>
+                <default>true</default>
+                <label>Transportation and Lease services</label>
+            </value>
+            <value>
+                <fullName>Auction services</fullName>
+                <default>false</default>
+                <label>Auction services</label>
+            </value>
+            <value>
+                <fullName>Emirates Transport Driving Institute</fullName>
+                <default>false</default>
+                <label>Emirates Transport Driving Institute</label>
+            </value>
+            <value>
+                <fullName>School &amp; Transport</fullName>
+                <default>false</default>
+                <label>School &amp; Transport</label>
+            </value>
+            <value>
+                <fullName>MRO</fullName>
+                <default>false</default>
+                <label>MRO</label>
+            </value>
+            <value>
+                <fullName>Digital Department</fullName>
+                <default>false</default>
+                <label>Digital Department</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

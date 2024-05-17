@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>ET_Applicable_KM_End_Range__c</columns>
+    <columns>ET_Applicable_KM_Start_Range__c</columns>
+    <columns>Insurance_Category__c</columns>
+    <columns>ET_Depreciation_Rate__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_En__c</fullName>
+    <externalId>false</externalId>
+    <label>Category En</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal Siren (Speaker)</fullName>
+                <default>false</default>
+                <label>Internal Siren (Speaker)</label>
+            </value>
+            <value>
+                <fullName>Child Detection Sensor</fullName>
+                <default>false</default>
+                <label>Child Detection Sensor</label>
+            </value>
+            <value>
+                <fullName>Child Check Button</fullName>
+                <default>false</default>
+                <label>Child Check Button</label>
+            </value>
+            <value>
+                <fullName>Panic Button</fullName>
+                <default>false</default>
+                <label>Panic Button</label>
+            </value>
+            <value>
+                <fullName>Temp. - Humidity</fullName>
+                <default>false</default>
+                <label>Temp. - Humidity</label>
+            </value>
+            <value>
+                <fullName>LCD Monitor</fullName>
+                <default>false</default>
+                <label>LCD Monitor</label>
+            </value>
+            <value>
+                <fullName>4 Pcs External IP Camera</fullName>
+                <default>false</default>
+                <label>4 Pcs External IP Camera</label>
+            </value>
+            <value>
+                <fullName>3 Pcs Internal IP Camera</fullName>
+                <default>false</default>
+                <label>3 Pcs Internal IP Camera</label>
+            </value>
+            <value>
+                <fullName>MDVR With HDD 2TB</fullName>
+                <default>false</default>
+                <label>MDVR With HDD 2TB</label>
+            </value>
+            <value>
+                <fullName>Bus Speed Limiter</fullName>
+                <default>false</default>
+                <label>Bus Speed Limiter</label>
+            </value>
+            <value>
+                <fullName>Stop Arm</fullName>
+                <default>false</default>
+                <label>Stop Arm</label>
+            </value>
+            <value>
+                <fullName>Electronic Destination Board</fullName>
+                <default>false</default>
+                <label>Electronic Destination Board</label>
+            </value>
+            <value>
+                <fullName>Fire Extinguisher 6KG×2</fullName>
+                <default>false</default>
+                <label>Fire Extinguisher 6KG×2</label>
+            </value>
+            <value>
+                <fullName>Emergency exit hammer</fullName>
+                <default>false</default>
+                <label>Emergency exit hammer</label>
+            </value>
+            <value>
+                <fullName>First Aid Bag</fullName>
+                <default>false</default>
+                <label>First Aid Bag</label>
+            </value>
+            <value>
+                <fullName>Automatic Fire Suppression System</fullName>
+                <default>false</default>
+                <label>Automatic Fire Suppression System</label>
+            </value>
+            <value>
+                <fullName>tool Cutting seat belts In case of emergency</fullName>
+                <default>false</default>
+                <label>tool Cutting seat belts In case of emergency</label>
+            </value>
+            <value>
+                <fullName>Automatic Fire Suppression (SUNWIN)</fullName>
+                <default>false</default>
+                <label>Automatic Fire Suppression (SUNWIN)</label>
+            </value>
+            <value>
+                <fullName>Automatic Fire Suppression (Except SUNWIN)</fullName>
+                <default>false</default>
+                <label>Automatic Fire Suppression (Except SUNWIN)</label>
+            </value>
+            <value>
+                <fullName>Cable Connections</fullName>
+                <default>false</default>
+                <label>Cable Connections</label>
+            </value>
+            <value>
+                <fullName>Second Device</fullName>
+                <default>false</default>
+                <label>Second Device</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

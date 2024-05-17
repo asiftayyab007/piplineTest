@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HOO_should_not_edit_status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(Status),
+$Profile.Name = &quot;ETT_Head of Operations&quot;
+)</errorConditionFormula>
+    <errorMessage>You don&#39;t have permission to edit status</errorMessage>
+</ValidationRule>

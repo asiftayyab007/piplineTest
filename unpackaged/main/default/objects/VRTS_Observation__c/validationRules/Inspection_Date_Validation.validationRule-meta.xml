@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Date_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   OR(
+   ISNEW(), ISCHANGED(Inspection_Date__c)),
+   Inspection_Date__c &lt; TODAY(), 
+   $Profile.Name &lt;&gt; &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Inspection_Date__c</errorDisplayField>
+    <errorMessage>Inspection date should not be in past</errorMessage>
+</ValidationRule>

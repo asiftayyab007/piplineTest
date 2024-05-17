@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>InsurancePolicyHO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>InsurancePolicyHO</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Health_Insurance_HO_HR</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>Employee_Zone__c</field>
+            <operation>equals</operation>
+            <value>HO</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>InsurancePolicyTechnical</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>InsurancePolicyTechnical</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Health_Insurance_Technical_Services_HR</roleAndSubordinatesInternal>
+        </sharedTo>
+        <booleanFilter>2 AND (1 OR 3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>Employee_Zone__c</field>
+            <operation>equals</operation>
+            <value>Zone A</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Employee_Zone__c</field>
+            <operation>equals</operation>
+            <value>Zone B</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Employee_Zone__c</field>
+            <operation>equals</operation>
+            <value>Zone C</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>InsurancePolicyZoneBRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>InsurancePolicyZoneBRule</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Health_Zone_B_HR</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>Employee_Zone__c</field>
+            <operation>equals</operation>
+            <value>Zone B</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>InsurancePolicyZoneC</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>InsurancePolicyZoneC</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Health_Zone_C_HR</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>Employee_Zone__c</field>
+            <operation>equals</operation>
+            <value>Zone C</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ZoneASharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ZoneASharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Health_Zone_A_HR</roleAndSubordinatesInternal>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Employee_Zone__c</field>
+            <operation>equals</operation>
+            <value>Zone A</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

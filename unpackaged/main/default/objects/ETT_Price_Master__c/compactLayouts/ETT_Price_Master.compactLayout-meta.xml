@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Price_Master</fullName>
+    <fields>Name</fields>
+    <fields>ETT_Party_Name__c</fields>
+    <fields>ETT_Party_Code__c</fields>
+    <fields>ETT_Party_Type__c</fields>
+    <label>ETT Price Master</label>
+</CompactLayout>

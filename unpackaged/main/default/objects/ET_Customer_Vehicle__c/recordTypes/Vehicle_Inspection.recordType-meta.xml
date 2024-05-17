@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_Inspection</fullName>
+    <active>true</active>
+    <label>Vehicle Inspection</label>
+    <picklistValues>
+        <picklist>ADFCA_Type_AR__c</picklist>
+        <values>
+            <fullName>With ADFCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Without ADFCA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ADFCA_Type__c</picklist>
+        <values>
+            <fullName>With ADFCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Without ADFCA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ET_Vehicle_type_AR__c</picklist>
+        <values>
+            <fullName>Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ET_Vehicle_type__c</picklist>
+        <values>
+            <fullName>Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_Language__c</picklist>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Registration_Type_AR__c</picklist>
+        <values>
+            <fullName>غير مسجلة</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>مسجلة</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Registration_Type__c</picklist>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Un-Registered</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Selected_Type_AR__c</picklist>
+        <values>
+            <fullName>Chassis No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plate Combination</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Selected_Type__c</picklist>
+        <values>
+            <fullName>Chassis No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plate Combination</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frozen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

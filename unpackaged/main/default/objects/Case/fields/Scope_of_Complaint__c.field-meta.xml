@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scope_of_Complaint__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Employee behaviour&#39;), &#39;HR&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Employee skills&#39;), &#39;HR&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Complaint about supervisors&#39;), &#39;HR&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Vehicle wash employee&#39;), &#39;HR&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Vehicle testing employee&#39;), &#39;HR&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Maintenance employee&#39;), &#39;HR&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Back office employee&#39;), &#39;HR&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Front desk employee &#39;), &#39;HR&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;School transport drivers&#39;), &#39;HR&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Website Issues&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Electronic Portal Service&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Drive Recklessly&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Child Lost&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Failing To Provide Services&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Service Operation&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Service Quality&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Bus Quality&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Vehicle Quality&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Required data Documents&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Invoices Issues&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Payment Issues&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Long journey time for students&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Bus capacity&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Parking in a no-parking area&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Dropping and pickup area&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;No Nany in the bus&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;No Buses Provided&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Vehicle replacement Issues&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Maintenance schedules delay&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Delay response - Roadside situations&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Bus Not ON Time&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Car Wash Services&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Vehicle Testing Services&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Service Delivery Procedures&#39;), &#39;Services&#39;,
+IF(
+ISPICKVAL(ET_Issue_Type_New__c, &#39;Others&#39;), &#39;Services&#39;,
+null)))))))))))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Scope of Complaint</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

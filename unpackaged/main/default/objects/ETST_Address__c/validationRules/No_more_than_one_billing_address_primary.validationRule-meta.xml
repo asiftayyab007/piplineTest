@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_more_than_one_billing_address_primary</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( 
+AND(Account__r.ET_PrimaryBillingCount__c &gt; 1, 
+TEXT(ET_Address_Type__c) = &#39;BILL_TO&#39;, 
+ET_Is_Primary__c = true), 
+true, 
+false)</errorConditionFormula>
+    <errorMessage>Primary billing address must only be one per customer.</errorMessage>
+</ValidationRule>

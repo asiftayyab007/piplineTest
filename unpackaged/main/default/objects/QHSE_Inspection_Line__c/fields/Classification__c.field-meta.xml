@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification__c</fullName>
+    <description>Classification/تصنيف الملاحظة</description>
+    <externalId>false</externalId>
+    <label>Classification/تصنيف الملاحظة</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Description__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High School</fullName>
+                <default>false</default>
+                <label>High School</label>
+            </value>
+            <value>
+                <fullName>Main</fullName>
+                <default>false</default>
+                <label>Main</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Damage to the seat belts for people of determination</controllingFieldValue>
+            <controllingFieldValue>Lack of seat belts for people of determination</controllingFieldValue>
+            <controllingFieldValue>Allowing an unauthorized person to drive school buses</controllingFieldValue>
+            <controllingFieldValue>Busy on the phone while providing the service.</controllingFieldValue>
+            <controllingFieldValue>Not wearing a reflective vest.</controllingFieldValue>
+            <controllingFieldValue>Failure to assist students in the process of getting up and down.</controllingFieldValue>
+            <controllingFieldValue>Failure to monitor the negative behaviors of transferees.</controllingFieldValue>
+            <controllingFieldValue>Failure to deliver students to parents or their representatives.</controllingFieldValue>
+            <controllingFieldValue>Failure to help transported people cross the road to take them from home to the bus and vice versa</controllingFieldValue>
+            <controllingFieldValue>Sleeping while serving.</controllingFieldValue>
+            <controllingFieldValue>Lack of daily bus inspection record</controllingFieldValue>
+            <controllingFieldValue>Dealing with transferees violently.</controllingFieldValue>
+            <controllingFieldValue>Throwing the bag of someone being transported from the bus.</controllingFieldValue>
+            <controllingFieldValue>Getting busy on the road using a tablet to prepare transfers.</controllingFieldValue>
+            <controllingFieldValue>Failure to record the arrival and disembarkation of transported persons</controllingFieldValue>
+            <controllingFieldValue>Transporting an unauthorized person to board the bus.</controllingFieldValue>
+            <controllingFieldValue>Installing a sign (the bus is empty) in the presence of transporters</controllingFieldValue>
+            <controllingFieldValue>The bus plate is not clear</controllingFieldValue>
+            <controllingFieldValue>The bus runs in the opposite direction of the road.</controllingFieldValue>
+            <controllingFieldValue>Boarding/disembarking passengers at unsafe points.</controllingFieldValue>
+            <controllingFieldValue>Fracture of the lateral femur</controllingFieldValue>
+            <controllingFieldValue>Lack of window opening handles</controllingFieldValue>
+            <controllingFieldValue>There is no barrier in front of the transfer seats</controllingFieldValue>
+            <controllingFieldValue>The &quot;stop&quot; lever does not work</controllingFieldValue>
+            <controllingFieldValue>There are no shelves for students&#39; bags</controllingFieldValue>
+            <controllingFieldValue>Broken bus glass</controllingFieldValue>
+            <controllingFieldValue>The presence of students’ bags and luggage in the bus aisle.</controllingFieldValue>
+            <controllingFieldValue>Check the bus randomly and inaccurately.</controllingFieldValue>
+            <controllingFieldValue>Do not check the bus before students board the bus.</controllingFieldValue>
+            <controllingFieldValue>Do not check the bus after the students get off the bus.</controllingFieldValue>
+            <controllingFieldValue>The presence of one of those transported on the bus after the transportation and safety supervisor gets off the bus.</controllingFieldValue>
+            <controllingFieldValue>Make the bus plate clear.</controllingFieldValue>
+            <controllingFieldValue>Damage to the windshield wipers</controllingFieldValue>
+            <controllingFieldValue>Allow students to use the tablet to prepare transfers</controllingFieldValue>
+            <controllingFieldValue>Allow the driver to use the tablet to prepare transfers</controllingFieldValue>
+            <controllingFieldValue>Damage and malfunction of the passenger door</controllingFieldValue>
+            <controllingFieldValue>Failure to provide first aid when one of the transported is injured.</controllingFieldValue>
+            <controllingFieldValue>There are uncovered electrical connections</controllingFieldValue>
+            <controllingFieldValue>Failure to wear a seat belt during the flight.</controllingFieldValue>
+            <controllingFieldValue>The seat belt is damaged and not working properly</controllingFieldValue>
+            <controllingFieldValue>Damage to the safety packages and the presence of sharp parts as a result of the protection cover being shattered or broken</controllingFieldValue>
+            <controllingFieldValue>The presence of sharp parts in the internal structure of the bus</controllingFieldValue>
+            <controllingFieldValue>Damage to the stairs&#39; anti-slip</controllingFieldValue>
+            <controllingFieldValue>Ready to get off before the bus stops.</controllingFieldValue>
+            <controllingFieldValue>The use of materials that affect the safety of those transported on the bus.</controllingFieldValue>
+            <controllingFieldValue>Students quarreling on the bus.</controllingFieldValue>
+            <controllingFieldValue>A student was injured on the bus.</controllingFieldValue>
+            <controllingFieldValue>Lie on the seat during the flight.</controllingFieldValue>
+            <controllingFieldValue>Not sitting properly on the seats, which affects the safety of the flight time</controllingFieldValue>
+            <controllingFieldValue>The bus driver was distracted while driving because a student approached the bus control buttons.</controllingFieldValue>
+            <controllingFieldValue>Tampering with the transmission while the bus is in motion</controllingFieldValue>
+            <controllingFieldValue>Stopping the bus and preventing the driver from providing the service.</controllingFieldValue>
+            <controllingFieldValue>Lack of a bus reference number (DOT) according to the legislation of the Integrated Transport Center</controllingFieldValue>
+            <controllingFieldValue>The presence of a “school bus” sticker on the windshield affects the driver’s field of vision</controllingFieldValue>
+            <controllingFieldValue>Brake damage/failure</controllingFieldValue>
+            <controllingFieldValue>There is a transmission malfunction</controllingFieldValue>
+            <controllingFieldValue>The moving step for boarding the bus does not work as expected</controllingFieldValue>
+            <controllingFieldValue>There is damage to the tires</controllingFieldValue>
+            <controllingFieldValue>Assault on the bus driver.</controllingFieldValue>
+            <controllingFieldValue>Assault on the transportation and safety supervisor.</controllingFieldValue>
+            <controllingFieldValue>Sitting in unallocated places on the bus.</controllingFieldValue>
+            <controllingFieldValue>Violently assaulting others.</controllingFieldValue>
+            <controllingFieldValue>Failure to leave a safe distance from the bus.</controllingFieldValue>
+            <controllingFieldValue>The student’s guardian or his representative board the bus</controllingFieldValue>
+            <controllingFieldValue>The student’s guardian or his representative boarding the bus and assaulting those being transported.</controllingFieldValue>
+            <controllingFieldValue>The number of passengers on the bus exceeds the number of seats</controllingFieldValue>
+            <controllingFieldValue>Flight time exceeding 60 minutes</controllingFieldValue>
+            <controllingFieldValue>There is no evidence of field oversight</controllingFieldValue>
+            <controllingFieldValue>The camera screen is not working</controllingFieldValue>
+            <controllingFieldValue>Passenger door sensor malfunction</controllingFieldValue>
+            <controllingFieldValue>Motion sensor and alarm malfunction</controllingFieldValue>
+            <controllingFieldValue>Tamper motion sensor and alarm</controllingFieldValue>
+            <controllingFieldValue>Lack of motion sensor and alarm system “First cycle + kindergarten”</controllingFieldValue>
+            <controllingFieldValue>Tampering with audio alarm</controllingFieldValue>
+            <controllingFieldValue>Providing transportation service without the presence of a transportation and safety supervisor on the bus.</controllingFieldValue>
+            <controllingFieldValue>Reverse alarm malfunctioned</controllingFieldValue>
+            <controllingFieldValue>The reversing camera is not working</controllingFieldValue>
+            <controllingFieldValue>Damage to the bus&#39;s external camera</controllingFieldValue>
+            <controllingFieldValue>Damage to the internal bus camera</controllingFieldValue>
+            <controllingFieldValue>There are no recordings in MDVR</controllingFieldValue>
+            <controllingFieldValue>Defect in camera systems</controllingFieldValue>
+            <controllingFieldValue>There is a shortage in the content of the first aid box</controllingFieldValue>
+            <controllingFieldValue>Lack of first aid box</controllingFieldValue>
+            <controllingFieldValue>Not installing fire extinguishers</controllingFieldValue>
+            <controllingFieldValue>Do not remove the old fire extinguisher base</controllingFieldValue>
+            <controllingFieldValue>There are no fire extinguishers on the bus</controllingFieldValue>
+            <controllingFieldValue>Invalid fire extinguisher</controllingFieldValue>
+            <controllingFieldValue>Lack of safety hammers</controllingFieldValue>
+            <controllingFieldValue>Shortage of safety hammers</controllingFieldValue>
+            <controllingFieldValue>There is no evidence of inspection of emergency doors</controllingFieldValue>
+            <controllingFieldValue>Emergency door inspection has expired</controllingFieldValue>
+            <controllingFieldValue>The audio alert when the emergency door is opened does not work</controllingFieldValue>
+            <controllingFieldValue>There is no evidence of checking the bus’s self-extinguishing system</controllingFieldValue>
+            <controllingFieldValue>The bus engine fire extinguishing system malfunctions</controllingFieldValue>
+            <controllingFieldValue>Picking up/dropping off transporters at a distance from his home.</controllingFieldValue>
+            <controllingFieldValue>The driver&#39;s failure to put up a sign (the bus is empty) after the end of the trip</controllingFieldValue>
+            <controllingFieldValue>Check the bus when it reaches the resting point (the final stop of the bus).</controllingFieldValue>
+            <controllingFieldValue>Failure to fasten the seat belt correctly</controllingFieldValue>
+            <controllingFieldValue>Using the school bus after official working hours</controllingFieldValue>
+            <controllingFieldValue>Using the school bus for personal purposes</controllingFieldValue>
+            <controllingFieldValue>Using &quot;vultures&quot; or &quot;smoking&quot; on the bus.</controllingFieldValue>
+            <controllingFieldValue>Lack of proof of obtaining a permit to practice the profession</controllingFieldValue>
+            <controllingFieldValue>Getting distracted from the road using the phone</controllingFieldValue>
+            <controllingFieldValue>Being distracted by the road, drinking hot/cold drinks.</controllingFieldValue>
+            <controllingFieldValue>Lack of a heavy bus driving license</controllingFieldValue>
+            <controllingFieldValue>The end of the examination of the seat height for people of determination</controllingFieldValue>
+            <controllingFieldValue>There is no evidence that the lift seats for people of determination have been inspected</controllingFieldValue>
+            <controllingFieldValue>There is no evidence of checking the seat belts of people of determination on the bus</controllingFieldValue>
+            <valueName>Main</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lack of knowledge and familiarity with using a hoist for people of determination (manual work in times of emergency)</controllingFieldValue>
+            <controllingFieldValue>Use of a daily bus inspection log that is not up to date</controllingFieldValue>
+            <controllingFieldValue>Reverse the bus during the trip.</controllingFieldValue>
+            <controllingFieldValue>Damage to the bus free plate base</controllingFieldValue>
+            <controllingFieldValue>Do not install a trash can</controllingFieldValue>
+            <controllingFieldValue>The presence of writing and drawings on the internal structure of the bus</controllingFieldValue>
+            <controllingFieldValue>Damage to the internal structure of the bus</controllingFieldValue>
+            <controllingFieldValue>Damage to the bus&#39;s exterior</controllingFieldValue>
+            <controllingFieldValue>Damage to window tinting (hidden)</controllingFieldValue>
+            <controllingFieldValue>There is no rearview mirror on the bus</controllingFieldValue>
+            <controllingFieldValue>Failure to remove old warning lights</controllingFieldValue>
+            <controllingFieldValue>There is rust and cracks on the exterior of the bus</controllingFieldValue>
+            <controllingFieldValue>Presence following an accident (bus exterior structure)</controllingFieldValue>
+            <controllingFieldValue>The seat belt is two-point and contravenes legislative requirements</controllingFieldValue>
+            <controllingFieldValue>The bus internal number (B00) on the bus body is not clear</controllingFieldValue>
+            <controllingFieldValue>The absence of the bus internal number (B00) on the bus body</controllingFieldValue>
+            <controllingFieldValue>The reference number (DOT) on the bus body is not clear</controllingFieldValue>
+            <controllingFieldValue>Failure to board the bus at the specified time during the trip</controllingFieldValue>
+            <controllingFieldValue>Damage to the bus&#39;s exterior stickers</controllingFieldValue>
+            <controllingFieldValue>Cover the bus stickers with police radars</controllingFieldValue>
+            <controllingFieldValue>Damage to the external phosphorescent tape of the bus</controllingFieldValue>
+            <controllingFieldValue>Damage to the internal phosphorescent tape of the bus</controllingFieldValue>
+            <controllingFieldValue>Heavy smoke coming out of the bus exhaust</controllingFieldValue>
+            <controllingFieldValue>Presence of transmission oil/engine oil spills</controllingFieldValue>
+            <controllingFieldValue>There is a malfunction in the bus engine</controllingFieldValue>
+            <controllingFieldValue>The bus&#39;s front electronic panel malfunctions</controllingFieldValue>
+            <controllingFieldValue>There is a break in the interior lighting of the bus</controllingFieldValue>
+            <controllingFieldValue>Broken bus taillights</controllingFieldValue>
+            <controllingFieldValue>Broken bus headlights</controllingFieldValue>
+            <controllingFieldValue>Damage/broken bus warning signals</controllingFieldValue>
+            <controllingFieldValue>The inside of the bus is not clean</controllingFieldValue>
+            <controllingFieldValue>The outside of the bus is not clean</controllingFieldValue>
+            <controllingFieldValue>The presence of (writing/drawings) on the bus seats</controllingFieldValue>
+            <controllingFieldValue>Bus chairs damaged and broken</controllingFieldValue>
+            <controllingFieldValue>Torn bus seats</controllingFieldValue>
+            <controllingFieldValue>Not installing a first aid box</controllingFieldValue>
+            <controllingFieldValue>Fire extinguisher inspection completed</controllingFieldValue>
+            <controllingFieldValue>Opening the stop lever without shifters</controllingFieldValue>
+            <controllingFieldValue>Expiration of the permit to practice the profession</controllingFieldValue>
+            <controllingFieldValue>Expiration of ownership of the bus</controllingFieldValue>
+            <controllingFieldValue>The driver&#39;s driving license has expired</controllingFieldValue>
+            <valueName>High School</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

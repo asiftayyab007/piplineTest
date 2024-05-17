@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Finance_Zone_A_Coordinator_Student_Sharing_Rule</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Finance Zone A Coordinator Student Sharing Rule</label>
+        <sharedTo>
+            <role>Zone_A_Finance_Coordinator</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Student</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Hamdy_To_Shahid</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Hamdy_To_Shahid</label>
+        <sharedTo>
+            <group>ET_Hamdy_To_Shahid</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>OwnerId</field>
+            <operation>equals</operation>
+            <value>0053z00000CWo4m</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

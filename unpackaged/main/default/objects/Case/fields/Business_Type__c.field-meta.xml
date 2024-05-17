@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Case_Record_Types__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>School Transport</fullName>
+                <default>false</default>
+                <label>School Transport</label>
+            </value>
+            <value>
+                <fullName>Transport and Leasing</fullName>
+                <default>false</default>
+                <label>Transport and Leasing</label>
+            </value>
+            <value>
+                <fullName>ETDI</fullName>
+                <default>false</default>
+                <label>ETDI</label>
+            </value>
+            <value>
+                <fullName>Limousine Services</fullName>
+                <default>false</default>
+                <label>Limousine Services</label>
+            </value>
+            <value>
+                <fullName>Vehicle Inspection Services</fullName>
+                <default>false</default>
+                <label>Vehicle Inspection Services</label>
+            </value>
+            <value>
+                <fullName>Transport Services - B2B</fullName>
+                <default>false</default>
+                <label>Transport Services - B2B</label>
+            </value>
+            <value>
+                <fullName>Claim</fullName>
+                <default>false</default>
+                <label>Claim</label>
+            </value>
+            <value>
+                <fullName>Traffic Fine</fullName>
+                <default>false</default>
+                <label>Traffic Fine</label>
+            </value>
+            <value>
+                <fullName>Auto Repair Services - B2C</fullName>
+                <default>false</default>
+                <label>Auto Repair Services - B2C</label>
+            </value>
+            <value>
+                <fullName>Auto Repair Services - B2B</fullName>
+                <default>false</default>
+                <label>Auto Repair Services - B2B</label>
+            </value>
+            <value>
+                <fullName>MRO</fullName>
+                <default>false</default>
+                <label>MRO</label>
+            </value>
+            <value>
+                <fullName>Logistic</fullName>
+                <default>false</default>
+                <label>Logistic</label>
+            </value>
+            <value>
+                <fullName>Department</fullName>
+                <default>false</default>
+                <label>Department</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Traffic Violation</controllingFieldValue>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <controllingFieldValue>Add Service</controllingFieldValue>
+            <controllingFieldValue>Theft</controllingFieldValue>
+            <controllingFieldValue>Internal Issues</controllingFieldValue>
+            <controllingFieldValue>Service Compliance</controllingFieldValue>
+            <controllingFieldValue>Feedback and Appreciation</controllingFieldValue>
+            <controllingFieldValue>Service Quality</controllingFieldValue>
+            <controllingFieldValue>Accident/Emergency</controllingFieldValue>
+            <controllingFieldValue>Safety Issues</controllingFieldValue>
+            <controllingFieldValue>Staff Behavior</controllingFieldValue>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <controllingFieldValue>Inquiry and Notices</controllingFieldValue>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Online Services</controllingFieldValue>
+            <controllingFieldValue>Service Environment</controllingFieldValue>
+            <controllingFieldValue>Cancel Services</controllingFieldValue>
+            <controllingFieldValue>IT Complaints</controllingFieldValue>
+            <valueName>School Transport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traffic Violation</controllingFieldValue>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <controllingFieldValue>Add Service</controllingFieldValue>
+            <controllingFieldValue>Theft</controllingFieldValue>
+            <controllingFieldValue>Internal Issues</controllingFieldValue>
+            <controllingFieldValue>Service Compliance</controllingFieldValue>
+            <controllingFieldValue>Feedback and Appreciation</controllingFieldValue>
+            <controllingFieldValue>Service Quality</controllingFieldValue>
+            <controllingFieldValue>Accident/Emergency</controllingFieldValue>
+            <controllingFieldValue>Safety Issues</controllingFieldValue>
+            <controllingFieldValue>Staff Behavior</controllingFieldValue>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <controllingFieldValue>Inquiry and Notices</controllingFieldValue>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Online Services</controllingFieldValue>
+            <controllingFieldValue>Service Environment</controllingFieldValue>
+            <controllingFieldValue>Cancel Services</controllingFieldValue>
+            <controllingFieldValue>IT Complaints</controllingFieldValue>
+            <valueName>Transport and Leasing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traffic Violation</controllingFieldValue>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <controllingFieldValue>Add Service</controllingFieldValue>
+            <controllingFieldValue>Theft</controllingFieldValue>
+            <controllingFieldValue>Internal Issues</controllingFieldValue>
+            <controllingFieldValue>Service Compliance</controllingFieldValue>
+            <controllingFieldValue>Feedback and Appreciation</controllingFieldValue>
+            <controllingFieldValue>Service Quality</controllingFieldValue>
+            <controllingFieldValue>Accident/Emergency</controllingFieldValue>
+            <controllingFieldValue>Safety Issues</controllingFieldValue>
+            <controllingFieldValue>Staff Behavior</controllingFieldValue>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <controllingFieldValue>Inquiry and Notices</controllingFieldValue>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Online Services</controllingFieldValue>
+            <controllingFieldValue>Service Environment</controllingFieldValue>
+            <controllingFieldValue>Cancel Services</controllingFieldValue>
+            <controllingFieldValue>IT Complaints</controllingFieldValue>
+            <valueName>ETDI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traffic Violation</controllingFieldValue>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <controllingFieldValue>Add Service</controllingFieldValue>
+            <controllingFieldValue>Theft</controllingFieldValue>
+            <controllingFieldValue>Internal Issues</controllingFieldValue>
+            <controllingFieldValue>Service Compliance</controllingFieldValue>
+            <controllingFieldValue>Feedback and Appreciation</controllingFieldValue>
+            <controllingFieldValue>Service Quality</controllingFieldValue>
+            <controllingFieldValue>Accident/Emergency</controllingFieldValue>
+            <controllingFieldValue>Safety Issues</controllingFieldValue>
+            <controllingFieldValue>Staff Behavior</controllingFieldValue>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <controllingFieldValue>Inquiry and Notices</controllingFieldValue>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Online Services</controllingFieldValue>
+            <controllingFieldValue>Service Environment</controllingFieldValue>
+            <controllingFieldValue>Cancel Services</controllingFieldValue>
+            <controllingFieldValue>IT Complaints</controllingFieldValue>
+            <valueName>MRO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traffic Violation</controllingFieldValue>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <controllingFieldValue>Add Service</controllingFieldValue>
+            <controllingFieldValue>Theft</controllingFieldValue>
+            <controllingFieldValue>Internal Issues</controllingFieldValue>
+            <controllingFieldValue>Service Compliance</controllingFieldValue>
+            <controllingFieldValue>Feedback and Appreciation</controllingFieldValue>
+            <controllingFieldValue>Service Quality</controllingFieldValue>
+            <controllingFieldValue>Accident/Emergency</controllingFieldValue>
+            <controllingFieldValue>Safety Issues</controllingFieldValue>
+            <controllingFieldValue>Staff Behavior</controllingFieldValue>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <controllingFieldValue>Inquiry and Notices</controllingFieldValue>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Online Services</controllingFieldValue>
+            <controllingFieldValue>Service Environment</controllingFieldValue>
+            <controllingFieldValue>Cancel Services</controllingFieldValue>
+            <controllingFieldValue>IT Complaints</controllingFieldValue>
+            <valueName>Logistic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traffic Violation</controllingFieldValue>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <controllingFieldValue>Add Service</controllingFieldValue>
+            <controllingFieldValue>Theft</controllingFieldValue>
+            <controllingFieldValue>Internal Issues</controllingFieldValue>
+            <controllingFieldValue>Service Compliance</controllingFieldValue>
+            <controllingFieldValue>Feedback and Appreciation</controllingFieldValue>
+            <controllingFieldValue>Service Quality</controllingFieldValue>
+            <controllingFieldValue>Accident/Emergency</controllingFieldValue>
+            <controllingFieldValue>Safety Issues</controllingFieldValue>
+            <controllingFieldValue>Staff Behavior</controllingFieldValue>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <controllingFieldValue>Inquiry and Notices</controllingFieldValue>
+            <controllingFieldValue>New Business</controllingFieldValue>
+            <controllingFieldValue>Online Services</controllingFieldValue>
+            <controllingFieldValue>Service Environment</controllingFieldValue>
+            <controllingFieldValue>Cancel Services</controllingFieldValue>
+            <controllingFieldValue>IT Complaints</controllingFieldValue>
+            <valueName>Department</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

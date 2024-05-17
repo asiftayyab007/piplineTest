@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branding_is_done_by_ET_or_Client_Types__c</fullName>
+    <externalId>false</externalId>
+    <label>Branding is done by ET or Client Types</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Terms_and_Conditions_Types</valueSetName>
+    </valueSet>
+</CustomField>

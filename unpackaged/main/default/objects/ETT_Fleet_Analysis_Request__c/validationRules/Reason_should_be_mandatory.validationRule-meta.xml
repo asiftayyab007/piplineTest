@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_should_be_mandatory</fullName>
+    <active>true</active>
+    <description>when inspector status is cancelled then rejectiob reason should be mandatory</description>
+    <errorConditionFormula>IF( ISCHANGED( Inspector_Status__c ) , IF( ISPICKVAL( Inspector_Status__c , &quot;Cancelled&quot;) ,  IF( ISBLANK( Inspection_Cancellation_Reason__c ) , true, false) , false)  , false)</errorConditionFormula>
+    <errorMessage>Please provide cancellation reason</errorMessage>
+</ValidationRule>

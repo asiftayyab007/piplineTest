@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Account_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>Sports And Social Club</fullName>
+                <default>false</default>
+                <label>Sports And Social Club</label>
+            </value>
+            <value>
+                <fullName>Ministry And Government</fullName>
+                <default>false</default>
+                <label>Ministry And Government</label>
+            </value>
+            <value>
+                <fullName>Rent</fullName>
+                <default>false</default>
+                <label>Rent</label>
+            </value>
+            <value>
+                <fullName>Transport</fullName>
+                <default>false</default>
+                <label>Transport</label>
+            </value>
+            <value>
+                <fullName>Contracting And Decoration</fullName>
+                <default>false</default>
+                <label>Contracting And Decoration</label>
+            </value>
+            <value>
+                <fullName>Haj And Ommrah</fullName>
+                <default>false</default>
+                <label>Haj And Ommrah</label>
+            </value>
+            <value>
+                <fullName>Hotel,Restaurant,Catering,Tourism,Travel</fullName>
+                <default>false</default>
+                <label>Hotel,Restaurant,Catering,Tourism,Travel</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Petrol And Gas</fullName>
+                <default>false</default>
+                <label>Petrol And Gas</label>
+            </value>
+            <value>
+                <fullName>Welfare Society</fullName>
+                <default>false</default>
+                <label>Welfare Society</label>
+            </value>
+            <value>
+                <fullName>Factory</fullName>
+                <default>false</default>
+                <label>Factory</label>
+            </value>
+            <value>
+                <fullName>Trading And Commercial</fullName>
+                <default>false</default>
+                <label>Trading And Commercial</label>
+            </value>
+            <value>
+                <fullName>Model School</fullName>
+                <default>false</default>
+                <label>Model School</label>
+            </value>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+            <value>
+                <fullName>Sundary</fullName>
+                <default>false</default>
+                <label>Sundary</label>
+            </value>
+            <value>
+                <fullName>Leisure and Tourism</fullName>
+                <default>false</default>
+                <label>Leisure and Tourism</label>
+            </value>
+            <value>
+                <fullName>Logistic Services</fullName>
+                <default>false</default>
+                <label>Logistic Services</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Advertisement And Promotional</fullName>
+                <default>false</default>
+                <label>Advertisement And Promotional</label>
+            </value>
+            <value>
+                <fullName>Private School</fullName>
+                <default>false</default>
+                <label>Private School</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Workshop And Garage</fullName>
+                <default>false</default>
+                <label>Workshop And Garage</label>
+            </value>
+            <value>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+                <label>Real Estate</label>
+            </value>
+            <value>
+                <fullName>Auction</fullName>
+                <default>false</default>
+                <label>Auction</label>
+            </value>
+            <value>
+                <fullName>University And College</fullName>
+                <default>false</default>
+                <label>University And College</label>
+            </value>
+            <value>
+                <fullName>MOTO</fullName>
+                <default>false</default>
+                <label>MOTO</label>
+            </value>
+            <value>
+                <fullName>Ajyal School</fullName>
+                <default>false</default>
+                <label>Ajyal School</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Cannot_Insert_Negative_Values</fullName>
+    <active>true</active>
+    <description>Budget Amount, Contract Period, Annual Revenue, No of employees Cannot Contain Negative Value.</description>
+    <errorConditionFormula>OR(
+ETSALES_Budget__c &lt; 0,
+ETSALES_Leasing_Term__c  &lt; 0,
+NumberOfEmployees &lt; 0,
+AnnualRevenue &lt; 0
+)</errorConditionFormula>
+    <errorMessage>Customer Budget, Contract Period,  Annual Revenue &amp; No of employees values should not be negative.</errorMessage>
+</ValidationRule>

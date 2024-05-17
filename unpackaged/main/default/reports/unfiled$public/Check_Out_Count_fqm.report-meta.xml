@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CICO_Check_Out__c.Check_Out_For__c</field>
+    </columns>
+    <columns>
+        <field>CICO_Check_Out__c.Plate_No__c</field>
+    </columns>
+    <columns>
+        <field>CICO_Check_Out__c.Check_Out_Status__c</field>
+    </columns>
+    <columns>
+        <field>CICO_Check_Out__c.Document_No__c</field>
+    </columns>
+    <columns>
+        <field>CICO_Check_Out__c.Check_Out_Date__c</field>
+    </columns>
+    <columns>
+        <field>CICO_Check_Out__c.Created_Date_Time__c</field>
+    </columns>
+    <currency>AED</currency>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CHILD_CREATED_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Check Out Count</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Vehicle_Master__c$CICO_Check_Out__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CICO_Check_Out__c.Created_Date_Time__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

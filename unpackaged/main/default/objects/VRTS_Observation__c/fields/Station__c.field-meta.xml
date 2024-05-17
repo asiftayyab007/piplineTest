@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Station__c</fullName>
+    <externalId>false</externalId>
+    <label>Station</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Branch__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Baniyas Station</fullName>
+                <default>false</default>
+                <label>Baniyas Station (محطة بني ياس)</label>
+            </value>
+            <value>
+                <fullName>Musaffah Station 1 - Capital</fullName>
+                <default>false</default>
+                <label>Musaffah Station 1 - Capital (محطة مصفح 1 - العاصمة)</label>
+            </value>
+            <value>
+                <fullName>Mussafah Station 2</fullName>
+                <default>false</default>
+                <label>Mussafah Station 2 (محطة مصفح 2)</label>
+            </value>
+            <value>
+                <fullName>Mussafah Station 3</fullName>
+                <default>false</default>
+                <label>Mussafah Station 3 (محطة مصفح 3)</label>
+            </value>
+            <value>
+                <fullName>Al Falah Station</fullName>
+                <default>false</default>
+                <label>Al Falah Station (محطة الفلاح)</label>
+            </value>
+            <value>
+                <fullName>Shahama Station</fullName>
+                <default>false</default>
+                <label>Shahama Station (محطة الشهامة)</label>
+            </value>
+            <value>
+                <fullName>Ajman Station</fullName>
+                <default>false</default>
+                <label>Ajman Station (محطة عجمان)</label>
+            </value>
+            <value>
+                <fullName>Al Foah Station</fullName>
+                <default>false</default>
+                <label>Al Foah Station (محطة الفوعة)</label>
+            </value>
+            <value>
+                <fullName>Cataract Station</fullName>
+                <default>false</default>
+                <label>Cataract Station (محطة الساد)</label>
+            </value>
+            <value>
+                <fullName>Mazyad Station</fullName>
+                <default>false</default>
+                <label>Mazyad Station (محطة مزيد)</label>
+            </value>
+            <value>
+                <fullName>Al Ain Industrial Station</fullName>
+                <default>false</default>
+                <label>Al Ain Industrial Station (محطة صناعية العين)</label>
+            </value>
+            <value>
+                <fullName>Al Dhaid Station</fullName>
+                <default>false</default>
+                <label>Al Dhaid Station (محطة الذيد)</label>
+            </value>
+            <value>
+                <fullName>Masfoot Station</fullName>
+                <default>false</default>
+                <label>Masfoot Station (محطة مصفوت)</label>
+            </value>
+            <value>
+                <fullName>um Al Quwain Station</fullName>
+                <default>false</default>
+                <label>um Al Quwain Station (محطة أم القوين)</label>
+            </value>
+            <value>
+                <fullName>Al Quoz Station</fullName>
+                <default>false</default>
+                <label>Al Quoz Station (محطة القوز)</label>
+            </value>
+            <value>
+                <fullName>Al Qusais Station</fullName>
+                <default>false</default>
+                <label>Al Qusais Station (محطة القصيص)</label>
+            </value>
+            <value>
+                <fullName>um Ramool Station</fullName>
+                <default>false</default>
+                <label>um Ramool Station (محطة أم الرمول)</label>
+            </value>
+            <value>
+                <fullName>Al Warsan Station</fullName>
+                <default>false</default>
+                <label>Al Warsan Station (محطة الورسان)</label>
+            </value>
+            <value>
+                <fullName>Al Hail Station</fullName>
+                <default>false</default>
+                <label>Al Hail Station (محطة الحيل)</label>
+            </value>
+            <value>
+                <fullName>Dibba Al Fujairah Station</fullName>
+                <default>false</default>
+                <label>Dibba Al Fujairah Station (محطة دبا الفجيرة)</label>
+            </value>
+            <value>
+                <fullName>Kalba Station</fullName>
+                <default>false</default>
+                <label>Kalba Station (محطة كلباء)</label>
+            </value>
+            <value>
+                <fullName>Khorfakkan Station</fullName>
+                <default>false</default>
+                <label>Khorfakkan Station (محطة خورفكان)</label>
+            </value>
+            <value>
+                <fullName>Al Dhait Station</fullName>
+                <default>false</default>
+                <label>Al Dhait Station (محطة الظيت)</label>
+            </value>
+            <value>
+                <fullName>Al Nakheel Station</fullName>
+                <default>false</default>
+                <label>Al Nakheel Station (محطة النخيل)</label>
+            </value>
+            <value>
+                <fullName>Rams Station</fullName>
+                <default>false</default>
+                <label>Rams Station (محطة الرمس)</label>
+            </value>
+            <value>
+                <fullName>Ghalila Station</fullName>
+                <default>false</default>
+                <label>Ghalila Station (محطة غليلة)</label>
+            </value>
+            <value>
+                <fullName>Azra Station</fullName>
+                <default>false</default>
+                <label>Azra Station (محطة العزره)</label>
+            </value>
+            <value>
+                <fullName>Clues Station</fullName>
+                <default>false</default>
+                <label>Clues Station (محطة القرائن)</label>
+            </value>
+            <value>
+                <fullName>Sharjah Industrial Station</fullName>
+                <default>false</default>
+                <label>Sharjah Industrial Station (محطة صناعية الشارقة)</label>
+            </value>
+            <value>
+                <fullName>Al Dhafra Station</fullName>
+                <default>false</default>
+                <label>Al Dhafra Station (محطة الظفرة)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Central Region-8</controllingFieldValue>
+            <valueName>Al Dhaid Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central Region-8</controllingFieldValue>
+            <valueName>Masfoot Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central Region-8</controllingFieldValue>
+            <valueName>um Al Quwain Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Coast-9</controllingFieldValue>
+            <valueName>Al Hail Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Coast-9</controllingFieldValue>
+            <valueName>Dibba Al Fujairah Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Coast-9</controllingFieldValue>
+            <valueName>Kalba Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Coast-9</controllingFieldValue>
+            <valueName>Khorfakkan Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Al Dhafra-1</controllingFieldValue>
+            <valueName>Al Dhafra Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi-2</controllingFieldValue>
+            <valueName>Baniyas Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi-2</controllingFieldValue>
+            <valueName>Musaffah Station 1 - Capital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi-2</controllingFieldValue>
+            <valueName>Mussafah Station 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi-2</controllingFieldValue>
+            <valueName>Mussafah Station 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi-2</controllingFieldValue>
+            <valueName>Al Falah Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abu Dhabi-2</controllingFieldValue>
+            <valueName>Shahama Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Al Ain-3</controllingFieldValue>
+            <valueName>Al Foah Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Al Ain-3</controllingFieldValue>
+            <valueName>Cataract Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Al Ain-3</controllingFieldValue>
+            <valueName>Mazyad Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Al Ain-3</controllingFieldValue>
+            <valueName>Al Ain Industrial Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai-4</controllingFieldValue>
+            <valueName>Al Quoz Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai-4</controllingFieldValue>
+            <valueName>Al Qusais Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai-4</controllingFieldValue>
+            <valueName>um Ramool Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dubai-4</controllingFieldValue>
+            <valueName>Al Warsan Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ajman-5</controllingFieldValue>
+            <valueName>Ajman Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sharjah-6</controllingFieldValue>
+            <valueName>Azra Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sharjah-6</controllingFieldValue>
+            <valueName>Clues Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sharjah-6</controllingFieldValue>
+            <valueName>Sharjah Industrial Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ras Al Khaimah-7</controllingFieldValue>
+            <valueName>Al Dhait Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ras Al Khaimah-7</controllingFieldValue>
+            <valueName>Al Nakheel Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ras Al Khaimah-7</controllingFieldValue>
+            <valueName>Rams Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ras Al Khaimah-7</controllingFieldValue>
+            <valueName>Ghalila Station</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

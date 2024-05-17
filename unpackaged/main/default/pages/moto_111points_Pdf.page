@@ -1,0 +1,750 @@
+<apex:page standardController="X111_Point_Check__c"  extensions="MOTO_VehInspectionCtrl" renderAs="pdf" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <html>
+        <head>
+            <style>
+                
+                h3{
+                margin: 0px;
+                padding: 50px 0px 15px;
+                font-weight: bold;
+                font-family: sans-serif;
+                font-size: 14px;
+                color: #000;
+                }
+                p{
+                margin: 0px;
+                font-weight: bold;
+                font-family: sans-serif;
+                font-size: 14px;
+                color: #000;
+                }
+                
+                .diagram{
+                margin-top:300px;
+                margin-bottom:40px;
+                }
+                
+                
+            </style>
+        </head>
+    </html>
+    
+    <body>
+         <h1 style="text-align:center">
+            111 Points Health Check
+        </h1>
+        <table>
+             <apex:pageBlock title="Vehicle Documentation">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <th>Name &nbsp;:</th>
+                            <td>{!X111_Point_Check__c.Name}</td>
+                        </tr>
+                        <tr>
+                            <th>Registration documents  &nbsp;:</th>
+                            <td> <apex:outputField value="{!X111_Point_Check__c.Registration_documents__c}"/></td>
+                        </tr>
+                        <tr>
+                            <th>On board equipment  &nbsp;:</th>
+                            <td> <apex:outputField value="{!X111_Point_Check__c.On_board_equipment__c}"/>
+                            </td>
+                        </tr> 
+                    </table>   
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>Safety equipment  &nbsp;:</th>
+                            <td> <apex:outputField value="{!X111_Point_Check__c.Safety_equipment__c}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Warranty booklet  &nbsp;:</th>
+                            <td> <apex:outputField value="{!X111_Point_Check__c.Warranty_booklet__c}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Maintenance booklet  &nbsp;:</th>
+                            <td> <apex:outputField value="{!X111_Point_Check__c.Maintenance_booklet__c}"/>
+                            </td>
+                        </tr>
+                    </table>  
+                </td>
+            </tr>
+                </apex:pageBlock>
+             <apex:pageBlock title="Vehicle Diagnostic Check">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <th>OBD Fault Memory check  &nbsp;:</th>
+                            <td> <apex:outputField value="{!X111_Point_Check__c.OBD_Fault_Memory_check__c}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Tire Pressure Monitoring TPM  &nbsp;:</th>
+                            <td> <apex:outputField value="{!X111_Point_Check__c.Tire_Pressure_Monitoring_TPM__c}"/>
+                            </td>
+                        </tr>
+                    </table>   
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>Front RH LH  &nbsp;:</th>
+                            <td> <apex:outputField value="{!X111_Point_Check__c.Front_RH_LH__c}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Rear RH LH  &nbsp;:</th>
+                            <td> <apex:outputField value="{!X111_Point_Check__c.Rear_RH_LH__c}"/>
+                            </td>
+                        </tr>
+                    </table>  
+                </td>
+            </tr>
+            </apex:pageBlock>
+            <apex:pageBlock title="Interior (Function and Condition">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Door locking system</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Door_locking_system__c	}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Remote controls</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Remote_controls__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Alarm system and immobillzer</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Alarm_system_and_immobillzer__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Ignition ignition switch</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Ignition_ignition_switch__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Steering wheel lock</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Steering_wheel_lock__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Interior lighting</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Interior_lighting__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Horn</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Horn__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Wipers front rear</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Wipers_front_rear__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Windscreen washer and headlight system</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Windscreen_washer_and_headlight_system__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Exterior mirror rear view mirror</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Exterior_mirror_rear_view_mirror__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Instrument panel(check while stationary)</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Instrument_panel__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Multi function steering wheel</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Multi_function_steering_wheel__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Steering column adjustment</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Steering_column_adjustment__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>On board clock</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.On_board_clock__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Warning lights and sounds</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Warning_lights_and_sounds__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Airbag system</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Airbag_system__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Sun visors</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Sun_visors__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Windscreen rear window and mirror</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Windscreen_rear_window_and_mirror__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Audio Radio telephone CD auto changer</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Audio_Radio_telephone_CD_auto_changer__c}"/>
+                                </td>
+                            </tr>
+                        </table>   
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Audio system radio CD DVD</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Audio_system_radio_CD_DVD__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Seat heating</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Seat_heating__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Seat ventilation</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Seat_ventilation__c}"/>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th>Power windows incl anti pinch</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Power_windows_incl_anti_pinch__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Steering wheel heating</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Steering_wheel_heating__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Auxiliary heating</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Auxiliary_heating__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Seat adjustment seat position memory</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Seat_adjustment_seat_position_memory__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Cup holders</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Cup_holders__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Glove compartment lid</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Glove_compartment_lid__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Cigarette lighter sockets</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Cigarette_lighter_sockets__c}"/>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th>Ashtrays</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Ashtrays__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Seat belts and seat belt height</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Seat_belts_and_seat_belt_height__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Seat and had restraint upholstery</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Seat_and_had_restraint_upholstery__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Roof sliding sunroof</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Roof_sliding_sunroof__c	}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Roof lining</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Roof_lining__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Cabriolet wind deflector</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Cabriolet_wind_deflector__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Floor mats and carpet</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Floor_mats_and_carpet__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Interior trim luggage compartment</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Interior_trim_luggage_compartment__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Unlocking mechanism for all lids</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Unlocking_mechanism_for_all_lids__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Equipment Exclusive equipment</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Equipment_Exclusive_equipment__c}"/>
+                                </td>
+                            </tr>
+                        </table>  
+                    </td>
+                </tr>
+            </apex:pageBlock>
+            
+            <apex:pageBlock title="Wheels/tyres">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Tread depth</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Tread_depth__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Frt LH RH RR RH RR LH</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Frt_LH_RH_RR_RH_RR_LH__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Tyre Size F R</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Tyre_Size_F_R__c}"/>
+                                </td>
+                            </tr>
+                        </table>   
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Tyre manufacturer</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Tyre_manufacturer__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>No safety related damage on wheels tyres</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.No_safety_related_damage_on_wheels_tyres__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Tyre pressure FRT RR</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Tyre_pressure_FRT_RR__c}"/>
+                                </td>
+                            </tr>
+                        </table>  
+                    </td>
+                </tr>
+            </apex:pageBlock>
+            <apex:pageBlock title="Drive system/underbody(function and conditions-no visible defects, fluid loss, leaks)">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Underbody cover</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Underbody_cover__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Exhaust system</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Exhaust_system__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Chassis wheel suspension shock absorber</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Chassis_wheel_suspension_shock_absorber__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Stabilizer bearings</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Stabilizer_bearings__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Axle joints</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Axle_joints__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Drive axles</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Drive_axles__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Transfer case</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Transfer_case__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Steering gear</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Steering_gear__c}"/>
+                                </td>
+                            </tr>
+                        </table>   
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Transmission</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Transmission__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Fuel system</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Fuel_system__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Radiators coolers fans</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Radiators_coolers_fans__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Coolant hoses and connections</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Coolant_hoses_and_connections__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Brake lines and hoses</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Brake_lines_and_hoses__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Brake Pads</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Brake_Pads__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Axle joints</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Axle_joints__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Brake discs within wear limits</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Brake_discs_within_wear_limits__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Brake calipers air ducts cover plates</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Brake_calipers_air_ducts_cover_plates__c}"/>
+                                </td>
+                            </tr>
+                        </table>  
+                    </td>
+                </tr>
+            </apex:pageBlock>  
+            <apex:pageBlock title="Vehicle exterior(function and condition)">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Body</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Body__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Convertible top</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Convertible_top__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Paintwork</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Paintwork__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Doors and lids</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Doors_and_lids__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Exterior lights</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Exterior_lights__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Headlight adjustment</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Headlight_adjustment__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Rims</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Rims__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Glazing</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Glazing__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Spoiler</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Spoiler__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Water drains and air guides</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Water_drains_and_air_guides__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Equipment Exclusive equipmentt</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Equipment_Exclusive_equipmentt__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Trailer coupling</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Trailer_coupling__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Taking two photos as shown documentation</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Taking_two_photos_as_shown_documentation__c}"/>
+                                </td>
+                            </tr> 
+                        </table>   
+                    </td>
+                    <td>
+                        <table>
+                            
+                            
+                            
+                            
+                            
+                        </table>  
+                    </td>
+                </tr>
+            </apex:pageBlock>
+            <apex:pageBlock title="Engine compartment(funtion and condition-no visible defects, fluid loss, leaks)">
+                
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Engine idling</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Engine_idling__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Air conditioning compressor</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Air_conditioning_compressor__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Belts generator air conditioning fans</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Belts_generator_air_conditioning_fans__c}"/>
+                                </td>
+                            </tr>
+                        </table>   
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Engine</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Engine__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Generator Alternator</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Generator_Alternator__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Battery test attach battery check sheet</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Battery_test_attach_battery_check_sheet__c}"/>
+                                </td>
+                            </tr>     
+                        </table>  
+                    </td>
+                </tr>
+            </apex:pageBlock>
+            <apex:pageBlock title="Fluids(fill levels)">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Engine oilth</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Engine_oil__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Coolant</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Coolant__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Power steering hydraulic oil</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Power_steering_hydraulic_oil__c}"/>
+                                </td>
+                            </tr>
+                        </table>   
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Brake clutch fluid</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Brake_clutch_fluid__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Windscreen and headlight washer fluid</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Windscreen_and_headlight_washer_fluid__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Transmission Fluid</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Transmission_Fluid__c}"/>
+                                </td>
+                            </tr>
+                        </table>  
+                    </td>
+                </tr>
+            </apex:pageBlock>
+            <apex:pageBlock title="Test drive(function)">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Staring and idle speed behaviour</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Staring_and_idle_speed_behaviour__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Braking effect foot brake and parking</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Braking_effect_foot_brake_and_parking__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ABS</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.ABS__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Suspension system Strut Type Air</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Suspension_system_Strut_Type_Air__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Power steering</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Power_steering__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Steering wheel centered</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Steering_wheel_centered__c	}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Directional stability</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Directional_stability__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Auto Braking</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Auto_Braking__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Vehicle performance</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Vehicle_performance__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Gear Shift operation</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Gear_Shift_operation__c	}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Auto Stop start stop</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Auto_Stop_start_stop__c}"/>
+                                </td>
+                            </tr>
+                        </table>   
+                    </td>
+                    <td>
+                        <table>
+                            <tr> 
+                                <th>Heating ventilation system air</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Heating_ventilation_system_air__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ParkAssist reversing camera</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.ParkAssist_reversing_camera__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>navigation system</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.navigation_system__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Cruise control all functions</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Cruise_control_all_functions__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Instrument panel while vehicle motion</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Instrument_panel_while_vehicle_motion__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Hill Hold Control</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Hill_Hold_Control__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Lane departure warning LDW</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Lane_departure_warning_LDW__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Lane Change Assist LCA</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Lane_Change_Assist_LCA__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Distance control system</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.Distance_control_system__c}"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>No unusual noises vibrations</th>
+                                <td> <apex:outputField value="{!X111_Point_Check__c.No_unusual_noises_vibrations__c}"/>
+                                </td>
+                            </tr>
+                        </table>  
+                    </td>
+                </tr>    
+            </apex:pageBlock>
+            <p class="diagram">Marking Diagram</p>
+            <apex:outputPanel rendered="{!MarkedDiagram}">
+                <apex:repeat value="{!imageData['MarkedDiagram']}" var="markedDiagramId">
+                    <img alt="no image" src="/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId={!markedDiagramId}" width="500" height="400" style=""/>
+                </apex:repeat>
+            </apex:outputPanel>
+        </table>
+        
+    </body>
+</apex:page>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation__c</fullName>
+    <externalId>false</externalId>
+    <label>Violation Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Red Light Jump</fullName>
+                <default>false</default>
+                <label>Red Light Jump</label>
+            </value>
+            <value>
+                <fullName>Over Speeding</fullName>
+                <default>false</default>
+                <label>Over Speeding</label>
+            </value>
+            <value>
+                <fullName>Rash Driving</fullName>
+                <default>false</default>
+                <label>Rash Driving</label>
+            </value>
+            <value>
+                <fullName>Safety Issues</fullName>
+                <default>false</default>
+                <label>Safety Issues</label>
+            </value>
+            <value>
+                <fullName>Drink and Drive</fullName>
+                <default>false</default>
+                <label>Drink and Drive</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

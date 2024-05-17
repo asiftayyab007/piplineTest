@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moto_CampaignValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>PRIORVALUE(Campaign__c) !=  null &amp;&amp;  ISCHANGED(Campaign__c )</errorConditionFormula>
+    <errorDisplayField>Campaign__c</errorDisplayField>
+    <errorMessage>You cannot change the Campaign</errorMessage>
+</ValidationRule>

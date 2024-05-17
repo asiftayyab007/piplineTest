@@ -1,0 +1,149 @@
+body {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0px;
+    font-family: 'Overpass', sans-serif;
+    background:#fff!important;
+    font-size:12px;
+    color: #000;
+}
+*{
+    box-sizing: border-box;
+}
+.mainouter{
+    background: #fff;
+    color: #000;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    padding: 15px;
+}
+
+table tr td{
+    padding:0 5px;
+    font-size:16px; 
+    line-height:normal; 
+}
+p{
+    font-size:16px; 
+    font-weight:600; 
+    line-height:normal; 
+    margin:0px;
+    color: #000;
+}
+hr{
+    margin: 0px;
+    border-color: #000;
+}
+.text-center, .text-center td{
+    text-align: center;
+}
+.lasttable{
+    margin-top: 10px;
+}
+.lasttable tr td{
+    border-color: #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+.lasttable tr td input{
+    border:0px;
+    width: 100%;
+    font-weight: normal;
+    border-radius: 0px;
+}
+.lasttable tr td input:focus{
+    border:0px;
+    outline: none;
+}
+.paddingright{
+    padding-right:10% !important;
+}
+.font30{
+    font-size:30px;
+    line-height:normal;
+}
+.font26{
+     font-size:26px;
+}
+.receipt{
+    font-size:20px; 
+    margin:0px; 
+    font-weight:bold;
+    border: 0px;
+    border-radius: 0px;
+    width: 140px;
+    text-align: center;
+    color: #000;
+    background: transparent;
+}
+.receipt::placeholder{
+    color: #bdbdbd; 
+}
+.receipt:focus{
+    outline: none;
+}
+.receipttable{ 
+    background:#efefef; 
+    border:1px solid #000;
+}
+.btndiv{
+    float: left;
+    width: 100%;
+}
+.btndiv a{
+    padding:5px 10px;
+    border-radius:4px;
+    background:#333;
+    color:#fff;
+    font-size: 12px;
+    margin: 5px;  
+    border:0px;
+    display: inline-block;
+}
+table tr td.receipt_outer{
+    border-bottom:1px solid #000; 
+    padding:8px 30px;
+}
+@media screen and (max-width:1090px){
+ .paddingright{
+    padding-right:5% !important;
+}   
+.font30{
+    font-size:22px; 
+}
+.font26{
+     font-size:20px;
+}
+}
+@media screen and (max-width:1024px){
+ .paddingright{
+    padding-right:0% !important;
+}   
+.receipttable{
+    width:100%;  
+}
+table tr td.receipt_outer{ 
+    padding:8px 0px;
+}
+table tr td.receipt_outer td{ 
+    padding: 5px 0;
+}
+.threetable table{
+    width: 45% !important;
+    margin-bottom: 10px !important;
+}
+.threetable table:last-child{
+    width:91% !important;
+    margin-bottom: 0px !important;
+}
+.font30{
+    font-size:20px; 
+}
+.font26{
+     font-size:18px;
+}
+p, .lasttable tr td{
+    font-size:14px; 
+}
+}

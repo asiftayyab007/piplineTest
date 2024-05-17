@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Tyre_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Tyre Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Tyre</fullName>
+                <default>false</default>
+                <label>New Tyre</label>
+            </value>
+            <value>
+                <fullName>Hot Process</fullName>
+                <default>false</default>
+                <label>Hot Process</label>
+            </value>
+            <value>
+                <fullName>Pre-cured</fullName>
+                <default>false</default>
+                <label>Pre-cured</label>
+            </value>
+            <value>
+                <fullName>First Retread</fullName>
+                <default>false</default>
+                <label>First Retread</label>
+            </value>
+            <value>
+                <fullName>Second Retread</fullName>
+                <default>false</default>
+                <label>Second Retread</label>
+            </value>
+            <value>
+                <fullName>Third Retread</fullName>
+                <default>false</default>
+                <label>Third Retread</label>
+            </value>
+            <value>
+                <fullName>Fourth Retread</fullName>
+                <default>false</default>
+                <label>Fourth Retread</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

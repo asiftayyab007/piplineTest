@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LIGHT</fullName>
+                <default>false</default>
+                <label>LIGHT</label>
+            </value>
+            <value>
+                <fullName>STEERING</fullName>
+                <default>false</default>
+                <label>STEERING</label>
+            </value>
+            <value>
+                <fullName>SUSPENSION</fullName>
+                <default>false</default>
+                <label>SUSPENSION</label>
+            </value>
+            <value>
+                <fullName>BRAKE SYSTEM</fullName>
+                <default>false</default>
+                <label>BRAKE SYSTEM</label>
+            </value>
+            <value>
+                <fullName>TIRES AND RIMS</fullName>
+                <default>false</default>
+                <label>TIRES AND RIMS</label>
+            </value>
+            <value>
+                <fullName>CHASSIS</fullName>
+                <default>false</default>
+                <label>CHASSIS</label>
+            </value>
+            <value>
+                <fullName>BODY</fullName>
+                <default>false</default>
+                <label>BODY</label>
+            </value>
+            <value>
+                <fullName>GLASSES</fullName>
+                <default>false</default>
+                <label>GLASSES</label>
+            </value>
+            <value>
+                <fullName>ENGINE</fullName>
+                <default>false</default>
+                <label>ENGINE</label>
+            </value>
+            <value>
+                <fullName>GENERAL ITEMS</fullName>
+                <default>false</default>
+                <label>GENERAL ITEMS</label>
+            </value>
+            <value>
+                <fullName>FUEL SYSTEM PROTECTION</fullName>
+                <default>false</default>
+                <label>FUEL SYSTEM PROTECTION</label>
+            </value>
+            <value>
+                <fullName>UNDER CHASSIS</fullName>
+                <default>false</default>
+                <label>UNDER CHASSIS</label>
+            </value>
+            <value>
+                <fullName>VEHICLE CONDITION</fullName>
+                <default>false</default>
+                <label>VEHICLE CONDITION</label>
+            </value>
+            <value>
+                <fullName>DOCUMENTS REQUIRED</fullName>
+                <default>false</default>
+                <label>DOCUMENTS REQUIRED</label>
+            </value>
+            <value>
+                <fullName>ADFCA VISUAL DEFECT</fullName>
+                <default>false</default>
+                <label>ADFCA VISUAL DEFECT</label>
+            </value>
+            <value>
+                <fullName>SCHOOL BUS INFORMATION</fullName>
+                <default>false</default>
+                <label>SCHOOL BUS INFORMATION</label>
+            </value>
+            <value>
+                <fullName>DOCUMENTS COLLECTED</fullName>
+                <default>false</default>
+                <label>DOCUMENTS COLLECTED</label>
+            </value>
+            <value>
+                <fullName>COMMENTS</fullName>
+                <default>false</default>
+                <label>COMMENTS</label>
+            </value>
+            <value>
+                <fullName>VEHICLE INFORMATION</fullName>
+                <default>false</default>
+                <label>VEHICLE INFORMATION</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

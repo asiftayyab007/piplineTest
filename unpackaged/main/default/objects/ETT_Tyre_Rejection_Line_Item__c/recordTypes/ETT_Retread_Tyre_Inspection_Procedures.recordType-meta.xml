@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_Retread_Tyre_Inspection_Procedures</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>ETT_Rejection_Line_Item</compactLayoutAssignment>
+    <label>Retread Tyre Inspection Procedures</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Good_Condition__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ETT_Job_Stage__c</picklist>
+        <values>
+            <fullName>Buffing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cementing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Painting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removal of RIM Tube Flap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rimming %26 Enveloping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skiving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thread Preparation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

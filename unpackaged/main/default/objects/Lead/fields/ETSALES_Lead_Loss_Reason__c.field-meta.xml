@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETSALES_Lead_Loss_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non Availability</fullName>
+                <default>false</default>
+                <label>Non Availability</label>
+            </value>
+            <value>
+                <fullName>Job Enquiry</fullName>
+                <default>false</default>
+                <label>Job Enquiry</label>
+            </value>
+            <value>
+                <fullName>Competitor Enquiry</fullName>
+                <default>false</default>
+                <label>Competitor Enquiry</label>
+            </value>
+            <value>
+                <fullName>Junk Mails</fullName>
+                <default>false</default>
+                <label>Junk Mails</label>
+            </value>
+            <value>
+                <fullName>Other Enquiry</fullName>
+                <default>false</default>
+                <label>Other Enquiry</label>
+            </value>
+            <value>
+                <fullName>Budget Constraint</fullName>
+                <default>false</default>
+                <label>Budget Constraint</label>
+            </value>
+            <value>
+                <fullName>Not An Approved Customer</fullName>
+                <default>false</default>
+                <label>Not An Approved Customer</label>
+            </value>
+            <value>
+                <fullName>Bad Credit Rating</fullName>
+                <default>false</default>
+                <label>Bad Credit Rating</label>
+            </value>
+            <value>
+                <fullName>Management Decision</fullName>
+                <default>false</default>
+                <label>Management Decision</label>
+            </value>
+            <value>
+                <fullName>Not in ET Service</fullName>
+                <default>false</default>
+                <label>Not in ET Service</label>
+            </value>
+            <value>
+                <fullName>Vehicle Not Available</fullName>
+                <default>false</default>
+                <label>Vehicle Not Available</label>
+            </value>
+            <value>
+                <fullName>Out of Budget</fullName>
+                <default>false</default>
+                <label>Out of Budget</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Not Qualified</controllingFieldValue>
+            <valueName>Non Availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Qualified</controllingFieldValue>
+            <valueName>Management Decision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Qualified</controllingFieldValue>
+            <valueName>Vehicle Not Available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Qualified</controllingFieldValue>
+            <valueName>Out of Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Qualified</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Junk</controllingFieldValue>
+            <valueName>Job Enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Junk</controllingFieldValue>
+            <valueName>Competitor Enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Junk</controllingFieldValue>
+            <valueName>Junk Mails</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Junk</controllingFieldValue>
+            <valueName>Other Enquiry</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

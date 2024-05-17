@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Legal_Contract_Stage_Validation</fullName>
+    <active>false</active>
+    <description>to restrict the user to move the Stage without having Legal Contract Created</description>
+    <errorConditionFormula>If(
+isPickval(StageName,&#39;Legal Contract&#39;) &amp;&amp; !(isLegalContractCreated__c ) &amp;&amp; IsChanged(StageName),TRUE,FALSE
+)</errorConditionFormula>
+    <errorMessage>Opportunity can not be moved to Legal Contract if Legal Contract is not generated.</errorMessage>
+</ValidationRule>

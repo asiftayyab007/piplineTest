@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Plate_Number__c</columns>
+    <columns>Internal_No__c</columns>
+    <columns>Plate_colour_code__c</columns>
+    <columns>Plate_Source__c</columns>
+    <columns>Make__c</columns>
+    <columns>Family__c</columns>
+    <columns>Operation_Status__c</columns>
+    <columns>Plate_Type__c</columns>
+    <columns>Zone__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

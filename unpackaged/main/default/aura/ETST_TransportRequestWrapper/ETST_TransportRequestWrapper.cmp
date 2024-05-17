@@ -1,0 +1,96 @@
+<aura:component  implements="force:hasRecordId,forceCommunity:availableForAllPageTypes">
+    <!--aura:handler event="c:ET_LanguageSelectionEvt" action="{!c.setLanguage}"/-->
+    <aura:attribute name="lang" type="String" default="English"  />
+    <aura:attribute name="selectedTabId" type="String"/>
+    <aura:attribute name="needMoreInfo" type="Boolean" default="false" />
+    <aura:attribute name="isEID" type="Boolean" default="false" />
+    <aura:attribute name="isPhone" type="Boolean" default="false" />
+    <aura:attribute name="backgroundImageURL" type="String" default=""/>
+    <aura:attribute name="backgroundColor" type="String" />
+    <c:ETST_UtilityMethods aura:id="ETST_UtilityMethods"/>
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
+    <aura:attribute name="userId" type="Id" />
+    <aura:attribute name="EID" type="String" /> 
+    <aura:attribute name="Phone" type="String" />
+    <aura:attribute name="eid1" type="String" />
+    <aura:attribute name="eid2" type="String" />
+    <aura:attribute name="eid3" type="String" />
+    
+   
+    <div aura:id="transportService" style="" id="userdashboard" > 
+        <c:ETST_StudentsTab   aura:id="activeStudnetsTab"/>
+        <!--lightning:tabset selectedTabId="{!v.selectedTabId}" >
+                <lightning:tab label="Your Children" id="activestudents">
+                        <c:ETST_StudentsTab backgroundColor="{!v.backgroundColor}" aura:id="activeStudnetsTab" />
+                    </lightning:tab>
+                
+                 </lightning:tab>
+                <lightning:tab label="Payment History" id="paymentHistory">
+                        <c:ETST_PaymentHistory backgroundColor="{!v.backgroundColor}" aura:id="PaymentHistoryTab" />
+                </lightning:tab>
+                <lightning:tab label="Refund History" id="refundHistory">
+                    <c:ETST_RefundHistory backgroundColor="{!v.backgroundColor}" aura:id="refundHistoryTab" />
+                </lightning:tab>
+                <lightning:tab label="My Cases" id="case History">
+                        <c:ETST_ParentCaseHistory  aura:id="casHistoryTab" />
+                </lightning:tab>
+                 <lightning:tab label="none" id="none">
+                        
+                </lightning:tab>
+            </lightning:tabset--> 
+        
+    </div>
+    <aura:if isTrue="{! v.needMoreInfo }">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_small custompopup">
+            <div class="slds-modal__container">
+                <!-- ###### MODAL BOX HEADER Start ######-->
+                <header class="slds-modal__header">                  
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Profile Information</h2>
+                </header>
+                <!--###### MODAL BOX BODY Part Start######-->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <p class="textinfopopup">Please complete your profile to continue</p>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2 teltextno">
+                            <aura:if isTrue="{! v.isEID}">
+                                <!--<label>Emirates Id:</label>-->
+                                <lightning:formattedText value="(EID) 784 " class="teltextuae textboxwidth"/>
+                                <lightning:formattedText value="-"  class="dashicon"/>
+                                <lightning:input class="textboxwidth" aura:id="eid1" required="true" 
+                                                 pattern="[0-9]*" messageWhenValueMissing="Complete this part"
+                                                 messageWhenPatternMismatch="Enter only digits" type="text" name="Emirates Id" value="{!v.eid1}" minlength="4" maxlength="4" onkeyup="{!c.changeFocus1}"  autocomplete="off"/>
+                                <lightning:formattedText value="-"  class="dashicon"/>
+                                <lightning:input class="textboxwidth" aura:id="eid2" required="true" type="text" name="Emirates Id" pattern="[0-9]*" messageWhenValueMissing="Complete this part"
+                                                 messageWhenPatternMismatch="Enter only digits" value="{!v.eid2}" minlength="7" maxlength="7" onkeyup="{!c.changeFocus2}" autocomplete="off"/>
+                                <lightning:formattedText value="-" class="dashicon"/>
+                                <lightning:input class="lasttextno" aura:id="eid3" required="true" type="text" pattern="[0-9]*" messageWhenValueMissing="Complete this part"
+                                                 messageWhenPatternMismatch="Enter only digits" name="Emirates Id" value="{!v.eid3}" maxlength="1" autocomplete="off" />
+                            </aura:if>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 phonetextno">
+                            <aura:if isTrue="{! v.isPhone}">
+                                <lightning:formattedText value="(Phone) +971" class="teltextuae phonetextwidth"/>
+                                <lightning:formattedText value="-"  class="dashicon"/>
+                                <!--pattern="^(|((9715))[0-9]{8})$"-->
+                                <lightning:input type="tel" name="Phone" class="phonetextwidthno" label="" disabled="false" minlength="9" maxlength="9" pattern="[0-9]*"  messageWhenPatternMismatch="Please enter correct mobile number"
+                                                 aura:id="Phone" messageWhenValueMissing="Phone is Mandatory" required="true" value="{!v.Phone}" autocomplete="off"/>
+                            </aura:if>
+                        </div>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral" 
+                                      label="Back"
+                                      title="Back"
+                                      onclick="{! c.closeModel }" class="btn_back"/>
+                    <lightning:button variant="brand" 
+                                      label="Submit"
+                                      title="Submit"
+                                      onclick="{!c.SubmitDetails}" class="btn_table"/>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    
+</aura:component>

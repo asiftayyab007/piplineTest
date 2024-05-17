@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Confirm_Booking</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Confirm Booking</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/28.0/connection.js&quot;)} 
+
+var bookingObj = new sforce.SObject(&quot;ETI_Booking__c&quot;); 
+
+if({!ETI_Booking__c.Booking_Date__c} == &#39;&#39;)
+{
+alert(&#39;Select Booking Date&#39;);
+}else
+{
+bookingObj.Id =&#39;{!ETI_Booking__c.Id}&#39;; 
+bookingObj.Is_booking_Confirmed__c=true;
+var result = sforce.connection.update([bookingObj]); 
+
+if (result[0].success==&#39;false&#39;) { 
+alert(result[0].errors.message); 
+} else { 
+alert(&#39;Email sent to customer&#39;); 
+location.reload(true);
+}
+}</url>
+</WebLink>

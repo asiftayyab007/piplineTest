@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Types__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Types</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cancel Service</fullName>
+                <default>false</default>
+                <label>Cancel Service</label>
+            </value>
+            <value>
+                <fullName>Complaint and Follow up</fullName>
+                <default>false</default>
+                <label>Complaint and Follow up</label>
+            </value>
+            <value>
+                <fullName>Follow up</fullName>
+                <default>false</default>
+                <label>Follow up</label>
+            </value>
+            <value>
+                <fullName>Get Services</fullName>
+                <default>false</default>
+                <label>Get Services</label>
+            </value>
+            <value>
+                <fullName>Inquires and Notices</fullName>
+                <default>false</default>
+                <label>Inquires and Notices</label>
+            </value>
+            <value>
+                <fullName>Notice</fullName>
+                <default>false</default>
+                <label>Notice</label>
+            </value>
+            <value>
+                <fullName>Thankyou and appreciation</fullName>
+                <default>false</default>
+                <label>Thankyou and appreciation</label>
+            </value>
+            <value>
+                <fullName>Update Information</fullName>
+                <default>false</default>
+                <label>Update Information</label>
+            </value>
+            <value>
+                <fullName>Human Resource</fullName>
+                <default>false</default>
+                <label>Human Resource</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Online and Financial Services</fullName>
+                <default>false</default>
+                <label>Online and Financial Services</label>
+            </value>
+            <value>
+                <fullName>Request</fullName>
+                <default>false</default>
+                <label>Request</label>
+            </value>
+            <value>
+                <fullName>Quality and Compliance</fullName>
+                <default>false</default>
+                <label>Quality and Compliance</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation</fullName>
+                <default>false</default>
+                <label>Traffic Violation</label>
+            </value>
+            <value>
+                <fullName>Internal Issues</fullName>
+                <default>false</default>
+                <label>Internal Issues</label>
+            </value>
+            <value>
+                <fullName>Theft and Missing</fullName>
+                <default>false</default>
+                <label>Theft and Missing</label>
+            </value>
+            <value>
+                <fullName>Safety Issue</fullName>
+                <default>false</default>
+                <label>Safety Issue</label>
+            </value>
+            <value>
+                <fullName>Accident/Emergency</fullName>
+                <default>false</default>
+                <label>Accident/Emergency</label>
+            </value>
+            <value>
+                <fullName>Request for Awareness Session</fullName>
+                <default>false</default>
+                <label>Request for Awareness Session</label>
+            </value>
+            <value>
+                <fullName>Request for New Bus/Supervisors/Teachers Transfer</fullName>
+                <default>false</default>
+                <label>Request for New Bus/Supervisors/Teachers Transfer</label>
+            </value>
+            <value>
+                <fullName>Requests for New Trips Activities and Events</fullName>
+                <default>false</default>
+                <label>Requests for New Trips Activities and Events</label>
+            </value>
+            <value>
+                <fullName>Printing New Card - Student</fullName>
+                <default>false</default>
+                <label>Printing New Card - Student</label>
+            </value>
+            <value>
+                <fullName>Printing New Card - Drivers &amp; Transportation Supervisors</fullName>
+                <default>false</default>
+                <label>Printing New Card - Drivers &amp; Transportation Supervisors</label>
+            </value>
+            <value>
+                <fullName>Evaluation of Schools/Services</fullName>
+                <default>false</default>
+                <label>Evaluation of Schools/Services</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Bus is not on time</fullName>
+                <default>false</default>
+                <label>Bus is not on time</label>
+            </value>
+            <value>
+                <fullName>Change the Bus stop as my kid is too young to reach the stop</fullName>
+                <default>false</default>
+                <label>Change the Bus stop as my kid is too young to reach the stop</label>
+            </value>
+            <value>
+                <fullName>Bus didn&#39;t pick my kid</fullName>
+                <default>false</default>
+                <label>Bus didn&#39;t pick my kid</label>
+            </value>
+            <value>
+                <fullName>My kid was bullied</fullName>
+                <default>false</default>
+                <label>My kid was bullied</label>
+            </value>
+            <value>
+                <fullName>Driver behavior is bad</fullName>
+                <default>false</default>
+                <label>Driver behavior is bad</label>
+            </value>
+            <value>
+                <fullName>Nanny behavior is bad</fullName>
+                <default>false</default>
+                <label>Nanny behavior is bad</label>
+            </value>
+            <value>
+                <fullName>Bus condition is not good</fullName>
+                <default>false</default>
+                <label>Bus condition is not good</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

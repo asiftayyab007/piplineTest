@@ -1,0 +1,33 @@
+.THIS {
+}
+.THIS .table-head {
+    border-top: 1px solid #DDDBDA;
+    border-bottom: 1px solid #DDDBDA;
+    height: 25px;
+	width: 100%;
+    background-color: #FAFAF9;
+    text-transform: capitalize;
+    font-weight: 600;
+     font-size: 14px;
+}
+
+.THIS .table-head-th {
+     font-size: 12px;
+    /*letter-spacing: 1px;*/
+    text-align: center;
+}
+
+.THIS .table-body {
+    height: 40px;
+    border-bottom: 1px solid #DDDBDA;
+}
+
+.THIS .table-body:hover {
+    background-color: #F3F2F2;
+    border-top: 1px solid #C1C1C1;
+    border-bottom: 1px solid #C1C1C1;  
+}
+
+.THIS .slds-progress-bar__value {
+    background: #4CAF50;
+}

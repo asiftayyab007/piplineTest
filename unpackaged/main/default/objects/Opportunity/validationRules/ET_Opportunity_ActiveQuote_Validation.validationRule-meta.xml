@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Opportunity_ActiveQuote_Validation</fullName>
+    <active>false</active>
+    <description>disabled by Shashank 07122020</description>
+    <errorConditionFormula>AND(ISCHANGED( StageName  ), ISPICKVAL( StageName , &quot;Proposal&quot;),ETSALES_Active_Quote_Count__c&lt;=0 )</errorConditionFormula>
+    <errorMessage>Opportunity should have at least 1 active Quote to change the Stage.</errorMessage>
+</ValidationRule>

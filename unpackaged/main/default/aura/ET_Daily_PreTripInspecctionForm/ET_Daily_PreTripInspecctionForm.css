@@ -1,0 +1,60 @@
+.THIS .slds-form-element__label{ 
+    display: none;
+}
+.THIS .slds-button__icon{ 
+    display: none;
+}
+.THIS.inspectionForm{
+    padding: 2rem;
+    background: #ebebeb;
+}
+.THIS .mainForm{
+   /* background: #ffffff; */
+}
+.THIS .mainForm .maindiv{
+    padding: 1rem;
+}
+ 
+.THIS .slds-form-element__control input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent;
+}
+.THIS .slds-grid{
+    padding: 0 1rem;
+    background: #ffffff;
+}
+.THIS .maindiv .slds-table{
+    margin: 10px 0;
+}
+.THIS .slds-table:not(.slds-no-row-hover) tbody tr:hover>td, 
+.THIS .slds-table:not(.slds-no-row-hover) tbody tr:hover>th, 
+.THIS .slds-table:not(.slds-no-row-hover) tbody tr:focus>td, 
+.THIS .slds-table:not(.slds-no-row-hover) tbody tr:focus>th {
+    background-color: transparent;
+}
+.THIS .slds-table thead th{
+    background: #adade1;
+    color: #fff;
+}
+.THIS .slds-modal__close svg.slds-button__icon.slds-button_icon-inverse {
+    fill: #fff;
+}
+.THIS table caption, .THIS .mainForm h2{
+    background: #4141a7;
+    color: #fff;
+    padding: 0.5rem;
+}
+.THIS span.slds-checkbox_faux {
+    border: 1px solid #ccc !important;
+    }
+    
+                .THIS .tableBorder tr td{
+                    border-bottom: 1px solid #d4d4d4;
+                }
+                .THIS .tableBorder tr:first-child td:first-child{
+                    border-bottom: none;
+                }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETT_OpptyRecordTypeValidation</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.Name != Account.RecordType.Name</errorConditionFormula>
+    <errorMessage>Please select Account and Opportunity record types as same.</errorMessage>
+</ValidationRule>

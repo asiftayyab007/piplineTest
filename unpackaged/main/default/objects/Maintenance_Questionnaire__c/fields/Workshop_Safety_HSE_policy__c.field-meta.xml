@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workshop_Safety_HSE_policy__c</fullName>
+    <description>9.	Kindly provide us your Workshop Safety &amp; HSE policy manual to understand the various aspects of HSE procedures followed in your workshop .</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <inlineHelpText>9.	Kindly provide us your Workshop Safety &amp; HSE policy manual to understand the various aspects of HSE procedures followed in your workshop .</inlineHelpText>
+    <label>Workshop Safety &amp; HSE policy</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

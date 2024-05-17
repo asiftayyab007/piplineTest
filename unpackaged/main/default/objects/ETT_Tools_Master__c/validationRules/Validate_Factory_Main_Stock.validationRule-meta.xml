@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Factory_Main_Stock</fullName>
+    <active>true</active>
+    <errorConditionFormula>ETT_Allocated_Units__c&gt;ETT_Main_Stock_Units__c</errorConditionFormula>
+    <errorDisplayField>ETT_Allocated_Units__c</errorDisplayField>
+    <errorMessage>Factory stock cannot exceed the main stock value</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Highlight_Panel</fullName>
+    <fields>WorkOrderNumber</fields>
+    <fields>AccountId</fields>
+    <fields>Inspection_Status__c</fields>
+    <fields>Status</fields>
+    <fields>ServiceTerritoryId</fields>
+    <fields>StartDate</fields>
+    <fields>Address</fields>
+    <fields>CreatedDate</fields>
+    <label>Inspection Highlight Panel</label>
+</CompactLayout>

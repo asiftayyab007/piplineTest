@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DisputeReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Dispute Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Addendum Not Signed (T&amp;L)</fullName>
+                <default>false</default>
+                <label>Addendum Not Signed (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>Addendum Not Signed (School Transport)</fullName>
+                <default>false</default>
+                <label>Addendum Not Signed (School Transport)</label>
+            </value>
+            <value>
+                <fullName>Addendum Not Signed (MRO)</fullName>
+                <default>false</default>
+                <label>Addendum Not Signed (MRO)</label>
+            </value>
+            <value>
+                <fullName>Contract Not Signed (T&amp;L)</fullName>
+                <default>false</default>
+                <label>Contract Not Signed (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>Contract Not Signed (School Transport)</fullName>
+                <default>false</default>
+                <label>Contract Not Signed (School Transport)</label>
+            </value>
+            <value>
+                <fullName>Contract Not Signed (MRO)</fullName>
+                <default>false</default>
+                <label>Contract Not Signed (MRO)</label>
+            </value>
+            <value>
+                <fullName>Delay in Vehicle Delivery (T&amp;L)</fullName>
+                <default>false</default>
+                <label>Delay in Vehicle Delivery (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>Delay in Vehicle Delivery (School Transport)</fullName>
+                <default>false</default>
+                <label>Delay in Vehicle Delivery (School Transport)</label>
+            </value>
+            <value>
+                <fullName>Delay in Vehicle Delivery (MRO)</fullName>
+                <default>false</default>
+                <label>Delay in Vehicle Delivery (MRO)</label>
+            </value>
+            <value>
+                <fullName>Fuel Increase Dispute (T&amp;L)</fullName>
+                <default>false</default>
+                <label>Fuel Increase Dispute (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>Fuel Increase Dispute (School Transport)</fullName>
+                <default>false</default>
+                <label>Fuel Increase Dispute (School Transport)</label>
+            </value>
+            <value>
+                <fullName>Fuel Increase Dispute (MRO)</fullName>
+                <default>false</default>
+                <label>Fuel Increase Dispute (MRO)</label>
+            </value>
+            <value>
+                <fullName>Government New Rule (T&amp;L)</fullName>
+                <default>false</default>
+                <label>Government New Rule (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>Government New Rule (School Transport)</fullName>
+                <default>false</default>
+                <label>Government New Rule (School Transport)</label>
+            </value>
+            <value>
+                <fullName>Government New Rule (MRO)</fullName>
+                <default>false</default>
+                <label>Government New Rule (MRO)</label>
+            </value>
+            <value>
+                <fullName>New Routes Request (T&amp;L)</fullName>
+                <default>false</default>
+                <label>New Routes Request (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>New Routes Request (School Transport)</fullName>
+                <default>false</default>
+                <label>New Routes Request (School Transport)</label>
+            </value>
+            <value>
+                <fullName>New Routes Request (MRO)</fullName>
+                <default>false</default>
+                <label>New Routes Request (MRO)</label>
+            </value>
+            <value>
+                <fullName>New Service Request (T&amp;L)</fullName>
+                <default>false</default>
+                <label>New Service Request (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>New Service Request (School Transport)</fullName>
+                <default>false</default>
+                <label>New Service Request (School Transport)</label>
+            </value>
+            <value>
+                <fullName>New Service Request (MRO)</fullName>
+                <default>false</default>
+                <label>New Service Request (MRO)</label>
+            </value>
+            <value>
+                <fullName>No Purchase Order (P.O.) (T&amp;L)</fullName>
+                <default>false</default>
+                <label>No Purchase Order (P.O.) (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>No Purchase Order (P.O.) (School Transport)</fullName>
+                <default>false</default>
+                <label>No Purchase Order (P.O.) (School Transport)</label>
+            </value>
+            <value>
+                <fullName>No Purchase Order (P.O.) (MRO)</fullName>
+                <default>false</default>
+                <label>No Purchase Order (P.O.) (MRO)</label>
+            </value>
+            <value>
+                <fullName>Purchase Order (P.O.) Fully Utilized (T&amp;L)</fullName>
+                <default>false</default>
+                <label>Purchase Order (P.O.) Fully Utilized (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>Purchase Order (P.O.) Fully Utilized (School Transport)</fullName>
+                <default>false</default>
+                <label>Purchase Order (P.O.) Fully Utilized (School Transport)</label>
+            </value>
+            <value>
+                <fullName>Purchase Order (P.O.) Fully Utilized (MRO)</fullName>
+                <default>false</default>
+                <label>Purchase Order (P.O.) Fully Utilized (MRO)</label>
+            </value>
+            <value>
+                <fullName>Service Issue (T&amp;L)</fullName>
+                <default>false</default>
+                <label>Service Issue (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>Service Issue (School Transport)</fullName>
+                <default>false</default>
+                <label>Service Issue (School Transport)</label>
+            </value>
+            <value>
+                <fullName>Service Issue (MRO)</fullName>
+                <default>false</default>
+                <label>Service Issue (MRO)</label>
+            </value>
+            <value>
+                <fullName>Service Not Provided (T&amp;L)</fullName>
+                <default>false</default>
+                <label>Service Not Provided (T&amp;L)</label>
+            </value>
+            <value>
+                <fullName>Service Not Provided (School Transport)</fullName>
+                <default>false</default>
+                <label>Service Not Provided (School Transport)</label>
+            </value>
+            <value>
+                <fullName>Service Not Provided (MRO)</fullName>
+                <default>false</default>
+                <label>Service Not Provided (MRO)</label>
+            </value>
+            <value>
+                <fullName>Random Closing of Invoices</fullName>
+                <default>false</default>
+                <label>Random Closing of Invoices</label>
+            </value>
+            <value>
+                <fullName>Waiver Request</fullName>
+                <default>false</default>
+                <label>Waiver Request</label>
+            </value>
+            <value>
+                <fullName>Document Not Attached to Invoice</fullName>
+                <default>false</default>
+                <label>Document Not Attached to Invoice</label>
+            </value>
+            <value>
+                <fullName>Invoice Amount Mismatch</fullName>
+                <default>false</default>
+                <label>Invoice Amount Mismatch</label>
+            </value>
+            <value>
+                <fullName>Invoice Not Received</fullName>
+                <default>false</default>
+                <label>Invoice Not Received</label>
+            </value>
+            <value>
+                <fullName>Late Submission of Traffic Fine</fullName>
+                <default>false</default>
+                <label>Late Submission of Traffic Fine</label>
+            </value>
+            <value>
+                <fullName>Driver Missed Stop</fullName>
+                <default>false</default>
+                <label>Driver Missed Stop</label>
+            </value>
+            <value>
+                <fullName>Fire Extinguisher</fullName>
+                <default>false</default>
+                <label>Fire Extinguisher</label>
+            </value>
+            <value>
+                <fullName>Insurance Issue</fullName>
+                <default>false</default>
+                <label>Insurance Issue</label>
+            </value>
+            <value>
+                <fullName>Job Quotation Not Approved</fullName>
+                <default>false</default>
+                <label>Job Quotation Not Approved</label>
+            </value>
+            <value>
+                <fullName>KPI Penalties</fullName>
+                <default>false</default>
+                <label>KPI Penalties</label>
+            </value>
+            <value>
+                <fullName>Late Payment of Traffic Fine</fullName>
+                <default>false</default>
+                <label>Late Payment of Traffic Fine</label>
+            </value>
+            <value>
+                <fullName>Other Emirates Pick-up Fine</fullName>
+                <default>false</default>
+                <label>Other Emirates Pick-up Fine</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Pending LPO &amp; GRN</fullName>
+                <default>false</default>
+                <label>Pending LPO &amp; GRN</label>
+            </value>
+            <value>
+                <fullName>Permits Fine</fullName>
+                <default>false</default>
+                <label>Permits Fine</label>
+            </value>
+            <value>
+                <fullName>Replacement Not Provided</fullName>
+                <default>false</default>
+                <label>Replacement Not Provided</label>
+            </value>
+            <value>
+                <fullName>Tires Expired</fullName>
+                <default>false</default>
+                <label>Tires Expired</label>
+            </value>
+            <value>
+                <fullName>Vehicle not as per Contract</fullName>
+                <default>false</default>
+                <label>Vehicle not as per Contract</label>
+            </value>
+            <value>
+                <fullName>Vehicle Registration Expired</fullName>
+                <default>false</default>
+                <label>Vehicle Registration Expired</label>
+            </value>
+            <value>
+                <fullName>Warning Stickers Not Available</fullName>
+                <default>false</default>
+                <label>Warning Stickers Not Available</label>
+            </value>
+            <value>
+                <fullName>Wrong Traffic Fine</fullName>
+                <default>false</default>
+                <label>Wrong Traffic Fine</label>
+            </value>
+            <value>
+                <fullName>Salik Fine</fullName>
+                <default>false</default>
+                <label>Salik Fine</label>
+            </value>
+            <value>
+                <fullName>Netting Request</fullName>
+                <default>false</default>
+                <label>Netting Request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Category__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Name==&quot;Manpower&quot; &amp;&amp; ISPICKVAL(ETSALES_GL_Services__c, &quot;Bus Nanny&quot;), &quot;School Transportation&quot;,
+IF(RecordType.Name==&quot;Leasing&quot;, &quot;Rental and Leasing&quot;,
+IF(RecordType.Name==&quot;Rental -B2B&quot;, &quot;Rental and Leasing&quot;,
+IF(RecordType.Name==&quot;Manpower&quot;,&quot;Rental and Leasing&quot;,
+IF(RecordType.Name==&quot;Maintainance&quot;, &quot;Maintenance&quot;,
+IF(RecordType.Name==&quot;Logistics&quot;, &quot;Transportation&quot;,
+IF(RecordType.Name==&quot;Chauffeur and Limousine -B2B&quot;, &quot;B2C/Managed for Cash&quot;,
+IF(RecordType.Name==&quot;Transportation&quot;, CASE(ETSALES_GL_Services__c, &quot;Government School&quot;, &quot;Government School Transportation&quot;, &quot;Quran Studies&quot;, &quot;Transportation&quot;,&quot;University&quot;, &quot;Transportation&quot;,&quot;Government Executive&quot;,&quot;Transportation&quot;,&quot;Haj &amp; Umrah&quot;,&quot;Transportation&quot;,&quot;Staff-Employees and Labors&quot;,&quot;Transportation&quot;,&quot;Club Members&quot;,&quot;Transportation&quot;,&quot;Private School&quot;,IF(VALUE(TEXT(Contract_Years__c))&gt;=1,&quot;School Transportation&quot;,&quot;Transportation&quot;),&quot;&quot;),&quot;&quot;))))))))</formula>
+    <label>Service Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

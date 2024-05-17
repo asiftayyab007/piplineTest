@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>true</default>
+        <label>Open</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Did Not Pick Up</fullName>
+        <default>false</default>
+        <label>Did Not Pick Up</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Number Switched Off</fullName>
+        <default>false</default>
+        <label>Number Switched Off</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Invalid Number</fullName>
+        <default>false</default>
+        <label>Invalid Number</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Number Busy</fullName>
+        <default>false</default>
+        <label>Number Busy</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer requested call back</fullName>
+        <default>false</default>
+        <label>Customer requested call back</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer successfully contacted</fullName>
+        <default>false</default>
+        <label>Customer successfully contacted</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer not contactable</fullName>
+        <default>false</default>
+        <label>Customer not contactable</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

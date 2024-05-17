@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>School_ID__c</columns>
+    <columns>Route_Name__c</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>Pick_up__c</columns>
+    <columns>School_Name__c</columns>
+    <columns>Student_ID__c</columns>
+    <columns>Student_Name__c</columns>
+    <columns>Date__c</columns>
+    <columns>Direction__c</columns>
+    <columns>Drop_off__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

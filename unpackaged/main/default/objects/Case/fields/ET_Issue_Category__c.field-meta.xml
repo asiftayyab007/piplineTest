@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Issue_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>ET Issue Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Case_Types__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service Compliance</fullName>
+                <default>false</default>
+                <label>Service Compliance</label>
+            </value>
+            <value>
+                <fullName>Driver/Staff Behavior</fullName>
+                <default>false</default>
+                <label>Driver/Staff Behavior</label>
+            </value>
+            <value>
+                <fullName>Service Quality</fullName>
+                <default>false</default>
+                <label>Service Quality</label>
+            </value>
+            <value>
+                <fullName>Online Services</fullName>
+                <default>false</default>
+                <label>Online Services</label>
+            </value>
+            <value>
+                <fullName>Request</fullName>
+                <default>false</default>
+                <label>Request</label>
+            </value>
+            <value>
+                <fullName>Traffic Violation</fullName>
+                <default>false</default>
+                <label>Traffic Violation</label>
+            </value>
+            <value>
+                <fullName>Internal issues</fullName>
+                <default>false</default>
+                <label>Internal issues</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Operations</fullName>
+                <default>false</default>
+                <label>Service Delivery Operations</label>
+            </value>
+            <value>
+                <fullName>Student Card</fullName>
+                <default>false</default>
+                <label>Student Card</label>
+            </value>
+            <value>
+                <fullName>school transport drivers</fullName>
+                <default>false</default>
+                <label>school transport drivers</label>
+            </value>
+            <value>
+                <fullName>Traffic Supervisor</fullName>
+                <default>false</default>
+                <label>Traffic Supervisor</label>
+            </value>
+            <value>
+                <fullName>Bus</fullName>
+                <default>false</default>
+                <label>Bus</label>
+            </value>
+            <value>
+                <fullName>Bus Supervisor</fullName>
+                <default>false</default>
+                <label>Bus Supervisor</label>
+            </value>
+            <value>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+                <label>Financial Services</label>
+            </value>
+            <value>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <fullName>Follow up</fullName>
+                <default>false</default>
+                <label>Follow up</label>
+            </value>
+            <value>
+                <fullName>Notice</fullName>
+                <default>false</default>
+                <label>Notice</label>
+            </value>
+            <value>
+                <fullName>Get service</fullName>
+                <default>false</default>
+                <label>Get service</label>
+            </value>
+            <value>
+                <fullName>Inquiries</fullName>
+                <default>false</default>
+                <label>Inquiries</label>
+            </value>
+            <value>
+                <fullName>Cancel service</fullName>
+                <default>false</default>
+                <label>Cancel service</label>
+            </value>
+            <value>
+                <fullName>Update information</fullName>
+                <default>false</default>
+                <label>Update information</label>
+            </value>
+            <value>
+                <fullName>Driver Behaviour</fullName>
+                <default>false</default>
+                <label>Driver Behaviour</label>
+            </value>
+            <value>
+                <fullName>Accident/Emergency</fullName>
+                <default>false</default>
+                <label>Accident/Emergency</label>
+            </value>
+            <value>
+                <fullName>Safety Issue</fullName>
+                <default>false</default>
+                <label>Safety Issue</label>
+            </value>
+            <value>
+                <fullName>Theft</fullName>
+                <default>false</default>
+                <label>Theft</label>
+            </value>
+            <value>
+                <fullName>Thank you and appreciation</fullName>
+                <default>false</default>
+                <label>Thank you and appreciation</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Update Information</controllingFieldValue>
+            <valueName>Update information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Thankyou and appreciation</controllingFieldValue>
+            <valueName>Thank you and appreciation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <controllingFieldValue>Internal Issues</controllingFieldValue>
+            <valueName>Internal issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Get service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Cancel service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online and Financial Services</controllingFieldValue>
+            <valueName>Online Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Online and Financial Services</controllingFieldValue>
+            <valueName>Financial Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Request</controllingFieldValue>
+            <valueName>Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality and Compliance</controllingFieldValue>
+            <valueName>Service Compliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quality and Compliance</controllingFieldValue>
+            <valueName>Service Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traffic Violation</controllingFieldValue>
+            <valueName>Traffic Violation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Theft and Missing</controllingFieldValue>
+            <valueName>Theft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Issue</controllingFieldValue>
+            <valueName>Safety Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accident/Emergency</controllingFieldValue>
+            <valueName>Accident/Emergency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complaint and Follow up</controllingFieldValue>
+            <valueName>Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complaint and Follow up</controllingFieldValue>
+            <valueName>Follow up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inquires and Notices</controllingFieldValue>
+            <valueName>Notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inquires and Notices</controllingFieldValue>
+            <valueName>Inquiries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Human Resource</controllingFieldValue>
+            <valueName>Driver/Staff Behavior</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

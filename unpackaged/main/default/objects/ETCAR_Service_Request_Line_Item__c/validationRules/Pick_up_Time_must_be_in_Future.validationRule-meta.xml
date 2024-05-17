@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pick_up_Time_must_be_in_Future</fullName>
+    <active>false</active>
+    <description>Pick up date and Time must be in Future</description>
+    <errorConditionFormula>AND(
+NOT($Permission.ETC_Rental_By_Pass_Validations),
+ETCAR_Pick_UP_Date_Time__c &lt;= NOW()
+)</errorConditionFormula>
+    <errorMessage>Pick up Date Time must be in Future</errorMessage>
+</ValidationRule>

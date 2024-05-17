@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Contract_Pdf_VF</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Generate Contract Pdf_VF</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>if ({!Contract_Pdf_Header__c.Sector__c} == &#39;School&#39;) {
+ 
+var vfURL  =  &#39;https://icrm--etdev.sandbox.lightning.force.com/apex/ET_generateContractPdf_School?Id=&#39; +{!Contract_Pdf_Header__c.Id};
+
+                window.open(vfURL);
+                
+}</url>
+</WebLink>

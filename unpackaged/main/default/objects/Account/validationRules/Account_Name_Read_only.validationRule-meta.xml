@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Name_Read_only</fullName>
+    <active>true</active>
+    <description>Account Name field should be read only for ETS Zone Sales Managers</description>
+    <errorConditionFormula>AND(
+$Profile.Name = &quot;ETS_Zone_Sales Manager&quot;,
+ISCHANGED(Name) 
+)</errorConditionFormula>
+    <errorMessage>Editing the Account Name is not allowed.</errorMessage>
+</ValidationRule>
